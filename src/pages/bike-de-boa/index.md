@@ -2,11 +2,11 @@
 date: "2016-10"
 date2: "2018"
 title: "Bike de Boa"
+description: "A (Progressive) Web App to find safe places to park your bike."
+tags: ['side project','activism','progressive web app']
+roles: "Front-end & Back-end Development, Design"
+team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
 ---
-
-**Roles**: front-end, back-end, ux design, visual design
-
-**Tags**: side project, nonprofit, activism, progressive web app
 
 
 I wanted to contribute in some way to foster the local culture of urban biking. Analysing the many problems people face when commuting with bicycles I identified a big one that I felt could be addressed in an efficient and innovative way using technology: where to park my bike safely?

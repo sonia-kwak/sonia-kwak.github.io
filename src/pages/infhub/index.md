@@ -3,17 +3,10 @@ date: "2012"
 date2: "2013"
 title: "infHUB – A hub for academic projects"
 description: "My first web project. Started as an academic project, ended up being expanded and made available to the university community."
-tags: ['front-end', 'back-end', 'social network'] 
+tags: ['social network','academic','platform']
+roles: "Front-end/Back-end development, Design"
+team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"
 ---
-
-* Roles: development, design, planning
-* Team: César Garcia Daudt, João Gilberto Heitor Gaiewski
-
-## Links
-
-https://infhub.herokuapp.com
-
-https://github.com/cmdalbem/redetrabalhosinf
 
 
 ## Problem
@@ -49,3 +42,9 @@ It also got me more interested in Usability, and what I would find out later to 
 ![](./infhub5.png) 
 ![](./infhub7.png)
 
+
+## Links
+
+https://infhub.herokuapp.com
+
+https://github.com/cmdalbem/redetrabalhosinf

@@ -1,10 +1,11 @@
 ---
 date: "2017-06"
 title: "Game of Lives"
+description: "A story-telling game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes."
+tags: ['hackathon','game']
+roles: "Development, Design"
+team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
 ---
-
-Roles: 
-Tags: 
 
 # Introduction
 
