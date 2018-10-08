@@ -22,14 +22,15 @@ const Paragraph = props => (
   <p className="f5 dark-gray">{props.children}</p>
 )
 
-const Image = props => (
-  <img 
-    className="mv6"
-    src={props.src}
-  >
-    {props.children}
-  </img>
-);
+// const Image = props => (
+//   <img 
+//     className="mv6"
+//     alt={props.alt}
+//     src={props.src}
+//   >
+//     {props.children}
+//   </img>
+// );
 
 const StyledLink = props => (
   <a
@@ -83,7 +84,7 @@ class BlogPostTemplate extends React.Component {
           <div className="w-100">
             {
               post.frontmatter.cover &&
-              <img className="w-100" src={post.frontmatter.cover.publicURL} />
+              <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
             }
           </div>
         </div>

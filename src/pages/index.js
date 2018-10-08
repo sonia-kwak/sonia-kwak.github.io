@@ -5,15 +5,14 @@ import Layout from '../components/layout'
 
 import Speaking from '../components/speaking'
 import HomeSection from '../components/homesection'
-import Projects from '../components/projects'
+// import Projects from '../components/projects'
 
 import selfie from '../images/selfie.png' 
 
 
 class IndexPage extends React.Component {
   render() {
-    // const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const posts = this.props.data.allMarkdownRemark.edges;
+    // const posts = this.props.data.allMarkdownRemark.edges;
 
     return (
       <Layout>
