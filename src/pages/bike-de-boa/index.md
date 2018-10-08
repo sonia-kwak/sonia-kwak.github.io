@@ -6,6 +6,7 @@ description: "A (Progressive) Web App to find safe places to park your bike."
 tags: ['side project','activism','progressive web app']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
+cover: './cover.png'
 ---
 
 

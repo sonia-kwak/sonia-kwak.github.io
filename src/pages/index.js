@@ -172,23 +172,26 @@ class IndexPage extends React.Component {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          } 
-          frontmatter {
-            date(formatString: "YYYY")
-            date2(formatString: "YYYY")
-            title
-            description
-            tags
-          }
-        }
-      }
-    }
-  }
-`
+         query {
+           allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+             edges {
+               node {
+                 excerpt
+                 fields {
+                   slug
+                 }
+                 frontmatter {
+                   date(formatString: "YYYY")
+                   date2(formatString: "YYYY")
+                   title
+                   description
+                   tags
+                   cover {
+                     publicURL
+                   }
+                 }
+               }
+             }
+           }
+         }
+       `

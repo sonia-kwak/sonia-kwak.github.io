@@ -5,9 +5,8 @@ description: "A story-telling game inspired by the best “walking simulators”
 tags: ['hackathon','game']
 roles: "Development, Design"
 team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
+cover: "./cover.png"
 ---
-
-# Introduction
 
 1st place @ Isobar Virtual Reality International Hackathon
 

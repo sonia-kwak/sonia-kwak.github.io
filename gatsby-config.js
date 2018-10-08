@@ -21,15 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `nunito sans\:400,600,700,900`
-        ], 
+        fonts: [`nunito sans\:400,600,700,900`],
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
         // Puts tracking script in the head instead of the body
         head: true,
         // Setting this parameter is optional
@@ -37,13 +35,13 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["localhost*"],
+        exclude: ['localhost*'],
         // Enables Google Optimize using your container Id
         // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
         // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        cookieDomain: 'example.com',
       },
     },
     {
@@ -65,10 +63,11 @@ module.exports = {
           },
           'gatsby-remark-smartypants',
           `gatsby-remark-reading-time`,
+          'gatsby-remark-component',
         ],
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
   ],
 }
