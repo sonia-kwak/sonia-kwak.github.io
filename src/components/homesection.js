@@ -8,11 +8,11 @@ class HomeSection extends React.Component {
 
         return (
             <section id={anchor} className="mb4 mt7-ns mt4 flex flex-row-ns flex-column items-top">
-                <div className="w-20">
+                <div className="w-30">
                 </div>
 
-                <div className="w-30-ns">
-                    <h2 className="f3 fw7 dark-gray">{title}</h2>
+                <div className="w-20-ns">
+                    <h2 className="f3 fw8 dark-gray">{title}</h2>
 
                     {
                         description &&

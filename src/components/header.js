@@ -17,9 +17,9 @@ const Header = () => (
       <a className="link dim gray ml4 ttu fw6" href="#work" >
         Work
       </a>
-      <a className="link dim gray ml4 ttu fw6" href="#projects" >
+      {/* <a className="link dim gray ml4 ttu fw6" href="#projects" >
         Projects
-      </a>
+      </a> */}
       <a className="link dim gray ml4 ttu fw6" href="#speaking" >
         Speaking
       </a>

@@ -89,18 +89,18 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection>
 
-          <HomeSection anchor="projects" title="Projects"
+          {/* <HomeSection anchor="projects" title="Projects"
             // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Projects posts={posts}/>
-          </HomeSection>
+          </HomeSection> */}
           
           <HomeSection anchor="speaking" title="Speaking" // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Speaking />
           </HomeSection>
 
-          <HomeSection anchor="currently" title="Currently" >
+          {/* <HomeSection anchor="currently" title="Currently" >
             <p className="pretty-bullet">
               Listening to <b>Lorem</b>, <b>Ipsum</b>.
             </p>
@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
             <p className="pretty-bullet">
               Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
             </p>
-          </HomeSection>
+          </HomeSection> */}
 
           <HomeSection anchor="elsewhere" title="Elsewhere" >
             <div className="f5 ttu fw6">
