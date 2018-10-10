@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
             <p className="pretty-bullet">
               Working as a Product Designer at{' '}
               <a
-                className="link pretty-link dim"
+                className="pretty-link"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.vtex.com/"
@@ -77,7 +77,7 @@ class IndexPage extends React.Component {
             <p className="pretty-bullet">
               In my free time I'm a cicloactivist and I've built{' '}
               <a
-                className="link pretty-link dim"
+                className="pretty-link"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.bikedeboa.com.br/"

@@ -4,7 +4,7 @@ const Speaking = () => (
     <div>
       <Talk
         title="A experiência de usuário da mobilidade urbana - Cidades melhores para pedalar e viver"
-        context="Interaction Latin America (proposta), 2018"
+        context="Interaction Latin America, 2018 [proposta aceita]"
         link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
       />
 
@@ -21,7 +21,7 @@ const Speaking = () => (
       />
 
       <Talk
-        title="Sprint de Criação de Multimídias Livres"
+        title="Multimídias Livres"
         context="Fórum Internacional Software Livre, 2016"
         link="https://musica-libre.org/sprint_multimedia_2016_1"
       />
@@ -38,11 +38,11 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1RnbQ5beTuvtUFzk6KX3kJXrF25i2WN-ZMcXbhlelktw/edit#slide=id.p"
       />
 
-      {/* <Talk
+      <Talk
         title="Podcasts"
         context="Isobar Lightning Talks, 2017"
         link="https://docs.google.com/presentation/d/1hzKk7USBEVX9m8HlrZD5rRb8sp-VXWFYuyebHe5kzJ8/edit?usp=sharing"
-      /> */}
+      />
 
       {/* <Talk
         title="Slow TV"
@@ -72,7 +72,7 @@ class Talk extends React.Component {
       <div className="mv4">
         <div className="fw5 f5 mv1">
           {/* {title} */}
-          <a className="link pretty-link dim" href={link}>
+          <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
         </div>
@@ -82,7 +82,7 @@ class Talk extends React.Component {
         </div>
         
         {/* <div className="mv2">
-          <a className="link pretty-link" href={link}>
+          <a className="pretty-link" href={link}>
             Slides
           </a>
         </div> */}

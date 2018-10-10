@@ -6,6 +6,9 @@ html {
   --blue: #1B9393;
   --bg-color: #fafafa;
 
+  --gray: #777;
+  --dark-gray: #333;
+  --light-gray: #eee;
 }
  
 body {
@@ -17,11 +20,13 @@ body {
 .pretty-link {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid var(--orange);
+  box-shadow: inset 0 -2px 0 -1px var(--orange);
+
+  transition: all 0.2s ease;
+} 
+.pretty-link:hover {
+  box-shadow: inset 0 -4px 0 -1px var(--orange);
 }
-/* .pretty-link:hover {
-  box-shadow: inset 0 -23px 0 -1px var(--orange);
-} */
 
 .pretty-bullet {
   position: relative;
@@ -34,16 +39,28 @@ body {
   line-height: 1.5rem;
 }
 
-.selected-tab {
+.tab {
   position: relative;
+  text-decoration: none;
 }
-.selected-tab:before {
+.tab:before {
   content: '・';
   position: absolute;
   bottom: -1.5rem;
   left: calc(50% - 0.75rem);
   font-size: 1.5rem;
-  color: var(--blue)
+  color: var(--gray);
+  opacity: 0;
+}
+.tab--unselected:hover {
+  /* color:  */
+}
+.tab--unselected:hover:before {
+  opacity: 1;
+}
+.tab--selected:before {
+  color: var(--blue);
+  opacity: 1;
 }
 
 .bg-fafafa {

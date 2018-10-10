@@ -144,7 +144,7 @@ class BlogPostTemplate extends React.Component {
               <div>
                 {
                   previous &&
-                  <Link className="link pretty-link dim" to={previous.fields.slug} rel="prev">
+                  <Link className="pretty-link" to={previous.fields.slug} rel="prev">
                     ← {previous.frontmatter.title}
                   </Link>
                 }
@@ -152,7 +152,7 @@ class BlogPostTemplate extends React.Component {
               <div>
                 {
                   next &&
-                  <Link className="link pretty-link dim" to={next.fields.slug} rel="next">
+                  <Link className="pretty-link" to={next.fields.slug} rel="next">
                     {next.frontmatter.title} →
               </Link>
                 }
