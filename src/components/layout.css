@@ -42,6 +42,8 @@ body {
 .tab {
   position: relative;
   text-decoration: none;
+
+  transition: all 0.2s;
 }
 .tab:before {
   content: '・';
@@ -51,16 +53,37 @@ body {
   font-size: 1.5rem;
   color: var(--gray);
   opacity: 0;
+
+  transition: all 0.2s;
 }
-.tab--unselected:hover {
-  /* color:  */
+.tab--unselected {
+  color: var(--gray);
 }
-.tab--unselected:hover:before {
+.tab--unselected:hover:before { 
   opacity: 1;
+}
+.tab--selected {
+  color: var(--dark-gray);
 }
 .tab--selected:before {
   color: var(--blue);
   opacity: 1;
+}
+
+.project-card {
+  box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.2);
+  transform: translateY(0px);
+
+  text-decoration: none;
+
+  transition: all 0.2s ease-out;
+}
+
+.project-card:hover {
+  box-shadow: 0px 11px 25px -5px rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+
+  transform: translateY(-4px);
 }
 
 .bg-fafafa {
@@ -111,4 +134,16 @@ body {
   .parallax__layer--back {
     transform: translateZ(-0.5px) scale(1.5) translateX(-25%) 
   }
+} */
+
+/* .reading-progress {
+  background: linear-gradient(to right, var(--orange) var(--scroll), transparent 0);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1;
 } */

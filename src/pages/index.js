@@ -1,18 +1,18 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
-import Speaking from '../components/speaking'
-import HomeSection from '../components/homesection'
-// import Projects from '../components/projects'
+import Speaking from '../components/Speaking'
+import HomeSection from '../components/HomeSection'
+import Projects from '../components/Projects'
 
 import selfie from '../images/selfie.png' 
 
 
 class IndexPage extends React.Component {
   render() {
-    // const posts = this.props.data.allMarkdownRemark.edges;
+    const posts = this.props.data.allMarkdownRemark.edges;
 
     return (
       <Layout>
@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
               className="parallax__layer--back absolute left-0 top-3 w-80 w-100-ns relative-ns"
             />
 
-            <h1 className="f1-ns f2 fw9 dark-gray absolute z-1 lh-solid top-0 left-3 mt7-ns ml7-ns ml4 mt6 mw6-ns">
+            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3 mt7-ns ml7-ns ml4 mt6 mw6-ns">
               Designer of products and systems.
             </h1>
           </div> 
@@ -88,13 +88,16 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection>
 
-          {/* <HomeSection anchor="projects" title="Projects"
-            // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+          {/* <HomeSection anchor="projects" title="Projects" fullScreen
+            // description="..."
           >
-            <Projects posts={posts}/>
-          </HomeSection> */}
+            <Projects posts={posts}/> 
+          </HomeSection>  */}
           
-          <HomeSection anchor="speaking" title="Speaking" // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+          <HomeSection
+            anchor="speaking"
+            title="Speaking"
+            // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Speaking />
           </HomeSection>
@@ -165,7 +168,7 @@ class IndexPage extends React.Component {
         </div>
       </Layout>
     );
-  }
+  } 
 }
 
 export default IndexPage;

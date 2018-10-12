@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import Footer from './footer'
+import Header from './Header'
+import Footer from './Footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -34,16 +34,16 @@ const Layout = ({ children }) => (
           />
         </Helmet>
 
-        {/* <div className="mh4-m mh6-ns mh3 fixed top-0 left-0 right-0 bg-fafafa z-1"> */}
-        <div className="mh4-m mh4-ns mh3">
+        <div className="ph4-ns ph2-m ph3 fixed top-0 left-0 right-0 bg-fafafa z-1">
+        {/* <div className="mh4-ns mh2-m mh3"> */}
           <Header siteTitle={data.site.siteMetadata.title} />
         </div>
 
-        <div className="mh4-m mh4-ns mh3 mt4 mb6 lh-copy">
+        <div className="mh4-ns mh2-m mh3 mt6 mb6 lh-copy">
           {children}
         </div>
 
-        <div className="ph4-m ph6-ns ph2 bg-near-white">
+        <div className="ph6-ns ph2-m ph2 bg-near-white">
           <Footer/>
         </div>
       </div>

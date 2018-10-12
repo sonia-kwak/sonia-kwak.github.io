@@ -1,52 +1,23 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import ProjectCard from '../components/ProjectCard'
 
 class Projects extends React.Component {
     render() {
         const posts = this.props.posts;
 
         return (
-            posts.map(({ node }) => {
-                return (
-                    <Project node={node}/>
-                )
-            })
-        )
-    }
-}
-
-class Project extends React.Component {
-    render() {
-        const node = this.props.node;
-
-        return (
-            <Link
-                className="link near-black mv5 db dim"
-                to={node.fields.slug}
-            >
+            <div className="flex flex-wrap nl3 nr3">
                 {
-                    node.frontmatter.cover ?
-                    <div className="w-100 db">
-                        <img src={node.frontmatter.cover.publicURL} />
-                    </div>
-                    :
-                    <div className="bg-gray w-100 pa5 db"/>
+                    posts.map(({ node }) => {
+                        return (
+                            <div className="w-third-ns ph3-ns mv5-ns w-50-m ph2-m mv3 w-100">
+                                <ProjectCard node={node}/>
+                            </div>
+                        )
+                    })
                 }
-                { node.frontmatter.title &&
-                    <h3 className="f5 fw7 mt3 mb0">
-                        {node.frontmatter.title}
-                    </h3>
-                }
-                { node.frontmatter.description &&
-                    <div className="f6 dark-gray">
-                        {node.frontmatter.description}
-                    </div>
-                }
-                <div className="f6 mv2 gray">
-                    {node.frontmatter.date} {node.frontmatter.date2 && `— ${node.frontmatter.date2}`}
-                </div>
-                {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
-            </Link>
+            </div>
         )
     }
 }

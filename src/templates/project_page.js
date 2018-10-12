@@ -6,6 +6,9 @@ import rehypeReact from "rehype-react"
 
 import Layout from '../components/layout'
 
+// import Scrollspy from 'react-scrollspy'
+
+
 const PrimaryTitle = props => (
   <h1 className="f2 dark-gray mt4 mb4">{props.children}</h1>
 );
@@ -48,12 +51,31 @@ const Separator = props => (
 );
 
 class BlogPostTemplate extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    // this.initScrollListener();
+  }
+
+  // initScrollListener() {
+  //   document.addEventListener('scroll', function() {
+  //     let h = document.documentElement,
+  //       b = document.body,
+  //       st = 'scrollTop',
+  //       sh = 'scrollHeight',
+  //       progress = document.querySelector('.reading-progress'),
+  //       scroll;
+ 
+  //     scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
+  //     progress.style.setProperty('--scroll', scroll + '%')
+  //   })
+  // }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
-    // post.html = post.html.replace(/<img class="/g,`<img class="mv6 `);
 
     console.log(post);
 
@@ -68,9 +90,8 @@ class BlogPostTemplate extends React.Component {
         a: StyledLink,
         // img: Image,
       },
-    }).Compiler
-
-
+    }).Compiler;
+    
     return (
       <Layout location={this.props.location}>
         <Helmet
@@ -79,16 +100,18 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
-        {/* Cover image */}
-        <div className="flex flex-row-ns flex-column mb4">
-          <div className="w-100">
-            {
-              post.frontmatter.cover &&
-              <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
-            }
-          </div>
-        </div>
-        
+        {/* <div className="fixed top-0">
+          <Scrollspy 
+            items={['section-1', 'section-2', 'section-3']}
+            // componentTag='div'
+            currentClassName="fw6"
+          >
+            <li><a href="#section-1">section 1</a></li>
+            <li><a href="#section-2">section 2</a></li>
+            <li><a href="#section-3">section 3</a></li>
+          </Scrollspy>
+        </div> */}
+
         {/* Heading */}
         <div className="flex flex-row-ns flex-column mb4">
           <div className="w-10-ns">
@@ -112,11 +135,21 @@ class BlogPostTemplate extends React.Component {
               }
               <div>
                 {post.frontmatter.date}
-              </div> 
+              </div>
               <div>
                 {readingTime.text}
-              </div> 
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Cover image */}
+        <div className="flex flex-row-ns flex-column mb4">
+          <div className="w-100">
+            {
+              post.frontmatter.cover &&
+              <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
+            }
           </div>
         </div>
         
