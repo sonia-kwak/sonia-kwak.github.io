@@ -4,7 +4,7 @@ import { Link,graphql } from 'gatsby'
 
 import rehypeReact from "rehype-react"
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 // import Scrollspy from 'react-scrollspy'
 
@@ -50,12 +50,12 @@ const Separator = props => (
   <hr className="mv6 bb b--black-10"/>
 );
 
-class BlogPostTemplate extends React.Component {
-  constructor(props) {
-    super(props);
+class ProjectPage extends React.Component {
+  // constructor(props) {
+  //   super(props);
     
-    // this.initScrollListener();
-  }
+  //   this.initScrollListener();
+  // }
 
   // initScrollListener() {
   //   document.addEventListener('scroll', function() {
@@ -199,7 +199,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default ProjectPage
 
 export const pageQuery = graphql`
          query BlogPostBySlug($slug: String!) {
