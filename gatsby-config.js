@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cristiano Dalbem Portfolio',
+    title: 'Cristiano Dalbem',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Cristiano Dalbem Portfolio',
+        short_name: 'Cristiano Dalbem',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#F5882D',
+        theme_color: '#F5882D',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/selfie.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
