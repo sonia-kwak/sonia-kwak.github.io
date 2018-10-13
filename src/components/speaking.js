@@ -69,7 +69,7 @@ class Talk extends React.Component {
     const { title, context, link } = this.props;
 
     return (
-      <div className="pv4">
+      <div className="pv4-ns pv2">
         <div className="fw5 f5 mv1">
           {/* {title} */}
           <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">

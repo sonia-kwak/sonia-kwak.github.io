@@ -7,7 +7,7 @@ class Projects extends React.Component {
         const posts = this.props.posts;
 
         return (
-            <div className="flex flex-wrap nl3 nr3">
+            <div className="flex flex-wrap nl3-ns nr3-ns">
                 {
                     posts.map(({ node }) => {
                         return (
