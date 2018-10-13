@@ -23,10 +23,15 @@ We use web technology because it’s the most democratic platform ever. We’ve 
 I’ve been the main responsible for the development and the Visual and UX Design. This has been a great project to put in practice lots of concepts and ideas from my studies with User Experience. I’ve also grown to be an analytics-freak, relentlessly playing with tools, metrics and reports to understand every little microinteraction from every user. In just 6 months the web app has already been accessed by more than 1300 people and the bike parkings got more than 9000 views, even with small efforts on the marketing side and almost no media coverage.
 
 
+```grid|1
 ![](./desktop2.png)
+```
 
+```grid|1
 ![](./desktop_details.png)
+````
 
+```grid|2 
 ![](./mobile.png)
-
 ![](./mobile_details2.png)
+```

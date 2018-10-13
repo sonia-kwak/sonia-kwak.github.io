@@ -147,3 +147,8 @@ body {
   height: 3px;
   z-index: 1;
 } */
+
+/* Hack to make 'gatsby-remark-images-grid' with 'gatsby-remark-images' */
+.gatsby-resp-image-wrapper {
+  width: 100%;
+}

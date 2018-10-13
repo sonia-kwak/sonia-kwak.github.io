@@ -16,7 +16,7 @@ class Header extends React.Component {
     const sections = [
       'About',
       'Work',
-      // 'Projects',
+      'Projects',
       'Speaking',
       'Elsewhere'
     ];

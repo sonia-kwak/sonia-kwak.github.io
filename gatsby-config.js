@@ -53,9 +53,18 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-images-grid",
+            options: {
+              gridGap: "2rem",
+              margin: '0'
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1036,
+              maxWidth: 2048,
+              quality: 90,
+              linkImagesToOriginal: false
             },
           },
           'gatsby-remark-smartypants',

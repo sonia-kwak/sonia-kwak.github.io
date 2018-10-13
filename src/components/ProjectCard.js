@@ -13,7 +13,7 @@ class ProjectCard extends React.Component {
                 {
                     node.frontmatter.cover ? 
                     <div className="w-100 db">
-                        <img src={node.frontmatter.cover.publicURL} />
+                        <img alt="" src={node.frontmatter.cover.publicURL} />
                     </div>
                     :
                     <div className="bg-gray w-100 pa5 db" />

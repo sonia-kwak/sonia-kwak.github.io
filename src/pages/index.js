@@ -88,11 +88,11 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection>
 
-          {/* <HomeSection anchor="projects" title="Projects" fullScreen
+          <HomeSection anchor="projects" title="Projects" fullScreen
             // description="..."
           >
             <Projects posts={posts}/> 
-          </HomeSection>  */}
+          </HomeSection> 
           
           <HomeSection
             anchor="speaking"
