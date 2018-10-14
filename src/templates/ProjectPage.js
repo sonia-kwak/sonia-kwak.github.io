@@ -146,7 +146,7 @@ class ProjectPage extends React.Component {
         <div className="flex flex-column">
           {
             post.frontmatter.description &&
-            <div className={`${margins} f2 mv4 dark-gray lh-title`}>
+            <div className={`${margins} f3 mv5 dark-gray lh-title`}>
               {post.frontmatter.description}
             </div>
           }

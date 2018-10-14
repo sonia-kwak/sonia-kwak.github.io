@@ -22,6 +22,9 @@ const Layout = ({ children }) => (
       // const isHome = this.props.location.pathname === '/';
       const isHome = true;
 
+      // let containerClasses = ' ';
+      // containerClasses += isHome ? 'pv4 fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : '';
+
       return (
         <div className="parallax">
           <Helmet
@@ -36,16 +39,16 @@ const Layout = ({ children }) => (
               href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
             />
           </Helmet>
-
-          <div className="ph4-ns ph2-m ph3 pv4">
+ 
+          <div className="ph4-ns ph2-m ph3 fixed-ns top-0 left-0 right-0 bg-fafafa z-1">
             <Header isHome/>
           </div>
 
-          <div className="mh4-ns mh2-m mh3 mt6-ns mt4 mb6 lh-copy">
+          <div className="ph4-ns ph2-m ph3 mt6-ns mt4 mb6 lh-copy">
             {children}
           </div>
 
-          <div className="ph6-ns ph2-m ph2 bg-near-white db-ns dn">
+          <div className="ph4-ns ph2-m ph3 bg-near-white db-ns dn">
             <Footer/>
           </div>
         </div>

@@ -24,10 +24,8 @@ class Header extends React.Component {
     ];
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
-    const containerClasses = isHome ? 'flex fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : 'flex';
- 
     return (
-      <div className={containerClasses}>
+      <div className='flex pv4'>
         <div className="w-10-ns"></div>
 
         <div className="w-80 flex justify-between items-center">
@@ -36,7 +34,7 @@ class Header extends React.Component {
               Cristiano Dalbem
             </Link>
           </h1>
-      
+       
           <div className="f7 dn db-ns">
             <Scrollspy
               items={sectionsSlugs}

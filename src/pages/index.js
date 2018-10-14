@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Speaking from '../components/Speaking'
+import Elsewhere from '../components/Elsewhere'
 import HomeSection from '../components/HomeSection'
 import Projects from '../components/Projects'
 
@@ -55,12 +56,11 @@ class IndexPage extends React.Component {
               </p>
             </section>
           </div>
-
         </div>
 
         <div>
-          <HomeSection title="Work" >
-            <p className="pretty-bullet">
+          <HomeSection title="Work">
+            <div className="pretty-bullet pb4-ns pb2">
               Working as a Product Designer at{' '}
               <a
                 className="pretty-link"
@@ -72,9 +72,9 @@ class IndexPage extends React.Component {
                 </a>
               , building the future in one of the biggest e-commerce ecosystems in
               the world.
-              </p>
+              </div>
 
-            <p className="pretty-bullet">
+            <div className="pretty-bullet pb4-ns pb2">
               In my free time I'm a cicloactivist and I've built{' '}
               <a
                 className="pretty-link"
@@ -85,24 +85,21 @@ class IndexPage extends React.Component {
                 bike de boa
                 </a>
               , a web app to promote the cycling culture in Brazil.
-            </p>
+            </div>
           </HomeSection>
 
-          <HomeSection title="Projects" fullScreen
-            // description="..."
-          >
+          <HomeSection title="Projects" fullScreen>
             <Projects posts={posts}/> 
           </HomeSection> 
             
           <HomeSection
-          
             title="Speaking"
             // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Speaking />
           </HomeSection>
 
-          {/* <HomeSection title="Currently" >
+          {/* <HomeSection title="Currently">
             <p className="pretty-bullet">
               Listening to <b>Lorem</b>, <b>Ipsum</b>.
             </p>
@@ -112,57 +109,8 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection> */}
 
-          <HomeSection title="Elsewhere" >
-            <div className="f5 ttu fw6">
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/cmdalbem/"
-              >
-                GitHub
-              </a>
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-2"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/cmdalbem/"
-              >
-                Instagram
-              </a>
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-3"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/cmdalbem"
-              >
-                Twitter
-              </a>
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-4"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.goodreads.com/cmdalbem"
-              >
-                Goodreads
-              </a>
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-5"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/cmdalbem/"
-              >
-                LinkedIn
-              </a>
-              <a
-                className="link dim db mv4 text-gradient-clip bg-gradient-6"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:cristiano.dalbem@gmail.com"
-              >
-                Email
-              </a>
-            </div>  
+          <HomeSection title="Elsewhere">
+            <Elsewhere />
           </HomeSection>
 
         </div>
