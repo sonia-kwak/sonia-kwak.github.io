@@ -91,7 +91,7 @@ class IndexPage extends React.Component {
           <HomeSection title="Projects" fullScreen>
             <Projects posts={posts}/> 
           </HomeSection> 
-            
+             
           <HomeSection
             title="Speaking"
             // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."

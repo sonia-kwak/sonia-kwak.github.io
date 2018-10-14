@@ -8,6 +8,7 @@ class ProjectCard extends React.Component {
         return (
             <Link
                 className="project-card near-black bg-white db br1 overflow-hidden"
+                // className="link dim near-black db br1 overflow-hidden"
                 to={node.fields.slug}
             >
                 {
@@ -16,10 +17,11 @@ class ProjectCard extends React.Component {
                         <img alt="" src={node.frontmatter.cover.publicURL} />
                     </div>
                     :
-                    <div className="bg-gray w-100 pa5 db" />
+                    <div className="bg-gray w-100 pa6 db" />
                 }
 
                 <div className="ph3 pv2">
+                {/* <div className=""> */}
                     {
                         node.frontmatter.title
                         &&
