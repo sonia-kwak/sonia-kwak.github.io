@@ -38,7 +38,6 @@ class ProjectPage extends React.Component {
     console.log(post);
 
     const margins = 'mh7';
-    // const base = 'f5 dark-gray lh-copy measure';
     const base = 'f5 dark-gray lh-copy';
 
     const renderAst = new rehypeReact({
@@ -144,7 +143,14 @@ class ProjectPage extends React.Component {
         </div>
         
         {/* Content */}
-        <div className="flex flex-row-ns flex-column">
+        <div className="flex flex-column">
+          {
+            post.frontmatter.description &&
+            <div className={`${margins} f2 mv4 dark-gray lh-title`}>
+              {post.frontmatter.description}
+            </div>
+          }
+
           { renderAst(post.htmlAst) }
         </div> 
         
@@ -192,6 +198,7 @@ export const pageQuery = graphql`
              htmlAst
              frontmatter {
                title
+               description
                date(formatString: "MMMM, YYYY")
                date2(formatString: "MMMM, YYYY")
                tags

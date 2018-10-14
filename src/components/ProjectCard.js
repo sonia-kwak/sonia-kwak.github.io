@@ -19,7 +19,7 @@ class ProjectCard extends React.Component {
                     <div className="bg-gray w-100 pa5 db" />
                 }
 
-                <div className="pa3">
+                <div className="ph3 pv2">
                     {
                         node.frontmatter.title
                         &&

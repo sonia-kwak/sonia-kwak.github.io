@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
         </div>
 
         <div>
-          <HomeSection anchor="work" title="Work" >
+          <HomeSection title="Work" >
             <p className="pretty-bullet">
               Working as a Product Designer at{' '}
               <a
@@ -88,21 +88,21 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection>
 
-          {/* <HomeSection anchor="projects" title="Projects" fullScreen
+          <HomeSection title="Projects" fullScreen
             // description="..."
           >
             <Projects posts={posts}/> 
-          </HomeSection>  */}
-          
+          </HomeSection> 
+            
           <HomeSection
-            anchor="speaking"
+          
             title="Speaking"
             // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Speaking />
           </HomeSection>
 
-          {/* <HomeSection anchor="currently" title="Currently" >
+          {/* <HomeSection title="Currently" >
             <p className="pretty-bullet">
               Listening to <b>Lorem</b>, <b>Ipsum</b>.
             </p>
@@ -112,7 +112,7 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection> */}
 
-          <HomeSection anchor="elsewhere" title="Elsewhere" >
+          <HomeSection title="Elsewhere" >
             <div className="f5 ttu fw6">
               <a
                 className="link dim db mv4 text-gradient-clip bg-gradient-1"

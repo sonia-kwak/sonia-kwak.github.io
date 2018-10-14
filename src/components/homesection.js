@@ -2,7 +2,8 @@ import React from 'react'
 
 class HomeSection extends React.Component {
     render() {
-        const { anchor, title, description, children, fullScreen } = this.props;
+        const { title, description, children, fullScreen } = this.props;
+        const anchor = title.toLowerCase();
 
         // const containerClasses = `${fullScreen && 'bg-near-white nl4-ns nr4-ns'}`;
         const containerClasses = '';

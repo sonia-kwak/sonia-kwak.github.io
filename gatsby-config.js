@@ -10,10 +10,10 @@ module.exports = {
         name: 'Cristiano Dalbem Portfolio',
         short_name: 'Cristiano Dalbem',
         start_url: '/',
-        background_color: '#F5882D',
-        theme_color: '#F5882D',
+        background_color: '#fafafa',
+        theme_color: '#fafafa',
         display: 'minimal-ui',
-        icon: 'src/images/selfie.png', // This path is relative to the root of the site.
+        icon: 'src/images/selfie.png',
       },
     },
     'gatsby-plugin-offline',

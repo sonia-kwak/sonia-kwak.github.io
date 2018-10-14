@@ -12,18 +12,22 @@ class Header extends React.Component {
   }
 
   render() {
+    const { isHome } = this.props;
+
     const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
     const sections = [
       'About',
       'Work',
-      // 'Projects',
+      'Projects',
       'Speaking',
       'Elsewhere'
     ];
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
-
+    
+    const containerClasses = isHome ? 'flex fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : 'flex';
+ 
     return (
-      <div className="pv4 flex">
+      <div className={containerClasses}>
         <div className="w-10-ns"></div>
 
         <div className="w-80 flex justify-between items-center">
@@ -42,8 +46,8 @@ class Header extends React.Component {
               {
                 sections.map( section => (
                   <button
-                    className={tabItemClasses}
-                    onClick={() => this.scrollToSection(section.toLowerCase)}
+                    className={tabItemClasses} 
+                    onClick={() => this.scrollToSection(section.toLowerCase())}
                     key={section}
                   >
                     {section}

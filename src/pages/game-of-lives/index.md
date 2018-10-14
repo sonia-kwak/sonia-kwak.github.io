@@ -10,9 +10,7 @@ cover: "./cover.png"
 
 1st place @ Isobar Virtual Reality International Hackathon
 
-"This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. Learn more about their experience here: https://thegameoflivesvr.tumblr.com"
-
-Source: https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/
+"This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. (source: https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)"
 
 
 ### Challenge
@@ -66,8 +64,9 @@ During the rest of the day we found the perfect assets, we devised the basic mec
 
 Most of us had had some experience with the Unity framework, but not enough to have a smooth experience. This firs day of development was full of technical difficulties and lots of tutorials read and videos watched. In the end of the day we had just some rough sketches of how each scene would look like.
 
-```grid|2
+```grid|3
 ![](./day2-dev.jpg)
+![](./coffee.jpg)
 ![](./day2-dev2.jpg)
 ```
 
@@ -90,6 +89,10 @@ There were lots of work that could be only be executed when all parts were broug
 We had to leave behind lots of cool ideas that we had in the beginning to make sure we’d meet the schedule. Some personas we wanted to contemplate but had to be left behind were: old people, people with physical disabilities and poor people.
 
 In the middle of the morning we managed to have all the 3 chapters working together, and we had some time to polish the experience and add some extra little details.
+
+```grid|1
+![](./day3-team.jpg)
+```
 
 
 # Result
