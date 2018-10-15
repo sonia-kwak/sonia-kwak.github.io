@@ -1,11 +1,12 @@
 ---
-date: "2012"
-date2: "2013"
-title: "infHUB – A hub for academic projects"
+date: "2012-09-07"
+date2: "2013-07-25"
+title: "infHUB, a platform for academic projects"
 description: "My first web project. Started as an academic project, ended up being expanded and made available to the university community."
 tags: ['social network','academic','platform']
 roles: "Front-end/Back-end development, Design"
 team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"
+cover: './cover.png'
 ---
 
 
@@ -36,11 +37,18 @@ It also got me more interested in Usability, and what I would find out later to 
 
 
 
+```grid|2
 ![](./infhub1.png)
 ![](./infhub2.png)
-![](./infhub3.png)
+```
+
+```grid|2
 ![](./infhub5.png) 
 ![](./infhub7.png)
+```
+ 
+<!-- ![](./infhub3.png) -->
+
 
 
 ## Links

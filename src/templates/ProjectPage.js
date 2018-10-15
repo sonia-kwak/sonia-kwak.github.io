@@ -50,7 +50,7 @@ class ProjectPage extends React.Component {
           <h2 className={`f2 dark-gray fw8 mt5 mb4 ${margins}`}>{props.children}</h2>
         ),
         h3: props => (
-          <h3 className={`f3 dark-gray fw7 mt4 mb3 ${margins}`}>{props.children}</h3>
+          <h3 className={`f3 dark-gray fw5 mt4 mb3 ${margins}`}>{props.children}</h3>
         ),
         p: props => (
           <p className={`mt0 ${base} ${margins}`}>{props.children}</p>
@@ -113,14 +113,17 @@ class ProjectPage extends React.Component {
           <div className="w-10-ns">
           </div>
 
-          <div className="w-80-ns">
-            <h1 className="f-subheadline fw9 mb3 dark-gray lh-solid">
+          <div className="w-60-ns">
+            <h1 className="f1 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
 
             <div className="f3 gray">
               <div>
                 {post.frontmatter.date}
+                { post.frontmatter.date2 && 
+                  ` – ${post.frontmatter.date2}`
+                }
               </div>
               <div>
                 {readingTime.text}
@@ -150,7 +153,7 @@ class ProjectPage extends React.Component {
               {post.frontmatter.description}
             </div>
           }
-
+          
           { renderAst(post.htmlAst) }
         </div> 
         

@@ -62,7 +62,7 @@ We researched for references and looked for what the Unity Assets Store had to o
 
 During the rest of the day we found the perfect assets, we devised the basic mechanics of the game and built the skeleton of the story Script. Since we were 6 and there would be 3 scenes for each chapter we could split into doubles and create each scene in parallel: the home, the street and the workplace.
 
-Most of us had had some experience with the Unity framework, but not enough to have a smooth experience. This firs day of development was full of technical difficulties and lots of tutorials read and videos watched. In the end of the day we had just some rough sketches of how each scene would look like.
+Most of us had had some experience with the Unity framework, but not enough to have a smooth experience. This first day of development was full of technical difficulties and lots of tutorials read and videos watched. In the end of the day we had just some rough sketches of how each scene would look like.
 
 ```grid|3
 ![](./day2-dev.jpg)
