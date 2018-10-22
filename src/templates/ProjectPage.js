@@ -53,10 +53,15 @@ class ProjectPage extends React.Component {
           <h3 className={`f3 dark-gray fw5 mt4 mb3 ${margins}`}>{props.children}</h3>
         ),
         p: props => (
-          <p className={`mt0 ${base} ${margins}`}>{props.children}</p>
+          <p className={`mt0 ${margins}`}>{props.children}</p>
+        ),
+        blockquote: props => (
+          <div className={`mt0 ml4 mv4 f4 lh-title `} style={{textIndent: '-.5em'}}>
+            {props.children}
+          </div>
         ),
         ul: props => (
-          <ul className={`${base} ${margins}`}>{props.children}</ul>
+          <ul className={`${margins}`}>{props.children}</ul>
         ),
         a: props => (
           <a
@@ -149,12 +154,14 @@ class ProjectPage extends React.Component {
         <div className="flex flex-column">
           {
             post.frontmatter.description &&
-            <div className={`${margins} f3 mv5 dark-gray lh-title`}>
+            <div className={`${margins} f2 mv5 dark-gray lh-title`}>
               {post.frontmatter.description}
             </div>
           }
           
-          { renderAst(post.htmlAst) }
+          <div className={base}>
+            { renderAst(post.htmlAst) }
+          </div>
         </div> 
         
         {/* Footer */}

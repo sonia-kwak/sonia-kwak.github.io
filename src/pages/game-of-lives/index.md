@@ -9,20 +9,10 @@ cover: "./cover.png"
 ---
 
 
-### Recognition
-
-This project was developed during the first Isobar Virtual Reality International Hackathon, a 3-day contest which we were very happy to get the first place. This recognition was certainly the result of a great team work, where everyone contributed with its own skills and previous experiences.
-
-> "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. [(source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)"
- 
-
-```grid|1
-![](./isobar_hackathon.png)
-```
- 
 ### Overview
 
-Our challenge was to develop a VR experience with the theme “Learn by Doing”. We focused in taking advantage of the platform’s potentials and unique features. Virtual Reality is an immersive media that fosters empathy and social progress.
+
+Our challenge was to develop a VR experience with the theme “Learn by Doing”. We focused in taking advantage of the platform’s potentials and unique features. We thought that Virtual Reality, being an immersive and interactive media, could be leveraged to foster empathy and social equality.
 
 The concept of the game is to tell a story in 3 chapters. Three times the same game, three times the same routine, but each time from very different perspectives. A story-telling game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes.
 
@@ -63,9 +53,9 @@ On the morning of the second day our first objective was to filter out from the 
 ![](./script.png)
 ``` 
 
-During the rest of the day we finished collecting the perfect assets, we designed the basic mechanics of the game and I started working on the game script. Since we were 6 and there would be 3 scenes for each chapter we could split into doubles and create each scene in parallel: the home, the street and the workplace.
+During the rest of the day we finished collecting the perfect assets, we designed the basic mechanics of the game and I started working on the game script. 
 
-Most of us had had some experience with the Unity framework, but not enough to have a smooth experience. This first day of development was full of technical difficulties and lots of tutorials read and videos watched. In the end of the day we had just some rough sketches of how each scene would look like.
+Most of us had had some experience with the Unity framework, but not enough to have a smooth experience. This first day of development was full of technical difficulties and hours of video tutorials and articles. 
 
 ```grid|3
 ![](./day2-dev.jpg)
@@ -85,14 +75,15 @@ Most of us had had some experience with the Unity framework, but not enough to h
 
 We only managed to glue together all the parts in the very end of this day. Most work done this afternoon was merging the work each double had done in parallel. 
 
-There were lots of work that could be only be executed when all parts were brought together. This slowed down a little the development, but the team managed to get busy the whole time producing lots of great content. I spent the day constantly improving the script and generating all the voice files using different character voices and intonations.
+There were lots of work that could be only be executed when all parts were brought together. This slowed down a little the development, but the team managed to stay busy the whole time producing lots of content.
+
+I spent the day constantly improving the game script and also creating the characters' voices. We didn't have time nor the proper equipment to record the voices, so I created a command-line script with a text-to-speech tool for generating automatically all sound files. Each character had a distinct voice pitch and intonation to match with its role.
 
 ```grid|1
 ![](./dialogues.png)
 ```
 
-
-Our past experience with Hackathons taught us the importance of priorizing and cutting out ideas to make sure we deliver in time. We ended up cutting out some characters which we wanted to design levels for, which were: the elderly, people with physical disabilities, people in poverty.
+Our past experience with Hackathons taught us the importance of prioritizing and cutting out ideas to make sure we deliver in time. We ended up cutting out some characters which we wanted to design levels for, which were: the elderly, people with physical disabilities, people in poverty.
 
 In the middle of the morning we managed to have all the 3 chapters working together, and we had some time to polish the experience and the final presentation.
 
@@ -110,4 +101,15 @@ The full gameplay which we presented to the Hackathon judges can be seen in the 
 
 ```grid|1
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/g-JqXQhAk78/0.jpg)](http://www.youtube.com/watch?v=g-JqXQhAk78)
+```
+
+# Recognition
+
+This project was developed during the first Isobar Virtual Reality International Hackathon, a 3-day contest which we were very happy to get the first place. This recognition was certainly the result of a great team work, where everyone contributed with its own skills and previous experiences.
+
+> "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. [(source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)"
+ 
+
+```grid|1
+![](./isobar_hackathon2.png)
 ```

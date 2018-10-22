@@ -64,7 +64,8 @@ module.exports = {
             options: {
               maxWidth: 2048,
               quality: 90,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+              showCaptions: true,
             },
           },
           'gatsby-remark-smartypants',
