@@ -9,7 +9,10 @@ Since 2007 I’ve been managing a digital portfolio of digital and analogic phot
 
 I love all aspects of the photographic process. From connecting with moments and capturing it with sensibility and precision. To spending hours perfecting the post-production and curating a collection, that (hopefully) allies technical quality with meaning.
 
+
+```grid|1
 ![](./flickr.jpg)
+```
 
 
 ## Links
