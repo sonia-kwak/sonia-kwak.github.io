@@ -8,6 +8,33 @@ import Layout from '../components/Layout'
 
 // import Scrollspy from 'react-scrollspy'
 
+class ResultsBanner extends React.Component {
+  static defaultProps = {
+    data: {},
+  }
+
+  render() {
+    const dataObj = JSON.parse(this.props.data);
+
+    return (
+      <div className="vw-100 nl4 nr4 mv6 pa6 bg-near-white flex flex-row justify-around">
+        {
+          Object.keys(dataObj).map ( i => (
+            <div>
+              <div className="f1 fw1 mt0">
+                {dataObj[i]}
+              </div>
+              <div className="f6 gray ttu mb0 tracked">
+                {i}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    )
+  }
+}
+
 class ProjectPage extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -79,7 +106,8 @@ class ProjectPage extends React.Component {
         ),
         figure: props => (
           <figure className="mv6 mh6">{props.children}</figure>
-        )
+        ),
+        "results-banner": ResultsBanner,
       },
     }).Compiler;
     

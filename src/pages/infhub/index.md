@@ -49,7 +49,13 @@ I’ve done most of designing and development, and it was super satisfying to se
 
 It also got me more interested in Usability, and what I would find out later to be called UX. During the time I worked on this project I came in contact with two classic books that shone a light in the making of the project: "Don't Make Me Think", by Steve Krug, and "Prioritizing Web Usability", by Jakob Nielsen. The latter I ended up skimming most of the chapters, I thought it was full of great ideas however was much more formal and boring compared to the first one.
 
-
+<results-banner
+    data='{
+        "projects uploaded": "142",
+        "unique users": "6,000+",
+        "pageviews": "29,000+"
+    }'>
+</results-banner>
 
 
 

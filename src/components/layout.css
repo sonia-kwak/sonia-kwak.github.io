@@ -73,7 +73,9 @@ body {
 
 .project-card {
   /* box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.1); */
-  box-shadow: rgba(0,0,0,0.1) 0 20px 77px, rgba(0,0,0,0.1) 0 10px 24px;
+  /* box-shadow: rgba(0,0,0,0.1) 0 20px 77px, rgba(0,0,0,0.1) 0 10px 24px; */
+  box-shadow: 0 15px 35px rgba(90,50,50,.1), 0 5px 15px rgba(0,0,0,.07);
+
   transform: translateY(0px);
 
   text-decoration: none;
@@ -82,7 +84,8 @@ body {
 }
 
 .project-card:hover {
-  box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 18px 35px rgba(90,50,50,.1), 0 8px 15px rgba(0,0,0,.07); 
   opacity: 0.9;
 
   transform: translateY(-4px);
