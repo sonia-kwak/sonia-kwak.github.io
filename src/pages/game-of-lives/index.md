@@ -83,6 +83,23 @@ I spent the day constantly improving the game script and also creating the chara
 ![](./dialogues.png)
 ```
 
+```javascript
+say 'Good morning. Did you sleep well? You are going to need it. You've got a big day ahead of you. Why don't you start with some breakfast.' -r 200 -v Alex -o narrator1.aiff
+say 'Very good! You should be well nourished for today. Time to grab your keys and go.' -r 200 -v Alex -o narrator2_men.aiff
+say 'Be careful how much you eat. That should be enough. Time to grab your keys and get going.' -r 200 -v Alex -o narrator2_girl.aiff
+say 'Um um. You should ration. Paycheck doesn` come in another 2 weeks. Time to grab your keys and get going.' -r 200 -v Alex -o narrator2_minority_poor.aiff
+say 'That should do it. You should find your keys and get going.' -r 200 -v Alex -o narrator3_men.aiff
+say 'Your schoffer is already waiting for you. Get in the car and youll be at work in no time. ' -r 200 -v Alex -o narrator4_men.aiff
+say 'Just another day of walking to work. Hurry up or you are going to be late. ' -r 200 -v Alex -o narrator4.aiff
+say 'Clock is ticking…' -r 200 -v Alex  -o narrator5a.aiff
+say 'You really dont want to be late…' -r 200 -v Alex -o narrator5b.aiff
+say 'Today is the big day. Today is the day you will finally launch the rocket. You should find your manager to get the access card.' -r 200 -v Alex -o narrator6.aiff
+say 'Just another regular day ends. Pretty easy, wasnt it? But life is very different for some groups of people. And the more privileges you have, the less you understand about those who dont. Now, what about trying it again, but from a different perspective…?' -r 200 -v Alex -o narrator_end_men.aiff
+say 'All around the world, 52% of economically active women have already been victims of sexual harassment in their workplace. Meanwhile, in the streets of Brazil, 97% of women have already been catcalled. And contrary to what offenders might think, it does not brighten up their day, its quite the opposite. Now, what about trying it again, but from a different perspective…?' -r 200 -v Alex -o narrator_end_girl.aiff
+say 'Racism and xenophobia are very real problems. Despite the fact that some people think it does not exist anymore, in Brazil and around the world we still elect politicians and give audience to TV shows that perpetuate this kind of thinking. Bolsonaro, a popular politician that will run for Brazils presidency in 2018, has recently appeared in a video declaring politics should be done for the majorities, not the minorities.' -r 200 -v Alex -o narrator_end_minority.aiff
+say 'Thanks for playing The Game of Lives. We hope you liked it, and it touched you somehow. This game was made with love by the Isobar Brazil Team. We are: André Trevisani, Diego Cunha, Diego Tomasi, Cristiano Medeiros Dalbem, Leonardo Schenfeld, Victoria Aiello. See you next time.' -r 200 -v Alex -o narrator_credits.aiff
+```
+
 Our past experience with Hackathons taught us the importance of prioritizing and cutting out ideas to make sure we deliver in time. We ended up cutting out some characters which we wanted to design levels for, which were: the elderly, people with physical disabilities, people in poverty.
 
 In the middle of the morning we managed to have all the 3 chapters working together, and we had some time to polish the experience and the final presentation.

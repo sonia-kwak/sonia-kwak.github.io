@@ -64,23 +64,31 @@ class ProjectPage extends React.Component {
 
     console.log(post);
 
-    const margins = 'mh7';
+    const defaultMargins = 'mh7';
     const base = 'f5 dark-gray lh-copy';
 
     const renderAst = new rehypeReact({
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 dark-gray mt4 mb3 ${margins}`}>{props.children}</h1>
+          <h1 className={`f1 tracked-tight fw1 dark-gray mt4 mb3 ${defaultMargins}`}>
+            {props.children}
+          </h1>
         ),
         h2: props => (
-          <h2 className={`f2 dark-gray fw8 mt5 mb4 ${margins}`}>{props.children}</h2>
+          <h2 className={`f2 dark-gray fw8 mt5 mb4 ${defaultMargins}`}>
+            {props.children}
+          </h2>
         ),
         h3: props => (
-          <h3 className={`f3 dark-gray fw5 mt4 mb3 ${margins}`}>{props.children}</h3>
+          <h3 className={`f3 dark-gray fw5 mt4 mb3 ${defaultMargins}`}>
+            {props.children}
+          </h3>
         ),
         p: props => (
-          <p className={`mt0 ${margins}`}>{props.children}</p>
+          <p className={`mt0 ${defaultMargins}`}>
+            {props.children
+          }</p>
         ),
         blockquote: props => (
           <div className={`mt0 ml4 mv4 f4 lh-title `} style={{textIndent: '-.5em'}}>
@@ -88,7 +96,9 @@ class ProjectPage extends React.Component {
           </div>
         ),
         ul: props => (
-          <ul className={`${margins}`}>{props.children}</ul>
+          <ul className={`${defaultMargins}`}>
+            {props.children}
+          </ul>
         ),
         a: props => (
           <a
@@ -142,33 +152,39 @@ class ProjectPage extends React.Component {
         </div>
 
         {/* Heading */}
-        <div className="flex flex-row-ns flex-column mb4">
-          <div className="w-10-ns">
-          </div>
-
-          <div className="w-60-ns">
-            <h1 className="f1 fw9 mb3 dark-gray lh-solid">
+        <div className="flex flex-row-ns flex-column mt6 mb7 ">
+          <div className="w-30-ns"> 
+            <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
-
-            <div className="f3 gray">
+          
+            <div className="f5 gray">
               <div>
                 {post.frontmatter.date}
                 { post.frontmatter.date2 && 
                   ` – ${post.frontmatter.date2}`
                 }
               </div>
-              <div>
-                {readingTime.text}
-              </div>
             </div>
+          </div>
 
-            <div className="f5 gray mt0">
+          <div className="w-10-ns">
+          </div>
+
+          <div className="w-60-ns">
+            {
+              post.frontmatter.description &&
+              <div className={`f3 dark-gray lh-copy`}>
+                {post.frontmatter.description}
+              </div>
+            }
+
+            <div className="mv3">
               {
                 post.frontmatter.tags &&
-                <div className="mv2">
+                <div>
                   {post.frontmatter.tags.map(tag => (
-                    <span className="br2 bg-near-white dark-gray f7 mr2 pa1">
+                    <span className="br2 bg-light-gray dark-gray f6 mr2 pa1">
                       {tag}
                     </span>
                   ))}
@@ -180,13 +196,10 @@ class ProjectPage extends React.Component {
         
         {/* Content */}
         <div className="flex flex-column">
-          {
-            post.frontmatter.description &&
-            <div className={`${margins} f2 mv5 dark-gray lh-title`}>
-              {post.frontmatter.description}
-            </div>
-          }
-          
+          <div className={`${base} ${defaultMargins} gray`}>
+            {readingTime.text}.
+          </div>
+
           <div className={base}>
             { renderAst(post.htmlAst) }
           </div>
