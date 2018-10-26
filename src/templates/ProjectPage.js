@@ -5,6 +5,7 @@ import { Link,graphql } from 'gatsby'
 import rehypeReact from "rehype-react"
 
 import Layout from '../components/Layout'
+import ProjectCard from '../components/ProjectCard'
 
 // import Scrollspy from 'react-scrollspy'
 
@@ -211,23 +212,24 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-80-ns">
-            <hr />
+            <div className="w-100 tc f2 mv6">
+              <h2>Other projects</h2>
+            </div>
 
             <div className="flex flex-row justify-between mt4">
-              <div>
+              <div className="w-40-ns">
                 {
                   previous &&
-                  <Link className="pretty-link" to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
-                  </Link>
+                  <ProjectCard node={previous} />
                 }
               </div> 
-              <div>
+
+              <div className="w-10-ns"></div>
+
+              <div className="w-40-ns">
                 {
                   next &&
-                  <Link className="pretty-link" to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-              </Link>
+                  <ProjectCard node={next} />
                 }
               </div>
             </div>

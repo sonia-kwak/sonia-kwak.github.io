@@ -15,11 +15,19 @@ exports.createPages = ({ graphql, actions }) => {
             allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
+                  excerpt
                   fields {
                     slug
                   }
                   frontmatter {
+                    date(formatString: "YYYY")
+                    date2(formatString: "YYYY")
                     title
+                    description
+                    tags
+                    cover {
+                      publicURL
+                    }
                   }
                 }
               }
