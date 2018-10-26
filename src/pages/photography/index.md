@@ -3,6 +3,7 @@ date: "2007"
 date2: "2018"
 title: "Photography"
 tags: ['side-project','artistic']
+cover: "./flickr.jpg"
 ---
 
 Since 2007 I’ve been managing a digital portfolio of digital and analogic photography that has been viewed more than 250,000 times on Flickr.

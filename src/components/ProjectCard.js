@@ -7,17 +7,18 @@ class ProjectCard extends React.Component {
 
         return (
             <Link
-                className="project-card near-black bg-white db br1 overflow-hidden"
+                className="b--light-gray ba bg-white br1 db near-black overflow-hidden card-shadow"
                 // className="link dim near-black db br1 overflow-hidden"
                 to={node.fields.slug}
             >
                 {
-                    node.frontmatter.cover ? 
-                    <div className="w-100 db">
-                        <img alt="" src={node.frontmatter.cover.publicURL} />
-                    </div>
-                    :
-                    <div className="bg-gray w-100 pa6 db" />
+                    <div
+                        className="w-100 db h5 cover bg-gray"
+                        style={ node.frontmatter.cover && {
+                            backgroundImage: `url(${node.frontmatter.cover.publicURL})`,
+                            backgroundPosition: 'center'
+                        }}
+                    ></div>
                 }
 
                 <div className="ph3 pv2">
@@ -25,7 +26,7 @@ class ProjectCard extends React.Component {
                     {
                         node.frontmatter.title
                         &&
-                        <h3 className="f5 fw7 mt3 mb0">
+                        <h3 className="f5 fw7 mt3 mb1">
                             {node.frontmatter.title}
                         </h3>
                     }
@@ -33,13 +34,13 @@ class ProjectCard extends React.Component {
                     {
                         node.frontmatter.description
                         &&
-                        <div className="f6 dark-gray">
+                        <div className="f6 gray">
                             {node.frontmatter.description}
                         </div>
                     }
                     
-                    <div className="f6 mv2 gray">
-                        {node.frontmatter.date} {node.frontmatter.date2 && `— ${node.frontmatter.date2}`}
+                    <div className="f6 mv3 gray">
+                        {node.frontmatter.date} {node.frontmatter.date2 && `– ${node.frontmatter.date2}`}
                     </div>
                     
                     {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}

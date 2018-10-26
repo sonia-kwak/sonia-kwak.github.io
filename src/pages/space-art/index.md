@@ -2,6 +2,7 @@
 date: "2004"
 date2: "2017"
 title: "Space Art"
+cover: "./space1.jpg"
 ---
 
 My first incursion with digital art, and probably the birth of my aesthetic self. Making space wallpapers got me started with digital design tools like Photoshop and 3D modeling software and also with a vibrant community of online artists.
