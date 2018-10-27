@@ -6,7 +6,7 @@ description: "A (Progressive) Web App to find safe places to park your bike."
 tags: ['side project','activism','progressive web app']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
-cover: './playstore_screenshots.png'
+cover: './cover.png'
 ---
 
 
@@ -28,10 +28,10 @@ I’ve been the main responsible for the development and the Visual and UX Desig
 
 <results-banner
     data='{
-        "cities": "62",
-        "mapped bike parkings": "2,700+",
         "unique users/month": "400",
-        "total pin views": "43,000+"
+        "total pin views": "43,000+",
+        "mapped bike parkings": "2,700+",
+        "cities": "62"
     }'>
 </results-banner>
 
