@@ -76,6 +76,11 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-catch-links`,
-    'gatsby-remark-copy-linked-files',
+    {
+      resolve: 'gatsby-remark-copy-linked-files',
+      options: {
+        destinationDir: 'static',
+      }
+    }
   ],
 }

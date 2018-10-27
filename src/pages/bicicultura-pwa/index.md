@@ -17,7 +17,14 @@ The idea of developing an app for the event appeared chatting with the organizat
 
 There were budget limitations for improving the website, but the most critical part is that they wouldn't be able to afford even printing the schedule to offer the participants. Their solution was to provide a link to download a PDF of that same website version, which didn't help a lot.
 
-![](./website_schedule_desktop.gif)
+<video autoplay loop type="video/mp4">
+    <source src="./schedule_desktop.mp4" type="video/mp4">
+    Your browser does not support the video element.
+</video>
+
+```grid|1
+![](./schedule_desktop.png)
+``` 
 
 We devised then that the main objective of an even app would be to improve the experience for the event participants on checking the schedule. This task would need to be supported either for users in their desktops, when they are at home planning the visit, but mainly the mobile case, for checking the schedule during the event. An offline experience would be critical as well, since the Museum didn't have wi-fi and many brazilians can't afford decent 3G plans.
 
@@ -32,12 +39,31 @@ The natural technology choice for me was to build PWA (Progressive Web App). Not
 * Full screen experience (no address bar)
 * Cross-platform and cross-device with a single source code.
 
+```grid|3
+![](./mobile_install1.png)
+![](./mobile_install2.png)
+![](./mobile_install4.png)
+``` 
+
 Today the easiest way to develop a simple PWA is using React, which also has a vibrant community that develops open-source tools that I could reuse. I used the create-react-act boilerplate for automating everything about the project build phase.
 
 For the UI I chose to use a React UI lib that implemented the Material Design System. This choice was also natural since an unique visual identity was not much of a priority. Moreover users would be using this app for the first time and only for a few days, so it was interesting to employ the Material well-known patterns and visual style to reduce cognitive work of understanding the app. Still, some very basic customization was done mainly with the Typography and Color Pallete to mirror the event visual identity.  
 
 ## Solution
 
+```grid|1
+![](./appicon.png)
+```
+
+```grid|1
+![](./mobile_schedule_now.png)
+```
+
+
+<video autoplay loop type="video/mp4">
+    <source src="./app_desktop.mp4" type="video/mp4">
+    Your browser does not support the video element.
+</video>
 
 
 ## Results
@@ -49,9 +75,14 @@ The app was highlighted in all the major event communications, both digital and 
         "event total visitors": "427",
         "app total users": "500",
         "pageviews": "1,636",
-        "PWA installs": "32"
+        "app installs": "32"
     }'>
 </results-banner>
+
+```grid|2
+![](./website_schedule_desktop.png "Before")
+![](./desktop_schedule.png "After")
+```
 
 
 ## Links
