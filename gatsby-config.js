@@ -16,7 +16,7 @@ module.exports = {
         icon: 'src/images/selfie.png',
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -65,7 +65,7 @@ module.exports = {
               maxWidth: 2048,
               quality: 90,
               linkImagesToOriginal: false,
-              // showCaptions: true,
+              showCaptions: true,
             },
           },
           'gatsby-remark-smartypants',
@@ -76,5 +76,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-catch-links`,
+    'gatsby-remark-copy-linked-files',
   ],
 }
