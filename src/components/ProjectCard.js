@@ -13,7 +13,7 @@ class ProjectCard extends React.Component {
             >
                 {
                     <div
-                        className="w-100 db h5 cover bg-gray"
+                        className="w-100 db card-cover-height pv5 cover bg-gray" 
                         style={ node.frontmatter.cover && {
                             backgroundImage: `url(${node.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'

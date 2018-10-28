@@ -65,7 +65,7 @@ class ProjectPage extends React.Component {
 
     console.log(post);
 
-    const defaultMargins = 'mh7';
+    const defaultMargins = 'mh2 mh4-m mh7-ns';
     const base = 'f5 dark-gray lh-copy';
 
     const renderAst = new rehypeReact({
@@ -118,6 +118,11 @@ class ProjectPage extends React.Component {
         figure: props => (
           <figure className="mv6 mh6">{props.children}</figure>
         ),
+        "video-container": props => (
+          <div className={`mv6 mh6 flex flex-row-ns flex-column`}> 
+            {props.children}
+          </div>
+        ),
         "results-banner": ResultsBanner,
       },
     }).Compiler;
@@ -146,15 +151,18 @@ class ProjectPage extends React.Component {
         <div className="flex flex-row-ns flex-column mb4">
           <div className="w-100">
             {
-              post.frontmatter.cover &&
-              <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
+              post.frontmatter.cover ?
+                <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
+                :
+                <div className="w-100 h5 pv7 bg-silver"></div>
             }
           </div>
         </div>
 
         {/* Heading */}
         <div className="flex flex-row-ns flex-column mt6 mb7 ">
-          <div className="w-30-ns"> 
+          <div className="w-10-ns"></div>
+          <div className="w-20-ns"> 
             <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
@@ -172,7 +180,7 @@ class ProjectPage extends React.Component {
           <div className="w-10-ns">
           </div>
 
-          <div className="w-60-ns">
+          <div className="w-50-ns">
             {
               post.frontmatter.description &&
               <div className={`f3 dark-gray lh-copy`}>

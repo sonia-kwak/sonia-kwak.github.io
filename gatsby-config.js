@@ -55,8 +55,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-images-grid",
             options: {
-              gridGap: "2rem",
-              margin: '0'
+              gridGap: "2%",
+              margin: 'auto',
             },
           },
           {
@@ -69,18 +69,13 @@ module.exports = {
             },
           },
           'gatsby-remark-smartypants',
-          `gatsby-remark-reading-time`,
+          'gatsby-remark-reading-time',
           'gatsby-remark-component',
+          'gatsby-remark-copy-linked-files',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-catch-links`,
-    {
-      resolve: 'gatsby-remark-copy-linked-files',
-      options: {
-        destinationDir: 'static',
-      }
-    }
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-catch-links',
   ],
 }

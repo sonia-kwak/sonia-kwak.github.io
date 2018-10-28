@@ -1,8 +1,8 @@
 ---
 date: "2012-09-07"
 date2: "2013-07-25"
-title: "infHUB, a platform for academic projects"
-description: "My first web project. Started as an academic project, ended up being expanded and made available to the university community."
+title: "infHUB"
+description: "A platform for university students share their projects."
 tags: ['social network','academic','platform']
 roles: "Front-end/Back-end development, Design"
 team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"

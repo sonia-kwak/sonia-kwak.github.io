@@ -19,11 +19,11 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      // const isHome = this.props.location.pathname === '/';
-      const isHome = true;
+      const isHome = window.location.pathname === '/';
+      // const isHome = true;
 
-      // let containerClasses = ' ';
-      // containerClasses += isHome ? 'pv4 fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : '';
+      let headerClasses = ' ';
+      headerClasses += isHome ? 'ph4-ns ph2-m ph3 fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : '';
 
       return (
         <div className="parallax">
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
             />
           </Helmet>
  
-          <div className="ph4-ns ph2-m ph3 fixed-ns top-0 left-0 right-0 bg-fafafa z-1">
+          <div className={headerClasses}>
             <Header isHome/>
           </div>
 

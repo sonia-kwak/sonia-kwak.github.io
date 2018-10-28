@@ -92,6 +92,10 @@ body {
   transform: translateY(-4px);
 }
 
+.card-cover-height {
+  height: 10rem; 
+}
+
 .bg-fafafa {
   background-color: var(--bg-color);
 }
