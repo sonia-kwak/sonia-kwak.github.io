@@ -2,7 +2,7 @@
 date: "2018"
 title: "Bicicultura PWA"
 description: "A simple web app for improving attendees' experience in the biggest brazilian conference on bike culture."
-tags: ['side-project','activism','pwa','volunteer']
+tags: ['activism','pwa','volunteer', 'UI/UX']
 roles: "Front-end Development, UX Design"
 cover: './cover.png'
 --- 

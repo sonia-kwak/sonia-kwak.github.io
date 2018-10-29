@@ -41,9 +41,10 @@ class ProjectCard extends React.Component {
 
                     {
                         post.frontmatter.tags &&
-                        <div>
+                        <div className="flex flex-row flex-wrap">
                             {post.frontmatter.tags.map(tag => (
-                                <span className="br2 bg-light-gray dark-gray f6 mr2 pa1">
+                                <span className="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">
+                                {/* <span className="br2 ba b--light-gray dark-gray f7 mr2 mt2 pa1"> */}
                                     {tag}
                                 </span>
                             ))}

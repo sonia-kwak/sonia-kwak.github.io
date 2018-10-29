@@ -12,16 +12,29 @@ class Header extends React.Component {
   }
 
   render() {
-    const { isHome } = this.props;
+    // const { isHome } = this.props;
+    // console.log('this.props', this.props);
+    // console.log('isHome (Header)', isHome);
 
+    const isHome = window.location.pathname === '/';
+
+    const url = new URL(window.location.href);
+    const isPreview = url.searchParams.get("preview");
+ 
     const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
-    const sections = [
+    let sections = [
       'About',
-      'Work',
-      'Projects',
-      'Speaking',
-      'Elsewhere'
+      'Work'
     ];
+    if (isPreview) {
+      sections.push('Projects');
+    }
+    sections = sections.concat(
+      [
+        'Speaking',
+        'Elsewhere'
+      ]
+    );
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (
@@ -33,26 +46,45 @@ class Header extends React.Component {
             <Link to="/" className="link dim near-black fw6">
               Cristiano Dalbem
             </Link>
+
+            {/* {
+              isHome ?
+                <Link to="/" className="link dim near-black fw6">
+                  Cristiano Dalbem
+                </Link>
+                :
+                <Link to="/" className="link dim near-black fw6 blue">
+                  ← Back
+                </Link>
+            } */}
           </h1>
        
-          <div className="f7 dn db-ns">
-            <Scrollspy
-              items={sectionsSlugs}
-              componentTag="div"
-              currentClassName="tab--selected"
-            >
-              {
-                sections.map( section => (
-                  <button
-                    className={tabItemClasses} 
-                    onClick={() => this.scrollToSection(section.toLowerCase())}
-                    key={section}
-                  >
-                    {section}
-                  </button>
-                ))
-              }
-            </Scrollspy>
+          <div className={isHome ? 'f7 dn db-ns' : ''}>
+            {
+              isHome ? 
+                <Scrollspy
+                  items={sectionsSlugs}
+                  componentTag="div"
+                  currentClassName="tab--selected"
+                  offset={200}
+                >
+                  {
+                    sections.map( section => (
+                      <button
+                        className={tabItemClasses} 
+                        onClick={() => this.scrollToSection(section.toLowerCase())}
+                        key={section}
+                      >
+                        {section}
+                      </button>
+                    ))
+                  }
+                </Scrollspy>
+                :
+                <Link to="/" className="link dim near-black fw6 blue">
+                  ← Back
+                </Link>
+            }
           </div>
         </div>
       </div>

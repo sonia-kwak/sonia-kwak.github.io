@@ -215,7 +215,8 @@ class ProjectPage extends React.Component {
         </div> 
         
         {/* Footer */}
-        <div className="flex flex-row-ns flex-column mv6">
+        {/* <div className="flex flex-row-ns flex-column mv6"> */}
+        <div className="flex flex-column flex-row-ns bg-near-white mt6 nl4 nr4 pb6">
           <div className="w-10-ns">
           </div>
 

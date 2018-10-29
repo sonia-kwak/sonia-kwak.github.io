@@ -15,6 +15,9 @@ class IndexPage extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
 
+    const url = new URL(window.location.href);
+    const isPreview = url.searchParams.get("preview");
+
     return (
       <Layout>
         <div className="flex flex-row-ns flex-column ">
@@ -88,9 +91,12 @@ class IndexPage extends React.Component {
             </div>
           </HomeSection>
 
-          <HomeSection title="Projects" fullScreen>
-            <Projects posts={posts}/> 
-          </HomeSection> 
+          {
+            isPreview &&
+            <HomeSection title="Projects" fullScreen>
+              <Projects posts={posts}/> 
+            </HomeSection> 
+          }
              
           <HomeSection
             title="Speaking"

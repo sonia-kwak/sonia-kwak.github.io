@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
     render={data => {
       const isHome = window.location.pathname === '/';
       // const isHome = true;
+      // console.log('isHome', isHome);
 
       let headerClasses = ' ';
       headerClasses += isHome ? 'ph4-ns ph2-m ph3 fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : '';
@@ -41,10 +42,10 @@ const Layout = ({ children }) => (
           </Helmet>
  
           <div className={headerClasses}>
-            <Header isHome/>
+            <Header/>
           </div>
 
-          <div className="ph4-ns ph2-m ph3 mt6-ns mt4 mb6 lh-copy">
+          <div className="ph4-ns ph2-m ph3 mt6-ns mt4 mb0 bb b--light-gray lh-copy">
             {children}
           </div>
 

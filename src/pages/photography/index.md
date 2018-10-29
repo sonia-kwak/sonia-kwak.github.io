@@ -2,7 +2,7 @@
 date: "2007"
 date2: "2018"
 title: "Photography"
-tags: ['side-project','artistic']
+tags: ['artistic']
 cover: "./flickr.jpg"
 ---
 
