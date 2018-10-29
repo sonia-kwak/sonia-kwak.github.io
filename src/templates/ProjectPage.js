@@ -243,7 +243,6 @@ class ProjectPage extends React.Component {
             </div>
           </div>
         </div>
-
       </Layout>
     )
   }

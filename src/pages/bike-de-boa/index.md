@@ -2,13 +2,32 @@
 date: "2016-10"
 date2: "2018"
 title: "Bike de Boa"
-description: "A (Progressive) Web App to find safe places to park your bike."
+description: "An open and collaborative map of places to park your bike, made to be super easy to use and educative. With the web app you can search for bike parkings nearby, and at the same time you learn if they are safe to use and why they are so."
 tags: ['side project','activism','progressive web app']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
 cover: './cover.png'
 ---
 
+
+## Overview
+
+bike de boa is an open and collaborative map of places to park your bike. It's focused on being super easy to use and also educative. With the app you can search for bike parkings nearby, and at the same time you learn if they are safe to use and why they are so.
+
+We believe that the bicycle is the future of urban mobility, and that having better bike parkings is a great way of promoting the bike culture in our cities. This project intends to push forward the discussion of what are good bike parkings, at the same time we collect data about the presence and evolution of this kind of structure in the cities of Brazil.
+
+This project is a (Progressive) Web App, which means it loads and runs fast accross all platforms and device sizes, as well as is fully indexable by search engines.
+
+## Who we are
+
+BIKE DE BOA ("bike ‘n’ chill") is collaborative website and app where people map and review places to park their bikes. These places, fundamental for the intermodal integration, can either be proper bike racks or any other urban objects used with that goal. The collaborative aspect allows the active participation of citizens, fostering a positive reinforcement that encourages more people commute with their bikes. On top of that the reviews and our bike parking guide bring information about best practices in a friendly way that educates about safety and encourages better structures to be installed.
+
+Our app was designed with simplicity and usability in mind, and engineered to be lightweight and compatible with all devices, making this platform extremely accessible and inclusive. It’s also completely open: all our source code and data is open to be reused and to receive contributions.
+
+We are a non-profit collective of friends and bikers with diverse backgrounds but with the common goal of contributing to the bike culture in Brazil.
+ 
+
+## Process
 
 I wanted to contribute in some way to foster the local culture of urban biking. Analysing the many problems people face when commuting with bicycles I identified a big one that I felt could be addressed in an efficient and innovative way using technology: where to park my bike safely?
 
