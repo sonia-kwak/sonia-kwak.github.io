@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import { formatDate } from '../components/utils.js'
+
 class ProjectCard extends React.Component {
     render() {
         const post = this.props.node;
+
+        let dateStart = formatDate(post.frontmatter.date, 'YYYY');
+        let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
+        if (dateEnd && dateEnd === dateStart) {
+            dateEnd = null;
+        }
 
         return (
             <Link
@@ -52,7 +60,7 @@ class ProjectCard extends React.Component {
                     }
                     
                     <div className="f6 mv3 gray">
-                        {post.frontmatter.date} {post.frontmatter.date2 && `– ${post.frontmatter.date2}`}
+                        {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div>
                     
                     {/* <p dangerouslySetInnerHTML={{ __html: post.excerpt }} /> */}

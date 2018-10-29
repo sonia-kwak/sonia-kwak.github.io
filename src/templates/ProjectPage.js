@@ -7,6 +7,8 @@ import rehypeReact from "rehype-react"
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
 
+import { formatDate } from '../components/utils.js'
+
 // import Scrollspy from 'react-scrollspy'
 
 class ResultsBanner extends React.Component {
@@ -63,10 +65,14 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    console.log(post);
-
     const defaultMargins = 'mh2 mh4-m mh7-ns';
     const base = 'f5 dark-gray lh-copy';
+
+    let dateStart = formatDate(post.frontmatter.date, 'YYYY');
+    let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
+    if (dateEnd && dateEnd === dateStart) {
+      dateEnd = null;
+    }
 
     const renderAst = new rehypeReact({
       createElement: React.createElement,
@@ -169,9 +175,9 @@ class ProjectPage extends React.Component {
           
             <div className="f5 gray">
               <div>
-                {post.frontmatter.date}
-                { post.frontmatter.date2 && 
-                  ` – ${post.frontmatter.date2}`
+                {dateStart}
+                { dateEnd && 
+                  ` – ${dateEnd}`
                 }
               </div>
             </div>

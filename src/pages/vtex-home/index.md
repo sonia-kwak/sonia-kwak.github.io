@@ -1,12 +1,13 @@
 ---
 date: "2018-03"
+date2: "2018-10"
 title: "VTEX Home"
 description: "A new home for the VTEX Admin."
 tags: ['UI/UX','work']
 roles: "UX Design"
 cover: './cover.png' 
 ---
-  
+
 
 ## Context
 VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. Through our products and services, we offer retailers a cohesive platform to run their entire business and provide their customers with the best shopping experience ever.
