@@ -16,10 +16,14 @@ class Header extends React.Component {
     // console.log('this.props', this.props);
     // console.log('isHome (Header)', isHome);
 
-    const isHome = window.location.pathname === '/';
+    let isHome, url, isPreview;
 
-    const url = new URL(window.location.href);
-    const isPreview = url.searchParams.get("preview");
+    if (typeof window !== `undefined`) {
+      isHome = window.location.pathname === '/';
+      
+      url = new URL(window.location.href);
+      isPreview = url.searchParams.get("preview");
+    }
  
     const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
     let sections = [

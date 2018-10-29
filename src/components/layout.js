@@ -19,7 +19,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      const isHome = window.location.pathname === '/';
+      let isHome;
+      if (typeof window !== `undefined`) {
+        isHome = window.location.pathname === '/';
+      }
       // const isHome = true;
       // console.log('isHome', isHome);
 

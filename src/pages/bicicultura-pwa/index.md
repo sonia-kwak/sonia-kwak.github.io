@@ -1,5 +1,6 @@
 ---
-date: "2018"
+date: "2018-05"
+date2: "2018-06"
 title: "Bicicultura PWA"
 description: "A simple web app for improving attendees' experience in the biggest brazilian conference on bike culture."
 tags: ['activism','pwa','volunteer', 'UI/UX']

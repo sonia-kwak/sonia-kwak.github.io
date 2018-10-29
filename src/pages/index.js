@@ -14,9 +14,12 @@ import selfie from '../images/selfie.png'
 class IndexPage extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
-
-    const url = new URL(window.location.href);
-    const isPreview = url.searchParams.get("preview");
+    
+    let url, isPreview;
+    if (typeof window !== `undefined`) {
+      url = new URL(window.location.href);
+      isPreview = url.searchParams.get("preview");
+    }
 
     return (
       <Layout>
@@ -137,8 +140,8 @@ export const pageQuery = graphql`
                    slug
                  }
                  frontmatter {
-                   date(formatString: "YYYY")
-                   date2(formatString: "YYYY")
+                   date
+                   date2
                    title
                    description
                    tags

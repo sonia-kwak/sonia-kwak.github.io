@@ -20,8 +20,8 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                   }
                   frontmatter {
-                    date(formatString: "YYYY")
-                    date2(formatString: "YYYY")
+                    date
+                    date2
                     title
                     description
                     tags

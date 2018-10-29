@@ -27,15 +27,11 @@ Made with web technology, including the D3.js dataviz library, and some basic mu
 
 ### Static visualization of patterns in music
 
-```grid|1
 ![](./shapeofsong1.png "The Shape of Song, by Martin Wattenberg")
-```
 
 ### Global flight patterns
 
-```grid|1
 ![](./airplanes1.png "BBC News")
-``` 
 
 #Music theory
 
@@ -48,7 +44,7 @@ Made with web technology, including the D3.js dataviz library, and some basic mu
  
 ```grid|1
 ![](./musicxml.png)
-``` 
+```
 
 D3 is a Javascript library oriented to Data Visualization. Isn’t a graphics library, but helps managing SVGs and DOMs. It has hundreds of samples online, good documentation, several books published.
 
@@ -58,51 +54,33 @@ D3 is a Javascript library oriented to Data Visualization. Isn’t a graphics li
 
 ###Neck position
 
-```grid|1
 ![](./stevevai-fortheloveofgod.png "Steve Vai - For The Love Of God")
-```
-```grid|1
 ![](./jimihendrix-purplehaze.png "Jimi Hendrix - Purple Haze")
-```
-```grid|1
 ![](./pacodelucia-entredosaguas.png "Paco de Lucia - Entre Dos Aguas")
-```
 
 ###Scale
 
 We can very easily recognize the scale used. The most probable scales used are automatically calculated.
 
 
-```grid|1
 ![](./santana-blackmagicwoman.png "Santana - Black Magic Woman")
-```
 
-```grid|1
 ![](./scales.png)
-```
 
 ###Complexity
 You can get impressed by something so simple can be so beautiful
 
-```grid|1
 ![](./pinkfloyd-comfortablynumb.png "Pink Floyd - Comfortably Numb")
-```
 
 ...and yet something that seemed simple aren’t that much
 
-```grid|1
 ![](./boleroravel.png "Maurice Ravel - Bolero")
-```
 
 Some music styles are more complex than others. Let's compare, for example, the performance of two acclaimed artists of different styles: a classic Rock band, and a legendary Jazz guitar player.
 
-```grid|1
 ![](./ledzeppelin-stairwaytoheaven.png "Led Zeppelin - Stairway To Heaven (Rock)")
-```
 
-```grid|1
 ![](./patmetheny-haveyouheard.png "Pat Metheny - Have You Heard (Jazz)")
-```
 
 ###Indian classical music
 
@@ -113,9 +91,7 @@ Varjit swar (Prohibited note)
 
 Path Identifies Pakad.
 
-```grid|1
 ![](./raagbhairvi.png "Raag bhairvi")
-```
 
 
 ##Further work

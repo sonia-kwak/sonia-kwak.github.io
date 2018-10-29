@@ -260,8 +260,8 @@ export const pageQuery = graphql`
              frontmatter {
                title
                description
-               date(formatString: "MMMM, YYYY")
-               date2(formatString: "MMMM, YYYY")
+               date
+               date2
                tags
                cover {
                  publicURL

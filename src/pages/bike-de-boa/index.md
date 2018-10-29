@@ -1,6 +1,6 @@
 ---
 date: "2016-10"
-date2: "2018"
+date2: "Now"
 title: "bike de boa"
 description: "An open and collaborative map of places to park your bike, made to be super easy to use and educative. With the web app you can search for bike parkings nearby, and at the same time you learn if they are safe to use and why they are so."
 tags: ['activism','progressive web app']

@@ -4,7 +4,7 @@ const Speaking = () => (
     <div>
       <Talk
         title="A experiência de usuário da mobilidade urbana - Cidades melhores para pedalar e viver"
-        context="Interaction Latin America, 2018 [proposta aceita]"
+        context="Interaction Latin America, 2018 [accepted proposal]"
         link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
       />
 
