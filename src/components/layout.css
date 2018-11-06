@@ -123,6 +123,14 @@ body {
   background: -webkit-linear-gradient(#f5852d, #f5882d);
 }
 
+.h6 {
+  height: 32rem;
+}
+
+.h7 {
+  height: 64rem;
+}
+
 /* @media screen and (min-width: 48em) {
   .parallax {
     perspective: 1px;

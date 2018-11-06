@@ -4,6 +4,7 @@ date2: "2007"
 title: "Space Art"
 cover: "./space1.jpg"
 description: ""
+tags: ['art','illustration','old']
 ---
 
 My first incursion with digital art, and probably the birth of my aesthetic self. Making space wallpapers got me started with digital design tools like Photoshop and 3D modeling software and also with a vibrant community of online artists.
@@ -13,7 +14,7 @@ I was a very active member on DeviantArt, one of the biggest online communities 
 
 ```grid|1
 ![](./space1.jpg)
-```
+``` 
 
 ```grid|1
 ![](./space2.jpg)

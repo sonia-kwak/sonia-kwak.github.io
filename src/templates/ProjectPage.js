@@ -157,9 +157,16 @@ class ProjectPage extends React.Component {
         {/* Cover image */}
         <div className="flex flex-row-ns flex-column mb4">
           <div className="w-100">
-            {
+            { 
               post.frontmatter.cover ?
-                <img className="w-100" alt="" src={post.frontmatter.cover.publicURL} />
+                // <div
+                //   className="w-100 db pv7 cover"
+                //   style={post.frontmatter.cover && {
+                //     backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
+                //     backgroundPosition: 'center'
+                //   }}
+                // ></div>
+                <img className="w-100 " alt="" src={post.frontmatter.cover.publicURL} />
                 :
                 <div className="w-100 h5 pv7 bg-silver"></div>
             }

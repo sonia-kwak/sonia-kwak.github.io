@@ -2,7 +2,7 @@
 date: "2007"
 date2: "Now"
 title: "Photography"
-tags: ['artistic']
+tags: ['art']
 cover: "./cover.png"
 description: "" 
 --- 
