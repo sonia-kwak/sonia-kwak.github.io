@@ -19,16 +19,16 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      let isHome;
+      let isHome = true;
       if (typeof window !== `undefined`) {
         isHome = window.location.pathname === '/';
       }
 
       const globalPadding = 'ph6-ns ph4-m ph3'
 
-      let headerClasses = ' ';
-      headerClasses += isHome ? `${globalPadding} fixed-ns top-0 left-0 right-0 bg-fafafa z-1` : '';
-
+      let headerClasses = `${globalPadding} `;  
+      headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-fafafa z-1` : '';
+ 
       return (
         <div className="parallax">
           <Helmet
