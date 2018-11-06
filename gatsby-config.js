@@ -72,6 +72,15 @@ module.exports = {
           'gatsby-remark-reading-time',
           'gatsby-remark-component',
           'gatsby-remark-copy-linked-files',
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              related: false,
+              noIframeBorder: true,
+            }
+          },
+          `gatsby-remark-responsive-iframe`
         ],
       },
     },
