@@ -66,7 +66,8 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    const defaultMargins = 'mh2 mh4-m mh7-ns';
+    const defaultMargins = 'mh0 mh0-m mh6-ns center';
+    const imageMargins = 'mv6 mh2';
     const base = 'f5 dark-gray lh-copy';
 
     let dateStart = formatDate(post.frontmatter.date, 'YYYY');
@@ -123,13 +124,13 @@ class ProjectPage extends React.Component {
           <hr className="mv6 bt-0 bb b--black-10" />
         ),
         figure: props => (
-          <figure className="mv6 mh6">{props.children}</figure>
+          <figure className={imageMargins}>{props.children}</figure>
         ),
         figcaption: props => (
           <figcaption className="mv2 fw6 f6 dark-gray tc">{props.children}</figcaption>
         ),
         "video-container": props => (
-          <div className={`mv6 mh6 flex flex-row-ns flex-column`}> 
+          <div className={`${imageMargins} flex flex-row-ns flex-column`}> 
             {props.children}
           </div>
         ),
@@ -177,9 +178,8 @@ class ProjectPage extends React.Component {
         </div>
 
         {/* Heading */}
-        <div className="flex flex-row-ns flex-column mt6 mb7 ">
-          <div className="w-10-ns"></div>
-          <div className="w-20-ns"> 
+        <div className="flex flex-row-ns flex-column mt5 mb6">
+          <div className="w-30-ns"> 
             <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
@@ -197,7 +197,7 @@ class ProjectPage extends React.Component {
           <div className="w-10-ns">
           </div>
 
-          <div className="w-50-ns">
+          <div className="w-60-ns">
             {
               post.frontmatter.description &&
               <div className={`f3 dark-gray lh-copy`}>
@@ -234,30 +234,25 @@ class ProjectPage extends React.Component {
         {/* Footer */}
         {/* <div className="flex flex-row-ns flex-column mv6"> */}
         <div className="flex flex-column flex-row-ns bg-near-white mt6 nl4 nr4 pb6">
-          <div className="w-10-ns">
+          <div className="w-100 tc f2 mv6">
+            <h2>Other projects</h2>
           </div>
 
-          <div className="w-80-ns">
-            <div className="w-100 tc f2 mv6">
-              <h2>Other projects</h2>
-            </div>
+          <div className="flex flex-row justify-between mt4">
+            <div className="w-40-ns">
+              {
+                previous &&
+                <ProjectCard node={previous} />
+              }
+            </div> 
 
-            <div className="flex flex-row justify-between mt4">
-              <div className="w-40-ns">
-                {
-                  previous &&
-                  <ProjectCard node={previous} />
-                }
-              </div> 
+            <div className="w-10-ns"></div>
 
-              <div className="w-10-ns"></div>
-
-              <div className="w-40-ns">
-                {
-                  next &&
-                  <ProjectCard node={next} />
-                }
-              </div>
+            <div className="w-40-ns">
+              {
+                next &&
+                <ProjectCard node={next} />
+              }
             </div>
           </div>
         </div>
