@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
           <div className="w-30-ns">
             <img
               src={selfie}
-              alt="Silhouette of a man standing at the top of a hill with silhoutes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
+              alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               className="parallax__layer--back absolute left-0 top-3 w-80 w-100-ns relative-ns"
             />
 

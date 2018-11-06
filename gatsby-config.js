@@ -66,6 +66,7 @@ module.exports = {
               quality: 90,
               linkImagesToOriginal: false,
               showCaptions: true,
+              backgroundColor: '#fafafa',
             },
           },
           'gatsby-remark-smartypants',

@@ -125,6 +125,9 @@ class ProjectPage extends React.Component {
         figure: props => (
           <figure className="mv6 mh6">{props.children}</figure>
         ),
+        figcaption: props => (
+          <figcaption className="mv2 fw6 f6 dark-gray tc">{props.children}</figcaption>
+        ),
         "video-container": props => (
           <div className={`mv6 mh6 flex flex-row-ns flex-column`}> 
             {props.children}
