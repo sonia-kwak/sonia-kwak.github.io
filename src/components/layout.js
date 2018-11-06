@@ -23,11 +23,11 @@ const Layout = ({ children }) => (
       if (typeof window !== `undefined`) {
         isHome = window.location.pathname === '/';
       }
-      // const isHome = true;
-      // console.log('isHome', isHome);
+
+      const globalPadding = 'ph6-ns ph4-m ph3'
 
       let headerClasses = ' ';
-      headerClasses += isHome ? 'ph4-ns ph2-m ph3 fixed-ns top-0 left-0 right-0 bg-fafafa z-1' : '';
+      headerClasses += isHome ? `${globalPadding} fixed-ns top-0 left-0 right-0 bg-fafafa z-1` : '';
 
       return (
         <div className="parallax">
@@ -48,11 +48,11 @@ const Layout = ({ children }) => (
             <Header/>
           </div>
 
-          <div className="ph4-ns ph2-m ph3 mt6-ns mt4 mb0 bb b--light-gray lh-copy">
+          <div className={`${globalPadding} mt6-ns mt4 mb0 pb7 bb b--light-gray lh-copy`}>
             {children}
           </div>
 
-          <div className="ph4-ns ph2-m ph3 bg-near-white db-ns dn">
+          <div className={`${globalPadding} bg-near-white db-ns dn`}>
             <Footer/>
           </div>
         </div>

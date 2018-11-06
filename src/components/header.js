@@ -43,9 +43,7 @@ class Header extends React.Component {
     
     return (
       <div className='flex pv4'>
-        <div className="w-10-ns"></div>
-
-        <div className="w-80 flex justify-between items-center">
+        <div className="w-100 flex justify-between items-center">
           <h1 className="f4 fw5">
             <Link to="/" className="link dim near-black fw6">
               Cristiano Dalbem

@@ -24,9 +24,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="flex flex-row-ns flex-column ">
-          <div className="w-10-ns" />
-
-          <div className="w-30-ns">
+          <div className="w-40-ns">
             <img
               src={selfie}
               alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
@@ -40,7 +38,7 @@ class IndexPage extends React.Component {
 
           <div className="w-10-ns" />
 
-          <div className="w-30-ns mt7">
+          <div className="w-40-ns mt7">
             <section id="about" className="mb4 mt5-ns mt7 f5 dark-gray">
               <p>
                 I'm a Designer focused in solving problems that are somewhere in the
