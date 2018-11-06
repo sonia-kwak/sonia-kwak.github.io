@@ -4,6 +4,7 @@ import { Link,graphql } from 'gatsby'
 
 import rehypeReact from "rehype-react"
 
+import Tag from '../components/Tag'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
 
@@ -199,9 +200,9 @@ class ProjectPage extends React.Component {
                 post.frontmatter.tags &&
                 <div>
                   {post.frontmatter.tags.map(tag => (
-                    <span className="br2 bg-light-gray dark-gray f6 mr2 pa1">
+                    <Tag>
                       {tag}
-                    </span>
+                    </Tag>
                   ))}
                 </div>
               }

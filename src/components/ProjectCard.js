@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Tag from '../components/Tag.js'
+
 import { formatDate } from '../components/utils.js'
 
 class ProjectCard extends React.Component {
@@ -15,13 +17,13 @@ class ProjectCard extends React.Component {
 
         return (
             <Link
-                className="b--light-gray ba bg-white br1 db near-black overflow-hidden card-shadow"
-                // className="link dim near-black db br1 overflow-hidden"
+                // className="b--light-gray ba bg-white br1 db near-black overflow-hidden card-shadow"
+                className="link dim near-black db br1 overflow-hidden"
                 to={post.fields.slug}
             >
                 {
                     <div
-                        className="w-100 db card-cover-height pv5 cover bg-gray" 
+                        className="w-100 db card-cover-height pv5 cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'
@@ -29,8 +31,8 @@ class ProjectCard extends React.Component {
                     ></div>
                 }
 
-                <div className="ph3 pv2">
-                {/* <div className=""> */}
+                {/* <div className="ph3 pv2"> */}
+                <div className="">
                     {
                         post.frontmatter.title
                         &&
@@ -51,10 +53,9 @@ class ProjectCard extends React.Component {
                         post.frontmatter.tags &&
                         <div className="flex flex-row flex-wrap">
                             {post.frontmatter.tags.map(tag => (
-                                <span className="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">
-                                {/* <span className="br2 ba b--light-gray dark-gray f7 mr2 mt2 pa1"> */}
+                                <Tag>
                                     {tag}
-                                </span>
+                                </Tag>
                             ))}
                         </div>
                     }
