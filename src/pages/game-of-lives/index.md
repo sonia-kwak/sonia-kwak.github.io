@@ -1,7 +1,7 @@
 ---
 date: "2017-06"
 title: "Game of Lives"
-description: "A story-telling VR game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes."
+description: "A story-telling VR game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes. Winner of the first Isobar International Hackathon."
 tags: ['hackathon','game','social']
 roles: "Game design, storyboard writing, development"
 team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
@@ -9,7 +9,7 @@ cover: "./cover.png"
 ---
 
 
-### Overview
+# Overview
 
 
 Our challenge was to develop a VR experience with the theme “Learn by Doing”. We focused in taking advantage of the platform’s potentials and unique features. We thought that Virtual Reality, being an immersive and interactive media, could be leveraged to foster empathy and social equality.
@@ -21,7 +21,8 @@ It works with a minimalistic playability with very simple mechanics. The story i
 
 ---
 
-# Day 1
+# Process
+
 ## Kick off
 
 On friday evening we started brainstorming so on saturday morning, with the official start of the hackathon, we would have some clues already of where to head to.
@@ -44,7 +45,6 @@ We finished the day listing some cool ideas we came up with based on the dynamic
 ``` -->
 
 
-# Day 2
 ## Hands On
 
 On the morning of the second day our first objective was to filter out from the list of the previous day what would be our projects. To make that decision we did some quick benchmarking of similar ideas on the market. We also look at what the Unity Assets Store had to offer us, since depending on the idea we would need cool, ready to use assets. We ended up with 2 final ideas that seemed perfect, so a toss of heads or tails was our call. The coin decided we’d be working on The Game of Lives.
@@ -70,7 +70,6 @@ Most of us had had some experience with the Unity framework, but not enough to h
 ```
 
 
-# Day 3
 ## A baby was born
 
 We only managed to glue together all the parts in the very end of this day. Most work done this afternoon was merging the work each double had done in parallel. 
@@ -98,13 +97,18 @@ In the spare time I designed a simple visual identity for the project to use in 
 ![](./day3-team.jpg)
 ```
 
+---
 
 # Result
 
 The full gameplay which we presented to the Hackathon judges can be seen in the video below.
 
+(I apologize the poor quality. I promise I'll try to get better footage, featuring many of the improvements we made after the Hackathon was finished.)
+
 `youtube: http://www.youtube.com/watch?v=g-JqXQhAk78` 
 
+
+---
 
 # Recognition
 
@@ -113,6 +117,6 @@ This project was developed during the first Isobar Virtual Reality International
 > "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. [(source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)"
  
 
-```grid|1
+<!-- ```grid|1
 ![](./isobar_hackathon2.png)
-```
+``` -->

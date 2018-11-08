@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
             ]}
           >
             <html lang="en" />
-            <link
+            <link 
               rel="stylesheet"
               href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
             />
@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
             <Header/>
           </div>
 
-          <div className={`${globalPadding} mt6-ns mt4 mb0 pb7 bb b--light-gray lh-copy`}>
+          <div className={`${globalPadding} mt6-ns mt4 mb0 bb b--light-gray lh-copy`}>
             {children}
           </div>
 

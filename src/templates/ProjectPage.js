@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
+// import { Link,graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import rehypeReact from "rehype-react"
 
@@ -21,7 +22,7 @@ class ResultsBanner extends React.Component {
     const dataObj = JSON.parse(this.props.data);
 
     return (
-      <div className="vw-100 nl4 nr4 mv6 pa6 bg-near-white flex flex-row justify-around">
+      <div className="vw-100 nl6 nr6 mv6 pa6 bg-near-white flex flex-row justify-around">
         {
           Object.keys(dataObj).map ( i => (
             <div>
@@ -232,8 +233,7 @@ class ProjectPage extends React.Component {
         </div> 
         
         {/* Footer */}
-        {/* <div className="flex flex-row-ns flex-column mv6"> */}
-        <div className="flex flex-column flex-row-ns bg-near-white mt6 nl4 nr4 pb6">
+        <div className="flex flex-column bg-near-white mt6 nl6 nr6 ph6 pb6">
           <div className="w-100 tc f2 mv6">
             <h2>Other projects</h2>
           </div>
