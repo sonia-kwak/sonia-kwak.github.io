@@ -12,11 +12,7 @@ class Header extends React.Component {
   }
 
   render() {
-    // const { isHome } = this.props;
-    // console.log('this.props', this.props);
-    // console.log('isHome (Header)', isHome);
-
-    let isHome, url, isPreview;
+    let isHome=true, url, isPreview;
 
     if (typeof window !== `undefined`) {
       isHome = window.location.pathname === '/';
