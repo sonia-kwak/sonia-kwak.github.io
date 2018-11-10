@@ -41,22 +41,13 @@ class IndexPage extends React.Component {
           <div className="w-40-ns mt7">
             <section id="about" className="mb4 mt5-ns mt7 f5 dark-gray">
               <p>
-                I'm a Designer focused in solving problems that are somewhere in the
-                middle between people and their tools, with a skillset that ranges
-                from researching to designing and programming products and systems.
+                I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work. I'm in a journey to build a skill set that ranges from researching to designing and programming products and systems.
               </p>
               <p>
-                I’m curious about everything related to the human experience and our
-                relation with technology. And I'm always learning, because to solve
-                the right problems the right way demands a set of skills that goes
-                beyond just digital tools.
+                I'm very curious and always learning, and it helps me finding the right problems and the right solutions, which demands a set of skills that goes beyond just digital tools.
               </p>
               <p>
-                My background in Computer Science has biased me to design solutions
-                that are scalable, maintainable and that stand the test of time. And
-                I tend to extend this mindset to businesses and their role in the
-                world, and I'm interested in creating stuff that contribute to a
-                more sustainable and equitable world.
+                My background in Computer Science has biased towards designing solutions that are scalable, maintainable that stand the test of time. I extend this mindset to the businesses in the world: I work with purpose, and I only create stuff that contribute to a more sustainable and equitable world.
               </p>
             </section>
           </div>
