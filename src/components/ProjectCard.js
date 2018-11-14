@@ -17,13 +17,14 @@ class ProjectCard extends React.Component {
 
         return (
             <Link
-                // className="b--light-gray ba bg-white br1 db near-black overflow-hidden card-shadow"
-                className="link dim near-black db br1 overflow-hidden"
+                // className="b--light-gray ba bg-white br0 db near-black overflow-hidden card-shadow pa3"
+                className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow"
+                // className="link dim near-black db br1 overflow-hidden"
                 to={post.fields.slug}
             >
                 {
                     <div
-                        className="w-100 db card-cover-height pv5 cover" 
+                        className="w-100 db card-cover-height pv6-ns pv5 cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'
@@ -31,12 +32,12 @@ class ProjectCard extends React.Component {
                     ></div>
                 }
 
-                {/* <div className="ph3 pv2"> */}
-                <div className="">
+                <div className="ph3 pv4">
+                {/* <div className="pv3"> */}
                     {
                         post.frontmatter.title
                         &&
-                        <h3 className="f5 fw7 mt3 mb1">
+                        <h3 className="f5 fw7 mt0 mb1">
                             {post.frontmatter.title}
                         </h3>
                     }
@@ -49,6 +50,10 @@ class ProjectCard extends React.Component {
                         </div>
                     } */}
 
+                    <div className="f6 mv1 gray">
+                        {dateStart} {dateEnd && `– ${dateEnd}`}
+                    </div>
+
                     {
                         post.frontmatter.tags &&
                         <div className="flex flex-row flex-wrap">
@@ -59,10 +64,6 @@ class ProjectCard extends React.Component {
                             ))}
                         </div>
                     }
-                    
-                    <div className="f6 mv3 gray">
-                        {dateStart} {dateEnd && `– ${dateEnd}`}
-                    </div>
                     
                     {/* <p dangerouslySetInnerHTML={{ __html: post.excerpt }} /> */}
                 </div>
