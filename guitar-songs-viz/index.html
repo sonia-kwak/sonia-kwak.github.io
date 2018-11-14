@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-project-page-js.4e075af59047f67ecfa4.css">html{font-family:Muli,sans-serif;--red:#ed4934;--orange:#f5882d;--blue:#1b9393;--bg-color:#fafafa;--gray:#777;--dark-gray:#333;--light-gray:#eee}body{background:var(--bg-color)}.pretty-link{color:inherit;text-decoration:none;box-shadow:inset 0 -2px 0 -1px var(--orange);transition:all .2s ease}.pretty-link:hover{box-shadow:inset 0 -4px 0 -1px var(--orange)}.pretty-bullet{position:relative}.pretty-bullet:before{content:"\30FB";position:absolute;left:-2rem;font-size:1.5rem;line-height:1.5rem}.tab{position:relative;text-decoration:none}.tab,.tab:before{transition:all .2s}.tab:before{content:"\30FB";position:absolute;bottom:-1.5rem;left:calc(50% - .75rem);font-size:1.5rem;opacity:0}.tab--unselected,.tab:before{color:var(--gray)}.tab--unselected:hover:before{opacity:1}.tab--selected{color:var(--dark-gray)}.tab--selected:before{color:var(--blue);opacity:1}.card-shadow{box-shadow:0 15px 35px rgba(90,50,50,.05),0 5px 15px rgba(0,0,0,.04);-webkit-transform:translateY(0);transform:translateY(0);text-decoration:none;transition:all .2s ease-out}.card-shadow:hover{box-shadow:0 18px 35px rgba(90,50,50,.1),0 8px 15px rgba(0,0,0,.07);-webkit-transform:translateY(-4px);transform:translateY(-4px)}.card-cover-height{height:10rem}.bg-fafafa{background-color:var(--bg-color)}.text-gradient-clip{-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important}.bg-gradient-1{background:-webkit-linear-gradient(#f52f2d,#f76560)}.bg-gradient-2{background:-webkit-linear-gradient(#f5402d,#f5442d)}.bg-gradient-3{background:-webkit-linear-gradient(#f5512d,#f5552d)}.bg-gradient-4{background:-webkit-linear-gradient(#f5632d,#f5672d)}.bg-gradient-5{background:-webkit-linear-gradient(#f5742d,#f5792d)}.bg-gradient-6{background:-webkit-linear-gradient(#f5852d,#f5882d)}.h6{height:32rem}.h7{height:64rem}.gatsby-resp-image-wrapper{width:100%}</style><meta name="generator" content="Gatsby 2.0.39"/><title data-react-helmet="true">Data Visualization of Guitar Songs</title><link data-react-helmet="true" rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/><meta data-react-helmet="true" name="description" content="Final project for the course on Advanced Human Computer Interaction. What if we could plot a guitar song in one single image? And what if it…"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#fafafa"/><link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,900" rel="stylesheet"/><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-project-page-js.da74a6ed09752e033efd.css">html{font-family:Muli,sans-serif;--red:#ed4934;--orange:#f5882d;--blue:#1b9393;--bg-color:#fafafa;--gray:#777;--dark-gray:#333;--light-gray:#eee}body{background:var(--bg-color)}.pretty-link{color:inherit;text-decoration:none;box-shadow:inset 0 -2px 0 -1px var(--orange);transition:all .2s ease}.pretty-link:hover{box-shadow:inset 0 -4px 0 -1px var(--orange)}.pretty-bullet{position:relative}.pretty-bullet:before{content:"\30FB";position:absolute;left:-2rem;font-size:1.5rem;line-height:1.5rem}.tab{position:relative;text-decoration:none}.tab,.tab:before{transition:all .2s}.tab:before{content:"\30FB";position:absolute;top:-1.5rem;left:calc(50% - .75rem);font-size:1.5rem;opacity:0}.tab--unselected,.tab:before{color:var(--gray)}.tab--unselected:hover:before{opacity:1}.tab--selected{color:var(--dark-gray)}.tab--selected:before{color:var(--blue);opacity:1}.dim{transition:opacity .1s ease-out!important}.dim:focus,.dim:hover{opacity:.7!important}.card-shadow{box-shadow:0 15px 35px rgba(90,50,50,.05),0 5px 15px rgba(0,0,0,.04);-webkit-transform:translateY(0);transform:translateY(0);text-decoration:none;transition:all .2s ease-out}.card-shadow:hover{box-shadow:0 18px 35px rgba(90,50,50,.1),0 8px 15px rgba(0,0,0,.07);-webkit-transform:translateY(-4px);transform:translateY(-4px)}.card-cover-height{height:10rem}.bg-fafafa{background-color:var(--bg-color)}.text-gradient-clip{-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important}.bg-gradient-1{background:-webkit-linear-gradient(#f52f2d,#f76560)}.bg-gradient-2{background:-webkit-linear-gradient(#f5402d,#f5442d)}.bg-gradient-3{background:-webkit-linear-gradient(#f5512d,#f5552d)}.bg-gradient-4{background:-webkit-linear-gradient(#f5632d,#f5672d)}.bg-gradient-5{background:-webkit-linear-gradient(#f5742d,#f5792d)}.bg-gradient-6{background:-webkit-linear-gradient(#f5852d,#f5882d)}.h6{height:32rem}.h7{height:64rem}.gatsby-resp-image-wrapper{width:100%}</style><meta name="generator" content="Gatsby 2.0.39"/><title data-react-helmet="true">Data Visualization of Guitar Songs</title><link data-react-helmet="true" rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/><meta data-react-helmet="true" name="description" content="Final project for the course on Advanced Human Computer Interaction. What if we could plot a guitar song in one single image? And what if it…"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#fafafa"/><link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,900" rel="stylesheet"/><script>
   window.excludeGAPaths=[/^(?:(?=.)localhost[^\/]*?)$/];
   
   if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
@@ -26,7 +26,7 @@
         .gatsbyRemarkImagesGrid-figcaption {
           text-align: center;
         }
-      </style><link as="script" rel="preload" href="/component---src-templates-project-page-js-51e33d2978fb017b8b3d.js"/><link as="script" rel="preload" href="/app-717a93efaf53ad310de5.js"/><link as="script" rel="preload" href="/7-9d907c72d9d59ead149e.js"/><link as="script" rel="preload" href="/1-f3a19dca6b812b6dc33d.js"/><link as="script" rel="preload" href="/0-5c94bd332c3409bbd9f2.js"/><link as="script" rel="preload" href="/webpack-runtime-46f8c25fc0f1731f6c8d.js"/><link rel="preload" href="/static/d/983/path---guitar-songs-viz-3-e-7-97b-QBT1vEYLffjM1XAAtBCf7MIVmuw.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="parallax"><div class="ph6-ns ph4-m ph3  fixed-ns top-0 left-0 right-0 bg-fafafa z-1"><div class="flex pv4"><div class="w-100 flex justify-between items-center"><h1 class="f4 fw5"><a class="link dim near-black fw6" href="/">Cristiano Dalbem</a></h1><div class="f7 dn db-ns"><div class=""><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">About</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Work</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Speaking</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Elsewhere</button></div></div></div></div></div><div class="ph6-ns ph4-m ph3 mt6-ns mt4 mb0 bb b--light-gray lh-copy"><div class="flex flex-row-ns flex-column mb4"><div class="w-100"><img class="w-100 " alt="" src="/static/cover-7f11078d11900ad4e908f1e26c439136.png"/></div></div><div class="flex flex-row-ns flex-column mt5 mb6"><div class="w-30-ns"><h1 class="f1 mt0 fw9 mb3 dark-gray lh-solid">Data Visualization of Guitar Songs</h1><div class="f5 gray"><div>2014</div></div></div><div class="w-10-ns"></div><div class="w-60-ns"><div class="f3 dark-gray lh-copy">What if we could plot a guitar song in one single image?</div><div class="mv3"><div><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">data visualization</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">d3</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">music</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">academic</span></div></div></div></div><div class="flex flex-column"><div class="f5 dark-gray lh-copy mh0 mh0-m mh6-ns center gray">2 min read<!-- -->.</div><div class="f5 dark-gray lh-copy"><div><p class="mt0 mh0 mh0-m mh6-ns center">Final project for the course on Advanced Human Computer Interaction.</p>
+      </style><link as="script" rel="preload" href="/component---src-templates-project-page-js-38749920134673828753.js"/><link as="script" rel="preload" href="/app-717a93efaf53ad310de5.js"/><link as="script" rel="preload" href="/7-9d907c72d9d59ead149e.js"/><link as="script" rel="preload" href="/1-f3a19dca6b812b6dc33d.js"/><link as="script" rel="preload" href="/0-5c94bd332c3409bbd9f2.js"/><link as="script" rel="preload" href="/webpack-runtime-d96bd2079ff05e95e384.js"/><link rel="preload" href="/static/d/656/path---guitar-songs-viz-3-e-7-97b-ABN7y85zYYDIhwprW6GstNl51g4.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="parallax"><div class="ph6-ns ph4-m ph3  fixed-ns top-0 left-0 right-0 bg-fafafa z-1"><div class="flex pv4"><div class="w-100 flex justify-between items-center"><h1 class="f4 fw5"><a class="link dim near-black fw6" href="/">Cristiano Dalbem</a></h1><div class="f7 dn db-ns"><div class=""><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">About</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Work</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Speaking</button><button class="ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected">Elsewhere</button></div></div></div></div></div><div class="ph6-ns ph4-m ph3 mt6-ns mt4 mb0 bb b--light-gray lh-copy"><div class="flex flex-row-ns flex-column mb4"><div class="w-100"><img class="w-100 " alt="" src="/static/cover-7f11078d11900ad4e908f1e26c439136.png"/></div></div><div class="flex flex-row-ns flex-column mt5 mb6"><div class="w-30-ns"><h1 class="f1 mt0 fw9 mb3 dark-gray lh-solid">Data Visualization of Guitar Songs</h1><div class="f5 gray"><div>2014</div></div></div><div class="w-10-ns"></div><div class="w-60-ns"><div class="f3 dark-gray lh-copy">What if we could plot a guitar song in one single image?</div><div class="mv3"><div><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">data visualization</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">music</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">academic</span></div></div></div></div><div class="flex flex-column"><div class="f5 dark-gray lh-copy mh0 mh0-m mh6-ns center gray">2 min read<!-- -->.</div><div class="f5 dark-gray lh-copy"><div><p class="mt0 mh0 mh0-m mh6-ns center">Final project for the course on Advanced Human Computer Interaction.</p>
 <p class="mt0 mh0 mh0-m mh6-ns center">What if we could plot a guitar song in one single image? And what if it could at the same time be beautiful and generate interesting insights about the performer’s style?</p>
 <p class="mt0 mh0 mh0-m mh6-ns center">Made with web technology, including the D3.js dataviz library, and some basic music theory.</p>
 <h1 class="f1 tracked-tight fw1 dark-gray mt4 mb3 mh0 mh0-m mh6-ns center">Inspiration</h1>
@@ -40,7 +40,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Thinking Machine, by Martin Wattenberg</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Thinking Machine, by Martin Wattenberg</figcaption>
   </figure>
       
   <figure class="mv6 mh2">
@@ -51,7 +51,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Thinking Machine, by Martin Wattenberg</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Thinking Machine, by Martin Wattenberg</figcaption>
   </figure>
       </div></figure>
 <h3 class="f3 dark-gray fw5 mt4 mb3 mh0 mh0-m mh6-ns center">Static visualization of patterns in music</h3>
@@ -64,7 +64,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">The Shape of Song, by Martin Wattenberg</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">The Shape of Song, by Martin Wattenberg</figcaption>
   </figure>
       </div>
 <h3 class="f3 dark-gray fw5 mt4 mb3 mh0 mh0-m mh6-ns center">Global flight patterns</h3>
@@ -77,7 +77,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">BBC News</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">BBC News</figcaption>
   </figure>
       </div>
 <h1 class="f1 tracked-tight fw1 dark-gray mt4 mb3 mh0 mh0-m mh6-ns center">Music theory</h1>
@@ -106,7 +106,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Steve Vai - For The Love Of God</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Steve Vai - For The Love Of God</figcaption>
   </figure>
       
 
@@ -118,7 +118,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Jimi Hendrix - Purple Haze</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Jimi Hendrix - Purple Haze</figcaption>
   </figure>
       
 
@@ -130,7 +130,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Paco de Lucia - Entre Dos Aguas</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Paco de Lucia - Entre Dos Aguas</figcaption>
   </figure>
       </div>
 <h3 class="f3 dark-gray fw5 mt4 mb3 mh0 mh0-m mh6-ns center">Scale</h3>
@@ -144,7 +144,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Santana - Black Magic Woman</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Santana - Black Magic Woman</figcaption>
   </figure>
       </div>
 <div>
@@ -165,7 +165,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Pink Floyd - Comfortably Numb</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Pink Floyd - Comfortably Numb</figcaption>
   </figure>
       </div>
 <p class="mt0 mh0 mh0-m mh6-ns center">…and yet something that seemed simple aren’t that much</p>
@@ -178,7 +178,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Maurice Ravel - Bolero</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Maurice Ravel - Bolero</figcaption>
   </figure>
       </div>
 <p class="mt0 mh0 mh0-m mh6-ns center">Some music styles are more complex than others. Let’s compare, for example, the performance of two acclaimed artists of different styles: a classic Rock band, and a legendary Jazz guitar player.</p>
@@ -191,7 +191,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Led Zeppelin - Stairway To Heaven (Rock)</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Led Zeppelin - Stairway To Heaven (Rock)</figcaption>
   </figure>
       </div>
 <div>
@@ -203,7 +203,7 @@
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Pat Metheny - Have You Heard (Jazz)</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Pat Metheny - Have You Heard (Jazz)</figcaption>
   </figure>
       </div>
 <h3 class="f3 dark-gray fw5 mt4 mb3 mh0 mh0-m mh6-ns center">Indian classical music</h3>
@@ -221,7 +221,7 @@ Varjit swar (Prohibited note)</p>
     </span>
   </span>
   
-  <figcaption class="mv2 fw6 f6 dark-gray tc">Raag bhairvi</figcaption>
+  <figcaption class="mt4 fw6 f6 dark-gray tc">Raag bhairvi</figcaption>
   </figure>
       </div>
 <h2 class="f2 dark-gray fw8 mt5 mb4 mh0 mh0-m mh6-ns center">Further work</h2>
@@ -233,4 +233,4 @@ Varjit swar (Prohibited note)</p>
 <li>Experiment with colours to put more visual information</li>
 <li>Dynamically select the part of song to be visualized </li>
 <li>Add support for special notes like bends, tremolos, open strings, etc.</li>
-</ul></div></div></div><div class="flex flex-column bg-near-white mt6 nl6 nr6 ph6 pb6"><div class="w-100 tc f2 mv6"><h2>Other projects</h2></div><div class="flex flex-row justify-between mt4"><div class="w-40-ns"><a class="link dim near-black db br1 overflow-hidden" href="/infhub/"><div class="w-100 db card-cover-height pv5 cover" style="background-image:url(/static/cover-8235865a687bda71186f2d404a1f148e.png);background-position:center"></div><div class=""><h3 class="f5 fw7 mt3 mb1">infHUB</h3><div class="flex flex-row flex-wrap"><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">social network</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">platform</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">academic</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">UI/UX</span></div><div class="f6 mv3 gray">2012<!-- --> <!-- -->– 2013</div></div></a></div><div class="w-10-ns"></div><div class="w-40-ns"><a class="link dim near-black db br1 overflow-hidden" href="/bike-de-boa/"><div class="w-100 db card-cover-height pv5 cover" style="background-image:url(/static/cover-539d64b2e8a966b446b0908c5db8a7e2.jpg);background-position:center"></div><div class=""><h3 class="f5 fw7 mt3 mb1">bike de boa</h3><div class="flex flex-row flex-wrap"><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">activism</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">progressive web app</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">UI/UX</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">platform</span></div><div class="f6 mv3 gray">2016<!-- --> <!-- -->– Now</div></div></a></div></div></div></div><div class="ph6-ns ph4-m ph3 bg-near-white db-ns dn"><div class="pv6 ph6 f7 silver">Designed with ❤ in Figma, developed with GatsbyJS, and styled with Tachyons.</div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-project-page-js","jsonName":"guitar-songs-viz-3e7","path":"/guitar-songs-viz/"};window.dataPath="983/path---guitar-songs-viz-3-e-7-97b-QBT1vEYLffjM1XAAtBCf7MIVmuw";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-717a93efaf53ad310de5.js"],"component---src-templates-project-page-js":["/component---src-templates-project-page-js.4e075af59047f67ecfa4.css","/component---src-templates-project-page-js-51e33d2978fb017b8b3d.js"],"component---src-pages-404-js":["/component---src-pages-404-js.4e075af59047f67ecfa4.css","/component---src-pages-404-js-4e6f57ef1f97786632f0.js"],"component---src-pages-index-js":["/component---src-pages-index-js.4e075af59047f67ecfa4.css","/component---src-pages-index-js-d782cb868ec8e7bc7532.js"]};/*]]>*/</script><script src="/webpack-runtime-46f8c25fc0f1731f6c8d.js" async=""></script><script src="/0-5c94bd332c3409bbd9f2.js" async=""></script><script src="/1-f3a19dca6b812b6dc33d.js" async=""></script><script src="/7-9d907c72d9d59ead149e.js" async=""></script><script src="/app-717a93efaf53ad310de5.js" async=""></script><script src="/component---src-templates-project-page-js-51e33d2978fb017b8b3d.js" async=""></script></body></html>
+</ul></div></div></div><div class="flex flex-column bg-near-white mt6 nl6 nr6 ph6 pb6"><div class="w-100 tc f2 mv6"><h2>Other projects</h2></div><div class="flex flex-row justify-between mt4"><div class="w-40-ns"><a class="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow" href="/infhub/"><div class="w-100 db card-cover-height pv6-ns pv5 cover" style="background-image:url(/static/cover-d9fe8c493530b14ce0d0926e4e7086e3.png);background-position:center"></div><div class="ph3 pv4"><h3 class="f5 fw7 mt0 mb1">infHUB</h3><div class="f6 mv1 gray">2012<!-- --> <!-- -->– 2013</div><div class="flex flex-row flex-wrap"><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">social network</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">platform</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">academic</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">UI/UX</span></div></div></a></div><div class="w-10-ns"></div><div class="w-40-ns"><a class="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow" href="/bike-de-boa/"><div class="w-100 db card-cover-height pv6-ns pv5 cover" style="background-image:url(/static/cover-539d64b2e8a966b446b0908c5db8a7e2.jpg);background-position:center"></div><div class="ph3 pv4"><h3 class="f5 fw7 mt0 mb1">bike de boa</h3><div class="f6 mv1 gray">2016<!-- --> <!-- -->– Now</div><div class="flex flex-row flex-wrap"><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">activism</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">progressive web app</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">UI/UX</span><span class="br2 bg-near-white dark-gray f7 mr2 mt2 pa1">platform</span></div></div></a></div></div></div></div><div class="ph6-ns ph4-m ph3 bg-near-white db-ns dn"><div class="pv6 ph6 f7 silver">Designed with ❤ in Figma, developed with GatsbyJS, and styled with Tachyons.</div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-project-page-js","jsonName":"guitar-songs-viz-3e7","path":"/guitar-songs-viz/"};window.dataPath="656/path---guitar-songs-viz-3-e-7-97b-ABN7y85zYYDIhwprW6GstNl51g4";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-717a93efaf53ad310de5.js"],"component---src-templates-project-page-js":["/component---src-templates-project-page-js.da74a6ed09752e033efd.css","/component---src-templates-project-page-js-38749920134673828753.js"],"component---src-pages-404-js":["/component---src-pages-404-js.da74a6ed09752e033efd.css","/component---src-pages-404-js-3b00f88f3dcc7b7e759d.js"],"component---src-pages-index-js":["/component---src-pages-index-js.da74a6ed09752e033efd.css","/component---src-pages-index-js-8004b573d37a208fa011.js"]};/*]]>*/</script><script src="/webpack-runtime-d96bd2079ff05e95e384.js" async=""></script><script src="/0-5c94bd332c3409bbd9f2.js" async=""></script><script src="/1-f3a19dca6b812b6dc33d.js" async=""></script><script src="/7-9d907c72d9d59ead149e.js" async=""></script><script src="/app-717a93efaf53ad310de5.js" async=""></script><script src="/component---src-templates-project-page-js-38749920134673828753.js" async=""></script></body></html>
