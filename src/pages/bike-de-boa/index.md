@@ -115,7 +115,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./illustration02.png)
 ```
 
-```grid|1
+```grid|1 
 ![](./illustration.png)
 ```
 

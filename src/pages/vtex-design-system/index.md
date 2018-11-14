@@ -1,7 +1,7 @@
 ---
 date: "2018-02"
 date2: "Now"
-title: "VTEX Design System"
+title: "VTEX Styleguide"
 description: ""
 tags: ['UI/UX','work','design system']
 roles: "Design, planning, development"

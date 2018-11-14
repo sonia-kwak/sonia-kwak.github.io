@@ -2,7 +2,7 @@
 date: "2014-12"
 title: "Data Visualization of Guitar Songs"
 description: "What if we could plot a guitar song in one single image?"
-tags: ['data visualization','d3','music','academic']
+tags: ['data visualization','music','academic']
 roles: "Development, Design"
 team: "Cristiano Dalbem, Shivani Shah"
 cover: "./cover.png"
@@ -19,7 +19,7 @@ Made with web technology, including the D3.js dataviz library, and some basic mu
 #Inspiration
 
 ### Visualizing Chess moves on board.
- 
+
 ```grid|2
 ![](./chess1.png "Thinking Machine, by Martin Wattenberg")
 ![](./chess2.png "Thinking Machine, by Martin Wattenberg")

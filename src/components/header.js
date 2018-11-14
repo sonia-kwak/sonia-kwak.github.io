@@ -22,19 +22,18 @@ class Header extends React.Component {
     }
  
     const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
-    let sections = [
+    let sections = isPreview ? [
       'About',
-      'Work'
-    ];
-    if (isPreview) {
-      sections.push('Projects');
-    }
-    sections = sections.concat(
-      [
-        'Speaking',
-        'Elsewhere'
-      ]
-    );
+      'Work',
+      'Projects',
+      'Speaking',
+      'Elsewhere'
+    ] : [
+      'About',
+      'Work',
+      'Speaking',
+      'Elsewhere'
+    ]
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (

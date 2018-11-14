@@ -50,7 +50,7 @@ body {
 .tab:before {
   content: '・';
   position: absolute;
-  bottom: -1.5rem;
+  top: -1.5rem;
   left: calc(50% - 0.75rem);
   font-size: 1.5rem;
   color: var(--gray);
@@ -70,6 +70,13 @@ body {
 .tab--selected:before {
   color: var(--blue);
   opacity: 1;
+}
+
+.dim {
+  transition: opacity .1s ease-out !important;
+} 
+.dim:focus,.dim:hover {
+  opacity: .7 !important;
 }
 
 .card-shadow {

@@ -8,11 +8,11 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
       />
 
-      {/* <Talk
+      <Talk
         title="Rage, rage against the dying of the Design System - Morte e vida de um sistema para empoderar um ecossistema."
-        context="Interaction Latin America (proposta), 2018"
+        context="Interaction Latin America, 2018 [proposal]"
         link="https://drive.google.com/open?id=10VxokY3c1onxm67WUD_flPh5tlxyydBy"
-      /> */}
+      />
 
       <Talk
         title="É possível estacionar a bike de boa?"
@@ -69,7 +69,7 @@ class Talk extends React.Component {
     const { title, context, link } = this.props;
 
     return (
-      <div className="pb4-ns pb2">
+      <div className="pb4-ns pb3">
         <div className="fw5 f5 mv1">
           {/* {title} */}
           <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">

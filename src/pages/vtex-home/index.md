@@ -123,7 +123,7 @@ Materializing the values into actual UI was done in both a top-down and bottom-u
 
 ## Result
  
-Without further ado, here's how our new Home looked like in the end.
+Here's how everything worked together. This is the actual state of the page development.
 
 ```grid|1
 ![](./breakdown.png)
