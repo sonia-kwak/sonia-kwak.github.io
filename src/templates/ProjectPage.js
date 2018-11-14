@@ -22,10 +22,10 @@ class ResultsBanner extends React.Component {
     const dataObj = JSON.parse(this.props.data);
 
     return (
-      <div className="vw-100 nl6 nr6 mv6 pa6 bg-near-white flex flex-row justify-around">
+      <div className="vw-100 nl6 nr6 mv6 pa6 bg-near-white flex flex-row-ns flex-column justify-around tl-ns tc">
         {
           Object.keys(dataObj).map ( i => (
-            <div>
+            <div className="mv0-ns mv3">
               <div className="f1 fw1 mt0">
                 {dataObj[i]}
               </div>
@@ -128,7 +128,7 @@ class ProjectPage extends React.Component {
           <figure className={imageMargins}>{props.children}</figure>
         ),
         figcaption: props => (
-          <figcaption className="mv2 fw6 f6 dark-gray tc">{props.children}</figcaption>
+          <figcaption className="mt4 fw6 f6 dark-gray tc">{props.children}</figcaption>
         ),
         "video-container": props => (
           <div className={`${imageMargins} flex flex-row-ns flex-column`}> 

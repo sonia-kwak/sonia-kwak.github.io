@@ -2,21 +2,18 @@
 date: "2016-10"
 date2: "Now"
 title: "bike de boa"
-description: "An open and collaborative map of places to park your bike, made to be super easy to use and educative. With the web app you can search for bike parkings nearby, and at the same time you learn if they are safe to use and why they are so."
+description: "A collaborative map of places to park your bike safely and make you commute more by bike. With the web app you can search for bike parkings nearby, map new ones, at the same time you learn about urban mobility and what makes good bike parking."
 tags: ['activism','progressive web app','UI/UX','platform']
 roles: "Front-end & Back-end Development, Design"
-team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
+team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt"
 cover: './cover.jpg'
 ---
 
-## Links
+# Overview
 
-* https://www.bikedeboa.com.br
-* https://www.facebook.com/bikedeboaapp
-* https://www.instagram.com/bikedeboa/ 
-
-
-## Overview
+```grid|1
+![](./illustration_simpler.png)
+```
 
 We believe that the bicycle is the future of urban mobility, and that having better bike parkings is a great way of promoting the bike culture in our cities. This project intends to push forward the discussion of what are good bike parkings, at the same time we collect data about the presence and evolution of this kind of structure in the cities of Brazil.
 
@@ -24,14 +21,19 @@ The collaborative aspect allows the active participation of citizens, fostering 
 
 This has been a great project to put in practice so many tools and concepts I've been learning in the past years about web development, UX Design and Analytics. Working in bike de boa I've learned how important it is to go beyond aesthetics and Usability to create a great product. And, most of all, beyond just improving hard skills, this has been a project with a social purpose.
 
-
+ 
 ## History
 
 Everything started as a simple project at a local hackathon, held in Isobar IWS, the place where I worked at that time. The theme of that year was "improving people's lives with technology". A few friendly people joined me trying to make come true an old idea of creating this platform to map bike parkings. We felt in love with it and extended the project much further than those 24h.
 
+The team also grew a lot, and we ended up creating an independent collective of people from diverse backgrounds that were interested in promoting the bicycle culture in Brazil with this project.
+
+```grid|1 
+![](./team.png)
+``` 
 
  
-## The problem
+# The problem
 
 I wanted to contribute in some way to foster the local culture of urban biking. Analyzing the many problems people face when commuting with bicycles I identified a big one that I felt could be addressed in an efficient and innovative way using technology: where to park my bike safely?
 
@@ -44,7 +46,7 @@ Bike racks, as they call structures to park bicycles, are made to offer confort 
 Many places already offered good structures to their clients to park their bikes, but people didn’t seem to know about them. Also there are big misconceptions on what it means to safely park a bike, so there was a big opportunity to reach people and educate them.
 
 
-## Research
+# Research
 
 ![](./benchmark.png "We made a very extensive benchmark study of collaborative maps in Brazil and abroad.")
 
@@ -84,9 +86,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./mindmap.png)
 ```
 
-```grid|1
-![](./facebook.png)
-```
+![](./references.png) 
 
 ```grid|2
 ![](./workshop_logo2.jpg)
@@ -94,24 +94,40 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```
 
 ```grid|2
-![](./illustration00.png)
-![](./illustration03.png)
+![](./process1.png)
+![](./process2.png) 
 ```
 
 ```grid|2
-![](./illustration01.png)
+![](./process3.png)
+![](./process4.png) 
+```
+
+```grid|1
+![](./icons.png)
+```
+
+<!-- ```grid|1
+![](./illustration03.png)
+``` -->
+
+```grid|1
 ![](./illustration02.png)
 ```
 
 ```grid|1
-![](./illustration04.jpg)
+![](./illustration.png)
 ```
 
 ```grid|1
 ![](./mapstyle.png)
 ```
 
-## The solution
+```grid|1
+![](./facebook.png)
+``` 
+
+## Final result
 
 ```grid|1
 ![](./desktop.png)
@@ -128,11 +144,6 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```grid|2
 ![](./tooltips2.png)
 ![](./tooltips3.png)
-```
-
-```grid|2 
-![](./mobile.png)
-![](./mobile_details2.png)
 ```
 
 ```grid|3
@@ -174,3 +185,11 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./bicicultura2018_02.jpg)
 ![](./bicicultura2018_01.jpg)
 ```
+
+
+## Links
+
+* [Website](https://www.bikedeboa.com.br)
+* [Facebook](https://www.facebook.com/bikedeboaapp), [Instagram](https://www.instagram.com/bikedeboa/)
+* [Github](https://github.com/bikedeboa/)
+* [Trello Board](https://trello.com/b/2skCAJnL/bike-de-boa-geral)
