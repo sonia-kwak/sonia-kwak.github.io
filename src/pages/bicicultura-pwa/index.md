@@ -8,17 +8,14 @@ roles: "Front-end Development, UX Design"
 cover: './cover.png'
 --- 
 
-* App: http://bicicultura.rio/app
-* GitHub: https://github.com/cmdalbem/app-bicicultura-2018
-
 ## Context
 Bicicultura is the biggest event about cycling culture in Brazil, and is hold every year in a different city. The event aims to bring together discussions and workshops on the diverse theme of urban mobility, touching the cultural, social, political, artistic, economic and environmental. It's organized by UCB, the biggest organization on ciclism in the country, and is helped by local groups. 
 
-In the past year the event was held in Recife, which I had the pleasure to visit per invitation to present my project Bike de Boa. In 2018 the event would be held in Rio de Janeiro, the city where I just moved to, and I had a personal will to contribute not only with another presentation but also with the organization. The group Transporte Ativo and its leader Zé Lobo are highly influential in the cicloativism scene and I was fortunate to know them already from a past partnership.
+In the past year the event was held in Recife, which I had the pleasure to be invitied to present my project [bike de boa](https://cristianodalbem.com/bike-de-boa/). In 2018 it'd be held in Rio de Janeiro, the city where I just moved to, and I really wanted to help with it. The Transporte Ativo organization and its founder Zé Lobo are highly influential in the cicloativism scene and I was fortunate to know them already from a previous partnership.
 
 
-## Problem
-The idea of developing an app for the event appeared chatting with the organization and seemed like a great opportunity for using my skills to help them. The official website was a simple Wordpress page, and I thought the user experience of checking the event schedule was far from great.
+## The problem
+The idea of developing an app for the event appeared from chatting with the organization and seemed like a great opportunity for using my skills to help them. The official website was a simple Wordpress page.
 
 There were budget limitations for improving the website, but the most critical part is that they wouldn't be able to afford even printing the schedule to offer the participants. Their solution was to provide a link to download a PDF of that same website version, which didn't help a lot.
 
@@ -32,23 +29,23 @@ There were budget limitations for improving the website, but the most critical p
 
 ### Planning
 
-With the organization we decided the main objective of the app would be to improve the experience for the event participants on checking the schedule. This task would need to be supported either for users in their desktops, when they are at home planning the visit, but mainly the mobile case, for checking the schedule during the event. An offline experience would be critical as well, since the Museum didn't have wi-fi and many brazilians can't afford decent 3G plans.
+Talking with Zé Lobo we decided the main objective of the app would be to improve the experience for the event participants on checking the schedule. This task would need to be supported either for users in their desktops, when they are at home planning the visit, but mainly in the mobile case, when checking the schedule during the event. An offline experience would be critical as well, since the Museum didn't have wi-fi and many brazilians can't afford decent 3G plans.
 
 In the benchmarking phase I looked for mainly two things:
 
 * apps that are specialized in events
 * how some of my favorite events made their apps
 
-This phase highlighted some common UI patterns these apps use and inspired me with cool ideas for improving the attendees experience. Everything was logged in a simple Trello board. Most of the cool ideas unfortunately weren't implemented in time since I they weren't as important as the critical.
+This phase highlighted some common UI patterns event apps use and gave me cool ideas for improving the attendees' experience. Everything was logged in a simple Trello board.
 
 ```grid|1
 ![](./trelloboard.png)
 ```
 
 ### Technology
-Since I didn't have much time available for the project and I was the only developer and designer I needed to be very mindful of the technologic solutions, priorizing powerful frameworks and tools and reusing pre-made solutions.
+Since I didn't have much time available for the project and I was the only developer and designer I needed to be very mindful of the technologic solutions, priorizing powerful frameworks that could give me ready-to-use solutions.
 
-The natural technology choice for me was to build PWA (Progressive Web App). Not only I'm very used to web technologies, but being a PWA I could offer everything a native app but without the need to develop the same solution multiple times. The main advantages I would be leveraging would be then:
+The natural choice for me was to build PWA (Progressive Web App). Not only I'm very used to web technologies, but being a PWA I could offer everything a native app without the need to develop the same solution multiple times. The main advantages of a PWA I would be leveraging would be:
 
 * Offline support
 * Ability to add the app to the home screen
@@ -111,6 +108,12 @@ The app was highlighted in all the major event communications, both digital and 
     }'>
 </results-banner>
 
+Another cool result from this project was the front-end performance. By using modern technologies and leveraging the best tools I could find the implemented solution got really good grades in the [Google Lighthouse Audit](https://developers.google.com/web/tools/lighthouse/) (to be honest, not that hard for such a simple app 🤓).
+
+```grid|1
+![](./pwa_perf.png)
+```
+
 <!-- ```grid|3
 ![](./website_schedule_desktop.png "Before")
 ![](./desktop_schedule.png "After (desktop)")
@@ -137,3 +140,12 @@ The app was highlighted in all the major event communications, both digital and 
 
 ## Further work
 
+I didn't have the opportunity to implement several cool ideas from the backlog, which will be perhaps left to next year's event.
+
+Another thing I pretend to work someday is to generalize how the event schedule is configured, so people can easily use it for their own events.
+
+## Links
+
+* Web app: http://bicicultura.rio/app
+* GitHub: https://github.com/cmdalbem/app-bicicultura-2018
+* Event page: http://bicicultura.rio/
