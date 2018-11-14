@@ -58,19 +58,19 @@ It also got me more interested in Usability, and what I would find out later to 
 </results-banner>
 
 
-
-```grid|2
+```grid|1
 ![](./infhub1.png)
-![](./infhub2.png)
 ```
 
 ```grid|2
-![](./infhub5.png) 
-![](./infhub7.png)
+![](./infhub5.png)
+![](./infhub3.png)
 ```
  
-<!-- ![](./infhub3.png) -->
-
+```grid|2
+![](./infhub2.png) 
+![](./infhub7.png)
+```
 
 
 ## Links
