@@ -2,7 +2,7 @@
 date: "2016-10"
 date2: "Now"
 title: "bike de boa"
-description: "A collaborative map of places to park your bike safely and make you commute more by bike. With the web app you can search for bike parkings nearby, map new ones, at the same time you learn about urban mobility and what makes good bike parking."
+description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes good bike parking and safe streets."
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt"
@@ -52,7 +52,7 @@ Many places already offered good structures to their clients to park their bikes
 
 We back all our decisions with user interviews and extensive research for content on bike safety and urban guidelines from around the world. I started getting really active on online biking communities to reach all kinds of opinions. With that we designed a system that gives a voice for people to say how safe they feel at places and also educates them with good practices from experts.
 
-![](./portoalegre.jpg "A friend caught one of our user interview sessions during Massa Crítica, a monthly cicloactivist event.")
+![](./portoalegre.jpg "A friend caught one of our user interview sessions during Massa Crítica, a monthly cicloactivist event.") 
 
 The idea of mapping safe places to park wasn't that new at all. We found out there were actually several collaborative maps throughout Brazil with this objective, which proved many others had also though it was a good idea. However as designers and developers we though we could drastically improve this by building a custom platform with our users needs in mind.
 
@@ -80,13 +80,18 @@ Since then dozens of people have passed by this project, contributing as they co
 Using simple project management and communication tools such as Trello, GitHub and Slack proved to be essential to enable so many people to contribute asynchronously. Making this project Open Source was also a natural choice.
 
 
-## Visual language
+## Process
+
+<!-- For this project to reach its potential of conveying messages of positivity, encouragin -->
+
 
 ```grid|1
-![](./mindmap.png)
+![](./mindmap.png "The brand values mindmap")
 ```
 
-![](./references.png) 
+```grid|1
+![](./references.png "Pinterest moodboard of design references") 
+```
 
 ```grid|2
 ![](./workshop_logo2.jpg)
@@ -94,14 +99,22 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```
 
 ```grid|2
-![](./process1.png)
-![](./process2.png) 
+![](./process4.png) 
+![](./process3.png)
 ```
 
 ```grid|2
-![](./process3.png)
-![](./process4.png) 
+![](./process2.png) 
+![](./process1.png)
 ```
+
+```grid|3
+![](./process1.jpg)
+![](./process2.jpg)
+![](./process3.jpg)
+``` 
+
+### Results
 
 ```grid|1
 ![](./icons.png)
@@ -127,24 +140,37 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./facebook.png)
 ``` 
 
-## Final result
+## Final product
+
+### Desktop
 
 ```grid|1
-![](./desktop.png)
+![](./desktop.png) 
 ```
 
 ```grid|1
 ![](./desktop_details.png)
 ```
 
-```grid|1
-![](./tooltips.png)
+```grid|2
+![](./howtoinstall.png) 
+![](./data.png)
 ```
 
-```grid|2
-![](./tooltips2.png)
-![](./tooltips3.png)
+Education is an important part of this project. Concepts are explained in more details with contextualized tooltips.
+
+```grid|1
+![](./tooltips.png) 
 ```
+
+For even more in depth tips on bike parkings and safety we create guides. These are based on international urbanism guides, which we made an effort to simplify and make as accessible as possible.
+
+```grid|2
+![](./guide1.png)
+![](./guide2.png)
+```
+
+### Mobile
 
 ```grid|3
 ![](./playstore_screenshots.png)
@@ -152,23 +178,26 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./playstore_screenshots3.png)
 ```
 
-```grid|4
+```grid|3
 ![](./playstore_screenshots4.png)
 ![](./playstore_screenshots5.png)
 ![](./playstore_screenshots6.png)
-![](./playstore_screenshots7.png)
 ```
 
 ## Results
 
+We're very happy that all the work has had good results. We've managed to burst the bubble and expand to all the country, and the engagement numbers are quite good for a project with zero marketing budget.
+
 <results-banner
     data='{
-        "unique users/month": "400",
-        "total pin views": "43,000+",
+        "cities mapped": "62",
         "mapped bike racks": "2,700+",
-        "cities": "62"
+        "unique users every month": "400",
+        "map pin clicks": "43,000+"
     }'>
 </results-banner>
+
+## Some more pics
 
 ```grid|2
 ![](./hackathon.jpg)
