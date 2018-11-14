@@ -104,6 +104,23 @@ Materializing the values into actual UI was done in both a top-down and bottom-u
 ![](./components.jpg)
 ```
 
+### Iterations
+
+```grid|2
+![](./process3.png) 
+![](./process5.png) 
+```
+
+```grid|2
+![](./process4.png)  
+![](./process1.png) 
+```
+
+```grid|1
+![](./process2.png) 
+```
+
+
 ## Result
  
 Without further ado, here's how our new Home looked like in the end.
@@ -112,18 +129,8 @@ Without further ado, here's how our new Home looked like in the end.
 ![](./breakdown.png)
 ```
 
-### Iterations
-
 ```grid|1
-![](./component_healthcheck.png) 
-```
-
-```grid|1
-![](./component_vtexday.png)
-```
-
-```grid|1
-![](./component_performance.png)
+![](./photo.jpg)
 ```
 
 <!-- ### Before
@@ -144,7 +151,3 @@ Without further ado, here's how our new Home looked like in the end.
 * Usar uma analogia melhor (usar analogia de uma loja de verdade?)
 * Pesquisa: entrevistar usuários da VTEX, o que eles esperam da Home.
 * Desenvolver novos cards -->
-
-```grid|1
-![](./photo.jpg)
-```
