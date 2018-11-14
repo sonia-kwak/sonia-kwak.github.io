@@ -82,7 +82,7 @@ I spent the day constantly improving the game script and also creating the chara
 ![](./dialogues.png)
 ```
 
-```grid|1
+```grid|1 
 ![](./bash.png)
 ```
 
@@ -103,12 +103,12 @@ In the spare time I designed a simple visual identity for the project to use in 
 
 The full gameplay which we presented to the Hackathon judges can be seen in the video below.
 
-(I apologize the poor quality. I promise I'll try to get better footage, featuring many of the improvements we made after the Hackathon was finished.)
+(Sorry for the poor video quality! One day I'll try to get better footage, also featuring many of the improvements we made after the Hackathon finished)
+
+<br>
 
 `youtube: http://www.youtube.com/watch?v=g-JqXQhAk78` 
 
-
----
 
 # Recognition
 
