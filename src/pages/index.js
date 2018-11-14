@@ -39,7 +39,7 @@ class IndexPage extends React.Component {
           <div className="w-10-ns" />
 
           <div className="w-40-ns mt7">
-            <section id="about" className="mb4 mt5-ns mt7 f5 dark-gray">
+            <section id="about" className="mb4 mt6-ns mt7 f5 dark-gray">
               <p>
                 I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work. I'm in a journey to build a skill set that ranges from researching to designing and programming products and systems.
               </p>
@@ -56,7 +56,7 @@ class IndexPage extends React.Component {
         <div>
           <HomeSection title="Work">
             <div className="pretty-bullet pb4-ns pb2">
-              Working as a Product Designer at{' '}
+              I'm working as a Product Designer at{' '}
               <a
                 className="pretty-link"
                 target="_blank"
@@ -65,7 +65,7 @@ class IndexPage extends React.Component {
               >
                 VTEX
                 </a>
-              , building the future in one of the biggest e-commerce ecosystems in
+              , building the future of e-commerce in one of the biggest ecosystems in
               the world.
               </div>
 
@@ -85,14 +85,15 @@ class IndexPage extends React.Component {
 
           {
             isPreview &&
-            <HomeSection title="Projects" fullScreen>
+            <HomeSection title="Projects" fullScreen
+              description="A selection of projects in which I've played a major role and I'm very proud of.">
               <Projects posts={posts}/> 
             </HomeSection> 
           }
              
           <HomeSection
             title="Speaking"
-            // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+            description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
           >
             <Speaking />
           </HomeSection>
