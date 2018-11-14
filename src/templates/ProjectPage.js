@@ -201,14 +201,26 @@ class ProjectPage extends React.Component {
           <div className="w-60-ns">
             {
               post.frontmatter.description &&
-              <div className={`f3 dark-gray lh-copy`}>
+              <div className='f3 dark-gray lh-copy'>
                 {post.frontmatter.description}
               </div>
             }
 
-            <div className="mv3">
-              {
-                post.frontmatter.tags &&
+            {
+              post.frontmatter.team &&
+              <div className='mv3 flex items-baseline dark-gray'>
+                <h2 className="f6 fw7 di ttu mr1">
+                  Team
+                </h2>
+                <div className="f5">
+                  { post.frontmatter.team }
+                </div>
+              </div>
+            }
+
+            {
+              post.frontmatter.tags &&
+              <div className="mv3">
                 <div>
                   {post.frontmatter.tags.map(tag => (
                     <Tag>
@@ -216,8 +228,8 @@ class ProjectPage extends React.Component {
                     </Tag>
                   ))}
                 </div>
-              }
-            </div>
+              </div>
+            }
           </div>
         </div>
         
@@ -275,6 +287,7 @@ export const pageQuery = graphql`
                date
                date2
                tags
+               team
                cover {
                  publicURL
                }
