@@ -6,7 +6,7 @@ description: "An open and collaborative map of places to park your bike, made to
 tags: ['activism','progressive web app','UI/UX','platform']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Denner Evaldt, Hannah Kny, Tadeu Saldanha"
-cover: './cover.png'
+cover: './cover.jpg'
 ---
 
 ## Links
@@ -114,7 +114,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ## The solution
 
 ```grid|1
-![](./cover.png)
+![](./desktop.png)
 ```
 
 ```grid|1
