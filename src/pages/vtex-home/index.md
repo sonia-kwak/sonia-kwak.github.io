@@ -6,8 +6,9 @@ description: "A new home for the an e-commerce platform admin, setting the groun
 tags: ['UI/UX','work']
 roles: "UX Design, research"
 cover: './photo_cropped.jpg' 
+team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
 ---
-
+ 
 
 ## Context
 VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products. 

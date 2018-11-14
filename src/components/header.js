@@ -79,7 +79,7 @@ class Header extends React.Component {
                 </Scrollspy>
                 :
                 <Link to="/" className="link dim near-black fw6 blue">
-                  ← Back
+                  ⬸ Back
                 </Link>
             }
           </div>

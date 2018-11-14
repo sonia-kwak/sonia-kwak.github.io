@@ -63,13 +63,19 @@ It also got me more interested in Usability, and what I would find out later to 
 ```
 
 ```grid|2
-![](./infhub5.png)
-![](./infhub3.png)
+![](./infhub5.png "Projects list")
+![](./infhub3.png "Gallery mode")
 ```
  
 ```grid|2
-![](./infhub2.png) 
-![](./infhub7.png)
+![](./infhub2.png "User profile page") 
+![](./infhub7.png "Project page")
+```
+ 
+```grid|3
+![](./search.png "Search for anything") 
+![](./filter.png "Filter by disciplines")
+![](./tags.png "...or filter by tags")
 ```
 
 

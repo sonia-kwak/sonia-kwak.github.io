@@ -3,7 +3,7 @@ date: "2016-10"
 date2: "Now"
 title: "bike de boa"
 description: "A collaborative map of places to park your bike safely and make you commute more by bike. With the web app you can search for bike parkings nearby, map new ones, at the same time you learn about urban mobility and what makes good bike parking."
-tags: ['activism','progressive web app','UI/UX','platform']
+tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt"
 cover: './cover.jpg'
@@ -106,7 +106,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```grid|1
 ![](./icons.png)
 ```
-
+ 
 <!-- ```grid|1
 ![](./illustration03.png)
 ``` -->
@@ -115,7 +115,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./illustration02.png)
 ```
 
-```grid|1 
+```grid|1
 ![](./illustration.png)
 ```
 
