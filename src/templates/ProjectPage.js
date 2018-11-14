@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-// import { Link,graphql } from 'gatsby'
-import { graphql } from 'gatsby'
+import { Link,graphql } from 'gatsby'
 
 import rehypeReact from "rehype-react"
 
@@ -207,18 +206,6 @@ class ProjectPage extends React.Component {
             }
 
             {
-              post.frontmatter.team &&
-              <div className='mv3 flex items-baseline dark-gray'>
-                <h2 className="f6 fw7 di ttu mr1">
-                  Team
-                </h2>
-                <div className="f5">
-                  { post.frontmatter.team }
-                </div>
-              </div>
-            }
-
-            {
               post.frontmatter.tags &&
               <div className="mv3">
                 <div>
@@ -227,6 +214,18 @@ class ProjectPage extends React.Component {
                       {tag}
                     </Tag>
                   ))}
+                </div>
+              </div>
+            }
+
+            {
+              post.frontmatter.team &&
+              <div className='mv3 flex items-baseline dark-gray'>
+                <h2 className="f6 fw7 di ttu mr1">
+                  Team
+                </h2>
+                <div className="f5">
+                  { post.frontmatter.team }
                 </div>
               </div>
             }
@@ -266,6 +265,12 @@ class ProjectPage extends React.Component {
                 <ProjectCard node={next} />
               }
             </div>
+          </div>
+
+          <div className="w-100 tc mt6">
+            <Link to="/#projects" className="f3 link dim near-black fw6 blue">
+              ⬸ See all projects
+            </Link>
           </div>
         </div>
       </Layout>
