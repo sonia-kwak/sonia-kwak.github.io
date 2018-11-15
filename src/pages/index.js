@@ -15,10 +15,9 @@ class IndexPage extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     
-    let url, isPreview;
+    let url;
     if (typeof window !== `undefined`) {
       url = new URL(window.location.href);
-      isPreview = url.searchParams.get("preview");
     }
 
     return (
@@ -83,13 +82,10 @@ class IndexPage extends React.Component {
             </div>
           </HomeSection>
 
-          {
-            isPreview &&
-            <HomeSection title="Projects" fullScreen
-              description="A selection of projects in which I've played a major role and I'm very proud of.">
-              <Projects posts={posts}/> 
-            </HomeSection> 
-          }
+          <HomeSection title="Projects" fullScreen
+            description="A selection of projects in which I've played a major role and I'm very proud of.">
+            <Projects posts={posts}/> 
+          </HomeSection> 
              
           <HomeSection
             title="Speaking"
@@ -135,6 +131,7 @@ export const pageQuery = graphql`
                    title
                    description
                    tags
+                   hide
                    cover {
                      publicURL
                    }

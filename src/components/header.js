@@ -12,28 +12,22 @@ class Header extends React.Component {
   }
 
   render() {
-    let isHome=true, url, isPreview;
+    let isHome=true, url;
 
     if (typeof window !== `undefined`) {
       isHome = window.location.pathname === '/';
       
       url = new URL(window.location.href);
-      isPreview = url.searchParams.get("preview");
     }
  
     const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
-    let sections = isPreview ? [
+    let sections = [
       'About',
       'Work',
       'Projects',
       'Speaking',
       'Elsewhere'
-    ] : [
-      'About',
-      'Work',
-      'Speaking',
-      'Elsewhere'
-    ]
+    ];
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (

@@ -6,6 +6,7 @@ description: ""
 tags: ['UI/UX','work','design system']
 roles: "Design, planning, development"
 cover: './cover.png' 
+hide: true
 ---
  
 

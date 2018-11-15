@@ -6,6 +6,7 @@ tags: ['data visualization','music','academic']
 roles: "Development, Design"
 team: "Cristiano Dalbem, Shivani Shah"
 cover: "./cover.png"
+hide: true
 ---
 
 
