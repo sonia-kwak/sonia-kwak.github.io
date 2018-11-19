@@ -252,8 +252,13 @@ class ProjectPage extends React.Component {
           <div className="flex flex-row justify-between mt4">
             <div className="w-40-ns">
               {
-                previous &&
-                <ProjectCard node={previous} />
+                previous && 
+                <div>
+                  <div className="f7 tl mb4 ttu fw6 gray">
+                    Previous
+                  </div>
+                  <ProjectCard node={previous} />
+                </div>
               }
             </div> 
 
@@ -262,14 +267,19 @@ class ProjectPage extends React.Component {
             <div className="w-40-ns">
               {
                 next &&
-                <ProjectCard node={next} />
+                <div>
+                  <div className="f7 tr mb4 ttu fw6 gray">
+                    Next
+                  </div>
+                  <ProjectCard node={next} />
+                </div>
               }
             </div>
           </div>
 
           <div className="w-100 tc mt6">
             <Link to="/#projects" className="f3 link dim near-black fw6 blue">
-              ⬸ See all projects
+              ⬸ View all projects
             </Link>
           </div>
         </div>
