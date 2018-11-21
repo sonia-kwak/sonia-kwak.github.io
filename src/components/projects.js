@@ -4,7 +4,8 @@ import ProjectCard from '../components/ProjectCard'
 
 class Projects extends React.Component {
     render() {
-        const posts = this.props.posts.filter(i => !i.node.frontmatter.hide);
+        // const posts = this.props.posts.filter(i => !i.node.frontmatter.hide);
+        const posts = this.props.posts;
 
         return (
             <div className="flex flex-wrap nl3-ns nr3-ns">

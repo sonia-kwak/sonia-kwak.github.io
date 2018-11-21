@@ -6,7 +6,7 @@ description: "A collaborative map of places to park your bike safely, encouragin
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt"
-cover: './cover.jpg'
+cover: './cover.png'
 ---
 
 # Overview
@@ -95,18 +95,18 @@ Using simple project management and communication tools such as Trello, GitHub a
 
 ```grid|2
 ![](./workshop_logo2.jpg)
-![](./workshop_logo.jpg)
+![](./workshop_logo.jpg) 
 ```
-
+<!--  
 ```grid|2
 ![](./process4.png) 
-![](./process3.png)
+![](./process3.png) 
 ```
 
 ```grid|2
 ![](./process2.png) 
 ![](./process1.png)
-```
+``` -->
 
 ```grid|3
 ![](./process1.jpg)
@@ -117,7 +117,12 @@ Using simple project management and communication tools such as Trello, GitHub a
 ### Results
 
 ```grid|1
-![](./icons.png)
+![](./attributes_chart.jpg)
+```
+
+```grid|2
+![](./attributes1.png)
+![](./attributes2.png) 
 ```
  
 <!-- ```grid|1
@@ -144,13 +149,22 @@ Using simple project management and communication tools such as Trello, GitHub a
 
 ### Desktop
 
-```grid|1
+```grid|2
 ![](./desktop.png) 
-```
-
-```grid|1
 ![](./desktop_details.png)
 ```
+
+<video-container> 
+    <video autoPlay controls loop width="100%" type="video/mp4">
+        <source src="./desktop1.mp4" type="video/mp4">
+    </video> 
+</video-container>
+
+<video-container> 
+    <video autoPlay controls loop width="100%" type="video/mp4">
+        <source src="./desktop2.mp4" type="video/mp4">
+    </video> 
+</video-container>
 
 ```grid|2
 ![](./howtoinstall.png) 

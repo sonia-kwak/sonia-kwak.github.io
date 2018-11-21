@@ -52,17 +52,14 @@ The natural choice for me was to build PWA (Progressive Web App). Not only I'm v
 * Full screen experience (no address bar)
 * Cross-platform and cross-device with a single source code.
 
-```grid|4
-![](./appicon.png)
-![](./mobile_install1.png)
-![](./mobile_install2.png)
-![](./mobile_install4.png)
-``` 
+```grid|1
+![](./pwa_install.png) 
+```  
 
 Today the easiest way to develop a simple PWA is using React. It has a vibrant community that develops open-source tools that I could reuse, like the `create-react-act` boilerplate for automating everything about the project scaffolding and build configs.
 
 For the UI I chose to use [material-ui](https://material-ui.com/), a popular React UI lib that implements the Material Design System. An unique visual identity was not much of a priority, and users would be using this app for the first time and only for a few days, so it was interesting to employ the Material well-known patterns and visual style to reduce cognitive load of understanding the app. Still, some very basic customization was done mainly with the Typography and Color Pallete to mirror the event visual identity.
-
+ 
 ## Solution
 
 ### Mobile
