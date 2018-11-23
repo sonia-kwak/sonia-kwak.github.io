@@ -7,8 +7,9 @@ import rehypeReact from "rehype-react"
 import Tag from '../components/Tag'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
+import ArticleNav from '../components/ArticleNav'
 
-import { formatDate } from '../components/utils.js'
+import { formatDate, slugify } from '../components/utils.js'
 
 // import Scrollspy from 'react-scrollspy'
 
@@ -67,7 +68,7 @@ class ProjectPage extends React.Component {
     const readingTime = post.fields.readingTime; 
 
     const defaultMargins = 'mh0 mh0-m mh6-ns center';
-    const imageMargins = 'mv6 mh2';
+    const imageMargins = 'mv6 mh0';
     const base = 'f5 dark-gray lh-copy';
 
     let dateStart = formatDate(post.frontmatter.date, 'YYYY');
@@ -76,16 +77,25 @@ class ProjectPage extends React.Component {
       dateEnd = null;
     }
 
+    console.log(post.htmlAst);
+    const h1s = post.htmlAst.children
+      .filter(c => c.tagName === 'h1')
+      .map(h => h.children[0].value);
+
+    const h2s = post.htmlAst.children
+      .filter(c => c.tagName === 'h2')
+      .map(h => h.children[0].value);
+
     const renderAst = new rehypeReact({
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 dark-gray mt4 mb3 ${defaultMargins}`}>
+          <h1 id={slugify(props.children[0])} className={`f1 tracked-tight fw1 dark-gray mt4 mb3 ${defaultMargins}`}>
             {props.children}
           </h1>
         ),
         h2: props => (
-          <h2 className={`f2 dark-gray fw8 mt5 mb4 ${defaultMargins}`}>
+          <h2 id={slugify(props.children[0])} className={`f2 dark-gray fw8 mt5 mb4 ${defaultMargins}`}>
             {props.children}
           </h2>
         ),
@@ -220,7 +230,7 @@ class ProjectPage extends React.Component {
 
             {
               post.frontmatter.team &&
-              <div className='mv3 flex items-baseline dark-gray'>
+              <div className='mv3 items-baseline dark-gray'>
                 <h2 className="f6 fw7 di ttu mr1">
                   Team
                 </h2>
@@ -233,7 +243,9 @@ class ProjectPage extends React.Component {
         </div>
         
         {/* Content */}
-        <div className="flex flex-column">
+        <div className="flex flex-column relative">
+          <ArticleNav sections={h1s} />
+          
           <div className={`${base} ${defaultMargins} gray`}>
             {readingTime.text}.
           </div>
@@ -242,7 +254,7 @@ class ProjectPage extends React.Component {
             { renderAst(post.htmlAst) }
           </div>
         </div> 
-        
+
         {/* Footer */}
         <div className="flex flex-column bg-near-white mt6 nl6 nr6 ph6 pb6">
           <div className="w-100 tc f2 mv6">
