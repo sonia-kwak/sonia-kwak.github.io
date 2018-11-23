@@ -70,7 +70,7 @@ module.exports = {
             options: {
               maxWidth: 2048,
               quality: 90,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
               showCaptions: true,
               backgroundColor: '#fafafa',
             },
