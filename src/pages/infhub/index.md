@@ -11,10 +11,10 @@ cover: './cover.png'
 
 
 ## Problem
-
+ 
 How many awesome people there are in our University that we never get to know their work, just because we didn't take the same classes at the same time?
 
-Everyone back in my uni seemed to be so creative, and developed solutions with such high quality. Once in a while some final projects were such masterpieces that their existence would shared orally by students for years - but these were exceptions.
+Everyone back in my uni seemed to be so creative, and developed solutions with such high quality. Once in a while some final projects were such masterpieces that their existence would shared orally by students for years - but these were exceptions.  
 
 "Have you seen that guy who made a kart racing game with our teachers' faces? And that one who built the fastest data structure any student has ever built?".
 
