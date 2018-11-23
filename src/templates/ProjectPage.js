@@ -66,8 +66,8 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    const defaultMargins = 'mh0 mh0-m mh6-ns center';
-    const imageMargins = 'mv6 mh2';
+    const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
+    const imageMargins = 'mv6 mh0';
     const base = 'f5 dark-gray lh-copy';
 
     let dateStart = formatDate(post.frontmatter.date, 'YYYY');
@@ -279,7 +279,7 @@ class ProjectPage extends React.Component {
 
           <div className="w-100 tc mt6">
             <Link to="/#projects" className="f3 link dim near-black fw6 blue">
-              ⬸ View all projects
+              View all projects
             </Link>
           </div>
         </div>

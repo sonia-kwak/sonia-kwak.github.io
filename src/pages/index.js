@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
 
         <div>
           <HomeSection title="Work">
-            <div className="pretty-bullet pb4-ns pb2">
+            <div className="pretty-bullet pb4-ns pb2 mt2">
               I'm working as a Product Designer at{' '}
               <a
                 className="pretty-link"

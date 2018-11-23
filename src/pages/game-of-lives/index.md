@@ -19,8 +19,6 @@ The concept of the game is to tell a story in 3 chapters. Three times the same g
 It works with a minimalistic playability with very simple mechanics. The story is told by a narrator and is permeated in dialogues and interactions with other characters. The ambiance is set from how characters interact with you to subtle details in the soundscape, slight differences in the scenarios and changes to the lightning and color palettes.
 
 
----
-
 # Process
 
 ## Kick off
@@ -96,8 +94,6 @@ In the spare time I designed a simple visual identity for the project to use in 
 ![](./day2-meeting.jpg)
 ![](./day3-team.jpg)
 ```
-
----
 
 # Result
 
