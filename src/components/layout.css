@@ -5,7 +5,7 @@ html {
   --red: #ED4934;
   --orange: #F5882D;
   --blue: #1B9393;
-  --bg-color: #fafafa;
+  --bg-color: #ffffff;
   /* --bg-color: white; */
 
   --gray: #777;
@@ -103,7 +103,7 @@ body {
   height: 10rem; 
 }
 
-.bg-fafafa {
+.bg-ffffff {
   background-color: var(--bg-color);
 }
 
