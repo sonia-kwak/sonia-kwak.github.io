@@ -8,16 +8,22 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
       />
 
-      <Talk
+      {/* <Talk
         title="Rage, rage against the dying of the Design System - Morte e vida de um sistema para empoderar um ecossistema."
         context="Interaction Latin America, 2018 [proposal]"
         link="https://drive.google.com/open?id=10VxokY3c1onxm67WUD_flPh5tlxyydBy"
-      />
+      /> */}
 
       <Talk
         title="É possível estacionar a bike de boa?"
         context="Bicicultura, 2018"
         link="https://docs.google.com/presentation/d/1JJvtK1kPmfCg-g06vtmPoQNBgT9BdHZQCGxbXaqZAm8/edit#slide=id.p"
+      />
+
+      <Talk
+        title="Podcasts"
+        context="Isobar Lightning Talks, 2017"
+        link="https://docs.google.com/presentation/d/1hzKk7USBEVX9m8HlrZD5rRb8sp-VXWFYuyebHe5kzJ8/edit?usp=sharing"
       />
 
       <Talk
@@ -36,12 +42,6 @@ const Speaking = () => (
         title="React no Mundo Real - Relatos do maior site de aluguel de carros do mundo"
         context="React Meetup, 2014"
         link="https://docs.google.com/presentation/d/1RnbQ5beTuvtUFzk6KX3kJXrF25i2WN-ZMcXbhlelktw/edit#slide=id.p"
-      />
-
-      <Talk
-        title="Podcasts"
-        context="Isobar Lightning Talks, 2017"
-        link="https://docs.google.com/presentation/d/1hzKk7USBEVX9m8HlrZD5rRb8sp-VXWFYuyebHe5kzJ8/edit?usp=sharing"
       />
 
       {/* <Talk
