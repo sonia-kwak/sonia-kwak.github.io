@@ -11,9 +11,9 @@ cover: './cover.png'
 
 # Overview
 
-```grid|1
+<!-- ```grid|1
 ![](./illustration_simpler.png)
-```
+``` -->
 
 We believe that the bicycle is the future of urban mobility, and that having better bike parkings is a great way of promoting the bike culture in our cities. This project intends to push forward the discussion of what are good bike parkings, at the same time we collect data about the presence and evolution of this kind of structure in the cities of Brazil.
 
@@ -117,7 +117,7 @@ Using simple project management and communication tools such as Trello, GitHub a
 ### Results
 
 ```grid|1
-![](./attributes_chart.jpg)
+![](./attributes_chart.png)
 ```
 
 ```grid|2
@@ -133,9 +133,9 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./illustration02.png)
 ```
 
-```grid|1
+<!-- ```grid|1
 ![](./illustration.png)
-```
+``` -->
 
 ```grid|1
 ![](./mapstyle.png)
@@ -174,15 +174,16 @@ Using simple project management and communication tools such as Trello, GitHub a
 Education is an important part of this project. Concepts are explained in more details with contextualized tooltips.
 
 ```grid|1
-![](./tooltips.png) 
+![](./tooltips.png)  
 ```
-
+ 
 For even more in depth tips on bike parkings and safety we create guides. These are based on international urbanism guides, which we made an effort to simplify and make as accessible as possible.
 
+<!-- 
 ```grid|2
 ![](./guide1.png)
 ![](./guide2.png)
-```
+``` -->
 
 ### Mobile
 
@@ -210,6 +211,12 @@ We're very happy that all the work has had good results. We've managed to burst 
         "map pin clicks": "43,000+"
     }'>
 </results-banner>
+
+We also were featured in many places:
+ 
+```grid|1
+![](./press.png)
+```
 
 ## Some more pics
 
