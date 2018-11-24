@@ -57,7 +57,7 @@ class Header extends React.Component {
                   items={sectionsSlugs}
                   componentTag="div"
                   currentClassName="tab--selected"
-                  offset={200}
+                  offset={-200}
                 >
                   {
                     sections.map( section => (
