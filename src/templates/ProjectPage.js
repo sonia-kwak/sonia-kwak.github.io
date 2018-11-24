@@ -10,7 +10,7 @@ import ProjectCard from '../components/ProjectCard'
 
 import { formatDate } from '../components/utils.js'
 
-// import Scrollspy from 'react-scrollspy'
+import { rightArrow, leftArrow } from '../components/icons.js'
 
 class ResultsBanner extends React.Component {
   static defaultProps = {
@@ -68,10 +68,10 @@ class ProjectPage extends React.Component {
 
     const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
     const imageMargins = 'mv6 mh0';
-    const base = 'f5 dark-gray lh-copy';
+    const base = 'f5 dark-gray lh-copy center';
 
-    let dateStart = formatDate(post.frontmatter.date, 'YYYY');
-    let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
+    let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');
+    let dateEnd = formatDate(post.frontmatter.date2, 'MMMM YYYY');
     if (dateEnd && dateEnd === dateStart) {
       dateEnd = null;
     }
@@ -146,18 +146,6 @@ class ProjectPage extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
-        {/* <div className="fixed top-0">
-          <Scrollspy 
-            items={['section-1', 'section-2', 'section-3']}
-            // componentTag='div'
-            currentClassName="fw6"
-          >
-            <li><a href="#section-1">section 1</a></li>
-            <li><a href="#section-2">section 2</a></li>
-            <li><a href="#section-3">section 3</a></li>
-          </Scrollspy>
-        </div> */}
-
         {/* Cover image */}
         <div className="flex flex-row-ns flex-column mb4">
           <div className="w-100">
@@ -183,15 +171,6 @@ class ProjectPage extends React.Component {
             <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
-          
-            <div className="f5 gray">
-              <div>
-                {dateStart}
-                { dateEnd && 
-                  ` – ${dateEnd}`
-                }
-              </div>
-            </div>
           </div>
 
           <div className="w-10-ns">
@@ -200,14 +179,22 @@ class ProjectPage extends React.Component {
           <div className="w-60-ns">
             {
               post.frontmatter.description &&
-              <div className='f3 dark-gray lh-copy'>
-                {post.frontmatter.description}
+              <div className="mb4 dark-gray">
+                <h2 className="f7 fw6 ttu mv1">
+                  Description
+                </h2>
+                <div className='f3 dark-gray lh-copy'>
+                  {post.frontmatter.description}
+                </div>
               </div>
             }
 
             {
               post.frontmatter.tags &&
-              <div className="mv3">
+              <div className="mv4 dark-gray">
+                <h2 className="f7 fw6 ttu mv1">
+                    Tags
+                </h2>
                 <div>
                   {post.frontmatter.tags.map(tag => (
                     <Tag>
@@ -219,14 +206,28 @@ class ProjectPage extends React.Component {
             }
 
             {
-              post.frontmatter.team &&
-              <div className='mv3 flex items-baseline dark-gray'>
-                <h2 className="f6 fw7 di ttu mr1">
-                  Team
+              <div className="mv4 dark-gray">
+                <h2 className="f7 fw6 ttu mv1">
+                  Date
                 </h2>
                 <div className="f5">
-                  { post.frontmatter.team }
+                  {dateStart}
+                  {dateEnd &&
+                    ` – ${dateEnd}`
+                  }
                 </div>
+              </div>
+            }
+
+            {
+              post.frontmatter.team &&
+              <div className='mv4 dark-gray'>
+                <h2 className="f7 fw6 ttu mv1">
+                  Team
+                </h2>
+                <span className="f5">
+                  { post.frontmatter.team }
+                </span>
               </div>
             }
           </div>
@@ -249,27 +250,27 @@ class ProjectPage extends React.Component {
             <h2>Other projects</h2>
           </div>
 
-          <div className="flex flex-row justify-between mt4">
-            <div className="w-40-ns">
+          <div className="flex flex-row-ns flex-column justify-between mt4">
+            <div className="w-40-ns w-100">
               {
                 previous && 
                 <div>
-                  <div className="f7 tl mb4 ttu fw6 gray">
-                    Previous
+                  <div className="f7 tl mb4 ttu fw6 gray db-ns dn">
+                    {leftArrow} Previous
                   </div>
                   <ProjectCard node={previous} />
                 </div>
               }
             </div> 
 
-            <div className="w-10-ns"></div>
+            <div className="w-10-ns mv0-ns mv3"></div>
 
-            <div className="w-40-ns">
+            <div className="w-40-ns w-100">
               {
                 next &&
                 <div>
-                  <div className="f7 tr mb4 ttu fw6 gray">
-                    Next
+                  <div className="f7 tr mb4 ttu fw6 gray db-ns dn">
+                    Next {rightArrow}
                   </div>
                   <ProjectCard node={next} />
                 </div>
@@ -278,7 +279,7 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-100 tc mt6">
-            <Link to="/#projects" className="f3 link dim near-black fw6 blue">
+            <Link to="/#projects" className="ba br1 dim f4 fw6 link orange pa3">
               View all projects
             </Link>
           </div>
