@@ -111,6 +111,21 @@ Another cool result from this project was the front-end performance. By using mo
 ![](./pwa_perf.png)
 ```
 
+## Further work
+
+I didn't have the opportunity to implement several cool ideas from the backlog, which will be perhaps left to next year's event.
+
+Another thing I pretend to work someday is to generalize how the event schedule is configured, so people can easily use it for their own events.
+
+## Links
+
+* Web app: http://bicicultura.rio/app
+* GitHub: https://github.com/cmdalbem/app-bicicultura-2018
+* Event page: http://bicicultura.rio/
+  
+
+## More pics
+
 <!-- ```grid|3
 ![](./website_schedule_desktop.png "Before")
 ![](./desktop_schedule.png "After (desktop)")
@@ -133,16 +148,3 @@ Another cool result from this project was the front-end performance. By using mo
 ![](./event5.jpg)
 ![](./event6.jpg) 
 ```
-
-
-## Further work
-
-I didn't have the opportunity to implement several cool ideas from the backlog, which will be perhaps left to next year's event.
-
-Another thing I pretend to work someday is to generalize how the event schedule is configured, so people can easily use it for their own events.
-
-## Links
-
-* Web app: http://bicicultura.rio/app
-* GitHub: https://github.com/cmdalbem/app-bicicultura-2018
-* Event page: http://bicicultura.rio/

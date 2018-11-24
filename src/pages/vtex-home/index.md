@@ -131,7 +131,7 @@ Here's how everything worked together. This is the actual state of the page deve
 ```
 
 ```grid|1
-![](./photo.jpg)
+![](./photo.jpg "A member of VTEX Support team with the Admin open.")
 ```
 
 <!-- ### Before

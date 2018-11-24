@@ -4,13 +4,10 @@ date2: "Now"
 title: "Photography"
 tags: ['art', 'hobby']
 cover: "./cover.png"
-description: "" 
+description: "Photography has been for many years the main way in which I try to express my views. I try to see the world from different perspectives, looking for beauty in the most ordinary places."
 --- 
 
 Since 2007 I’ve been managing a digital portfolio of digital and analogic photography that has been viewed more than 250,000 times on Flickr.
-
-Photography has been for many years the main way in which I try to express my views, always trying to see the world from different perspectives and looking for beauty in the most ordinary places. 
-
 I love all aspects of the photographic process. From connecting with moments and capturing it with sensibility and precision. To spending hours perfecting the post-production and curating a collection. To live in a constant search for the perfect match between technical quality and meaningful content.
 
 <results-banner
