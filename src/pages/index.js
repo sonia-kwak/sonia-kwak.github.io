@@ -38,15 +38,15 @@ class IndexPage extends React.Component {
           <div className="w-10-ns" />
 
           <div className="w-40-ns mt7">
-            <section id="about" className="mb4 mt6-ns mt7 f5 dark-gray">
+            <section id="about" className="mb4 mt6-ns mt7 f4 lh-copy dark-gray">
               <p>
-                I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work. I'm in a journey to build a skill set that ranges from researching to designing and programming products and systems.
+                I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work and express ourselves. I'm in a journey to constantly improve a skill set that ranges from researching to designing and programming products and systems.
               </p>
               <p>
-                I'm very curious and always learning, and it helps me finding the right problems and the right solutions, which demands a set of skills that goes beyond just digital tools.
+                I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve as well the right solutions for them.
               </p>
               <p>
-                My background in Computer Science has biased towards designing solutions that are scalable, maintainable that stand the test of time. I extend this mindset to the businesses in the world: I work with purpose, and I only create stuff that contribute to a more sustainable and equitable world.
+                My background in Computer Science has biased towards solutions that are scalable, maintainable that stand the test of time. This mindset also applies to businesses and their role in the world. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
               </p>
             </section>
           </div>
