@@ -97,6 +97,18 @@ In the spare time I designed a simple visual identity for the project to use in 
 
 # Result
 
+```grid|3
+![](./screenshot1.png) 
+![](./screenshot2.png) 
+![](./screenshot3.png) 
+```
+
+```grid|3
+![](./screenshot4.png) 
+![](./screenshot5.png) 
+![](./screenshot6.png) 
+```
+
 The full gameplay which we presented to the Hackathon judges can be seen in the video below.
 
 (Sorry for the poor video quality! One day I'll try to get better footage, also featuring many of the improvements we made after the Hackathon finished)
@@ -104,15 +116,15 @@ The full gameplay which we presented to the Hackathon judges can be seen in the 
 <br>
 
 `youtube: http://www.youtube.com/watch?v=g-JqXQhAk78` 
-
+ 
 
 # Recognition
 
 This project was developed during the first Isobar Virtual Reality International Hackathon, a 3-day contest which we were very happy to get the first place. This recognition was certainly the result of a great team work, where everyone contributed with its own skills and previous experiences.
 
-> "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art. [(source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)"
+> "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art." [(Source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)
  
 
 <!-- ```grid|1
-![](./isobar_hackathon2.png)
+![](./isobar_hackathon2.png) 
 ``` -->
