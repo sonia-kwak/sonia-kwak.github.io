@@ -100,7 +100,7 @@ class ProjectPage extends React.Component {
           }</p>
         ),
         blockquote: props => (
-          <div className={`mt0 ml4 mv4 f4 lh-title `} style={{textIndent: '-.5em'}}>
+          <div className={`mt0 ml5 mv4 f3`} style={{textIndent: '-.5em'}}>
             {props.children}
           </div>
         ),
