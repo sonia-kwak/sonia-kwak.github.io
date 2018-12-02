@@ -5,7 +5,7 @@ title: "bike de boa"
 description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes good bike parking and safe streets."
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
-team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt"
+team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, etc."
 cover: './cover.png'
 ---
 
@@ -97,21 +97,10 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./workshop_logo2.jpg)
 ![](./workshop_logo.jpg) 
 ```
-<!--  
-```grid|2
-![](./process4.png) 
-![](./process3.png) 
-```
 
 ```grid|2
-![](./process2.png) 
-![](./process1.png)
-``` -->
-
-```grid|3
 ![](./process1.jpg)
 ![](./process2.jpg)
-![](./process3.jpg)
 ``` 
 
 ### Results
@@ -124,21 +113,13 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./attributes1.png)
 ![](./attributes2.png) 
 ```
- 
-<!-- ```grid|1
-![](./illustration03.png)
-``` -->
-
-```grid|1
-![](./illustration02.png)
-```
 
 <!-- ```grid|1
 ![](./illustration.png)
 ``` -->
 
 ```grid|1
-![](./mapstyle.png)
+![](./mapstyle.png "Our customized version of Google Maps.")
 ```
 
 ```grid|1
@@ -187,8 +168,8 @@ For even more in depth tips on bike parkings and safety we create guides. These 
 
 ### Mobile
 
-```grid|3
-![](./playstore_screenshots.png)
+```grid|3 
+![](./playstore_screenshots1.png)
 ![](./playstore_screenshots2.png)
 ![](./playstore_screenshots3.png)
 ```
@@ -198,7 +179,7 @@ For even more in depth tips on bike parkings and safety we create guides. These 
 ![](./playstore_screenshots5.png)
 ![](./playstore_screenshots6.png)
 ```
-
+ 
 ## Results
 
 We're very happy that all the work has had good results. We've managed to burst the bubble and expand to all the country, and the engagement numbers are quite good for a project with zero marketing budget.
@@ -220,18 +201,21 @@ We also were featured in many places:
 
 ## Some more pics
 
+```grid|1
+![](./ila.jpg "Interaction Latin America 2018")
+```
+
 ```grid|2
-![](./hackathon.jpg)
-![](./worksession.jpg)
+![](./hackathon.jpg "The Isobar IWS hackathon, where everything started.")
+![](./worksession.jpg "One our working meetings.")
 ```
 
 ```grid|2
 ![](./bicicultura2018_03.jpg)
-![](./massacritica.jpg)
+![](./massacritica.jpg "")
 ```
 
-```grid|3
-![](./bicicultura2017_01.jpg)
+```grid|2
 ![](./bicicultura2018_02.jpg)
 ![](./bicicultura2018_01.jpg)
 ```
