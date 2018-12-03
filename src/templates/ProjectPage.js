@@ -80,12 +80,12 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 dark-gray mt4 mb3 ${defaultMargins}`}>
+          <h1 className={`f1 tracked-tight fw1 dark-gray mt5 mb4 ${defaultMargins}`}>
             {props.children}
           </h1>
         ),
         h2: props => (
-          <h2 className={`f2 dark-gray fw8 mt5 mb4 ${defaultMargins}`}>
+          <h2 className={`f2 dark-gray fw8 mt4 mb3 ${defaultMargins}`}>
             {props.children}
           </h2>
         ),
@@ -180,7 +180,7 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.description &&
               <div className="mb4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw7 ttu mv1">
                   Description
                 </h2>
                 <div className='f3 dark-gray lh-copy'>
@@ -192,12 +192,12 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.tags &&
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw7 ttu mv1">
                     Tags
                 </h2>
                 <div>
                   {post.frontmatter.tags.map(tag => (
-                    <Tag>
+                    <Tag size="big">
                       {tag}
                     </Tag>
                   ))}
@@ -207,7 +207,7 @@ class ProjectPage extends React.Component {
 
             {
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw7 ttu mv1">
                   Date
                 </h2>
                 <div className="f5">
@@ -222,7 +222,7 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.team &&
               <div className='mv4 dark-gray'>
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw7 ttu mv1">
                   Team
                 </h2>
                 <span className="f5">

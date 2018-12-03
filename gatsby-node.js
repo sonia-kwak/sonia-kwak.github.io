@@ -3,6 +3,17 @@ const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+function sortPosts(posts) {
+  let priorizedPosts = posts.filter(p => p.node.frontmatter.forceOrder);
+  priorizedPosts = priorizedPosts.sort((a, b) => {
+    return a.node.frontmatter.forceOrder - b.node.frontmatter.forceOrder;
+  });
+
+  const nonPriorizedPosts = posts.filter(p => !p.node.frontmatter.forceOrder);
+
+  return [...priorizedPosts, ...nonPriorizedPosts];
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -23,6 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
                     date
                     date2
                     title
+                    forceOrder
                     description
                     tags
                     cover {
@@ -41,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create project pages
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = sortPosts(result.data.allMarkdownRemark.edges);
 
         _.each(posts, (post, index) => {
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;

@@ -7,6 +7,7 @@ tags: ['UI/UX','work']
 roles: "UX Design, research"
 cover: './photo_cropped.jpg' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
+forceOrder: 2
 ---
  
 

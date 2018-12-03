@@ -7,6 +7,7 @@ tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, etc."
 cover: './cover.png'
+forceOrder: 1
 ---
 
 # Overview

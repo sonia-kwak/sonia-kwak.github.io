@@ -10,16 +10,13 @@ import Projects from '../components/Projects'
 
 import selfie from '../images/selfie.png' 
 
+import { sortPosts } from '../components/utils.js'
+
 
 class IndexPage extends React.Component {
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges;
+    const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
     
-    let url;
-    if (typeof window !== `undefined`) {
-      url = new URL(window.location.href);
-    }
-
     return (
       <Layout>
         <div className="flex flex-row-ns flex-column ">
@@ -54,7 +51,7 @@ class IndexPage extends React.Component {
 
         <div>
           <HomeSection title="Work">
-            <div className="pretty-bullet pb4-ns pb2 mt2">
+            <div className="f4 pb4-ns pb2 mt2">
               I'm working as a Product Designer at{' '}
               <a
                 className="pretty-link"
@@ -68,7 +65,7 @@ class IndexPage extends React.Component {
               the world.
               </div>
 
-            <div className="pretty-bullet pb4-ns pb2">
+            <div className="f4 pb4-ns pb2">
               In my free time I'm a cicloactivist and I've built{' '}
               <a
                 className="pretty-link"
@@ -134,6 +131,7 @@ export const pageQuery = graphql`
                    cover {
                      publicURL
                    }
+                   forceOrder
                  }
                }
              }
