@@ -24,10 +24,10 @@ class IndexPage extends React.Component {
             <img
               src={selfie}
               alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
-              className="parallax__layer--back absolute left-0 top-3 w-80 w-100-ns relative-ns"
+              className="parallax__layer--back absolute left-0 top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
             />
 
-            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3 mt7-ns ml7-ns ml4 mt6 mw6-ns">
+            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns mt7-ns ml7-ns ml4 mt6 mw6-ns tl-ns tr">
               Designer of products and systems.
             </h1>
           </div> 
@@ -52,30 +52,33 @@ class IndexPage extends React.Component {
         <div>
           <HomeSection title="Work">
             <div className="f4 pb4-ns pb2 mt2">
-              I'm working as a Product Designer at{' '}
-              <a
-                className="pretty-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.vtex.com/"
-              >
-                VTEX
-                </a>
-              , building the future of e-commerce in one of the biggest ecosystems in
-              the world.
-              </div>
-
-            <div className="f4 pb4-ns pb2">
-              In my free time I'm a cicloactivist and I've built{' '}
-              <a
-                className="pretty-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.bikedeboa.com.br/"
-              >
-                bike de boa
-                </a>
-              , a web app to promote the cycling culture in Brazil.
+                I'm working as a Product Designer at{' '}
+                <a
+                  className="pretty-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.vtex.com/"
+                >
+                  VTEX
+                  </a>
+                , building the future of e-commerce in one of the biggest ecosystems in
+                the world.
+              <p>
+                I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their business.
+              </p>
+              
+              <p>
+                In my free time as a cicloactivist and I've built{' '}
+                <a
+                  className="pretty-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.bikedeboa.com.br/"
+                >
+                  bike de boa
+                  </a>
+                , a web app to help urban cyclists in Brazil.
+              </p>
             </div>
           </HomeSection>
 
