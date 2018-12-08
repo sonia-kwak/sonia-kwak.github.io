@@ -101,12 +101,5 @@ module.exports = {
         userShelf: "currently-reading"
       }
     }
-  //   {
-	//       resolve: "@jamesdanylik/gatsby-source-goodreads",
-	//       options: {
-  //         key: 'toGLdnsikKAbTOmaFiPrw',
-  //         id: '14179336'
-	//       },
-	// },
   ],
 }
