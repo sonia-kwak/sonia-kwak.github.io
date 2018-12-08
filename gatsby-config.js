@@ -93,5 +93,20 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
+    {
+      resolve: "@halkeye/gatsby-source-goodreads",
+      options: {
+        developerKey: "toGLdnsikKAbTOmaFiPrw",
+        goodReadsUserId: "14179336",
+        userShelf: "currently-reading"
+      }
+    }
+  //   {
+	//       resolve: "@jamesdanylik/gatsby-source-goodreads",
+	//       options: {
+  //         key: 'toGLdnsikKAbTOmaFiPrw',
+  //         id: '14179336'
+	//       },
+	// },
   ],
 }
