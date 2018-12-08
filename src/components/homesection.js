@@ -10,7 +10,7 @@ class HomeSection extends React.Component {
 
         const descriptionContent = (
             description &&
-            <p className="f4 dark-gray mt2 fw6 mb5-ns mb2 mt0 lh-copy">
+            <p className="f4 dark-gray fw6 mb5-ns mb4 mt2-ns mt0 lh-copy">
                 {description}
             </p>
         );
@@ -23,12 +23,12 @@ class HomeSection extends React.Component {
                     </div>
 
                     <div className="w-20-ns">
-                        <h2 className="f3 fw8 mv0-ns mv4 dark-gray">{title}</h2>
+                        <h2 className="f3-ns f2 fw8 mv0-ns mt3 mb2 dark-gray">{title}</h2>
                     </div>
 
                     {
                         (!fullScreen || description) &&
-                        <div className='w-30-ns f5 mt0'>
+                        <div className='w-40-ns f5 mt0'>
                             {descriptionContent}
                             {!fullScreen && children }
                         </div>

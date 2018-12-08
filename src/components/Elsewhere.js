@@ -4,7 +4,7 @@ const Speaking = () => {
   const classes = 'link dim db mb4-ns mb2 text-gradient-clip';
 
   return (
-    <div className="f3 fw2">
+    <div className="f4 fw2 mt2">
       <a
         className={`${classes} bg-gradient-1`}
         target="_blank"

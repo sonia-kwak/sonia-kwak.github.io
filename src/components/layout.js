@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
       const globalPadding = 'ph6-ns ph4-m ph3';
 
       let headerClasses = `${globalPadding} `;  
-      headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-white z-1` : '';
+      headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-white z-2 relative` : '';
  
       return (
         <div className="parallax">

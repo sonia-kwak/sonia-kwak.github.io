@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
 
         <div>
           <HomeSection title="Work">
-            <div className="f4 pb4-ns pb2 mt2">
+            <div className="f5 pb4-ns pb2 mt2">
                 I'm working as a Product Designer at{' '}
                 <a
                   className="pretty-link"

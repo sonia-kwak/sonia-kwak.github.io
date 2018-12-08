@@ -4,6 +4,7 @@ html {
   /* --red: #F52D2D; */
   --red: #ED4934;
   --orange: #F5882D;
+  --orange-light: hsl(27, 100%, 80%);
   --blue: #1B9393;
   --bg-color: #ffffff;
   /* --bg-color: white; */
@@ -22,12 +23,12 @@ body {
 .pretty-link {
   color: inherit;
   text-decoration: none;
-  box-shadow: inset 0 -2px 0 -1px var(--orange);
+  box-shadow: inset 0 -2px 0 0px var(--orange);
 
   transition: all 0.2s ease;
 } 
 .pretty-link:hover {
-  box-shadow: inset 0 -4px 0 -1px var(--orange);
+  box-shadow: inset 0 -6px 0 0px var(--orange);
 }
 
 .pretty-bullet {
