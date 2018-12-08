@@ -132,12 +132,12 @@ export const pageQuery = graphql`
               node {
                 shelfNames
                 book {
-                  bookID
                   link
                   title
                   imageUrl
-                  smallImageUrl
-                  largeImageUrl
+                  authors {
+                    name
+                  }
                 }
               }
             }

@@ -235,7 +235,7 @@ class ProjectPage extends React.Component {
         
         {/* Content */}
         <div className="flex flex-column">
-          <div className={`${base} ${defaultMargins} gray`}>
+          <div className={`${base} gray`}>
             {readingTime.text}.
           </div>
 
