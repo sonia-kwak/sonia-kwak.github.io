@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Speaking from '../components/Speaking'
+import Reading from '../components/Reading'
 import Elsewhere from '../components/Elsewhere'
 import HomeSection from '../components/HomeSection'
 import Projects from '../components/Projects'
@@ -16,6 +17,7 @@ import { sortPosts } from '../components/utils.js'
 class IndexPage extends React.Component {
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
+    const books = this.props.data.allGoodreadsBook.edges;
     
     return (
       <Layout>
@@ -90,19 +92,26 @@ class IndexPage extends React.Component {
           <HomeSection
             title="Speaking"
             description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
-          >
+          > 
             <Speaking />
           </HomeSection>
 
           {/* <HomeSection title="Currently">
             <p className="pretty-bullet">
               Listening to <b>Lorem</b>, <b>Ipsum</b>.
-            </p>
+            </p> 
 
             <p className="pretty-bullet">
               Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
             </p>
           </HomeSection> */}
+
+          <HomeSection
+            title="Reading"
+            description="Books I'm currently reading according to my Goodreads profile."
+          >
+            <Reading books={books} />
+          </HomeSection>
 
           <HomeSection title="Elsewhere">
             <Elsewhere />
@@ -118,6 +127,21 @@ export default IndexPage;
 
 export const pageQuery = graphql`
          query {
+           allGoodreadsBook(filter: {shelfNames: {in: ["currently-reading"]}}) {
+            edges {
+              node {
+                shelfNames
+                book {
+                  bookID
+                  link
+                  title
+                  imageUrl
+                  smallImageUrl
+                  largeImageUrl
+                }
+              }
+            }
+          },
            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
              edges {
                node {
