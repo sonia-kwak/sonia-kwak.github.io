@@ -108,7 +108,18 @@ class IndexPage extends React.Component {
 
           <HomeSection
             title="Reading"
-            description="Books I'm currently reading according to my Goodreads profile."
+            description={(
+              <span> 
+                Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to my Goodreads 
+                <a
+                 className="pretty-link ml1"
+                 href="https://www.goodreads.com/cmdalbem"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                 profile
+                </a>.
+              </span>
+            )}
           >
             <Reading books={books} />
           </HomeSection>
