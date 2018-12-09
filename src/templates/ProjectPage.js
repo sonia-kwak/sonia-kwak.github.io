@@ -114,8 +114,7 @@ class ProjectPage extends React.Component {
             href={props.href}
             target="_blank"
             rel="noopener noreferrer"
-            // className="link blue dim"
-            className="link blue dim"
+            className="pretty-link"
           >
             {props.children}
           </a>

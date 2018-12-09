@@ -6,6 +6,7 @@ html {
   --orange: #F5882D;
   --orange-light: hsl(27, 100%, 80%);
   --blue: #1B9393;
+  --blue-light: hsl(180, 75%, 80%);
   --bg-color: #ffffff;
   /* --bg-color: white; */
 
@@ -22,13 +23,33 @@ body {
 
 .pretty-link {
   color: inherit;
-  text-decoration: none;
-  box-shadow: inset 0 -2px 0 0px var(--orange);
+  /* color: var(--orange); */
 
-  transition: all 0.2s ease;
+  text-decoration: none;
+  /* box-shadow: inset 0 -2px 0 0px var(--orange); */
+  /* box-shadow: inset 0 -4px 0 0px var(--blue-light); */
+  box-shadow: inset 0 -4px 0 0px var(--orange);
+  
+  /* background-color: var(--orange); */
+  /* color: white; */
+ 
+  /* transition: all 0.2s ease; */
 } 
 .pretty-link:hover {
-  box-shadow: inset 0 -6px 0 0px var(--orange);
+  /* box-shadow: inset 0 -6px 0 0px var(--orange); */
+  background-color: var(--orange);
+  color: white;
+}
+
+figure a,
+figure a.pretty-link {
+  box-shadow: none;
+  cursor: zoom-in;
+}
+
+figure a,
+figure a.pretty-link:hover {
+  background-color: transparent;
 }
 
 .pretty-bullet {
