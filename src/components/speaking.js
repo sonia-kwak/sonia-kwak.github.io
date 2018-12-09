@@ -3,9 +3,9 @@ import React from 'react'
 const Speaking = () => (
     <div>
       <Talk
-        title="A experiência de usuário da mobilidade urbana - Cidades melhores para pedalar e viver"
-        context="Interaction Latin America, 2018 [accepted proposal]"
-        link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
+        title="A UX da Mobilidade Urbana - Cidades melhores para pedalar e viver"
+        context="Interaction Latin America, 2018"
+      link="https://docs.google.com/presentation/d/1pI4ONbgxePD8DrPSmUlRHCa_mSGdzyGJB8Qb38ur4bs/edit?usp=sharing"
       />
 
       {/* <Talk
