@@ -224,7 +224,23 @@ We also were featured in many places:
 
 ## Links
 
-* [Website](https://www.bikedeboa.com.br)
-* [Facebook](https://www.facebook.com/bikedeboaapp), [Instagram](https://www.instagram.com/bikedeboa/)
-* [Github](https://github.com/bikedeboa/)
-* [Trello Board](https://trello.com/b/2skCAJnL/bike-de-boa-geral)
+<links-list
+    items='[
+        {
+            "label": "Website",
+            "url": "https://www.bikedeboa.com.br"
+        },
+        {
+            "label": "Github",
+            "url": "https://github.com/bikedeboa"
+        },
+        {
+            "label": "Facebook",
+            "url": "https://www.facebook.com/bikedeboaapp/"
+        },
+        {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/bikedeboa/"
+        }
+    ]'>
+</links-list>

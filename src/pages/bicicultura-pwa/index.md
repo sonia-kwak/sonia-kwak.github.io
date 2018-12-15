@@ -119,9 +119,23 @@ Another thing I pretend to work someday is to generalize how the event schedule 
 
 ## Links
 
-* Web app: http://bicicultura.rio/app
-* GitHub: https://github.com/cmdalbem/app-bicicultura-2018
-* Event page: http://bicicultura.rio/
+<links-list
+    items='[
+        {
+            "label": "Web app",
+            "url": "http://bicicultura.rio/app"
+        },
+        {
+            "label": "GitHub",
+            "url": "https://github.com/cmdalbem/app-bicicultura-2018"
+        },
+        {
+            "label": "Event page",
+            "url": "http://bicicultura.rio/"
+        }
+    ]'>
+</links-list>
+
   
 
 ## More pics

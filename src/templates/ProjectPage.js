@@ -7,10 +7,11 @@ import rehypeReact from "rehype-react"
 import Tag from '../components/Tag'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
+import LinksList from '../components/LinksList'
 
 import { formatDate } from '../components/utils.js'
 
-import { rightArrow, leftArrow } from '../components/icons.js'
+import { RightArrow, LeftArrow } from '../components/icons.js'
 
 class ResultsBanner extends React.Component {
   static defaultProps = {
@@ -134,6 +135,16 @@ class ProjectPage extends React.Component {
           </div>
         ),
         "results-banner": ResultsBanner,
+        "links-list": props => {
+          let arrayObj = JSON.parse(props.items);
+          let items = arrayObj.map( i => i);
+          
+          return (
+            <p className={`mt0 ${defaultMargins}`}>
+              <LinksList items={items} rows/>
+            </p>
+          )
+        }
       },
     }).Compiler;
     
@@ -255,7 +266,7 @@ class ProjectPage extends React.Component {
                 previous && 
                 <div>
                   <div className="f7 tl mb4 ttu fw6 gray db-ns dn">
-                    {leftArrow} Previous
+                    {LeftArrow} Previous
                   </div>
                   <ProjectCard node={previous} />
                 </div>
@@ -269,7 +280,7 @@ class ProjectPage extends React.Component {
                 next &&
                 <div>
                   <div className="f7 tr mb4 ttu fw6 gray db-ns dn">
-                    Next {rightArrow}
+                    Next {RightArrow}
                   </div>
                   <ProjectCard node={next} />
                 </div>

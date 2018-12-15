@@ -81,6 +81,15 @@ It also got me more interested in Usability, and what I would find out later to 
 
 ## Links
 
-https://infhub.herokuapp.com
-
-https://github.com/cmdalbem/redetrabalhosinf
+<links-list
+    items='[
+        {
+            "label": "Website",
+            "url": "https://infhub.herokuapp.com"
+        },
+        {
+            "label": "GitHub",
+            "url": "https://github.com/cmdalbem/redetrabalhosinf"
+        }
+    ]'>
+</links-list>

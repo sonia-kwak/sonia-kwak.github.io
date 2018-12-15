@@ -1,59 +1,37 @@
 import React from 'react'
 
+import LinksList from './LinksList'
+
 const Speaking = () => {
-  const classes = 'link dim db mb4-ns mb2 text-gradient-clip';
+  const items = [
+    {
+      label: 'GitHub',
+      url: "https://github.com/cmdalbem/"
+    },
+    {
+      label: 'Instagram',
+      url: "https://www.instagram.com/cmdalbem/"
+    },
+    {
+      label: 'Twitter',
+      url: "https://twitter.com/cmdalbem"
+    },
+    {
+      label: 'Goodreads',
+      url: "https://www.goodreads.com/cmdalbem"
+    },
+    {
+      label: 'LinkedIn',
+      url: "https://www.linkedin.com/in/cmdalbem/"
+    },
+    {
+      label: 'Email',
+      url: "mailto:cristiano.dalbem@gmail.com"
+    }
+  ];
 
   return (
-    <div className="f3 fw2">
-      <a
-        className={`${classes} bg-gradient-1`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/cmdalbem/"
-      >
-        GitHub
-      </a>
-      <a
-        className={`${classes} bg-gradient-2`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.instagram.com/cmdalbem/"
-      >
-        Instagram
-      </a>
-      <a
-        className={`${classes} bg-gradient-3`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/cmdalbem"
-      >
-        Twitter
-      </a>
-      <a
-        className={`${classes} bg-gradient-4`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.goodreads.com/cmdalbem"
-      >
-        Goodreads
-      </a>
-      <a
-        className={`${classes} bg-gradient-5`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/cmdalbem/"
-      >
-        LinkedIn
-      </a>
-      <a
-        className={`${classes} bg-gradient-6`}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="mailto:cristiano.dalbem@gmail.com"
-      >
-        Email
-      </a>
-    </div>
+    <LinksList items={items}/>
   )
 }
 
