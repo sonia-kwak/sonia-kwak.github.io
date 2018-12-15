@@ -98,7 +98,7 @@ module.exports = {
       options: {
         developerKey: "toGLdnsikKAbTOmaFiPrw",
         goodReadsUserId: "14179336",
-        userShelf: "currently-reading"
+        // userShelf: "currently-reading"
       }
     }
   ],

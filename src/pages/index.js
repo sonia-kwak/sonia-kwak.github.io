@@ -17,7 +17,14 @@ import { sortPosts } from '../components/utils.js'
 class IndexPage extends React.Component {
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
-    const books = this.props.data.allGoodreadsBook.edges;
+    
+    let bookNodes = {};
+    bookNodes.finished = this.props.data.allGoodreadsBook.edges.filter( b =>
+      b.node.shelfNames.includes('read')
+    );
+    bookNodes.reading = this.props.data.allGoodreadsBook.edges.filter( b =>
+      b.node.shelfNames.includes('currently-reading')
+    );
     
     return (
       <Layout>
@@ -106,22 +113,22 @@ class IndexPage extends React.Component {
             </p>
           </HomeSection> */}
 
-          <HomeSection
+          <HomeSection 
             title="Reading"
             description={(
               <span> 
-                Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to my Goodreads 
+                Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to 
                 <a
                  className="pretty-link ml1"
                  href="https://www.goodreads.com/cmdalbem"
                  target="_blank"
                  rel="noopener noreferrer">
-                 profile
+                 Goodreads
                 </a>.
               </span>
             )}
           >
-            <Reading books={books} />
+            <Reading bookNodes={bookNodes} />
           </HomeSection>
 
           <HomeSection title="Elsewhere">
@@ -138,7 +145,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
          query {
-           allGoodreadsBook(filter: {shelfNames: {in: ["currently-reading"]}}) {
+           allGoodreadsBook(filter: {shelfNames: {in: ["read","currently-reading"]}}) {
             edges {
               node {
                 shelfNames

@@ -28,7 +28,7 @@ class ResultsBanner extends React.Component {
               <div className="f1 fw1 mt0">
                 {dataObj[i]}
               </div>
-              <div className="f6 gray ttu mb0 tracked">
+              <div className="f7 gray ttu mb0 tracked">
                 {i}
               </div>
             </div>

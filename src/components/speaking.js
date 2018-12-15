@@ -70,7 +70,7 @@ class Talk extends React.Component {
 
     return (
       <div className="pb4-ns pb3">
-        <div className="fw5 f5 mv1">
+        <div className="fw5 f4 mv1">
           {/* {title} */}
           <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">
             {title}
