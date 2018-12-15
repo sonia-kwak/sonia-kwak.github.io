@@ -22,7 +22,10 @@ class ResultsBanner extends React.Component {
     const dataObj = JSON.parse(this.props.data);
 
     return (
-      <div className="vw-100 nl6 nr6 mv6 pa6 bg-near-white flex flex-row-ns flex-column justify-around tl-ns tc">
+      <div 
+        className="nl6 nr6 mv6 pa6 bg-near-white flex flex-row-ns flex-column justify-around tl-ns tc"
+        style={{width: '100vw'}}
+      >
         {
           Object.keys(dataObj).map ( i => (
             <div className="mv0-ns mv3">
