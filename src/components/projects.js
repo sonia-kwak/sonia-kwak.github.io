@@ -7,11 +7,11 @@ class Projects extends React.Component {
         const posts = this.props.posts;
 
         return (
-            <div className="flex flex-wrap nl3-ns nr3-ns">
+            <div className="flex flex-wrap">
                 {
                     posts.map(({ node }) => {
                         return (
-                            <div className="w-50-ns ph3-ns mv5-ns w-50-m ph2-m mv4 w-100">
+                            <div className="w-50-ns mv5-ns pr4-ns pr3-m mv4 w-50-m w-100">
                                 <ProjectCard node={node}/>
                             </div>
                         )

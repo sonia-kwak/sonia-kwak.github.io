@@ -184,7 +184,7 @@ class ProjectPage extends React.Component {
                 <h2 className="f7 fw7 ttu mv1">
                     Tags
                 </h2>
-                <div>
+                <div className="mv2">
                   {post.frontmatter.tags.map(tag => (
                     <Tag size="big">
                       {tag}

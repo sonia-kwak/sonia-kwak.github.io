@@ -20,7 +20,7 @@ class Header extends React.Component {
       url = new URL(window.location.href);
     }
  
-    const tabItemClasses = 'ml3 ttu fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
+    const tabItemClasses = 'ml4 ttu pa0 fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
     let sections = [
       'About',
       'Work',
@@ -32,7 +32,7 @@ class Header extends React.Component {
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (
-      <div className='flex pv4'>
+      <div className='flex pt4 pb2'>
         <div className="w-100 flex justify-between items-center">
           <h1 className="f4 fw5">
             <Link to="/" className="link dim near-black fw6">

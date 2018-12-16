@@ -17,14 +17,14 @@ class ProjectCard extends React.Component {
 
         return (
             <Link
-                // className="b--light-gray ba bg-white br0 db near-black overflow-hidden card-shadow card-hover pa3"
-                className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
-                // className="link dim near-black db br1 overflow-hidden"
+                // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
+                className="link dim near-black db br1"
                 to={post.fields.slug}
             >
                 {
                     <div
-                        className="w-100 db card-cover-height pv6-ns pv5 cover" 
+                        className="w-100 db card-cover-height pv6-ns pv5 cover card-shadow card-hover" 
+                        // className="w-100 db card-cover-height pv6-ns pv5 cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'
@@ -32,16 +32,8 @@ class ProjectCard extends React.Component {
                     ></div>
                 }
 
-                <div className="ph3 pv4">
-                {/* <div className="pv3"> */}
-                    {
-                        post.frontmatter.title
-                        &&
-                        <h3 className="f5 fw7 mt0 mb1">
-                            {post.frontmatter.title}
-                        </h3>
-                    }
-
+                {/* <div className="ph3 pv4"> */}
+                <div className="pv3">
                     {/* {
                         post.frontmatter.description
                         &&
@@ -55,6 +47,14 @@ class ProjectCard extends React.Component {
                     </div>
 
                     {
+                        post.frontmatter.title
+                        &&
+                        <h3 className="f4 fw7 mt0 mb1">
+                            {post.frontmatter.title}
+                        </h3>
+                    }
+
+                    {
                         post.frontmatter.tags &&
                         <div className="flex flex-row flex-wrap">
                             {post.frontmatter.tags.map(tag => (
@@ -64,8 +64,6 @@ class ProjectCard extends React.Component {
                             ))}
                         </div>
                     }
-                    
-                    {/* <p dangerouslySetInnerHTML={{ __html: post.excerpt }} /> */}
                 </div>
             </Link>
         )
