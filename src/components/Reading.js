@@ -8,7 +8,7 @@ class Reading extends React.Component {
 
         return (
             <>
-                <div className="flex flex-wrap nl3-ns nr3-ns">
+                <div className="flex flex-wrap">
                     {
                         bookNodes.reading.map(i =>
                             <Book mode="half" book={i.node.book}/>
@@ -18,7 +18,7 @@ class Reading extends React.Component {
                 
                 <h2 className="dark-gray f5 mb4">Recently finished</h2>
                 
-                <div className="flex flex-wrap nl3-ns nr3-ns">
+                <div className="flex flex-wrap">
                     {
                         bookNodes.finished.map(i =>
                             <Book mode="mini" book={i.node.book}/>
@@ -34,15 +34,15 @@ class Book extends React.Component {
     render() {
         const { book, mode } = this.props;
 
-        let containerClasses = 'flex flex-row ph3-ns mb5-ns w-50-m ph2-m mb4 dim link ';
-        let titleClasses = 'fw6 lh-title ';
+        let containerClasses = 'flex flex-row pr3-ns mb5-ns w-50-m ph2-m mb4 dim link ';
+        let titleClasses = ' lh-title ';
         let subtitleClasses = '';
 
         switch(mode) {
             case 'half':
-                containerClasses += "w-50";
-                titleClasses += 'f6'
-                subtitleClasses += 'f7'
+                containerClasses += "w-50-ns w-100";
+                titleClasses += 'f6-ns f5'
+                subtitleClasses += 'f7-ns f6'
                 break;
             case 'full':
                 containerClasses += "w-100";
@@ -66,13 +66,13 @@ class Book extends React.Component {
                 
                 {
                     mode !== 'mini' &&
-                    <div className="flex flex-column ml3 near-black">
+                    <div className="flex flex-column ml3 dark-gray">
                         <div className={titleClasses}>
                             {book.title}
                         </div>
-                        <div className={subtitleClasses}>
+                        {/* <div className={subtitleClasses}>
                             by {book.authors[0].name}
-                        </div>
+                        </div> */}
                     </div>
                 }
             </a>
