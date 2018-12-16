@@ -11,7 +11,7 @@ class Projects extends React.Component {
                 {
                     posts.map(({ node }) => {
                         return (
-                            <div className="w-50-ns mv5-ns pr4-ns pr3-m mv4 w-50-m w-100">
+                            <div className="project-card w-50-ns mv5-ns pr4-ns pr3-m mv4 w-50-m w-100">
                                 <ProjectCard node={node}/>
                             </div>
                         )

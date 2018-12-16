@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import ScrollReveal from 'scrollreveal'
+
 import Layout from '../components/Layout'
 
 import Speaking from '../components/Speaking'
@@ -15,6 +17,24 @@ import { sortPosts } from '../components/utils.js'
 
 
 class IndexPage extends React.Component {
+  componentDidMount() {
+    if (typeof window !== `undefined`) {
+      window.sr = ScrollReveal({
+        // reset: false,
+        scale: 1, 
+        // mobile: true,
+        // // delay: 200,
+        // viewFactor: 0.3,
+        duration: 1200,
+        distance: '30px',
+        easing: 'ease-in-out',
+      });
+      
+      // window.sr.reveal('section', { duration: 1200}, 500); 
+      window.sr.reveal('.project-card', 200); 
+    }
+  }
+
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
     
@@ -28,7 +48,7 @@ class IndexPage extends React.Component {
     
     return (
       <Layout>
-        <div className="flex flex-row-ns flex-column ">
+        <section className="flex flex-row-ns flex-column ">
           <div className="w-40-ns">
             <img
               src={selfie}
@@ -56,86 +76,84 @@ class IndexPage extends React.Component {
               </p>
             </section>
           </div>
-        </div>
+        </section>
 
-        <div>
-          <HomeSection title="Work">
-            <div className="f5 pb4-ns pb2 mt2">
-                I'm working as a Product Designer at{' '}
-                <a
-                  className="pretty-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.vtex.com/"
-                >
-                  VTEX
-                  </a>
-                , building the future of e-commerce in one of the biggest ecosystems in
-                the world.
-              <p>
-                I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their business.
-              </p>
-              
-              <p>
-                In my free time as a cicloactivist and I've built{' '}
-                <a
-                  className="pretty-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.bikedeboa.com.br/"
-                >
-                  bike de boa
-                  </a>
-                , a web app to help urban cyclists in Brazil.
-              </p>
-            </div>
-          </HomeSection>
-
-          <HomeSection title="Projects" fullScreen
-            description="A selection of projects in which I've played a major role and I'm very proud of.">
-            <Projects posts={posts}/> 
-          </HomeSection> 
-             
-          <HomeSection
-            title="Speaking"
-            description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
-          > 
-            <Speaking />
-          </HomeSection>
-
-          {/* <HomeSection title="Currently">
-            <p className="pretty-bullet">
-              Listening to <b>Lorem</b>, <b>Ipsum</b>.
-            </p> 
-
-            <p className="pretty-bullet">
-              Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
+        <HomeSection title="Work">
+          <div className="f5 pb4-ns pb2 mt2">
+              I'm working as a Product Designer at{' '}
+              <a
+                className="pretty-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.vtex.com/"
+              >
+                VTEX
+                </a>
+              , building the future of e-commerce in one of the biggest ecosystems in
+              the world.
+            <p>
+              I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their business.
             </p>
-          </HomeSection> */}
+            
+            <p>
+              In my free time as a cicloactivist and I've built{' '}
+              <a
+                className="pretty-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.bikedeboa.com.br/"
+              >
+                bike de boa
+                </a>
+              , a web app to help urban cyclists in Brazil.
+            </p>
+          </div>
+        </HomeSection>
 
-          <HomeSection 
-            title="Reading"
-            description={(
-              <span> 
-                Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to 
-                <a
-                 className="pretty-link ml1"
-                 href="https://www.goodreads.com/cmdalbem"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                 Goodreads
-                </a>.
-              </span>
-            )}
-          >
-            <Reading bookNodes={bookNodes} />
-          </HomeSection>
+        <HomeSection title="Projects" fullScreen
+          description="A selection of projects in which I've played a major role and I'm very proud of.">
+          <Projects posts={posts}/> 
+        </HomeSection> 
+            
+        <HomeSection
+          title="Speaking"
+          description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+        > 
+          <Speaking />
+        </HomeSection>
 
-          <HomeSection title="Elsewhere">
-            <Elsewhere />
-          </HomeSection>
+        {/* <HomeSection title="Currently">
+          <p className="pretty-bullet">
+            Listening to <b>Lorem</b>, <b>Ipsum</b>.
+          </p> 
 
-        </div>
+          <p className="pretty-bullet">
+            Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
+          </p>
+        </HomeSection> */}
+
+        <HomeSection 
+          title="Reading"
+          description={(
+            <span> 
+              Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to 
+              <a
+                className="pretty-link ml1"
+                href="https://www.goodreads.com/cmdalbem"
+                target="_blank"
+                rel="noopener noreferrer">
+                Goodreads
+              </a>.
+            </span>
+          )}
+        >
+          <Reading bookNodes={bookNodes} />
+        </HomeSection>
+
+        <HomeSection title="Elsewhere">
+          <Elsewhere />
+        </HomeSection>
+
       </Layout>
     );
   } 
