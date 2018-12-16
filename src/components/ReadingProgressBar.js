@@ -4,21 +4,27 @@ class ReadingProgressBar extends React.Component {
     constructor(props) {
         super(props);
 
-        const listenerCallback = () => {
-            const h = document.documentElement;
-            const b = document.body;
-            const st = 'scrollTop';
-            const sh = 'scrollHeight';
-            let scroll;
+        let listenerCallback;
 
-            scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-
-            this.setState({
-                scroll: scroll
-            });
+        // Prevent error on server-side renderer
+        if (typeof window !== 'undefined') {
+            listenerCallback = () => {
+                const h = document.documentElement;
+                const b = document.body;
+                const st = 'scrollTop';
+                const sh = 'scrollHeight';
+                let scroll;
+    
+                scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+    
+                this.setState({
+                    scroll: scroll
+                });
+            }
+    
+            document.addEventListener('scroll', listenerCallback, { passive: true });
+    
         }
-
-        document.addEventListener('scroll', listenerCallback, { passive: true });
 
         this.state = {
             listenerCallback: listenerCallback,
