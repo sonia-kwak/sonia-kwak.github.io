@@ -44,7 +44,3 @@ Although it was not the objective, my intense contributions over the years made 
 ```grid|1
 ![](./space5.jpg)
 ```
-
-# Links
-
-https://www.deviantart.com/xred-thunderdragonx

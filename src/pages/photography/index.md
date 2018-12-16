@@ -17,7 +17,8 @@ I love all aspects of the photographic process. From connecting with moments and
         "gallery views": "20,000+"
     }'/>
 
-Below is a small collection of some of the pictures I hold nearest to my heart. For more stuff like this feel free to check my [Flickr](https://www.flickr.com/photos/helloninja) and [Instagram](https://instagram.com/cmdalbem).
+
+Below is a collection of the pictures I hold nearest to my heart.
 
  
 ```grid|1
@@ -83,3 +84,19 @@ Below is a small collection of some of the pictures I hold nearest to my heart. 
 ![](./3535274502_9621684a4a_o.jpg "Butiá. 2008") 
 
 ![](./2082522736_590e333369_o.jpg "Porto Alegre. 2007")
+
+
+## Links
+
+<links-list
+    items='[
+        {
+            "label": "Flickr",
+            "url": "https://www.flickr.com/photos/helloninja"
+        },
+        {
+            "label": "Instagram",
+            "url": "https://instagram.com/cmdalbem"
+        }
+    ]'>
+</links-list>
