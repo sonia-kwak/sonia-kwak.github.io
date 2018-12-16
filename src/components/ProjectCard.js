@@ -23,8 +23,8 @@ class ProjectCard extends React.Component {
             >
                 {
                     <div
-                        className="w-100 db card-cover-height pv6-ns pv5 cover card-shadow card-hover" 
-                        // className="w-100 db card-cover-height pv6-ns pv5 cover" 
+                        className="w-100 db card-cover-height cover card-shadow card-hover" 
+                        // className="w-100 db card-cover-height cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'

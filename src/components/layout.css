@@ -122,7 +122,7 @@ figure a.pretty-link:hover {
 }
 
 .card-cover-height {
-  height: 10rem; 
+  height: 18rem; 
 }
 
 .bg-ffffff {
@@ -187,3 +187,8 @@ figure a.pretty-link:hover {
 .gatsby-resp-image-wrapper {
   width: 100%;
 }
+
+/* Prevents flickering on ScrollReveal */
+/* html.sr .project-card {
+    visibility: hidden;
+} */
