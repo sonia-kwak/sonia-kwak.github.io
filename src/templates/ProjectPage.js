@@ -8,6 +8,7 @@ import Tag from '../components/Tag'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
 import LinksList from '../components/LinksList'
+import ReadingProgressBar from '../components/ReadingProgressBar'
 
 import { formatDate } from '../components/utils.js'
 
@@ -44,26 +45,6 @@ class ResultsBanner extends React.Component {
 }
 
 class ProjectPage extends React.Component {
-  // constructor(props) {
-  //   super(props);
-    
-  //   this.initScrollListener();
-  // }
-
-  // initScrollListener() {
-  //   document.addEventListener('scroll', function() {
-  //     let h = document.documentElement,
-  //       b = document.body,
-  //       st = 'scrollTop',
-  //       sh = 'scrollHeight',
-  //       progress = document.querySelector('.reading-progress'),
-  //       scroll;
- 
-  //     scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
-  //     progress.style.setProperty('--scroll', scroll + '%')
-  //   })
-  // }
-
   render() {
     const post = this.props.data.markdownRemark
     const siteDescription = post.excerpt
@@ -159,18 +140,13 @@ class ProjectPage extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
+        <ReadingProgressBar/>
+
         {/* Cover image */}
         <div className="flex flex-row-ns flex-column mb4">
           <div className="w-100">
             { 
               post.frontmatter.cover ?
-                // <div
-                //   className="w-100 db pv7 cover"
-                //   style={post.frontmatter.cover && {
-                //     backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
-                //     backgroundPosition: 'center'
-                //   }}
-                // ></div>
                 <img className="w-100 " alt="" src={post.frontmatter.cover.publicURL} />
                 :
                 <div className="w-100 h5 pv7 bg-silver"></div>

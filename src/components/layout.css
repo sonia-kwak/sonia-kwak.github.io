@@ -183,18 +183,6 @@ figure a.pretty-link:hover {
   }
 } */
 
-/* .reading-progress {
-  background: linear-gradient(to right, var(--orange) var(--scroll), transparent 0);
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  z-index: 1;
-} */
-
 /* Hack to make 'gatsby-remark-images-grid' with 'gatsby-remark-images' */
 .gatsby-resp-image-wrapper {
   width: 100%;
