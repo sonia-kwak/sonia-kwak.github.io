@@ -4,8 +4,6 @@ const LinksList = props => {
   const { items } = props;
   const classes = 'link dim db mb4-ns mb2 text-gradient-clip';
 
-  console.log('items',items);
-
   if (!items || !items.map) {
     return null;
   }
