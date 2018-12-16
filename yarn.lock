@@ -7053,6 +7053,18 @@ is-directory@^0.3.1:
   resolved "https://registry.yarnpkg.com/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
   integrity sha1-YTObbyR1/Hcv2cnYP1yFddwVSuE=
 
+is-dom-node-list@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/is-dom-node-list/-/is-dom-node-list-1.2.1.tgz#141ded0c66de759d0976800d21370bb908f2950f"
+  integrity sha512-P1H071iT5TGG8pAHslhrLDo/tQLYc8tGuWABVqhGU4l2mm7aDNb9cx2myQ2AujEQO6B2cAujcW4a0/+6UfXInw==
+  dependencies:
+    is-dom-node "^1.0.4"
+
+is-dom-node@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/is-dom-node/-/is-dom-node-1.0.4.tgz#abb18af7133f1e687610cfeb274da1ced342f1c5"
+  integrity sha512-NEnTHKCeyGJTL0cKdzATF8SWzyTMYf5CbNKWBvsXvyMxZG32g+a09qkeCbrfQNLTD85CbPeHb4YjIJCjyzF0yA==
+
 is-dotfile@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/is-dotfile/-/is-dotfile-1.0.3.tgz#a6a2f32ffd2dfb04f5ca25ecd0f6b83cf798a1e1"
@@ -8446,6 +8458,11 @@ minipass@^2.2.1, minipass@^2.3.4:
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
+
+miniraf@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/miniraf/-/miniraf-1.0.1.tgz#b74c9fcf5437b6fddaaa80de1544f96a6a03d8a1"
+  integrity sha512-2OVNqiGCiL3XaKMZQPHcE8f/89gnaEYQmQv5SHWz4eezyn0gHLBl8W8XGcy5G8Y+Gz1JUwysvj/grNy34nUOdQ==
 
 minizlib@^1.1.1:
   version "1.2.1"
@@ -10679,6 +10696,11 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
+rematrix@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/rematrix/-/rematrix-0.2.2.tgz#c96a050260782db9908904885991256e23beda5d"
+  integrity sha512-agFFS3RzrLXJl5LY5xg/xYyXvUuVAnkhgKO7RaO9J1Ssth6yvbO+PIiV67V59MB5NCdAK2flvGvNT4mdKVniFA==
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -10999,6 +11021,15 @@ scroll-behavior@^0.9.9:
   dependencies:
     dom-helpers "^3.2.1"
     invariant "^2.2.2"
+
+scrollreveal@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-4.0.0.tgz#00cf5c8052b8e6f302b62e46bd64268d3b161d39"
+  integrity sha512-r9JOsE7dWMRDFoTHjbeREHzZ2vQm2jk0Eqzm4j5Qk7lKl5DHyYfFL8x3nSdHQlFNDn34BSLTHWxsg4Mg4768eQ==
+  dependencies:
+    miniraf "^1.0.0"
+    rematrix "0.2.2"
+    tealight "0.3.0"
 
 section-matter@^1.0.0:
   version "1.0.0"
@@ -11955,6 +11986,14 @@ tar@^4, tar@^4.4.8:
     mkdirp "^0.5.0"
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
+
+tealight@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/tealight/-/tealight-0.3.0.tgz#92909b07f898a654554dde761f664448571e0a1b"
+  integrity sha512-xaKtlxnQNazU4hGwUND8c0u/CyqlDRjRV05cNH7qUyPgvngeuNBZWDGnMWXRE1q0sk3SvN5LgcREcSvGUgPVKQ==
+  dependencies:
+    is-dom-node "^1.0.4"
+    is-dom-node-list "^1.2.1"
 
 temp-dir@^1.0.0:
   version "1.0.0"
