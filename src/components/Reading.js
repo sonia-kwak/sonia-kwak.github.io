@@ -16,7 +16,7 @@ class Reading extends React.Component {
                     }
                 </div>
                 
-                <h2 className="dark-gray f5 mb4">Recently finished</h2>
+                {/* <h2 className="dark-gray f5 mb4">Recently finished</h2>
                 
                 <div className="flex flex-wrap">
                     {
@@ -24,7 +24,7 @@ class Reading extends React.Component {
                             <Book mode="mini" book={i.node.book}/>
                         )
                     }
-                </div>
+                </div> */}
             </>
         )
     }
