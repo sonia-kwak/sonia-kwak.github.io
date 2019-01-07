@@ -62,7 +62,7 @@ I started building a Moodboard of pictures of the coolest Hostel lobbies I could
 
 ```grid|1
 ![](./moodboard.jpg) 
-```
+```  
 
 * **Shared**, communal spaces and visual permeability encourage people to make eye contact;
 * It might be visually noisy, but it's always **harmonious**, beautiful, with welcoming warm colors and textures;
@@ -85,14 +85,6 @@ From these observations we ended up with these 7 core values:
 <!-- ```grid|1
 ![](./values.jpg) 
 ```  -->
-
-### Looks familiar?
-
-Here's a good surprise: looking around at our office we see the very same values, materialized in our working space.
-
-```grid|1
-![](./vtexoffice.jpg)
-```
 
 
 ## The components

@@ -86,9 +86,9 @@ Using simple project management and communication tools such as Trello, GitHub a
 <!-- For this project to reach its potential of conveying messages of positivity, encouragin -->
 
 
-```grid|1
+<!-- ```grid|1
 ![](./mindmap.png "The brand values mindmap")
-```
+``` -->
 
 ```grid|1
 ![](./references.png "Pinterest moodboard of design references") 
