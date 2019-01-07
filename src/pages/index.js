@@ -49,10 +49,10 @@ class IndexPage extends React.Component {
                 I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work and express ourselves. I'm in a journey to constantly improve a skill set that ranges from researching to designing and programming products and systems.
               </p>
               <p>
-                I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve as well the right solutions for them.
+                I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
               </p>
               <p>
-                My background in Computer Science has biased towards solutions that are scalable, maintainable that stand the test of time. This mindset also applies to businesses and their role in the world. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
+                My background in Computer Science has biased towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
               </p>
             </section>
           </div>
