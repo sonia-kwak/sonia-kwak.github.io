@@ -25,7 +25,6 @@ class ResultsBanner extends React.Component {
     return (
       <div 
         className="nl6 nr6 mv6 pa6 bg-near-white flex flex-row-ns flex-column justify-around tl-ns tc"
-        style={{width: '100vw'}}
       >
         {
           Object.keys(dataObj).map ( i => (
@@ -53,7 +52,7 @@ class ProjectPage extends React.Component {
 
     const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
     const imageMargins = 'mv6 mh0';
-    const base = 'f5 dark-gray lh-copy center';
+    const baseType = 'f5 dark-gray lh-copy center';
 
     let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');
     let dateEnd = formatDate(post.frontmatter.date2, 'MMMM YYYY');
@@ -160,6 +159,9 @@ class ProjectPage extends React.Component {
             <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
+            <div className={`f6 gray`}>
+              {readingTime.text}
+            </div>
           </div>
 
           <div className="w-10-ns">
@@ -224,11 +226,7 @@ class ProjectPage extends React.Component {
         
         {/* Content */}
         <div className="flex flex-column">
-          <div className={`${base} gray`}>
-            {readingTime.text}.
-          </div>
-
-          <div className={base}>
+          <div className={baseType}>
             { renderAst(post.htmlAst) }
           </div>
         </div> 
