@@ -33,10 +33,10 @@ class IndexPage extends React.Component {
             <img
               src={selfie}
               alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
-              className="parallax__layer--back absolute left-0 top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
+              className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
             />
 
-            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns mt7-ns ml7-ns ml4 mt6 mw6-ns tl-ns tr">
+            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns mt7-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
               Designer of products and systems.
             </h1>
           </div> 
