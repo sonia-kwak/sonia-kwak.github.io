@@ -26,37 +26,37 @@ This project was the first section of the Admin that was rewritten using all the
 
 ## Process 
 
-With so much important stuff to build in the platform designing a new Home was definitely not one of the priorities. This project was made possible only because of an internal Hackathon, where we gathered forces and joined developers from different teams to work together and make it become possible. We had 48h to create a proof of concept with half a dozen developers.
+With so much important stuff to build in the platform designing a new Home was definitely not one of the priorities. This project was made possible in an internal Hackathon, where we gathered forces and joined developers from different teams to work together and create a proof of concept in 48 hours.
 
-Our main objective was to create the first new VTEX admin screen entirely done on IO. Given we had very limited time and human resources we though that old ugly Home could be a perfect fit.
+Our main objective was to create the first new VTEX admin screen, but we didn't know which one. Given we had limited time and human resources we though that old ugly Home was a perfect fit for the challenge.
 
 ```grid|1 
-![](./oldadmin.png "The old admin home screen.") 
+![](./oldadmin.png "The old admin home screen. Quite a mess.") 
 ```
 
-Because of the mentioned project constraints we didn't have time to interview lots of users, so we leveraged the internal knowledge that our Product team and Customer Care teams had about the platform.
+As with many projects in VTEX benchmarking was a big challenge. How many big e-commerce SaaS platforms do we know? Not even a handful. How many of them have really great design and targeted a very similar audience compared to us? You got the point. This pushed us to think outside the box and try to get inspiration from different places.
+
+Because of the mentioned project constraints we leveraged the internal knowledge that our Product and Customer Care teams had about the platform and what we could offer. 
 
 
 ## The concept
 
-As with many projects in VTEX benchmarking was a big challenge. How many big e-commerce SaaS platforms do we know? Not even a handful. How many of them have really great design and targeted a very similar audience compared to us? You got the point. This pushed use to think "outside the box", and try to get inspired by something outside our industry.
-
-I love travelling, and I love hostels (I think one day I'll have one). VTEX is a tool people use to do their work every day, and they spend a lot of time in it, so it has to offer great services and at the same time be welcoming and cmnfortable to hang out. What other services work like that? I thought it was similar to a Hotel, which offers "comfort-as-a-service", as well as fulfill people's basic needs such as food, entertainment, etc. Just like a Hotel we're also big and very complex inside, but it has to be invisible to the final user.
+VTEX is a tool people use to do their work every day, and they spend a lot of time in it, so it has to offer great services and at the same time be welcoming and comfortable to hang out. What other services work like that? I thought it was similar to a Hotel, which offers "comfort-as-a-service", as well as fulfill people's basic needs such as food, entertainment, etc. Just like a Hotel we're also big and very complex inside, but it has to be invisible to the final user.
 
 Now looking at the company's culture and values:
 
-* Exclusivity is not one of our strengths. The platform is multinenant, which means we prioritize offering a simple, single solution to all of our clients and updating in despite of offering exclusive solutions tailored specifically to each user need. It's like if people had to eat sharing the table. Hum
-* We strive to be horizontal, both internally and externally. Our clients are super diverse, but all solutions we design have to work well for everyone.
+* Exclusivity is not one of our strengths, we have a multinenant SaaS platform. We prioritize offering single solution to all of our clients instead of exclusive solutions tailored for each client. It's like if people had to eat sharing the table. Hum.
+* From an hierarchical standpoint we strive to be horizontal, both internally and externally. Our clients are super diverse, but our solutions have to work well for everyone.
 * And internally we have no managers or bosses: hierarchy is organic, and most of the time decisions are taken horizontally, which demands lots of communication and empathy.
 * Our main value is not our features, but the ecosystem, the community, and lots of other stuff.
-* We're definetely not classic or traditional, just look at our main brand color: pink (most of other platforms and IT companies are blue).
+* We're definitely not classic or traditional, just look at our main brand color: pink (most of other platforms and IT companies are blue).
 
 
 ## Designing with values
 
 ### The hypothesis: the home of VTEX Admin should feel like the lobby of a Hostel.
 
-A lobby is where the mood is set. It's in the begginning of the journey of using the product, probably the first thing someone sees when starting their working hours. So it should feel welcoming. Sometimes it's calming, sometimes it isn't, but it's always pleasant.
+A lobby is where the mood is set. It's in the beginning of the journey of using the product, probably the first thing someone sees when starting their working hours. So it should feel welcoming. Sometimes it's calming, sometimes it isn't, but it's always pleasant.
 
 I started building a Moodboard of pictures of the coolest Hostel lobbies I could find, looking for patterns.
 
@@ -64,23 +64,14 @@ I started building a Moodboard of pictures of the coolest Hostel lobbies I could
 ![](./moodboard.jpg) 
 ```  
 
-* **Shared**, communal spaces and visual permeability encourage people to make eye contact;
-* It might be visually noisy, but it's always **harmonious**, beautiful, with welcoming warm colors and textures;
-* **Informal** and playful furniture invite people to relax and leisure activities;
-* **Wayfinding**: it simplifies the inner complexities and guides people.
-* People feel part of it and are often encouraged to leave their marks, **customizing** the space.
-* Everything, from decoration to architecture celebrates the **diversity** of customers.
-* There's always a **help desk** with someone ready to answer your questions.
-
 From these observations we ended up with these 7 core values:
 
-* Diverse
-* Communal
-* Beautiful
-* Welcoming 
-* Informal
-* Objective
-* Transparent
+* **Communal** and **transparent**: shared spaces and visual permeability encourage people to make eye contact;
+* **Beautiful**: decoration might be tend to the noisy side of the spectrum, but it's always harmonious, with welcoming warm colors and textures;
+* **Informal** and playful furniture invite people to relax and leisure activities;
+* **Objective**: it simplifies the inner complexities and guides people (wayfinding).
+* **Diverse**: Everything, from decoration to architecture celebrates the diversity of customers. People feel part of it and are often encouraged to leave their marks, customizing the space.
+* **Welcoming**: there's always a help desk with someone ready to answer your questions.
 
 <!-- ```grid|1
 ![](./values.jpg) 
@@ -93,7 +84,7 @@ Materializing the values into actual UI was done in both a top-down and bottom-u
 
 * Top-down: we used the values as a "healthcheck", to filter ideas that would come from the ideation session with the team and other all stakeholders we could bring together.
 * Bottom-up: the values themselves helped us imagine new features that we didn't think of before.
-
+  
 ```grid|1
 ![](./components.jpg)
 ```
@@ -124,7 +115,11 @@ Here's how everything worked together. This is the actual state of the page deve
 ```
 
 ```grid|1
-![](./photo.jpg "A member of VTEX Support team with the Admin open.")
+![](./vtex.com.png "The landing page for VTEX, highlighting our work.")
+```
+
+```grid|1
+![](./photo.jpg "A member of the Support Team with the Admin open, a common scene in our office (not sure why, honestly).")
 ```
 
 <!-- ### Before
