@@ -1,5 +1,31 @@
+@keyframes slideIn {
+  from { 
+    transform: translateY(-3px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from { 
+    transform: translateY(3px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ 
+
+
 html {
-  font-family: 'Muli', sans-serif;   
+  font-family: 'Muli', sans-serif;
 
   /* --red: #F52D2D; */
   --red: #ED4934;
@@ -68,8 +94,6 @@ figure figure {
 .tab {
   position: relative;
   text-decoration: none;
-
-  transition: all 0.2s;
 }
 .tab:before {
   content: '・';
@@ -79,14 +103,13 @@ figure figure {
   font-size: 1.5rem;
   color: var(--gray);
   opacity: 0;
-
-  transition: all 0.2s;
 }
 .tab--unselected {
   color: var(--gray);
 }
 .tab--unselected:hover:before { 
   opacity: 1;
+  animation: slideIn .3s ease-out
 }
 .tab--selected {
   color: var(--dark-gray);
@@ -94,6 +117,7 @@ figure figure {
 .tab--selected:before {
   color: var(--blue);
   opacity: 1;
+  animation: slideIn .3s ease-out
 }
 
 .dim {

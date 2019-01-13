@@ -5,6 +5,7 @@ import ScrollReveal from 'scrollreveal'
 
 import Layout from '../components/Layout'
 
+// import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
 import Elsewhere from '../components/Elsewhere'
@@ -15,25 +16,25 @@ import selfie from '../images/selfie.png'
 
 import { sortPosts } from '../components/utils.js'
 
-
 class IndexPage extends React.Component {
   componentDidMount() {
     if (typeof window !== `undefined`) {
       window.sr = ScrollReveal({
         // reset: false,
-        scale: 1, 
+        // scale: 1, 
         // mobile: true,
-        // // delay: 200,
         // viewFactor: 0.3,
-        duration: 1200,
-        distance: '30px',
-        easing: 'ease-in-out',
-      });
+        delay: 200,
+        duration: 900,
+        distance: '15px',
+        easing: 'ease-out',
+      }); 
       
-      // window.sr.reveal('section', { duration: 1200}, 500); 
-      window.sr.reveal('.project-card', 200); 
+      // window.sr.reveal('section', { duration: 700}, 3000); 
+      window.sr.reveal('section, .project-card');
     }
   }
+
 
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
@@ -56,8 +57,8 @@ class IndexPage extends React.Component {
               className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
             />
 
-            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns mt7-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
-              Designer of products and systems.
+            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns pt5 mt6-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
+              I'm a designer of products and systems.
             </h1>
           </div> 
 
@@ -66,20 +67,23 @@ class IndexPage extends React.Component {
           <div className="w-40-ns mt7">
             <section id="about" className="mb4 mt6-ns mt7 f4 lh-copy dark-gray">
               <p>
-                I'm a Designer interested in solving problems related to the human experience, our relation with technology and the tools we use to work and express ourselves. I'm in a journey to constantly improve a skill set that ranges from researching to designing and programming products and systems.
+                Nice to meet you!
+              </p>
+              <p>
+                I'm a Designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience, our relation with technology and the tools we use to work and express ourselves.
+              </p>
+              <p>
+                My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
               </p>
               <p>
                 I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
-              </p>
-              <p>
-                My background in Computer Science has biased towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
               </p>
             </section>
           </div>
         </section>
 
         <HomeSection title="Work">
-          <div className="f5 pb4-ns pb2 mt2">
+          <div className="f4 pb4-ns pb2 mt2">
               I'm working as a Product Designer at{' '}
               <a
                 className="pretty-link"
@@ -160,6 +164,7 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage;
+// export default AnimateLoad(IndexPage);
 
 export const pageQuery = graphql`
          query {
