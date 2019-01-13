@@ -10,24 +10,20 @@ const AnimateLoad = (WrappedComponent, options) => {
       }, 0)
     }
 
-    // Doesn't work :(
-    // componentWillUnmount() {
-    //   this.setState({ didMount: false })
-    // }
-
     render() {
       const { didMount } = this.state
 
-      let { duration, delay } = options || {};
+      let { duration, delay, animation } = options || {};
       duration = duration || '.7s';
       delay = delay || '0s';
+      animation = animation || 'fadeIn';
 
       let styles;
       if (didMount) {
         styles = {
-          animation: `slideIn ${duration} ease-out ${delay} 1`
+          animation: `${animation} ${duration} ease-out ${delay} 1`
         }
-      } else {
+      } else { 
         styles = {
           opacity: 0,
         }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const LinksList = props => {
   const { items } = props;
-  const classes = 'link dim db mb4-ns mb2 text-gradient-clip';
+  const classes = 'animatable link dim db mb4-ns mb2 text-gradient-clip';
 
   if (!items || !items.map) {
     return null;

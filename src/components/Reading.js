@@ -34,7 +34,7 @@ class Book extends React.Component {
     render() {
         const { book, mode } = this.props;
 
-        let containerClasses = 'flex flex-row pr3-ns mb5-ns w-50-m ph2-m mb4 dim link ';
+        let containerClasses = 'animatable flex flex-row pr3-ns mb5-ns w-50-m ph2-m mb4 dim link ';
         let titleClasses = ' lh-title ';
         let subtitleClasses = '';
 
