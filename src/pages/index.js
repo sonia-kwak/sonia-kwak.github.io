@@ -5,7 +5,7 @@ import ScrollReveal from 'scrollreveal'
 
 import Layout from '../components/Layout'
 
-// import AnimateLoad from '../components/AnimateLoad'
+import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
 import Elsewhere from '../components/Elsewhere'
@@ -20,18 +20,20 @@ class IndexPage extends React.Component {
   componentDidMount() {
     if (typeof window !== `undefined`) {
       window.sr = ScrollReveal({
-        // reset: false,
+        reset: false,
         // scale: 1, 
         // mobile: true,
         // viewFactor: 0.3,
-        delay: 200,
-        duration: 900,
-        distance: '15px',
-        easing: 'ease-out',
+        // delay: 200,
+        opacity: 0.2,
+        duration: 700,
+        distance: '20px',
+        easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
       }); 
       
       // window.sr.reveal('section', { duration: 700}, 3000); 
-      window.sr.reveal('section, .project-card');
+      // window.sr.reveal('section, .project-card');
+      window.sr.reveal('.animatable');
     }
   }
 
@@ -70,7 +72,7 @@ class IndexPage extends React.Component {
                 Nice to meet you!
               </p>
               <p>
-                I'm a Designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience, our relation with technology and the tools we use to work and express ourselves.
+                I'm a Designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
               </p>
               <p>
                 My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
@@ -96,7 +98,7 @@ class IndexPage extends React.Component {
               , building the future of e-commerce in one of the biggest ecosystems in
               the world.
             <p>
-              I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their business.
+              I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their businesses.
             </p>
             
             <p>
@@ -115,7 +117,7 @@ class IndexPage extends React.Component {
         </HomeSection>
 
         <HomeSection title="Projects" fullScreen
-          description="A selection of projects in which I've played a major role and I'm very proud of.">
+          description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
           <Projects posts={posts}/> 
         </HomeSection> 
             

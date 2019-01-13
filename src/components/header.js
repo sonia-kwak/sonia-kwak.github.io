@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import AnimateLoad from '../components/AnimateLoad'
+
 import Scrollspy from 'react-scrollspy'
 
 class Header extends React.Component {
@@ -89,4 +91,5 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+// export default Header
+export default AnimateLoad(Header, { animation: 'slideDownWithDelay', duration: '1.5s'})
