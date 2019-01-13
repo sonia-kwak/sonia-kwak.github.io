@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import AnimateLoad from '../components/AnimateLoad'
+
 import Header from './Header'
 import Footer from './Footer'
 import './layout.css'
@@ -28,6 +30,9 @@ const Layout = ({ children }) => (
 
       let headerClasses = `${globalPadding} `;  
       headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-white z-2 relative` : '';
+
+      const AnimatedHeader = AnimateLoad(Header);
+      // const AnimatedChildren = AnimateLoad(children);
  
       return (
         <div className="parallax">
@@ -45,10 +50,11 @@ const Layout = ({ children }) => (
           </Helmet>
  
           <div className={headerClasses}>
-            <Header/>
+            <AnimatedHeader/>
           </div>
 
-          <div className={`${globalPadding} mt6-ns mt4 mb0 bb b--light-gray lh-copy`}>
+          <div className={`${globalPadding} mt2 mb0 bb b--light-gray lh-copy`}>
+            {/* <AnimatedChildren/> */}
             {children}
           </div>
 
