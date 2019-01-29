@@ -5,7 +5,7 @@ title: "VTEX Admin Home"
 description: "A new home for the an e-commerce platform admin, setting the ground for a new generation of Admin UIs."
 tags: ['UI/UX','platform','work']
 roles: "UX Design, research"
-cover: './photo_cropped.jpg' 
+cover: './cover.png' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
 forceOrder: 2
 ---
