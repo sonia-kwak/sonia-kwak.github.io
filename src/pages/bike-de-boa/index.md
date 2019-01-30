@@ -2,7 +2,7 @@
 date: "2016-10"
 date2: "Now"
 title: "bike de boa"
-description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes good bike parking and safe streets."
+description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes for good bike parking and safer streets."
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, etc."
@@ -23,7 +23,7 @@ The collaborative aspect allows the active participation of citizens, fostering 
 This has been a great project to put in practice so many tools and concepts I've been learning in the past years about web development, UX Design and Analytics. Working in bike de boa I've learned how important it is to go beyond aesthetics and Usability to create a great product. And, most of all, beyond just improving hard skills, this has been a project with a social purpose.
 
  
-## History
+## How it all started
 
 Everything started as a simple project at a local hackathon, held in Isobar IWS, the place where I worked at that time. The theme of that year was "improving people's lives with technology". A few friendly people joined me trying to make come true an old idea of creating this platform to map bike parkings. We felt in love with it and extended the project much further than those 24h.
 
@@ -104,11 +104,11 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./process2.jpg)
 ``` 
 
-### Results
-
 ```grid|1
 ![](./attributes_chart.png)
 ```
+
+### Results
 
 ```grid|2
 ![](./attributes1.png)
@@ -124,15 +124,18 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```
 
 ```grid|1
-![](./facebook.png)
+![](./facebook.png "Our social media presence.")
 ``` 
 
 ## Final product
 
 ### Desktop
 
-```grid|2
+```grid|1
 ![](./desktop.png) 
+```
+
+```grid|1
 ![](./desktop_details.png)
 ```
 
@@ -200,7 +203,7 @@ We also were featured in many places:
 ![](./press.png)
 ```
 
-## Some more pics
+## Some more pics of our team
 
 ```grid|1
 ![](./ila.jpg "Interaction Latin America 2018")
