@@ -51,7 +51,8 @@ class ProjectPage extends React.Component {
     const readingTime = post.fields.readingTime; 
 
     const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
-    const imageMargins = 'mv6 mh0';
+    // const imageMargins = 'mv6 mh0';
+    const imageMargins = `${defaultMargins} mv6 `;
     const baseType = 'f5 dark-gray lh-copy center';
 
     let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');

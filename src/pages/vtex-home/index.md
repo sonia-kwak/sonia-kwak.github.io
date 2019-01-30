@@ -9,12 +9,12 @@ cover: './cover.png'
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
 forceOrder: 2
 ---
- 
+  
 
 ## Context
 VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products. 
-
-## Problem 
+ 
+### The problem 
 The main challenge of working in such environment is that the product is the same whether you're a small store or a huge commerce operation. So every solution we design has to leverage a huge diversity of user needs, and build something that works for everybody.
  
 The main touchpoint of our product with the merchants is the Admin. It's where our clients configure and manage everything related to their commerce operations. With the coming of age of [VTEX IO](https://vtex.io/), our serverless service for hosting e-commerce applications, we were ready to start using it to host our own Admin. 
@@ -31,7 +31,7 @@ With so much important stuff to build in the platform designing a new Home was d
 Our main objective was to create the first new VTEX admin screen, but we didn't know which one. Given we had limited time and human resources we though that old ugly Home was a perfect fit for the challenge.
 
 ```grid|1 
-![](./oldadmin.png "The old admin home screen. Quite a mess.") 
+![](./oldadmin.png "The old admin home screen. A little dull and messy.") 
 ```
 
 As with many projects in VTEX benchmarking was a big challenge. How many big e-commerce SaaS platforms do we know? Not even a handful. How many of them have really great design and targeted a very similar audience compared to us? You got the point. This pushed us to think outside the box and try to get inspiration from different places.
@@ -90,6 +90,8 @@ Materializing the values into actual UI was done in both a top-down and bottom-u
 ```
 
 ### Iterations
+
+Each component passed through several iterations, playing with variations on visual weight and content writing and collecting feedback from the team.
 
 ```grid|2
 ![](./process3.png) 

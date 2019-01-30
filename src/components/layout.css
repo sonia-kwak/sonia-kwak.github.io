@@ -46,10 +46,12 @@ figure a.pretty-link {
   box-shadow: none;
   cursor: zoom-in;
 }
-
 figure a,
 figure a.pretty-link:hover {
   background-color: transparent;
+}
+figure figure {
+  margin: 0 !important;
 }
 
 .pretty-bullet {
