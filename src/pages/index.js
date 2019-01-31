@@ -17,26 +17,25 @@ import selfie from '../images/selfie.png'
 import { sortPosts } from '../components/utils.js'
 
 class IndexPage extends React.Component {
-  componentDidMount() {
-    if (typeof window !== `undefined`) {
-      window.sr = ScrollReveal({
-        reset: false,
-        // scale: 1, 
-        // mobile: true,
-        // viewFactor: 0.3,
-        // delay: 200,
-        opacity: 0.2,
-        duration: 700,
-        distance: '20px',
-        easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
-      }); 
+  // componentDidMount() {
+  //   if (typeof window !== `undefined`) {
+  //     window.sr = ScrollReveal({
+  //       reset: false,
+  //       // scale: 1, 
+  //       // mobile: true,
+  //       // viewFactor: 0.3,
+  //       // delay: 200,
+  //       opacity: 0.2,
+  //       duration: 700,
+  //       distance: '20px',
+  //       easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
+  //     }); 
       
-      // window.sr.reveal('section', { duration: 700}, 3000); 
-      // window.sr.reveal('section, .project-card');
-      window.sr.reveal('.animatable');
-    }
-  }
-
+  //     // window.sr.reveal('section', { duration: 700}, 3000); 
+  //     // window.sr.reveal('section, .project-card');
+  //     window.sr.reveal('.animatable');
+  //   }
+  // }
 
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
