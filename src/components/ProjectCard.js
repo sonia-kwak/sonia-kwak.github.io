@@ -18,13 +18,13 @@ class ProjectCard extends React.Component {
         return (
             <Link
                 // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
-                className="link dim near-black db br1"
-                to={post.fields.slug}
+                className="project-card link near-black db br1"
+                to={post.fields.slug} 
             >
                 {
                     <div
-                        className="w-100 db card-cover-height cover card-shadow card-hover" 
-                        // className="w-100 db card-cover-height cover" 
+                        className="w-100 db project-card--cover cover card-shadow card-hover" 
+                        // className="w-100 db project-card--cover cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
                             backgroundPosition: 'center'
@@ -42,14 +42,14 @@ class ProjectCard extends React.Component {
                         </div>
                     } */}
 
-                    <div className="f6 mv1 gray">
+                    <div className="project-card--date f6 mv1 gray">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div>
 
                     {
                         post.frontmatter.title
                         &&
-                        <h3 className="f4 fw7 mt0 mb1">
+                        <h3 className="project-card--title f4 fw7 mt0 mb1">
                             {post.frontmatter.title}
                         </h3>
                     }

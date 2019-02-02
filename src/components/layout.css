@@ -153,19 +153,28 @@ figure figure {
   text-decoration: none;
 }
   
-.card-hover {
+.project-card--cover {
+  height: 18rem; 
+
   transform: translateY(0px);
+}
+.project-card--cover,
+.project-card--title,
+.project-card--date {
   transition: all 0.2s ease-out;
 }
-.card-hover:hover {
+.project-card:hover .project-card--cover {
   /* box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 18px 35px rgba(90,50,50,.1), 0 9px 18px -5px rgba(0,0,0,.3); 
 
   transform: translateY(-4px);
 }
-
-.card-cover-height {
-  height: 18rem; 
+.project-card:hover .project-card--title {
+  color: var(--orange);
+}
+.project-card:hover .project-card--date {
+  color: var(--dark-gray);
+  font-weight: 600;
 }
 
 .bg-ffffff {
