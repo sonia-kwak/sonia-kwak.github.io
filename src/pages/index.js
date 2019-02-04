@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 // import ScrollReveal from 'scrollreveal'
 
 import Layout from '../components/Layout'
-
+ 
 import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
