@@ -14,12 +14,15 @@ forceOrder: 2
   
 
 ## Context
-VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products. 
- 
-### The problem 
+VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products.
+
 The main challenge of working in such environment is that the product is the same whether you're a small store or a huge commerce operation. So every solution we design has to leverage a huge diversity of user needs, and build something that works for everybody.
  
-The main touchpoint of our product with the merchants is the Admin. It's where our clients configure and manage everything related to their commerce operations. With the coming of age of [VTEX IO](https://vtex.io/), our serverless service for hosting e-commerce applications, we were ready to start using it to host our own Admin. 
+The main touchpoint of our product with the merchants is the Admin. It's where our clients configure and manage everything related to their commerce operations. It's also where most of our design efforts go into.
+
+ 
+### The problem 
+With the coming of age of [VTEX IO](https://vtex.io/), our serverless service for hosting e-commerce applications, we were ready to start using it to host our own Admin. 
 
 This was much more than just [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food). We knew the "new platform" was more modern, robust and easier to use than anything we ever had before. A new navigation shell and routing system for the new admin was ready for use, now we needed to start replacing the iframes of the old admins with fresh, first-citizen reimplementations of them.
 
