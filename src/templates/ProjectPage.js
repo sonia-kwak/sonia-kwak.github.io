@@ -73,7 +73,7 @@ class ProjectPage extends React.Component {
     const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
     // const imageMargins = 'mv6 mh0';
     const imageMargins = `${defaultMargins} mv6 `;
-    const baseType = 'f5 dark-gray lh-copy center';
+    const baseType = 'f4 dark-gray lh-copy center';
 
     let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');
     let dateEnd = formatDate(post.frontmatter.date2, 'MMMM YYYY');
@@ -85,14 +85,14 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 dark-gray mt5 mb4 ${defaultMargins}`}>
+          <h1 className={`f1 tracked-tight fw1 dark-gray mt6 mb5 ${defaultMargins}`}>
             {props.children}
           </h1>
         ),
         h2: props => (
-          <h2 className={`f2 dark-gray fw8 mt4 mb3 ${defaultMargins}`}>
+          <h2 className={`f2 dark-gray fw6 mt5 mb3 ${defaultMargins}`}>
             {props.children}
-          </h2>
+          </h2> 
         ),
         h3: props => (
           <h3 className={`f3 dark-gray fw5 mt4 mb3 ${defaultMargins}`}>
@@ -134,7 +134,7 @@ class ProjectPage extends React.Component {
           <figcaption className="mt4 fw6 f6 dark-gray tc">{props.children}</figcaption>
         ),
         "video-container": props => (
-          <div className={`${imageMargins} flex flex-row-ns flex-column`}> 
+          <div className={imageMargins}> 
             {props.children}
           </div>
         ),
@@ -192,10 +192,12 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.description &&
               <div className="mb4 dark-gray">
-                <h2 className="f7 fw7 ttu mv1">
-                  Description
+                <h2 className="f7 fw6 ttu mv1">
+                  <span className="">
+                    Description
+                  </span>
                 </h2>
-                <div className='f3 dark-gray lh-copy'>
+                <div className='f3 dark-gray lh-title'>
                   {post.frontmatter.description}
                 </div>
               </div>
@@ -204,8 +206,10 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.tags &&
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw7 ttu mv1">
-                    Tags
+                <h2 className="f7 fw6 ttu mv1">
+                    <span className="">
+                      Tags
+                    </span>
                 </h2>
                 <div className="mv2">
                   {post.frontmatter.tags.map(tag => (
@@ -219,8 +223,10 @@ class ProjectPage extends React.Component {
 
             {
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw7 ttu mv1">
-                  Date
+                <h2 className="f7 fw6 ttu mv1">
+                  <span className="">
+                    Date
+                  </span>
                 </h2>
                 <div className="f5">
                   {dateStart}
@@ -234,8 +240,10 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.team &&
               <div className='mv4 dark-gray'>
-                <h2 className="f7 fw7 ttu mv1">
-                  Team
+                <h2 className="f7 fw6 ttu mv1">
+                  <span className="">
+                    Team
+                  </span>
                 </h2>
                 <span className="f5">
                   { post.frontmatter.team }
