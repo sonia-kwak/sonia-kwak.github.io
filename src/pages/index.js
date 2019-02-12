@@ -71,7 +71,7 @@ class IndexPage extends React.Component {
                 Nice to meet you!
               </p>
               <p>
-                I'm a Designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
+                I'm a designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
               </p>
               <p>
                 My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
@@ -196,6 +196,7 @@ export const pageQuery = graphql`
                    date2
                    title
                    description
+                   minibio
                    tags
                    cover {
                      publicURL

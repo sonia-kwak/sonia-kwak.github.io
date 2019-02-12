@@ -2,6 +2,7 @@
 date: "2016-10"
 date2: "Now"
 title: "bike de boa"
+minibio: "Web app for collaboratively mapping safe places in the city to park your bike."
 description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes for good bike parking and safer streets."
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
@@ -57,12 +58,12 @@ We back all our decisions with user interviews and extensive research for conten
 
 The idea of mapping safe places to park wasn't that new at all. We found out there were actually several collaborative maps throughout Brazil with this objective, which proved many others had also though it was a good idea. However as designers and developers we though we could drastically improve this by building a custom platform with our users needs in mind.
 
-The main problems we found with the actual collaborative maps were:
+The main issues we found with the actual collaborative maps can be divided into 4 topics:
 
-* **Lack of trust.** How good are the mapped bike racks? None had a uniform way of ranking the pins.
-* **Consistency.** Each user helping with the mapping gave focus to the attributes they were most interested in, so each pin had very different information than the others. This made really hard to detect patterns in the data, track progress, etc.
-* **Easy of use.** It's expected to happen a tradeoff when you use a generic map platform for a very specific need. We though we could offer a better experience building a platform tailored for this scenario.
-* **Findability (SEO).** Solutions using native apps were simply not indexed at all by web search engines.
+* **Trust:** How good are the mapped bike racks? None had a uniform way of ranking the pins.
+* **Data consistency:** Each user helping with the mapping gave focus to the attributes they were most interested in, so each pin had very different information than the others. This made really hard to detect patterns in the data, track progress, etc.
+* **Ease of use:** It's expected to happen a tradeoff when you use a generic map platform for a very specific need. We though we could offer a better experience building a platform tailored for this scenario.
+* **Discoverability and SEO:** Solutions using native apps were simply not indexed at all by web search engines.
 
 
 ## Development
@@ -94,10 +95,10 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./references.png "Pinterest moodboard of design references") 
 ```
 
-```grid|2
+<!-- ```grid|2
 ![](./workshop_logo2.jpg)
 ![](./workshop_logo.jpg) 
-```
+``` -->
 
 ```grid|2
 ![](./process1.jpg)
@@ -105,31 +106,22 @@ Using simple project management and communication tools such as Trello, GitHub a
 ``` 
 
 ```grid|1
-![](./attributes_chart.png)
-```
-
-### Results
-
-```grid|2
-![](./attributes1.png)
-![](./attributes2.png) 
+![](./attributes_chart.jpg)
 ```
 
 <!-- ```grid|1
 ![](./illustration.png)
 ``` -->
 
-```grid|1
-![](./mapstyle.png "Our customized version of Google Maps.")
-```
-
-```grid|1
-![](./facebook.png "Our social media presence.")
-``` 
-
 ## Final product
 
 ### Desktop
+
+<video-container> 
+    <video autoPlay controls loop width="100%" type="video/mp4">
+        <source src="./desktop1.mp4" type="video/mp4">
+    </video> 
+</video-container>
 
 ```grid|1
 ![](./desktop.png) 
@@ -138,12 +130,6 @@ Using simple project management and communication tools such as Trello, GitHub a
 ```grid|1
 ![](./desktop_details.png)
 ```
-
-<video-container> 
-    <video autoPlay controls loop width="100%" type="video/mp4">
-        <source src="./desktop1.mp4" type="video/mp4">
-    </video> 
-</video-container>
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
@@ -162,13 +148,30 @@ Education is an important part of this project. Concepts are explained in more d
 ![](./tooltips.png)  
 ```
  
-For even more in depth tips on bike parkings and safety we create guides. These are based on international urbanism guides, which we made an effort to simplify and make as accessible as possible.
+<!-- For even more in depth tips on bike parkings and safety we create guides. These are based on international urbanism guides, which we made an effort to simplify and make as accessible as possible. -->
 
-<!-- 
-```grid|2
+<!-- ```grid|2
 ![](./guide1.png)
 ![](./guide2.png)
 ``` -->
+
+We leveraged as much as possible the flexibility of Google Maps for customizing everything in the map, cutting out all information that wasn't strictly necessary and fine-tuning colors to match the visual identiy.
+
+```grid|1
+![](./mapstyle.png "Our customized version of Google Maps.")
+```
+
+Like our source code all the project data is also open, and we created a simple dashboard for users to easily browser, search and filter through data. It's also possible to export it with convenient file formats such as CSV or XLS.
+
+```grid|1
+![](./dashboard.png)
+```
+
+We leveraged as much as possible the flexibility of Google Maps for customizing everything in the map, cutting out all information that wasn't strictly necessary and fine-tuning colors to match the visual identity.
+
+```grid|1
+![](./facebook.png)
+``` 
 
 ### Mobile
 

@@ -11,7 +11,7 @@ class Reading extends React.Component {
                 <div className="flex flex-wrap">
                     {
                         bookNodes.reading.map(i =>
-                            <Book mode="half" book={i.node.book}/>
+                            <Book mode="mini" book={i.node.book}/>
                         )
                     }
                 </div>
@@ -51,6 +51,8 @@ class Book extends React.Component {
                 break;
             case 'mini':
                 containerClasses += "w-third-ns w-50";
+                titleClasses += 'f5 fw6'
+                subtitleClasses += 'f6'
                 break;
         }
 
@@ -70,9 +72,9 @@ class Book extends React.Component {
                         <div className={titleClasses}>
                             {book.title}
                         </div>
-                        {/* <div className={subtitleClasses}>
+                        <div className={subtitleClasses}>
                             by {book.authors[0].name}
-                        </div> */}
+                        </div>
                     </div>
                 }
             </a>

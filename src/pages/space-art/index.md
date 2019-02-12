@@ -3,7 +3,8 @@ date: "2004"
 date2: "2007"
 title: "Space Art"
 cover: "./space1.jpg"
-description: "My first contact with digital art, and the birth of my aesthetic self. Making space wallpapers got me started with digital design tools and with a vibrant community of online artists and designers."
+minibio: "My first contact with digital design, at 14yo, creating space art wallpapers."
+description: "My first contact with digital art, the birth of my aesthetic self. Making space wallpapers got me started with digital design tools and with a vibrant community of online artists and designers called DeviantArt."
 tags: ['art','illustration','old']
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2018-03"
 date2: "2018-10"
-title: "VTEX Admin Home"
+title: "VTEX Home"
+minibio: "A new home dashboard for an ecommerce platfom."
 description: "A new home for the an e-commerce platform admin, setting the ground for a new generation of Admin UIs."
 tags: ['UI/UX','platform','work']
 roles: "UX Design, research"

@@ -2,7 +2,8 @@
 date: "2012-09-07"
 date2: "2013-07-25"
 title: "infHub"
-description: "A platform for university students share their projects."
+minibio: "My first web development and UX project. A platform for university students to share their projects."
+description: "A platform for university students to share their projects."
 tags: ['social network','platform','academic','UI/UX']
 roles: "Front-end/Back-end development, Design"
 team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"

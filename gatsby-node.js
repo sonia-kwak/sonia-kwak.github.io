@@ -36,6 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     forceOrder
                     description
+                    minibio
                     tags
                     cover {
                       publicURL

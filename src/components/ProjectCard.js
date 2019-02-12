@@ -34,29 +34,37 @@ class ProjectCard extends React.Component {
 
                 {/* <div className="ph3 pv4"> */}
                 <div className="pv3">
-                    {/* {
-                        post.frontmatter.description
-                        &&
-                        <div className="f6 gray">
-                            {post.frontmatter.description}
-                        </div>
-                    } */}
-
-                    <div className="project-card--date f6 mv1 gray">
+                    <div className="project-card--date f6 mt1 silver">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div>
 
                     {
                         post.frontmatter.title
                         &&
-                        <h3 className="project-card--title f4 fw7 mt0 mb1">
+                        <h3 className="project-card--title f4 fw7 dark-gray mt0 mb0">
                             {post.frontmatter.title}
                         </h3>
                     }
 
+                    {/* {
+                        post.frontmatter.description
+                        &&
+                        <div className="project-card--description f6 silver lh-copy">
+                            {post.frontmatter.description}
+                        </div>
+                    } */}
+
+                    {
+                        post.frontmatter.minibio
+                        &&
+                        <div className="project-card--description f5 mt0 gray lh-copy">
+                            {post.frontmatter.minibio}
+                        </div>
+                    }
+
                     {
                         post.frontmatter.tags &&
-                        <div className="flex flex-row flex-wrap">
+                        <div className="flex flex-row flex-wrap mt2">
                             {post.frontmatter.tags.map(tag => (
                                 <Tag>
                                     {tag}

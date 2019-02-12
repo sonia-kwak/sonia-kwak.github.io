@@ -2,6 +2,7 @@
 date: "2018-05"
 date2: "2018-06"
 title: "Bicicultura PWA"
+minibio: "A simple web app for the biggest brazilian conference on bike culture."
 description: "A simple web app for improving attendees' experience in the biggest brazilian conference on bike culture."
 tags: ['activism','development','volunteer', 'UI/UX']
 roles: "Front-end Development, UX Design"

@@ -1,6 +1,7 @@
 ---
 date: "2017-06"
 title: "Game of Lives"
+minibio: "A Virtual Reality game that foster empathy for social issues."
 description: "A story-telling VR game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes. Winner of the first Isobar International Hackathon."
 tags: ['hackathon','game','social']
 roles: "Game design, storyboard writing, development"
