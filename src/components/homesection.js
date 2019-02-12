@@ -28,7 +28,7 @@ class HomeSection extends React.Component {
 
                     {
                         (!fullScreen || description) &&
-                        <div className='w-40-ns f5 mt0'>
+                        <div className='w-50-ns f5 mt0'>
                             {descriptionContent}
                             {!fullScreen && children }
                         </div>
