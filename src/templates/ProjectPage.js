@@ -73,7 +73,7 @@ class ProjectPage extends React.Component {
     const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
     // const imageMargins = 'mv6 mh0';
     const imageMargins = `${defaultMargins} mv6 `;
-    const baseType = 'f4 dark-gray lh-copy center';
+    const baseType = 'f4-ns f5 dark-gray lh-copy center';
 
     let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');
     let dateEnd = formatDate(post.frontmatter.date2, 'MMMM YYYY');
@@ -88,7 +88,7 @@ class ProjectPage extends React.Component {
           <h1 className={`f1 tracked-tight fw1 near-black mt6 mb5 ${defaultMargins}`}>
             {props.children}
           </h1>
-        ),
+        ), 
         h2: props => (
           <h2 className={`f2 near-black fw6 mt5 mb3 ${defaultMargins}`}>
             {props.children}
