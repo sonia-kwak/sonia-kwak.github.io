@@ -41,7 +41,7 @@ class ProjectCard extends React.Component {
                     {
                         post.frontmatter.title
                         &&
-                        <h3 className="project-card--title f4 fw7 dark-gray mt0 mb0">
+                        <h3 className="project-card--title f4 fw7 near-black mt0 mb0">
                             {post.frontmatter.title}
                         </h3>
                     }

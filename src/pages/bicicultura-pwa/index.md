@@ -71,13 +71,13 @@ For the UI I chose to use [material-ui](https://material-ui.com/), a popular Rea
 ``` -->
 
 <video-container> 
-    <video autoPlay controls loop width="100%" type="video/mp4">
+    <video autoPlay controls loop width="30%" type="video/mp4">
         <source src="./app_mobile1.mp4" type="video/mp4">
     </video> 
-    <video autoPlay controls loop width="100%" type="video/mp4">
+    <video autoPlay controls loop width="30%" type="video/mp4">
         <source src="./app_mobile2.mp4" type="video/mp4">
     </video>
-    <video autoPlay controls loop width="100%" type="video/mp4">
+    <video autoPlay controls loop width="30%" type="video/mp4">
         <source src="./app_mobile3.mp4" type="video/mp4">
     </video>
 </video-container>
@@ -139,7 +139,7 @@ Another thing I pretend to work someday is to generalize how the event schedule 
 
   
 
-## More pics
+# Event pictures
 
 <!-- ```grid|3
 ![](./website_schedule_desktop.png "Before")
@@ -147,10 +147,9 @@ Another thing I pretend to work someday is to generalize how the event schedule 
 ![](./mobile_schedule_now_complete.png "After (mobile)")
 ``` -->
 
-```grid|3
+```grid|2
 ![](./event1.jpg)
 ![](./event2.jpg)
-![](./event3.jpg)
 ```
 
 ```grid|2
@@ -158,8 +157,12 @@ Another thing I pretend to work someday is to generalize how the event schedule 
 ![](./event8.jpg)
 ```
 
-```grid|3
+```grid|2
+![](./event3.jpg)
 ![](./event4.jpg)
+```
+
+```grid|2
 ![](./event5.jpg)
 ![](./event6.jpg) 
 ```

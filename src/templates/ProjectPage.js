@@ -85,17 +85,17 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 dark-gray mt6 mb5 ${defaultMargins}`}>
+          <h1 className={`f1 tracked-tight fw1 near-black mt6 mb5 ${defaultMargins}`}>
             {props.children}
           </h1>
         ),
         h2: props => (
-          <h2 className={`f2 dark-gray fw6 mt5 mb3 ${defaultMargins}`}>
+          <h2 className={`f2 near-black fw6 mt5 mb3 ${defaultMargins}`}>
             {props.children}
           </h2> 
         ),
         h3: props => (
-          <h3 className={`f3 dark-gray fw5 mt4 mb3 ${defaultMargins}`}>
+          <h3 className={`f3 near-black fw5 mt4 mb3 ${defaultMargins}`}>
             {props.children}
           </h3>
         ),
@@ -105,7 +105,7 @@ class ProjectPage extends React.Component {
           }</p>
         ),
         blockquote: props => (
-          <div className={`mt0 ml5 mv4 f3`} style={{textIndent: '-.5em'}}>
+          <div className={`mt0 ml5 mv5 f3 fw6`} style={{textIndent: '-.5em'}}>
             {props.children}
           </div>
         ),

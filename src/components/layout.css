@@ -54,6 +54,7 @@ html {
   /* --bg-color: white; */
 
   --gray: #777;
+  --near-black: #111111;
   --dark-gray: #333;
   --light-gray: #eee;
 }
@@ -174,7 +175,7 @@ figure figure {
   color: var(--orange);
 }
 .project-card:hover .project-card--date {
-  color: var(--dark-gray);
+  color: var(--near-black);
   font-weight: 600;
 }
 .project-card:hover .project-card--description {
@@ -217,7 +218,11 @@ figure figure {
 }
  
 .lh-copy {
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+.dark-gray {
+  color: rgba(17,17,17,0.8);
 }
 
 .shadow-6 {
