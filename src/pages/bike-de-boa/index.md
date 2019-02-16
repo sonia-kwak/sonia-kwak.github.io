@@ -3,10 +3,10 @@ date: "2016-10"
 date2: "Now"
 title: "bike de boa"
 minibio: "Web app for collaboratively mapping safe places in the city to park your bike."
-description: "A collaborative map of places to park your bike safely, encouraging you to bike more. With the web app you can search for bike parkings nearby and map new ones while learning about urban mobility and what makes for good bike parking and safer streets."
+description: "A cicloactivist project that aims to foster a positive vibe in the community, encouraging people to use more their bikes in the city. With the web app you can search for safe places to park your bike nearby, as well as map new ones while learning what makes for good bike parking and safer streets."
 tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
-team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, etc."
+team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi, and others."
 cover: './cover.png'
 forceOrder: 1
 ---
@@ -17,7 +17,7 @@ forceOrder: 1
 ![](./illustration_simpler.png)
 ``` -->
 
-We believe that the bicycle is the future of urban mobility, and that having better bike parkings is a great way of promoting the bike culture in our cities. This project intends to push forward the discussion of what are good bike parkings, at the same time we collect data about the presence and evolution of this kind of structure in the cities of Brazil.
+We believe that the bicycle is the future of urban mobility, and that having better bike parkings is a great way of promoting the bike culture in our cities. This project intends to push forward the discussion of what are good bike parkings, at the same time we collect data about the presence and evolution of this kind of structure in the cities of Brazil. 
 
 The collaborative aspect allows the active participation of citizens, fostering a positive reinforcement that encourages more people commute with their bikes. On top of that the reviews and our bike parking guide bring information about best practices in a friendly way that educates about safety and encourages better structures to be installed.
 
@@ -31,9 +31,9 @@ Everything started as a simple project at a local hackathon, held in Isobar IWS,
 The team also grew a lot, and we ended up creating an independent collective of people from diverse backgrounds that were interested in promoting the bicycle culture in Brazil with this project.
 
 ```grid|1 
-![](./team.png)
+![](./team.png "This was a collaborative, non-profit project that received support from several people.")
 ``` 
-
+ 
  
 # The problem
 
@@ -168,7 +168,7 @@ Like our source code all the project data is also open, and we created a simple 
 ![](./dashboard.png "Our custom dashboard for efficiently browsing through the data and downloading it.")
 ```
 
-I also designed [a dashboard on Google Data Studio](https://datastudio.google.com/open/1Dcx_Cq_rDgmD4cjQqumQZ2ilvl7bQDey), which is automatically synced with our Analytics data and shows the most important data about last month's activity on the platform.
+I also designed a simple [dashboard on Google Data Studio](https://datastudio.google.com/open/1Dcx_Cq_rDgmD4cjQqumQZ2ilvl7bQDey), which is automatically synced with our Google Analytics and shows the most important data about any given month activity on the platform.
  
 ```grid|1
 ![](./datastudio.png)
@@ -182,7 +182,9 @@ We made some effort to have a decent social media presence as well, both on Face
 
 ### Mobile
 
-Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This hypothesis is now well validated already, with Google Analytics Because of that both design and front-end development was though mobile-first.
+Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This led us to use a mobile-first strategy, both for UX and Front-end development, making sure this was the main touchpoint we invested our energies.
+
+It's interesting to note however that his hypothesis was never totally validated through our Analytics data. Today the access is still well split between Desktop and Mobile, with the latter overpassing the first for just a little.
 
 ```grid|3 
 ![](./playstore_screenshots1.png)
@@ -195,8 +197,6 @@ Our hypothesis was that the main use of the app would be on Mobile, with the use
 ![](./playstore_screenshots5.png)
 ![](./playstore_screenshots6.png)
 ```
- 
-However, the hypothesis of Mobile was the main access didn't hold during the project life, which led us to invest some more energy making the Desktop experience better.
 
 <!-- ```grid|1
 ![](./analytics_mobile.png.png)
