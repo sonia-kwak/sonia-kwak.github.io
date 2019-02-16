@@ -66,6 +66,9 @@ The main issues we found with the actual collaborative maps can be divided into 
 * **Discoverability and SEO:** Solutions using native apps were simply not indexed at all by web search engines.
 
 
+
+## Execution
+
 ## Development
 
 Building native apps, although they offer the best performance, are very cost-intensive. Using web technologies we found a way to have one single code base while offering a cross-platform and cross-device experience. An emerging technology called PWA caught our attention as a way to bridge the native app experience with the accessibility of the Web.
@@ -81,11 +84,9 @@ Since then dozens of people have passed by this project, contributing as they co
 
 Using simple project management and communication tools such as Trello, GitHub and Slack proved to be essential to enable so many people to contribute asynchronously. Making this project Open Source was also a natural choice.
 
-
-## Process
+## Visual design
 
 <!-- For this project to reach its potential of conveying messages of positivity, encouragin -->
-
 
 <!-- ```grid|1
 ![](./mindmap.png "The brand values mindmap")
@@ -127,9 +128,9 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./desktop.png) 
 ```
 
-```grid|1
+<!-- ```grid|1
 ![](./desktop_details.png)
-```
+``` -->
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
@@ -161,19 +162,27 @@ We leveraged as much as possible the flexibility of Google Maps for customizing 
 ![](./mapstyle.png "Our customized version of Google Maps.")
 ```
 
-Like our source code all the project data is also open, and we created a simple dashboard for users to easily browser, search and filter through data. It's also possible to export it with convenient file formats such as CSV or XLS.
+Like our source code all the project data is also open, and we created a simple [dashboard](https://www.bikedeboa.com.br/dados) for users to easily browser, search and filter through data. Using our data for research or other applications is as easy as clicking the download button, which exports all our data in convenient file format such as CSV or XLS.
 
 ```grid|1
-![](./dashboard.png)
+![](./dashboard.png "Our custom dashboard for efficiently browsing through the data and downloading it.")
 ```
 
-We leveraged as much as possible the flexibility of Google Maps for customizing everything in the map, cutting out all information that wasn't strictly necessary and fine-tuning colors to match the visual identity.
+I also designed [a dashboard on Google Data Studio](https://datastudio.google.com/open/1Dcx_Cq_rDgmD4cjQqumQZ2ilvl7bQDey), which is automatically synced with our Analytics data and shows the most important data about last month's activity on the platform.
+ 
+```grid|1
+![](./datastudio.png)
+```
+ 
+We made some effort to have a decent social media presence as well, both on Facebook and Instagram. Digital Marketing was not the expertise of any of us in the team, so there was a steep learning curve that I'm not sure we ever conquered.
 
 ```grid|1
 ![](./facebook.png)
 ``` 
 
 ### Mobile
+
+Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This hypothesis is now well validated already, with Google Analytics Because of that both design and front-end development was though mobile-first.
 
 ```grid|3 
 ![](./playstore_screenshots1.png)
@@ -187,6 +196,12 @@ We leveraged as much as possible the flexibility of Google Maps for customizing 
 ![](./playstore_screenshots6.png)
 ```
  
+However, the hypothesis of Mobile was the main access didn't hold during the project life, which led us to invest some more energy making the Desktop experience better.
+
+<!-- ```grid|1
+![](./analytics_mobile.png.png)
+``` -->
+
 ## Results
 
 We're very happy that all the work has had good results. We've managed to burst the bubble and expand to all the country, and the engagement numbers are quite good for a project with zero marketing budget.
