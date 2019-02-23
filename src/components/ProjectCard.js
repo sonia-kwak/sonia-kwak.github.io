@@ -23,7 +23,7 @@ class ProjectCard extends React.Component {
             >
                 {
                     <div
-                        className="w-100 db project-card--cover cover card-shadow card-hover" 
+                        className="w-100 db project-card--cover cover card-shadow card-hover br1" 
                         // className="w-100 db project-card--cover cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,

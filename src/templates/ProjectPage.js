@@ -27,7 +27,7 @@ class ResultsBanner extends React.Component {
 
     return (
       <div 
-        className="nl7 nr7 mv6 pa6 bg-near-white flex flex-row-ns flex-column justify-around tl-ns tc"
+        className="nl6 nr6 nl4-m nr4-m nl3 nr3 mv6 pa6 bg-near-white flex flex-row-l flex-column justify-around tl-ns tc"
       >
         {
           Object.keys(dataObj).map ( i => (
@@ -70,10 +70,10 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    const defaultMargins = 'mh0 mh0-m mh6-ns mw7';
+    const defaultMargins = 'mw7 center';
     // const imageMargins = 'mv6 mh0';
-    const imageMargins = `${defaultMargins} mv6 `;
-    const baseType = 'f4-ns f5 dark-gray lh-copy center';
+    const imageMargins = `${defaultMargins} mv6-ns mv5 `;
+    const baseType = 'f4-ns f5 dark-gray lh-copy ';
 
     let dateStart = formatDate(post.frontmatter.date, 'MMMM YYYY');
     let dateEnd = formatDate(post.frontmatter.date2, 'MMMM YYYY');
@@ -85,12 +85,12 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f1 tracked-tight fw1 near-black mt6 mb5 ${defaultMargins}`}>
+          <h1 className={`f1 tracked-tight fw1 near-black mt6-ns mb5-ns mt5 mb4 ${defaultMargins}`}>
             {props.children}
           </h1>
         ), 
         h2: props => (
-          <h2 className={`f2 near-black fw6 mt5 mb3 ${defaultMargins}`}>
+          <h2 className={`f2 near-black fw6 mt5-ns mb3-ns mt4 mb2 ${defaultMargins}`}>
             {props.children}
           </h2> 
         ),
@@ -180,7 +180,7 @@ class ProjectPage extends React.Component {
             <h1 className="f1 mt0 fw9 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
-            <div className={`f6 gray`}>
+            <div className='f6 gray db-ns dn'>
               {readingTime.text}
             </div>
           </div>
@@ -192,11 +192,6 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.description &&
               <div className="mb4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
-                  <span className="">
-                    Description
-                  </span>
-                </h2>
                 <div className='f3 dark-gray lh-title'>
                   {post.frontmatter.description}
                 </div>
@@ -206,12 +201,12 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.tags &&
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
                     <span className="">
                       Tags
                     </span>
                 </h2>
-                <div className="mv2">
+                <div className="">
                   {post.frontmatter.tags.map(tag => (
                     <Tag size="big">
                       {tag}
@@ -223,7 +218,7 @@ class ProjectPage extends React.Component {
 
             {
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
                   <span className="">
                     Date
                   </span>
@@ -240,12 +235,12 @@ class ProjectPage extends React.Component {
             {
               post.frontmatter.team &&
               <div className='mv4 dark-gray'>
-                <h2 className="f7 fw6 ttu mv1">
+                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
                   <span className="">
                     Team
                   </span>
                 </h2>
-                <span className="f5">
+                <span className="f5 din">
                   { post.frontmatter.team }
                 </span>
               </div>
@@ -295,7 +290,7 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-100 tc mt6">
-            <Link to="/#projects" className="ba br1 dim f4 fw6 link orange pa3">
+            <Link to="/#projects" className="ba br1 dim f4 fw6 link orange pa3 br1">
               View all projects
             </Link>
           </div>
