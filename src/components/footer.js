@@ -1,13 +1,13 @@
 import React from 'react'
 
 const Footer = () => (
-    <div className="flex flex-row-ns flex-column pt5 pb6 f7 w-100 silver justify-between">
+    <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between">
         <div className="mw6-ns lh-copy">
             Designed with ❤ in Figma, developed with GatsbyJS, and styled with Tachyons.
         </div>
         <div className="mv4 mv0-ns">
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim silver"
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="https://github.com/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 438.549 438.549'>
@@ -17,7 +17,7 @@ const Footer = () => (
                 {/* GitHub */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim silver"
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="https://www.instagram.com/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 512 512'>
@@ -30,7 +30,7 @@ const Footer = () => (
                 {/* Instagram */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim silver"
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="https://twitter.com/cmdalbem">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 612 612'>
@@ -40,7 +40,7 @@ const Footer = () => (
                 {/* Twitter */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim silver"
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="https://www.linkedin.com/in/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 430.117 430.117'>
@@ -50,7 +50,7 @@ const Footer = () => (
                 {/* LinkedIn */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim silver"
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="mailto:cristiano.dalbem@gmail.com
                 ">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'

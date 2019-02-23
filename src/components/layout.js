@@ -53,12 +53,12 @@ const Layout = ({ children }) => (
             <AnimatedHeader/>
           </div>
 
-          <div className={`${globalPadding} mt2 mb0 bb b--light-gray lh-copy`}>
+          <div className={`${globalPadding} mt2 mb0`}>
             {/* <AnimatedChildren/> */}
             {children}
           </div>
 
-          <div className={`${globalPadding} bg-near-white`}>
+          <div className={`${globalPadding} bg-dark-gray`}>
             <Footer/>
           </div>
         </div>
