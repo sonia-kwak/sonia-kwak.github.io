@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Tag = (props) => {
-    let classes = 'br2 ba b--silver gray ';
+    let classes = 'br2 ba b--moon-gray gray dib ';
 
     if (props.size && props.size === 'big') {
-        classes += 'f5 mr2 mt2 pv1 ph2';
+        classes += 'f5 mr2 mb2 pv1 ph2';
     } else {
-        classes += 'f7 mr2 mt2 pa1';
+        classes += 'f7 mr2 mb2 pa1';
     }
 
     return (
