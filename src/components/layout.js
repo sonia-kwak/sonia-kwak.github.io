@@ -58,7 +58,7 @@ const Layout = ({ children }) => (
             {children}
           </div>
 
-          <div className={`${globalPadding} bg-near-white db-ns dn`}>
+          <div className={`${globalPadding} bg-near-white`}>
             <Footer/>
           </div>
         </div>
