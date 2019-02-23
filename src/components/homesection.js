@@ -6,18 +6,18 @@ class HomeSection extends React.Component {
         const anchor = title.toLowerCase();
 
         // const containerClasses = `${fullScreen && 'bg-near-white nl4-ns nr4-ns'}`;
-        const containerClasses = '';
+        const containerClasses = 'mv7-ns mv4 ';
 
         const descriptionContent = (
             description &&
-            <p className="f4 dark-gray fw6 mb5-ns mb4 mt2-ns mt0 lh-copy">
+            <p className="f4 dark-gray fw6 mb5-ns mb4 mt0-ns mt0 lh-copy">
                 {description}
             </p>
         );
 
         return (
             <section id={anchor} className={containerClasses}>
-                <div className="mb4 mt7-ns mt4 flex flex-row-ns flex-column items-top">
+                <div className="mb4 flex flex-row-ns flex-column items-top">
                     <div className="w-30-ns pt3 pr4-ns">
                         <div className="w-100 bt bw1 b--near-black"></div>
                     </div>
