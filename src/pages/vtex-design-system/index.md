@@ -19,18 +19,27 @@ The main touchpoint of our product with the merchants is the Admin. It's where o
 
 ## The problem
 
+- lack of consistency due to highly autonomous company culture
+- scaling design/frontend
+- upcoming app store and lack of expertise from partners
 
 ## Process
+
+- books, articles
+- benchmarks of all other design systems
+- understanding the past experience and building on top of it
 
 
 ## Components
 
-I've been contributing with a variety of components. Everything that is added to the System is presented in our weekly meetings, where Designers and Developers give their feedbacks and make sure we only put in production something that makes sense for us.
+Among other stuff related to Design Systems I've been contributing with a variety of components. Everything that is added to the System is presented in our weekly meetings, where Designers and Developers give their feedbacks and make sure we only include something that makes sense for the teams in general.
 
-Here are some details about some of my favorite components that I've helped design, and sometimes even develop.
+Here are some details about some of my favorite components that I've helped design - and sometimes even code :)
+
 
 ### Table
 
+After basic atomic components such as buttons and inputs, tables are the most used components in Admin screens in almost every digital product. Going through the legacy Admin screens it was clear it wasn't different for us. Most of them were mainly based on a main table, often with common features such as column sorting, search, filtering, importing and exporting. So  we started gathering forces from designers and developers of different teams to create our own, awesome Table component.
 
 ```grid|1
 ![](./table.png)
@@ -41,8 +50,20 @@ Here are some details about some of my favorite components that I've helped desi
 ```
 
 ```grid|1
-![](./table_bulk.png)
+![](./table_bench.png "The enormous benchmark we did only for this component")
+``` 
+
+```grid|1
+![](./table_filter_interactions.png "Studies I did of different interaction models for filters and their pros and cons")
 ```
+
+```grid|1
+![](./table_filterbar.png "Final design of our filter system") 
+```
+
+```grid|1
+![](./table_bulk.png) 
+``` 
 
 
 ### Conditions builder
@@ -72,7 +93,13 @@ Here are some details about some of my favorite components that I've helped desi
 ```
 
 
-### System documentation
+### Admin layout components
+
+
+
+## Documentation
+
+I'm always a big main advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose (like Bootstrap), it was thought to limit usages that we though wouldn't be desirable. However there's a limit of the things we can test automatically in the form of React PropTypes, and the rest, like good copy, depends on some guidance.
 
 ```grid|1
 ![](./docs.png)
