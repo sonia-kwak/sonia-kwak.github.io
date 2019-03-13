@@ -18,12 +18,12 @@ class HomeSection extends React.Component {
         return (
             <section id={anchor} className={containerClasses}>
                 <div className="mb4 flex flex-row-ns flex-column items-top">
-                    <div className="w-30-ns pt3 pr4-ns">
+                    <div className="w-30-ns pt3 pr4-ns db-ns dn">
                         <div className="w-100 bt bw1 b--near-black"></div>
                     </div>
 
                     <div className="w-20-ns">
-                        <h2 className="f3-ns f2 fw8 mv0-ns mt3 mb2 near-black">{title}</h2>
+                        <h2 className="f3-ns f2 fw8 mv0-ns mb2 near-black">{title}</h2>
                     </div>
 
                     {

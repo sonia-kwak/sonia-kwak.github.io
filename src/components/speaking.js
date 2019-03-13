@@ -4,7 +4,7 @@ const Speaking = () => (
     <div>
       <Talk
         title="A UX da Mobilidade Urbana - Cidades melhores para pedalar e viver"
-        context="Interaction Latin America, 2018"
+        context="ILA (Interaction Latin America), ILA Redux RJ, ILA Redux SP. 2018"
       link="https://docs.google.com/presentation/d/1pI4ONbgxePD8DrPSmUlRHCa_mSGdzyGJB8Qb38ur4bs/edit?usp=sharing"
       />
 
@@ -69,7 +69,7 @@ class Talk extends React.Component {
     const { title, context, link } = this.props;
 
     return (
-      <div className="pb4-ns pb3 animatable">
+      <div className="pb4-ns pb3 animatable lh-copy">
         <div className="fw5 f4 mv1">
           {/* {title} */}
           <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">

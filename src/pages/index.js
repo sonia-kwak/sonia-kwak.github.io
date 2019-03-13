@@ -71,7 +71,7 @@ class IndexPage extends React.Component {
                 Nice to meet you!
               </p>
               <p>
-                I'm a designer in a journey to improve a skill set that ranges from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
+                I'm a designer with a skill set ranging from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
               </p>
               <p>
                 My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
@@ -95,13 +95,9 @@ class IndexPage extends React.Component {
                 VTEX
                 </a>
               , building the future of e-commerce in one of the biggest ecosystems in
-              the world.
+              the world. I've been contributing in a variety of teams and projects, participating from all project phases, always in search of the right balance between the inherent complexity of the platform, technology constraints and the pains and needs of thousands of users that depend on our platform everyday to run their businesses.
             <p>
-              I've been contributing in a variety of teams and projects, always searching for a balance between the complexity of the systems, technology constraints and the needs of thousands of users that depend on our platform everyday to run their businesses.
-            </p>
-            
-            <p>
-              In my free time as a cicloactivist and I've built{' '}
+              In my free time I'm a cicloactivist and I've built{' '}
               <a
                 className="pretty-link"
                 target="_blank"

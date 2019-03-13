@@ -18,7 +18,7 @@ class ProjectCard extends React.Component {
         return (
             <Link
                 // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
-                className="project-card link near-black db br1"
+                className="project-card link near-black db br1 lh-copy"
                 to={post.fields.slug} 
             >
                 {
