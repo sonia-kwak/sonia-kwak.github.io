@@ -34,19 +34,22 @@ With all this momentum we starting seeing lots of legacy systems being rewritten
 
 The first thing that called my attention when we started discussing this project was the fact that something similar had already existed in the company. A few years ago some Designers that were not working with us anymore started a similar initiative which clearly did not work out, so we started looking back at that moment with a critical and open-minded view to make sure we wouldn't repeat the errors of the past.
 
-Building on top of those insights we agreed some basic organization principles:
+Building on top of those insights we agreed on some important working principles:
 
-* We needed to find a easy-to-use tool for building our component library and documentations, one which we would need the last of customization or building things in-house. We just don't have time to for that, we needed to focus our energy in the actual work.
+* To quickstart we would use the same tech stack as VTEX IO, and we would bootstrap our system with [Tachyons](https://tachyons.io/), a CSS Framework that already had a Design System-like structure.
 
-* The Design Principles devised by that team were very unknown for the company, which was a sign that they weren't very representative. Part of creating this new design system would be to revise them, probably devising a new process.
+* We chose [Styleguidist](https://react-styleguidist.js.org/) to be the tool for building our component library and documentations automatically. In the past the team had started developing their own tool in house, but we didn't have time for that.
 
-* Building a glossary of all components and variations being used in the platform is cool, but it's just too much work for all the hundreds of screen we had. But, most importantly, we didn't feel it was so important being retrocompatible in that sense, and looking ahead was more important than looking back.
+* The current Design Principles were mostly unknown in the company, which was a sign that they weren't very representative. Part of creating this new design system would be to revise them.
+
+* Building a glossary of all components and variations being used in the platform is cool, but it's just too much work for all the hundreds of screen we had. Most importantly, we didn't feel it was so important being retrocompatible in that sense, and looking ahead was more important than looking back.
   
 * References should go beyond general-purpose systems like Material, or plain component libraries like Bootstrap. We need to look at references that were more contextualized, and closest to what we needed to build. 
 
-```grid|1
+```grid|1 
 ![](./bench.png "Some of our favorite references of enterprise Design Systems.")
 ```
+
 
 ### Rituals & team building
 
@@ -158,7 +161,7 @@ More complex than tables but yet a very common pattern on admin systems are Cond
 
 Looking at other digital products we found out a conditions builder is a common pattern, especially on the more advanced products. Some were truly inspiring, while others not that much. One common pitfall was giving control to each boolean operator individually, which can lead the user into creating unintentional precedence mistakes (e.g. in `a OR b AND c` the `AND` has precedence, but the user might not know that). Others had poor visual design, which  made it look overwhelming and more complex it actually was.
 
-```grid|1 
+```grid|1  
 ![](./conditions_bench.png "Benchmark for the Conditions Builder")
 ``` 
 
