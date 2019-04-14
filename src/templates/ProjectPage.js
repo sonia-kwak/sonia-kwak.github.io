@@ -133,6 +133,9 @@ class ProjectPage extends React.Component {
         figcaption: props => (
           <figcaption className="mt4 fw6 f6 dark-gray tc">{props.children}</figcaption>
         ),
+        code: props => (
+          <code className="f6 bg-light-gray ph2">{props.children}</code>
+        ),
         "video-container": props => (
           <div className={imageMargins}> 
             {props.children}
