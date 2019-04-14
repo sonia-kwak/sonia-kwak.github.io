@@ -50,7 +50,11 @@ Building on top of those insights we agreed some basic organization principles:
 
 ### Rituals & team building
 
+*Coming soon*
 
+```grid|1 
+![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
+```
 
 ### Documentation
 
@@ -67,18 +71,16 @@ I'm always a big advocate for the need of documentation and guidelines with ever
 </video-container>
 
 
-### Fostering engagement
-
-```grid|1 
-![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
-```
-
 
 # Components
 
-Everything that is added to the System is presented in our weekly meetings, where Designers and Developers give their feedbacks and make sure we only include something that makes sense for everyone and feels like part of our identity.
+```grid|1
+![](./styleguide_figma.png "The system components implemented in Figma.")
+```
 
-Among the diverse contributions I've bought to the organization of the project and the team I've being one of the main responsibles for some very interesting components we designed and developed. Here are some further details about my favorite ones!
+Everything that was added to the component library was presented in our weekly meetings, where Designers and Developers gave their feedbacks and made sure we only include something that makes sense for everyone and feels like part of our identity.
+
+I contributed closely with the design and event the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**.
 
 
 ## Table
@@ -89,8 +91,10 @@ After basic atomic components such as buttons and inputs, tables are the most us
 ![](./four_admins.png "4 examples of admins that we designed in different times of the company and almost felt like 4 different platforms.") 
 ```
 
+We did an extensive benchmark research in digital products and found out that powerful table components were ubiquitous, either in B2C as B2B products.
+
 ```grid|1
-![](./table_bench.png "Benchmarking other digital products. We found out that powerful table components were ubiquitous.")
+![](./table_bench.png "Benchmarking other digital products for the Table component.")
 ```  
 
 We split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail even for such a complex component.
@@ -125,7 +129,7 @@ A quick look around the platform revealed we had half a dozen different variatio
 ![](./filters_legacy.png)
 ```
 
-We studied a couple of different interaction modes for filters, trying to understand the pros and cons of each one, trying to find the best one for our admins.
+We studied a couple of different interaction modes for filters and analyzed the pros and cons of each one.
 
 ```grid|1
 ![](./table_filter_interactions.png)
@@ -133,15 +137,15 @@ We studied a couple of different interaction modes for filters, trying to unders
 
 Our solution focused in solving the following problems:
 * Screen real-estate: some of our products offered dozens of different filters, and we couldn't try to fit them all in the screen.
-* Live preview: solutions with drawers made it hard to directly see the result of filtering along with the data.
+* Live preview: solutions with drawers made it hard to see the result of filtering directly along with the changing data, which made it harder to use.
 * Discoverability: we designed a simple Select component that had search and categories built-in to make it really easy to find filters.
-* Flexibility: the Statement component architecture was designed to offer a standard protocol for the most diverse filters.
+* Flexibility: we designed the Statement component to be a standard protocol for the most diverse filters.
 
 ```grid|1
 ![](./statements.png "A Statement is an abstract component that has a "subject", a list of possible "verbs" and "objects", and is used inside components like the Filter Bar and the Conditions Builder.")
 ```
 
-One way of using our filters system is by using the Filter Bar component, which already solves common interactions like clearing filters.
+One way of using our filters system is by using the Filter Bar component, which already solves common interactions like turning filters on and off, creating new filters and clearing.
 
 ```grid|1
 ![](./FilterBar.png "Final design of the Filter Bar component.") 
@@ -150,29 +154,27 @@ One way of using our filters system is by using the Filter Bar component, which 
 
 ## Conditions builder
 
-<!-- More complex than tables but yet a very common pattern on admin systems are Conditions. They are seen from simple filters to creating complex IF-THEN logics and boolean relationships.
+More complex than tables but yet a very common pattern on admin systems are Conditions. They are seen from simple filters to creating complex IF-THEN logics and boolean relationships.
+
+Looking at other digital products we found out a conditions builder is a common pattern, especially on the more advanced products. Some were truly inspiring, while others not that much. One common pitfall was giving control to each boolean operator individually, which can lead the user into creating unintentional precedence mistakes (e.g. in `a OR b AND c` the `AND` has precedence, but the user might not know that). Others had poor visual design, which  made it look overwhelming and more complex it actually was.
+
+```grid|1 
+![](./conditions_bench.png "Benchmark for the Conditions Builder")
+``` 
+
+We designed a Conditions Builder to be a common pattern of adding multiple conditions with simple boolean relationships. To chose the boolean operator there's a single global control. It also helps users that are not used with boolean logic: either you chose that *all* conditions should be met or that *any* condition should be met.
+
+Each line is made of a Statement, that same component used in the Filter component.
 
 ```grid|1
 ![](./conditions.png)
 ```
-  
+ 
+It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way.
+
 ```grid|1
-![](./conditions_benchmark.png)
+![](./conditions_advanced.png)
 ``` 
-
-```grid|1
-![](./conditions_complex.png)
-```  -->
-
-*Coming soon*
-
-## Collapsible
-
-*Coming soon*
-
-## Admin layout components
-
-*Coming soon*
 
 # Links
 
