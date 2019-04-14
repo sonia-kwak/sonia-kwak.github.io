@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
       const globalPadding = 'ph6-ns ph4-m ph3';
 
       let headerClasses = `${globalPadding} `;  
-      headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-white z-2 relative` : '';
+      headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-background-color z-2 relative` : '';
 
       const AnimatedHeader = AnimateLoad(Header);
       // const AnimatedChildren = AnimateLoad(children);

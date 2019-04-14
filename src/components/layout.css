@@ -50,8 +50,7 @@ html {
   --orange-light: hsl(27, 100%, 80%);
   --blue: #1B9393;
   --blue-light: hsl(180, 75%, 80%);
-  --bg-color: #ffffff;
-  /* --bg-color: white; */
+  --bg-color: white;
 
   --gray: #777;
   --near-black: #111111;
@@ -67,20 +66,13 @@ body {
 
 .pretty-link {
   color: inherit;
-  /* color: var(--orange); */
 
   text-decoration: none;
-  /* box-shadow: inset 0 -2px 0 0px var(--orange); */
-  /* box-shadow: inset 0 -4px 0 0px var(--blue-light); */
   box-shadow: inset 0 -3px 0 0px var(--orange);
   
-  /* background-color: var(--orange); */
-  /* color: white; */
- 
   /* transition: all 0.2s ease; */
 } 
 .pretty-link:hover {
-  /* box-shadow: inset 0 -6px 0 0px var(--orange); */
   background-color: var(--orange);
   color: white;
 }
@@ -133,7 +125,8 @@ figure figure {
   color: var(--dark-gray);
 }
 .tab--selected:before {
-  color: var(--blue);
+  /* color: var(--blue); */
+  color: var(--orange); 
   opacity: 1;
   animation: slideDown .3s ease-out
 }
@@ -194,10 +187,6 @@ figure figure {
   color: black;
 }
 
-.bg-ffffff {
-  background-color: var(--bg-color);
-}
-
 .text-gradient-clip {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -219,6 +208,10 @@ figure figure {
 }
 .bg-gradient-6 {
   background: -webkit-linear-gradient(#f5852d, #f5882d);
+}
+
+.bg-background-color {
+  background-color: var(--bg-color);
 }
 
 .h6 {
