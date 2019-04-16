@@ -67,7 +67,7 @@ The main issues we found with the actual collaborative maps can be divided into 
 
 
 
-## Execution
+# Execution
 
 ## Development
 
