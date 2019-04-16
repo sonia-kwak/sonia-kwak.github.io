@@ -52,39 +52,40 @@ Building on top of those insights we agreed on some important working principles
 ![](./bench.png "Some of our favorite references of enterprise Design Systems.")
 ```
 
-```grid|1 
+<!-- ```grid|1 
 ![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
-```
+``` -->
 
-### Planning
+<!-- ### Planning
 
 ```grid|1 
 ![](./maslow.png "We drew inspiration from the famous Maslow Pyramid of Priorities to understand how to focus our energies in the project.")
-```
+``` -->
 
 
 ### Documentation
 
-I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose, like Bootstrap, it was thought to limit usages that we though wouldn't be desirable. Yet there's a limit of the things we can test automatically in the form of React PropTypes, and the rest depends on some guidance, for instance writing good labels.
+I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose, like Bootstrap, it was thought to limit usages that we though wouldn't be desirable. Yet there's a limit of the things we can limit automatically in the form of React PropTypes, and the rest depends on some guidance - for instance writing good labels.
 
-Each and every component in the Styleguide should have:
+For each and every component in the Styleguide we defined it should have (and no PR would be approved without):
 * An intuitive name
 * A short description
 * *Dos and Don'ts*, where Dos would explicit possible but non-obvious applications and Don'ts should predict and prevent possible misuses.
 * Documentation of the React props and their possible values
 * Some meaningful, contextualized examples of applications and variations.
 
+The tool we chose to document our system was Styleguidist, which had a very easy to use Markdown system. The default theme was not that great, but I managed to tweak it by leveraging its built-in customization system, rendering a fairly decent-looking website IMHO.
+  
 ```grid|1 
-![](./emptystate.png "Example documentation for our EmptyState component.")
+![](./emptystate_full.png "Example documentation for our EmptyState component.")
 ```
+<!-- ![](./emptystate.png "Example documentation for our EmptyState component.") -->
 
-I found it was very fun writing these docs. It was a exercive of empathy, putting myself on the shoes of lonely devs that didn't have designers (or even beginner designers). It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes really were made for.
+I found it was very fun writing these docs. It was a exercive of empathy, putting myself on the shoes of lonely devs that could potentially not have designers with them, or even beginner designers learning about our interaction patterns. It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes were really made for and expressing it in a concise and accessible language.
 
 <!-- ```grid|1 
 ![](./docs.png)
 ``` -->
-
-<!-- ![](./emptystate_full.png "Example documentation for our EmptyState component.") -->
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
@@ -94,9 +95,9 @@ I found it was very fun writing these docs. It was a exercive of empathy, puttin
 
 ### Design kit
 
-The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of features built-in, including: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
+The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of out-of-the-box features such as: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
 
-Since it was a very new tool, and we have just transitioned from Sketch, as the main advocate of it I organized workshops in the company to have everybody on board. I also often helped everyone answering questions and just sharing good practices with the reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
+This was a new tool for everyone, who have just transitioned from Sketch. As the most excited person I took the role of organizing workshops in the company to have everybody onboard. I also often helped answering questions and sharing good practices with the tool, like reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
  
 ```grid|1
 ![](./styleguide_figma.png "The system components implemented in Figma.")
@@ -106,7 +107,7 @@ Since it was a very new tool, and we have just transitioned from Sketch, as the 
 
 <!-- Part of our weekly rituals included meetings where people would bring new ideas or contributions and Designers and Developers gave their feedbacks. Since it was a highly collaborative work it was important to have such a free space where people could bring their ideas, but at the same time it wasn't like if anyone could do anything. -->
 
-I contributed closely with the design and even the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them had contributions of other team members as well, but I consider I played an important part on them.
+I contributed closely with the design and even the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them had contributions of other team members, but I consider I played a major role on them.
 
 
 ## Table
@@ -133,9 +134,7 @@ For this daunting task, we split the component in subcomponents that we would ad
 ![](./table_docs.png)
 ```
 
-As with everything about Styleguide, the development was totally guided by demands in our projects, to make sure we only designed and implemented things that were really necessary. Because of that the development had to be halted a priorities changed a few times, which is fairly natural to any project like this.
-
-After a few months we had a working, feature-full version that was already being used by several projects in the company. At the time of this writing at least 10 projects are already reusing it, and more are certainly to come.
+As with everything about Styleguide, the development was totally guided by demands in our projects. Because of that the development had to be halted a priorities changed a few times, which is fairly natural to any project like this. Yet, after a few months we had a working, feature-full version that was already being used by several projects in the company. At the time of this writing at least 10 projects are already reusing it, and more are certainly to come.
 
 ```grid|1
 ![](./promotionsadmin.png "Example application of the Table component in the shining new Promotions Admin. It showcases almost all of current features: search, filter, toolbar, line and bulk actions, reorderable headers, custom cells and pagination.")
