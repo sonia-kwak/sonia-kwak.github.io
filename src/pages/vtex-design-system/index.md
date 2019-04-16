@@ -18,15 +18,17 @@ The main touchpoint of our product with the store owners is the Admin. It's wher
 
 ### The problem
 
-The birth of this project was only possible because of the confluence of several conditions.
+The birth of our Design System was only possible because of the confluence of several conditions in the company.
 
-* The company was growing super fast (40% per year, to be exact), and so were the teams. New designers and developers were joining every day, thus sharing knowledge in a structured and scalable way was starting to be obligatory if we wanted to keep going fast.
+* We were growing insanely fast, and so were the teams. New designers and developers were joining every day, thus sharing knowledge in a structured and scalable way was starting to be obligatory if we wanted to keep going fast.
 
-* There was also the coming of age of [VTEX IO](https://vtex.io/), our serverless service for hosting e-commerce applications that was being developed for 4 years already. We were for the first time ready to start dogfooding and using it to host our own Admins, while we matured to host full ecommerce websites and third-party apps.
+* The company was developing for a few years already [VTEX IO](https://vtex.io/), a serverless platform for running e-commerce applications that. It was starting to get in a mature phase, so we were for the first time ready to start dogfooding and using it to run our own Admins.
 
-* We were starting to draw what one day would become our App Store, a place for our wide ecosystem of partners could easily develop, spread and monetize extensions - all powered by IO.
+* There were early sketches of a VTEX App Store, a place where our big ecosystem of partners could easily develop, spread and monetize ecommerce extensions - all powered by IO.
 
-With all this momentum we starting seeing lots of legacy systems being rewritten to work with the new opinionated tech stacks. For the growing Product Design team it was an awesome opportunity to improve UX across the admins, but the team was still small for the demand and we needed to scale our design solutions.
+* For the first time the company was investing on branding, with a new logo, visual identity, and a more professional communication. This was a great opportunity for refreshing the UI look & feel as well.
+
+With this momentum we started seeing legacy systems being rewritten, so they could run under new platform. For the growing Product Design team it was an awesome opportunity to improve UX across the admins, but the team was still small for the demand and we needed to scale our design solutions.
 
 ## Process
 
@@ -50,22 +52,39 @@ Building on top of those insights we agreed on some important working principles
 ![](./bench.png "Some of our favorite references of enterprise Design Systems.")
 ```
 
-
-### Rituals & team building
-
-*Coming soon*
-
 ```grid|1 
 ![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
 ```
 
+### Planning
+
+```grid|1 
+![](./maslow.png "We drew inspiration from the famous Maslow Pyramid of Priorities to understand how to focus our energies in the project.")
+```
+
+
 ### Documentation
 
-I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose (like Bootstrap), it was thought to limit usages that we though wouldn't be desirable. However there's a limit of the things we can test automatically in the form of React PropTypes, and the rest, like good copy, depends on some guidance.
+I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose, like Bootstrap, it was thought to limit usages that we though wouldn't be desirable. Yet there's a limit of the things we can test automatically in the form of React PropTypes, and the rest depends on some guidance, for instance writing good labels.
+
+Each and every component in the Styleguide should have:
+* An intuitive name
+* A short description
+* *Dos and Don'ts*, where Dos would explicit possible but non-obvious applications and Don'ts should predict and prevent possible misuses.
+* Documentation of the React props and their possible values
+* Some meaningful, contextualized examples of applications and variations.
+
+```grid|1 
+![](./emptystate.png "Example documentation for our EmptyState component.")
+```
+
+I found it was very fun writing these docs. It was a exercive of empathy, putting myself on the shoes of lonely devs that didn't have designers (or even beginner designers). It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes really were made for.
 
 <!-- ```grid|1 
 ![](./docs.png)
 ``` -->
+
+<!-- ![](./emptystate_full.png "Example documentation for our EmptyState component.") -->
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
@@ -73,22 +92,26 @@ I'm always a big advocate for the need of documentation and guidelines with ever
     </video> 
 </video-container>
 
+### Design kit
 
+The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of features built-in, including: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
+
+Since it was a very new tool, and we have just transitioned from Sketch, as the main advocate of it I organized workshops in the company to have everybody on board. I also often helped everyone answering questions and just sharing good practices with the reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
+ 
+```grid|1
+![](./styleguide_figma.png "The system components implemented in Figma.")
+``` 
 
 # Components
 
-```grid|1
-![](./styleguide_figma.png "The system components implemented in Figma.")
-```
+<!-- Part of our weekly rituals included meetings where people would bring new ideas or contributions and Designers and Developers gave their feedbacks. Since it was a highly collaborative work it was important to have such a free space where people could bring their ideas, but at the same time it wasn't like if anyone could do anything. -->
 
-Everything that was added to the component library was presented in our weekly meetings, where Designers and Developers gave their feedbacks and made sure we only include something that makes sense for everyone and feels like part of our identity.
-
-I contributed closely with the design and event the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**.
+I contributed closely with the design and even the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them had contributions of other team members as well, but I consider I played an important part on them.
 
 
 ## Table
 
-After basic atomic components such as buttons and inputs, tables are the most used components in Admin screens in almost every digital product. Going through the legacy Admin screens it was clear it wasn't different for us. Most of them were mainly based on a main table, often with common features such as column sorting, search, filtering, importing and exporting. So  we started gathering forces from designers and developers of different teams to create our own, awesome Table component.
+After basic atomic components such as buttons and inputs, tables are the most used components in Admin screens in almost every digital product. Going through the legacy Admin screens it was clear it wasn't different for us. Most of them were comprised of mostly a big fat table and some controls such as column sorting, search, filtering, importing and exporting. So we started gathering forces from designers and developers of different teams to create our own, awesome Table component.
 
 ```grid|1
 ![](./four_admins.png "4 examples of admins that we designed in different times of the company and almost felt like 4 different platforms.") 
@@ -100,7 +123,7 @@ We did an extensive benchmark research in digital products and found out that po
 ![](./table_bench.png "Benchmarking other digital products for the Table component.")
 ```  
 
-We split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail even for such a complex component.
+For this daunting task, we split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail without being overwhelmed by its complexity.
 
 <!-- ```grid|1
 ![](./table.png)
@@ -115,12 +138,12 @@ As with everything about Styleguide, the development was totally guided by deman
 After a few months we had a working, feature-full version that was already being used by several projects in the company. At the time of this writing at least 10 projects are already reusing it, and more are certainly to come.
 
 ```grid|1
-![](./promotionsadmin.png "Example application of the Table component in the shining new Promotions Admin.")
+![](./promotionsadmin.png "Example application of the Table component in the shining new Promotions Admin. It showcases almost all of current features: search, filter, toolbar, line and bulk actions, reorderable headers, custom cells and pagination.")
 ``` 
 
 ## Filters
 
-Along with tables, another very important part of any admin are filters. We wanted to design  a standard filter solution for VTEX that would be powerful enough to work for all filtering needs. 
+Along with tables, another very important part of any admin are filters. We wanted to design  a standard filter solution for VTEX that would be powerful enough to work with the overwhelming quantity and complexity of filters needed.
 
 ```grid|1
 ![](./filters_table.png)
@@ -138,17 +161,17 @@ We studied a couple of different interaction modes for filters and analyzed the 
 ![](./table_filter_interactions.png)
 ```  
 
-Our solution focused in solving the following problems:
-* Screen real-estate: some of our products offered dozens of different filters, and we couldn't try to fit them all in the screen.
-* Live preview: solutions with drawers made it hard to see the result of filtering directly along with the changing data, which made it harder to use.
-* Discoverability: we designed a simple Select component that had search and categories built-in to make it really easy to find filters.
-* Flexibility: we designed the Statement component to be a standard protocol for the most diverse filters.
+The direction we chose to take focused in solving the following problems:
+* **Screen real-estate**: some of our products offered from dozens to hundreds of possible filter variations, and we couldn't try to fit them all in the screen.
+* **Live preview**: solutions with drawers made it hard to see the result of filtering directly along with the changing data, which made it harder to use.
+* **Discoverability**: we designed a simple Select component that had search and categories built-in to make it really easy to find filters.
+* **Flexibility**: we designed the Statement component to be a standard protocol for the most diverse filters imaginable, at the same time it was a common language to be reused with other components.
 
 ```grid|1
 ![](./statements.png "A Statement is an abstract component that has a "subject", a list of possible "verbs" and "objects", and is used inside components like the Filter Bar and the Conditions Builder.")
 ```
 
-One way of using our filters system is by using the Filter Bar component, which already solves common interactions like turning filters on and off, creating new filters and clearing.
+One way of using our filters system is by using the Filter Bar component, which already solves common interactions like turning filters on and off, creating new filters and clearing them.
 
 ```grid|1
 ![](./FilterBar.png "Final design of the Filter Bar component.") 
@@ -157,34 +180,34 @@ One way of using our filters system is by using the Filter Bar component, which 
 
 ## Conditions builder
 
-More complex than tables but yet a very common pattern on admin systems are Conditions. They are seen from simple filters to creating complex IF-THEN logics and boolean relationships.
+Conditions are statements that have boolean relationships. They are often seen being used in things liks filters, but also in more complex applications like IF-THEN programmable logics.
 
-Looking at other digital products we found out a conditions builder is a common pattern, especially on the more advanced products. Some were truly inspiring, while others not that much. One common pitfall was giving control to each boolean operator individually, which can lead the user into creating unintentional precedence mistakes (e.g. in `a OR b AND c` the `AND` has precedence, but the user might not know that). Others had poor visual design, which  made it look overwhelming and more complex it actually was.
+Looking at other digital products we found out this was a more common pattern than we initially thought, *especially* on the more advanced products. Some were truly inspiring, while others not that much. One common pitfall was giving control to each boolean operator individually, which can lead the user into creating unintentional precedence mistakes (e.g. in `a OR b AND c` the `AND` has precedence, but the user might not know that). Others had poor visual design, which made it look overwhelming and more complex it actually was.
 
 ```grid|1  
 ![](./conditions_bench.png "Benchmark for the Conditions Builder")
 ``` 
 
-We designed a Conditions Builder to be a common pattern of adding multiple conditions with simple boolean relationships. To chose the boolean operator there's a single global control. It also helps users that are not used with boolean logic: either you chose that *all* conditions should be met or that *any* condition should be met.
+We designed a Conditions Builder to be a common pattern for adding multiple conditions with simple (first level) boolean relationships. To chose the boolean operator there's a single global control, which prevents the precedence problem. It also helps users that are not used with boolean logic: either you chose that `all` conditions should be met or that `any` condition should be met. 
 
 Each line is made of a Statement, that same component used in the Filter component.
 
-```grid|1
+```grid|1 
 ![](./conditions.png)
 ```
  
-It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way.
+<!-- It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way.
 
 ```grid|1
 ![](./conditions_advanced.png)
-``` 
+```  -->
 
 # Links
 
 <links-list
     items='[
         {
-            "label": "Styleguide website",
+            "label": "VTEX Design System website",
             "url": "https://styleguide.vtex.com"
         },
         {
