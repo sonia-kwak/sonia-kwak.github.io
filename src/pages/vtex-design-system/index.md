@@ -22,7 +22,7 @@ The birth of our Design System was only possible because of the confluence of se
 
 * We were growing insanely fast, and so were the teams. New designers and developers were joining every day, thus sharing knowledge in a structured and scalable way was starting to be obligatory if we wanted to keep going fast.
 
-* The company was developing for a few years already [VTEX IO](https://vtex.io/), a serverless platform for running e-commerce applications that. It was starting to get in a mature phase, so we were for the first time ready to start dogfooding and using it to run our own Admins.
+* The company was developing for a few years already [VTEX IO](https://vtex.io/), a serverless platform for running e-commerce applications that. It was starting to get in a mature phase, so we were for the first time ready to start [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) and using it to run our own Admins.
 
 * There were early sketches of a VTEX App Store, a place where our big ecosystem of partners could easily develop, spread and monetize ecommerce extensions - all powered by IO.
 
@@ -62,8 +62,17 @@ Building on top of those insights we agreed on some important working principles
 ![](./maslow.png "We drew inspiration from the famous Maslow Pyramid of Priorities to understand how to focus our energies in the project.")
 ``` -->
 
+## Design kit
 
-### Documentation
+The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of out-of-the-box features such as: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
+
+This was a new tool for everyone, who have just transitioned from Sketch. As the most excited person I took the role of organizing workshops in the company to have everybody onboard. I also often helped answering questions and sharing good practices with the tool, like reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
+ 
+```grid|1
+![](./styleguide_figma.png "The system components implemented in Figma.")
+``` 
+
+## Documentation
 
 I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose, like Bootstrap, it was thought to limit usages that we though wouldn't be desirable. Yet there's a limit of the things we can limit automatically in the form of React PropTypes, and the rest depends on some guidance - for instance writing good labels.
 
@@ -81,7 +90,7 @@ The tool we chose to document our system was Styleguidist, which had a very easy
 ```
 <!-- ![](./emptystate.png "Example documentation for our EmptyState component.") -->
 
-I found it was very fun writing these docs. It was a exercive of empathy, putting myself on the shoes of lonely devs that could potentially not have designers with them, or even beginner designers learning about our interaction patterns. It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes were really made for and expressing it in a concise and accessible language.
+I found it was very fun writing these docs. It was a exercise of empathy, putting myself on the shoes of lonely devs that could potentially not have designers with them, or even beginner designers learning about our interaction patterns. It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes were really made for and expressing it in a concise and accessible language.
 
 <!-- ```grid|1 
 ![](./docs.png)
@@ -93,21 +102,26 @@ I found it was very fun writing these docs. It was a exercive of empathy, puttin
     </video> 
 </video-container>
 
-### Design kit
 
-The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of out-of-the-box features such as: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
+# Foundations
 
-This was a new tool for everyone, who have just transitioned from Sketch. As the most excited person I took the role of organizing workshops in the company to have everybody onboard. I also often helped answering questions and sharing good practices with the tool, like reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
+Typography, spacing, grids and color palette were the first items to cross off the list.
+
+**Typography** and **color palette** were straightforward, and were drawn from the all fresh and new Brand System. The rest of the styles came directly from **Tachyons**, which bootstrapped us with a solid foundation on which we could iterate later.
+
+The last part we developed were the **Design Tokens**, which Tachyons doesn't support natively. It was later in the game we found out we would need a set of basic components to be reused in the new Storefront and Store Components system, and tokenizing Styleguide's was the way to go.
+
+Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
  
-```grid|1
-![](./styleguide_figma.png "The system components implemented in Figma.")
+```grid|1 
+![](./foundations.png)
 ``` 
-
+ 
 # Components
 
 <!-- Part of our weekly rituals included meetings where people would bring new ideas or contributions and Designers and Developers gave their feedbacks. Since it was a highly collaborative work it was important to have such a free space where people could bring their ideas, but at the same time it wasn't like if anyone could do anything. -->
 
-I contributed closely with the design and even the development of several of Styleguide components. Here are some further details about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them had contributions of other team members, but I consider I played a major role on them.
+### I contributed closely with the design and development of several of Styleguide components. Here are some stories about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them were team efforts, but I consider I played a major role on their making.
 
 
 ## Table
