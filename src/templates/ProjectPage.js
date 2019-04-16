@@ -15,7 +15,7 @@ import ReadingProgressBar from '../components/ReadingProgressBar'
 
 import { formatDate } from '../components/utils.js'
 
-import { RightArrow, LeftArrow } from '../components/icons.js'
+// import { RightArrow, LeftArrow } from '../components/icons.js'
 
 class ResultsBanner extends React.Component {
   static defaultProps = {
@@ -266,8 +266,8 @@ class ProjectPage extends React.Component {
               {
                 previous && 
                 <div>
-                  <div className="f7 tl mb4 ttu fw6 gray db-ns dn">
-                    {LeftArrow} Previous
+                  <div className="f3 tl mb3 ttu fw7 black-10 db-ns dn">
+                    Previous
                   </div>
                   <ProjectCard node={previous} />
                 </div>
@@ -280,8 +280,8 @@ class ProjectPage extends React.Component {
               {
                 next &&
                 <div>
-                  <div className="f7 tr mb4 ttu fw6 gray db-ns dn">
-                    Next {RightArrow}
+                  <div className="f3 tr mb3 ttu fw7 black-10 db-ns dn">
+                    Next
                   </div>
                   <ProjectCard node={next} />
                 </div>
