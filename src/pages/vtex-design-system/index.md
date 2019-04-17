@@ -1,4 +1,5 @@
 ---
+projectType: 'case study'
 date: "2018-02"
 date2: "Now"
 title: "VTEX Design System"
@@ -9,7 +10,7 @@ team: "Cristiano Dalbem, Breno Calazans, Kevin Chevalier, Guilherme Freitas, Luc
 cover: './cover.png' 
 forceOrder: 1
 ---
- 
+  
 
 ## Context
 [VTEX](https://vtex.com/) is a brazilian SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products.
@@ -113,9 +114,9 @@ The last part we developed were the **Design Tokens**, which Tachyons doesn't su
 
 Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
  
-```grid|1 
+<!-- ```grid|1 
 ![](./foundations.png)
-``` 
+```  -->
  
 # Components
 
