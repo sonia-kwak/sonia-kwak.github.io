@@ -39,6 +39,8 @@ class IndexPage extends React.Component {
 
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
+    const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
+    const projects = posts.filter(i => i.node.frontmatter.projectType === 'project');
     
     let bookNodes = {};
     bookNodes.finished = this.props.data.allGoodreadsBook.edges.filter( b =>
@@ -111,9 +113,14 @@ class IndexPage extends React.Component {
           </div>
         </HomeSection>
 
-        <HomeSection title="Projects" fullScreen
+        <HomeSection title="Case studies" fullScreen
           description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
-          <Projects posts={posts}/> 
+          <Projects posts={caseStudies}/> 
+        </HomeSection> 
+        
+        <HomeSection title="Other projects" fullScreen
+          description="">
+          <Projects posts={projects}/> 
         </HomeSection> 
             
         <HomeSection
@@ -193,6 +200,7 @@ export const pageQuery = graphql`
                    title
                    description
                    minibio
+                   projectType
                    tags
                    cover {
                      publicURL

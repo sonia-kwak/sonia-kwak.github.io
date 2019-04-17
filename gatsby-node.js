@@ -37,6 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
                     forceOrder
                     description
                     minibio
+                    projectType
                     tags
                     cover {
                       publicURL

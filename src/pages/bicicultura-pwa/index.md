@@ -1,4 +1,5 @@
 ---
+projectType: 'case study'
 date: "2018-05"
 date2: "2018-06"
 title: "Bicicultura PWA"

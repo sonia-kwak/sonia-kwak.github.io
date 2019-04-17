@@ -1,4 +1,5 @@
 ---
+projectType: 'case study'
 date: "2018-03"
 date2: "2018-10"
 title: "VTEX Home"

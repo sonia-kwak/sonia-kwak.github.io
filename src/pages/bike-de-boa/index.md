@@ -1,4 +1,5 @@
 ---
+projectType: 'case study'
 date: "2016-10"
 date2: "Now"
 title: "bike de boa"
