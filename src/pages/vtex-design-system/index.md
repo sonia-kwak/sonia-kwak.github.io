@@ -103,7 +103,7 @@ I found it was very fun writing these docs. It was a exercise of empathy, puttin
 </video-container>
 
 
-# Foundations
+# Foundations 
 
 Typography, spacing, grids and color palette were the first items to cross off the list.
 
