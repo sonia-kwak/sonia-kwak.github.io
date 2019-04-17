@@ -71,7 +71,7 @@ class ProjectPage extends React.Component {
     const readingTime = post.fields.readingTime; 
 
     const defaultMargins = 'mw7 center';
-    // const imageMargins = 'mv6 mh0';
+    const bigImageMargins = `nl4-ns nr4-ns nl3-m nr3-m mv6-ns mv5 `;
     const imageMargins = `${defaultMargins} mv6-ns mv5 `;
     const baseType = 'f4-ns f5 dark-gray lh-copy ';
 
@@ -135,6 +135,17 @@ class ProjectPage extends React.Component {
         ),
         code: props => (
           <code className="f6 bg-light-gray ph2">{props.children}</code>
+        ),
+        "jumbo": props => (
+          <div className={bigImageMargins}>
+            { props.children }
+            {
+              props.caption &&
+              <figcaption className={defaultMargins + " mt4 fw6 f6 dark-gray tc"}>
+                {props.caption}
+              </figcaption>
+            }
+          </div>
         ),
         "video-container": props => (
           <div className={imageMargins}> 
