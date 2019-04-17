@@ -8,6 +8,7 @@ import { formatDate } from '../components/utils.js'
 class ProjectCard extends React.Component {
     render() {
         const post = this.props.node;
+        const mini = this.props.mini;
 
         let dateStart = formatDate(post.frontmatter.date, 'YYYY');
         let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
@@ -23,7 +24,7 @@ class ProjectCard extends React.Component {
             >
                 {
                     <div
-                        className="w-100 db project-card--cover cover card-shadow card-hover br1" 
+                        className={`w-100 db project-card--cover cover card-shadow br1 ${mini && "h4"}`}
                         // className="w-100 db project-card--cover cover" 
                         style={ post.frontmatter.cover && {
                             backgroundImage: `url(${post.frontmatter.cover.publicURL})`,
@@ -64,6 +65,7 @@ class ProjectCard extends React.Component {
 
                     {
                         post.frontmatter.tags &&
+                        !mini &&
                         <div className="flex flex-row flex-wrap mt2">
                             {post.frontmatter.tags.map(tag => (
                                 <Tag>

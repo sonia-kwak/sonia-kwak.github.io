@@ -26,7 +26,7 @@ class Header extends React.Component {
     let sections = [
       'About',
       'Work',
-      'Projects',
+      'Case studies',
       'Speaking',
       'Reading',
       'Elsewhere'
@@ -36,8 +36,8 @@ class Header extends React.Component {
     return (
       <div className='flex pt3 pb2'>
         <div className="w-100 flex justify-between items-center">
-          <h1 className="f4 fw5">
-            <Link to="/" className="link dim near-black fw6">
+          <h1>
+            <Link to="/" className="link dim near-black fw7 ttu f5">
               Cristiano Dalbem
             </Link>
 
@@ -75,7 +75,7 @@ class Header extends React.Component {
                   }
                 </Scrollspy>
                 :
-                <Link to="/" className="link dim near-black fw6 blue">
+                <Link to="/" className="link dim fw6 orange">
                   <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'
                     fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round'
                     strokeLinejoin='round' className='feather feather-corner-left-up'>
