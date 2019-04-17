@@ -53,8 +53,10 @@ html {
   --bg-color: white;
 
   --gray: #777;
-  --near-black: #111111;
-  --dark-gray: #414141;
+  /* --near-black: #111111; */
+  --near-black: #493e36;
+  /* --dark-gray: #414141; */
+  --dark-gray: #4d3d33;
   --light-gray: #eee;
 }
  
@@ -227,9 +229,14 @@ figure figure {
 }
 
 .dark-gray {
-  color: var(--dark-gray);
+  color: var(--dark-gray) !important;
 }
-
+.near-black {
+  color: var(--near-black) !important;
+}
+.bg-dark-gray {
+  background-color: var(--dark-gray) !important;
+}
 .orange {
   color: var(--orange);
 }
