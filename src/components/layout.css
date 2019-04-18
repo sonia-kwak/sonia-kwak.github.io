@@ -216,6 +216,11 @@ figure figure {
   background-color: var(--bg-color);
 }
 
+
+/* ------------------ */
+/* Tachyons Overrides */
+/* ------------------ */
+
 .h6 {
   height: 32rem;
 }
@@ -228,22 +233,34 @@ figure figure {
   line-height: 1.65;
 }
 
+.f4 {
+  font-size: 18px !important;
+}
+
 .dark-gray {
   color: var(--dark-gray) !important;
 }
 .near-black {
   color: var(--near-black) !important;
 }
+.b--near-black {
+  border-color: var(--near-black) !important;
+}
 .bg-dark-gray {
   background-color: var(--dark-gray) !important;
 }
 .orange {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
  
 .shadow-6 {
   box-shadow: 0 0 30px 0px rgba(0,0,0,.05);
 }
+
+
+/* --------------------- */
+/* Third-party Overrides */
+/* --------------------- */
 
 /* @media screen and (min-width: 48em) {
   .parallax {
