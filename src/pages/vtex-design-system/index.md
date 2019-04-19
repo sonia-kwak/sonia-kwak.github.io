@@ -49,10 +49,10 @@ Building on top of those insights we agreed on some important working principles
   
 * References should go beyond general-purpose systems like Material, or plain component libraries like Bootstrap. We need to look at references that were more contextualized, and closest to what we needed to build. 
 
-```grid|1 
-![](./bench.png "Some of our favorite references of enterprise Design Systems.")
-```
-
+<jumbo caption="Some of our references of mature enterprise Design Systems.">
+<img src="./bench.png"/>
+</jumbo>
+ 
 <!-- ```grid|1 
 ![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
 ``` -->
@@ -87,9 +87,8 @@ For each and every component in the Styleguide we defined it should have (and no
 The tool we chose to document our system was Styleguidist, which had a very easy to use Markdown system. The default theme was not that great, but I managed to tweak it by leveraging its built-in customization system, rendering a fairly decent-looking website IMHO.
   
 ```grid|1 
-![](./emptystate_full.png "Example documentation for our EmptyState component.")
+![](./emptystate_full.png "Example documentation page for our EmptyState component.")
 ```
-<!-- ![](./emptystate.png "Example documentation for our EmptyState component.") -->
 
 I found it was very fun writing these docs. It was a exercise of empathy, putting myself on the shoes of lonely devs that could potentially not have designers with them, or even beginner designers learning about our interaction patterns. It was also a philosophical exercise, trying to understand what even basic components such as Buttons or Checkboxes were really made for and expressing it in a concise and accessible language.
 
@@ -102,7 +101,7 @@ I found it was very fun writing these docs. It was a exercise of empathy, puttin
         <source src="./styleguide.mp4" type="video/mp4">
     </video> 
 </video-container>
-
+ 
 
 # Foundations 
 
@@ -113,10 +112,11 @@ Typography, spacing, grids and color palette were the first items to cross off t
 The last part we developed were the **Design Tokens**, which Tachyons doesn't support natively. It was later in the game we found out we would need a set of basic components to be reused in the new Storefront and Store Components system, and tokenizing Styleguide's was the way to go.
 
 Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
- 
-```grid|1 
-![](./foundations.png)
-``` 
+
+<jumbo caption="Documentation of our foundations in Figma. Every color, style and grid is easily reusable by all teams using the Team Library feature.">
+<img src="./foundations.png"/>
+</jumbo>
+
  
 # Components
 
@@ -127,19 +127,19 @@ Still today we're constantly iterating and tweaking on these foundations while w
 
 ## Table
 
-After basic atomic components such as buttons and inputs, tables are the most used components in Admin screens in almost every digital product. Going through the legacy Admin screens it was clear it wasn't different for us. Most of them were comprised of mostly a big fat table and some controls such as column sorting, search, filtering, importing and exporting. So we started gathering forces from designers and developers of different teams to create our own, awesome Table component.
+After basic atomic components such as buttons and inputs, Tables are the most used components in Admin screens in almost every digital product. Going through the legacy Admin screens it was clear it wasn't different for us. Most of them were comprised of mostly a big fat table and some controls such as column sorting, search, filtering, importing and exporting. So we started gathering forces from designers and developers of different teams to create our own, awesome Table component.
 
 ```grid|1
 ![](./four_admins.png "4 examples of admins that we designed in different times of the company and almost felt like 4 different platforms.") 
 ```
 
-We did an extensive benchmark research in digital products and found out that powerful table components were ubiquitous, either in B2C as B2B products.
+We did an extensive benchmark research in digital products and found out that powerful table components were ubiquitous, either in B2C as B2B products. This gave us lots of ideas of interesting features and possible approaches we could take to create ours. 
 
 ```grid|1
 ![](./table_bench.png "Benchmarking other digital products for the Table component.")
 ```  
 
-For this daunting task, we split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail without being overwhelmed by its complexity.
+We split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail without being overwhelmed by its complexity.
 
 <!-- ```grid|1
 ![](./table.png)
@@ -161,15 +161,15 @@ Along with tables, another very important part of any admin are filters. We want
 
 ```grid|1
 ![](./filters_table.png)
-```
+``` 
 
-A quick look around the platform revealed we had half a dozen different variations of filters. Even worst, all of them revolved around the same drawer-like interaction that in our studies we found out not to be the most adequate for our needs.
+An audit around the platform revealed we had half a dozen different variations of filters. The problems ranged from bad interaction choices, visual hierarchy, information architecture, discoverability and flexibility.
+ 
+<jumbo caption="Examples of two very different filter interactions found in the legacy admins.">
+    <img src="./filters_legacy.png"/>
+</jumbo>
 
-```grid|1
-![](./filters_legacy.png)
-```
-
-We studied a couple of different interaction modes for filters and analyzed the pros and cons of each one.
+We studied a couple of different interaction models for filters and analyzed the pros and cons of each one related to the problems we found in the current solutions.
 
 <jumbo>
     <img src="./table_filter_interactions.png"/>
@@ -177,15 +177,15 @@ We studied a couple of different interaction modes for filters and analyzed the 
 
 The direction we chose to take focused in solving the following problems:
 * **Screen real-estate**: some of our products offered from dozens to hundreds of possible filter variations, and we couldn't try to fit them all in the screen.
-* **Live preview**: solutions with drawers made it hard to see the result of filtering directly along with the changing data, which made it harder to use.
-* **Discoverability**: we designed a simple Select component that had search and categories built-in to make it really easy to find filters.
+* **Live preview**: solutions with drawers made it hard to see the result of filtering directly along with the changing data, which made it harder to use especially if you're exploring data and trying different filter configurations.
+* **Discoverability**: we designed a simple Select component that had typeahead search built-in, so it'd be easy to find filters even in long lists.
 * **Flexibility**: we designed the Statement component to be a standard protocol for the most diverse filters imaginable, at the same time it was a common language to be reused with other components.
 
 ```grid|1
 ![](./statements.png "A Statement is an abstract component that has a "subject", a list of possible "verbs" and "objects", and is used inside components like the Filter Bar and the Conditions Builder.")
 ```
 
-One way of using our filters system is by using the Filter Bar component, which already solves common interactions like turning filters on and off, creating new filters and clearing them.
+One way of using our filters system is by using the Filter Bar component, a high-order component that implements common interactions like turning filters on and off, creating new filters and clearing them. In the future we intend it to also implement saving filter preferences.
 
 <jumbo caption="Final design of the Filter Bar component.">
     <img src="./FilterBar.png"/>
@@ -205,17 +205,17 @@ Looking at other digital products we found out this was a more common pattern th
 We designed a Conditions Builder to be a common pattern for adding multiple conditions with simple (first level) boolean relationships. To chose the boolean operator there's a single global control, which prevents the precedence problem. It also helps users that are not used with boolean logic: either you chose that `all` conditions should be met or that `any` condition should be met. 
 
 Each line is made of a Statement, that same component used in the Filter component.
-
-```grid|1 
-![](./conditions.png)
-```
  
-<!-- It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way.
+<jumbo>
+    <img src="./conditions.png"/>
+</jumbo>
+ 
+<!-- It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way. -->
 
-```grid|1
+<!-- ```grid|1
 ![](./conditions_advanced.png)
 ```  -->
-
+ 
 # Links
 
 <links-list
