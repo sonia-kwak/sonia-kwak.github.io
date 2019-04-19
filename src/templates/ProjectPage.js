@@ -14,7 +14,7 @@ import LinksList from '../components/LinksList'
 import ReadingProgressBar from '../components/ReadingProgressBar'
 
 import { formatDate } from '../components/utils.js'
-
+ 
 // import { RightArrow, LeftArrow } from '../components/icons.js'
 
 class ResultsBanner extends React.Component {
@@ -71,7 +71,7 @@ class ProjectPage extends React.Component {
     const readingTime = post.fields.readingTime; 
 
     const defaultMargins = 'mw7 center';
-    const bigImageMargins = `nl4-ns nr4-ns nl3-m nr3-m mv6-ns mv5 `;
+    const bigImageMargins = `nl5-ns nr5-ns nl3-m nr3-m mv6-ns mv5 `;
     const imageMargins = `${defaultMargins} mv6-ns mv5 `;
     const baseType = 'f4-ns f5 dark-gray lh-copy ';
 
