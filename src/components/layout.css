@@ -179,7 +179,7 @@ figure figure {
   transform: translateY(-4px);
 }
 .project-card:hover .project-card--title {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 .project-card:hover .project-card--date {
   color: var(--near-black);
