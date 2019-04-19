@@ -114,9 +114,9 @@ The last part we developed were the **Design Tokens**, which Tachyons doesn't su
 
 Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
  
-<!-- ```grid|1 
+```grid|1 
 ![](./foundations.png)
-```  -->
+``` 
  
 # Components
 
@@ -151,9 +151,9 @@ For this daunting task, we split the component in subcomponents that we would ad
 
 As with everything about Styleguide, the development was totally guided by demands in our projects. Because of that the development had to be halted a priorities changed a few times, which is fairly natural to any project like this. Yet, after a few months we had a working, feature-full version that was already being used by several projects in the company. At the time of this writing at least 10 projects are already reusing it, and more are certainly to come.
 
-```grid|1
-![](./promotionsadmin.png "Example application of the Table component in the shining new Promotions Admin. It showcases almost all of current features: search, filter, toolbar, line and bulk actions, reorderable headers, custom cells and pagination.")
-``` 
+<jumbo caption="Example application of the Table component in the shining new Promotions Admin. It showcases almost all of current features: search, filter, toolbar, line and bulk actions, reorderable headers, custom cells and pagination.">
+<img src="./promotionsadmin.png"/>
+</jumbo>
 
 ## Filters
 
@@ -171,9 +171,9 @@ A quick look around the platform revealed we had half a dozen different variatio
 
 We studied a couple of different interaction modes for filters and analyzed the pros and cons of each one.
 
-```grid|1
-![](./table_filter_interactions.png)
-```  
+<jumbo>
+    <img src="./table_filter_interactions.png"/>
+</jumbo>
 
 The direction we chose to take focused in solving the following problems:
 * **Screen real-estate**: some of our products offered from dozens to hundreds of possible filter variations, and we couldn't try to fit them all in the screen.
@@ -187,9 +187,9 @@ The direction we chose to take focused in solving the following problems:
 
 One way of using our filters system is by using the Filter Bar component, which already solves common interactions like turning filters on and off, creating new filters and clearing them.
 
-```grid|1
-![](./FilterBar.png "Final design of the Filter Bar component.") 
-``` 
+<jumbo caption="Final design of the Filter Bar component.">
+    <img src="./FilterBar.png"/>
+</jumbo>
 
 
 ## Conditions builder

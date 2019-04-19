@@ -42,7 +42,9 @@ I wanted to contribute in some way to foster the local culture of urban biking. 
 
 Most cicling apps at that time seemed to focus too much either on cicling as a sport or in routing. But how can even the most advanced pathplanning algorithms help you if you happen to live in a city with few to no cyclable paths and traffic is chaotic and super dangerous? This is a cultural problem, and probably no app can fix that. Most of our western cities are "carcentric" by design, and drivers think they have the streets all to themselves and their noisy, air-polluting, stress-inducing machines.
 
-![](./mosaic.png "Examples of good and bad bike racks. Can you spot which is which?")
+<jumbo caption="Examples of good and bad bike racks. Can you spot which is which?">
+    <img src="./mosaic.png"/>
+</jumbo>
 
 Bike racks, as they call structures to park bicycles, are made to offer confort and safety to ciclists and even work as some kind of subliminar marketing for the daily ciclist. There is even research that say they can boost local economy by increasing customers and sales.
 
@@ -119,15 +121,15 @@ Using simple project management and communication tools such as Trello, GitHub a
 
 ### Desktop
 
+<jumbo>
+    <img src="./desktop.png"/>
+</jumbo>
+
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
         <source src="./desktop1.mp4" type="video/mp4">
     </video> 
 </video-container>
-
-```grid|1
-![](./desktop.png) 
-```
 
 <!-- ```grid|1
 ![](./desktop_details.png)
