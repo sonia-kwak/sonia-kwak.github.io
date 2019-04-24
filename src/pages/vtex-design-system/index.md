@@ -63,28 +63,51 @@ Building on top of those insights we agreed on some important working principles
 ![](./maslow.png "We drew inspiration from the famous Maslow Pyramid of Priorities to understand how to focus our energies in the project.")
 ``` -->
 
+## Foundations 
+
+Typography, spacing, grids and color palette were the first items to cross off the list.
+
+Typography and color palette were straightforward, they were drawn from the new [Brand System](http://brand.vtex.com/). The rest of the styles came directly from Tachyons, which bootstrapped us with a solid foundation on which we could iterate later.
+
+The last part we developed were the Design Tokens. These are like variables in code, but for visual elements. It was a little later in the game we found out we would need a set of basic components to be reused in the new Store Components system and Tachyons didn't support natively themes, so tokenizing our Styleguide was the way to go.
+
+Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
+
+<jumbo caption="Documentation of our foundations in Figma. Every color, style and grid is easily reusable by all teams using the Team Library feature.">
+<img src="./foundations.png"/>
+</jumbo>
+
 ## Design kit
 
 The VTEX Design Team used to use [Figma](https://www.figma.com/), a modern web-based UI/UX design tool that has lots of out-of-the-box features such as: multiplayer, file versioning, reusable component and styles libraries and interactive prototyping. All of this made it very easy develop the design system and reuse in all team's designs.
 
-This was a new tool for everyone, who have just transitioned from Sketch. As the most excited person I took the role of organizing workshops in the company to have everybody onboard. I also often helped answering questions and sharing good practices with the tool, like reusing components, designing new ones to be easily reusable and keeping everything organized and documented.
+This was new for everyone, who have been working with other tools like Sketch and Adobe XD. I quickly got very excited about Figma, so I took the initiative of learning everything I could about it and organizing workshops in the company to have everybody onboard. I'm also continually helping others and sharing good practices.
  
 ```grid|1
 ![](./styleguide_figma.png "The system components implemented in Figma.")
 ``` 
 
+## Rituals 
+It was very important from the very beginning to structure frequent meetings to discuss ideas and work on issues. These rituals provided a steady heartbeat to keep the project alive.
+
+Part of our weekly rituals included meetings where people would bring new ideas or contributions and Designers and Developers gave their feedbacks. Since it was a highly collaborative work it was important to have such a free space where people could bring their ideas, but at the same time it wasn't like if anyone could do anything.
+
+```grid|1
+![](./team.jpeg)
+```  
+
 ## Documentation
 
-I'm always a big advocate for the need of documentation and guidelines with every tool we provide. With the Styleguide components it wouldn't be different. Even if they were designed for their specific usage, and not for generic purpose, like Bootstrap, it was thought to limit usages that we though wouldn't be desirable. Yet there's a limit of the things we can limit automatically in the form of React PropTypes, and the rest depends on some guidance - for instance writing good labels.
+As the saying goes: "if it's not documented it doesn't exist". There's a limit of the things we can opinionate with the component API, the rest depends on some written guidance.
 
-For each and every component in the Styleguide we defined it should have (and no PR would be approved without):
-* An intuitive name
+For each and every component in the Styleguide we defined it should have, and no PR would be approved without:
+* An intuitive name (definitely not as easy as it sounds)
 * A short description
 * *Dos and Don'ts*, where Dos would explicit possible but non-obvious applications and Don'ts should predict and prevent possible misuses.
-* Documentation of the React props and their possible values
+* Documentation of the React *props*, their defaults and acceptable values
 * Some meaningful, contextualized examples of applications and variations.
 
-The tool we chose to document our system was Styleguidist, which had a very easy to use Markdown system. The default theme was not that great, but I managed to tweak it by leveraging its built-in customization system, rendering a fairly decent-looking website IMHO.
+It was easy writing these docs in Styleguidist using simple Markdown files. The default theme was not that great though, but I managed to tweak it by leveraging its built-in customization system, rendering a fairly decent-looking website IMHO.
   
 ```grid|1 
 ![](./emptystate_full.png "Example documentation page for our EmptyState component.")
@@ -103,26 +126,10 @@ I found it was very fun writing these docs. It was a exercise of empathy, puttin
 </video-container>
  
 
-# Foundations 
-
-Typography, spacing, grids and color palette were the first items to cross off the list.
-
-**Typography** and **color palette** were straightforward, and were drawn from the all fresh and new Brand System. The rest of the styles came directly from **Tachyons**, which bootstrapped us with a solid foundation on which we could iterate later.
-
-The last part we developed were the **Design Tokens**, which Tachyons doesn't support natively. It was later in the game we found out we would need a set of basic components to be reused in the new Storefront and Store Components system, and tokenizing Styleguide's was the way to go.
-
-Still today we're constantly iterating and tweaking on these foundations while we learn from practice. One important learning, in my opinion, was that starting off from an existing system shouldn't have made us lazy on doing research for these visual foundations and making all decisions intentional. Still today new designers sometimes question some decisions, to which we sometimes can only say "well, that's how Tachyons was".
-
-<jumbo caption="Documentation of our foundations in Figma. Every color, style and grid is easily reusable by all teams using the Team Library feature.">
-<img src="./foundations.png"/>
-</jumbo>
-
  
-# Components
+# Components deep dive
 
-<!-- Part of our weekly rituals included meetings where people would bring new ideas or contributions and Designers and Developers gave their feedbacks. Since it was a highly collaborative work it was important to have such a free space where people could bring their ideas, but at the same time it wasn't like if anyone could do anything. -->
-
-### I contributed closely with the design and development of several of Styleguide components. Here are some stories about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them were team efforts, but I consider I played a major role on their making.
+I contributed closely with the design and development of several of Styleguide components. Here are some stories about my favorite ones: the **Table**, the **Filters** and the **Conditions Builder**. All of them were team efforts, but I consider I played a major role in their making.
 
 
 ## Table
@@ -140,10 +147,6 @@ We did an extensive benchmark research in digital products and found out that po
 ```  
 
 We split the component in subcomponents that we would address one by one, making sure we were intentional in every design detail without being overwhelmed by its complexity.
-
-<!-- ```grid|1
-![](./table.png)
-```  -->
 
 ```grid|1
 ![](./table_docs.png)
@@ -169,7 +172,7 @@ An audit around the platform revealed we had half a dozen different variations o
     <img src="./filters_legacy.png"/>
 </jumbo>
 
-We studied a couple of different interaction models for filters and analyzed the pros and cons of each one related to the problems we found in the current solutions.
+We studied different interaction models for filters and analyzed the pros and cons of each one related to the problems we found in the current solutions.
 
 <jumbo>
     <img src="./table_filter_interactions.png"/>
@@ -198,9 +201,9 @@ Conditions are statements that have boolean relationships. They are often seen b
 
 Looking at other digital products we found out this was a more common pattern than we initially thought, *especially* on the more advanced products. Some were truly inspiring, while others not that much. One common pitfall was giving control to each boolean operator individually, which can lead the user into creating unintentional precedence mistakes (e.g. in `a OR b AND c` the `AND` has precedence, but the user might not know that). Others had poor visual design, which made it look overwhelming and more complex it actually was.
 
-```grid|1  
-![](./conditions_bench.png "Benchmark for the Conditions Builder")
-``` 
+<jumbo caption="Benchmark for the Conditions Builder">
+    <img src="./conditions_bench.png"/>
+</jumbo>
 
 We designed a Conditions Builder to be a common pattern for adding multiple conditions with simple (first level) boolean relationships. To chose the boolean operator there's a single global control, which prevents the precedence problem. It also helps users that are not used with boolean logic: either you chose that `all` conditions should be met or that `any` condition should be met. 
 
