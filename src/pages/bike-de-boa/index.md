@@ -9,7 +9,7 @@ tags: ['progressive web app','UI/UX','platform','activism']
 roles: "Front-end & Back-end Development, Design"
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi, and others."
 cover: './cover.png'
-forceOrder: 1
+forceOrder: 2
 ---
 
 # Overview
@@ -117,9 +117,9 @@ Using simple project management and communication tools such as Trello, GitHub a
 ![](./illustration.png)
 ``` -->
 
-## Final product
+# Final product
 
-### Desktop
+## Desktop
 
 <jumbo>
     <img src="./desktop.png"/>
@@ -183,7 +183,7 @@ We made some effort to have a decent social media presence as well, both on Face
 ![](./facebook.png)
 ``` 
 
-### Mobile
+## Mobile
 
 Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This led us to use a mobile-first strategy, both for UX and Front-end development, making sure this was the main touchpoint we invested our energies.
 

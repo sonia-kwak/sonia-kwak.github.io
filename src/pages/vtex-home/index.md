@@ -9,11 +9,11 @@ tags: ['UI/UX','platform','work']
 roles: "UX Design, research"
 cover: './cover.png' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
-forceOrder: 2
+forceOrder: 3
 ---
   
 
-## Context
+# Context
 VTEX is a global SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products.
 
 The main challenge of working in such environment is that the product is the same whether you're a small store or a huge commerce operation. So every solution we design has to leverage a huge diversity of user needs, and build something that works for everybody.
@@ -21,7 +21,7 @@ The main challenge of working in such environment is that the product is the sam
 The main touchpoint of our product with the merchants is the Admin. It's where our clients configure and manage everything related to their commerce operations. It's also where most of our design efforts go into.
 
  
-### The problem 
+## The problem 
 With the coming of age of [VTEX IO](https://vtex.io/), our serverless service for hosting e-commerce applications, we were ready to start using it to host our own Admin. 
 
 This was much more than just [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food). We knew the "new platform" was more modern, robust and easier to use than anything we ever had before. A new navigation shell and routing system for the new admin was ready for use, now we needed to start replacing the iframes of the old admins with fresh, first-citizen reimplementations of them.
@@ -29,7 +29,7 @@ This was much more than just [dogfooding](https://en.wikipedia.org/wiki/Eating_y
 This project was the first section of the Admin that was rewritten using all the newest technologies we had, and was a great way of showcasing the our users that a new generation of technologies and admin panels was coming.
  
 
-## Process 
+# Process 
 
 With so much important stuff to build in the platform designing a new Home was definitely not one of the priorities. This project was made possible in an internal Hackathon, where we gathered forces and joined developers from different teams to work together and create a proof of concept in 48 hours.
 
@@ -59,7 +59,7 @@ Now looking at the company's culture and values:
 
 ## Designing with values
 
-### The hypothesis: the home of VTEX Admin should feel like the lobby of a Hostel.
+**The hypothesis: the home of VTEX Admin should feel like the lobby of a Hostel.**
 
 A lobby is where the mood is set. It's in the beginning of the journey of using the product, probably the first thing someone sees when starting their working hours. So it should feel welcoming. Sometimes it's calming, sometimes it isn't, but it's always pleasant.
 
@@ -83,7 +83,7 @@ From these observations we ended up with these 7 core values:
 ```  -->
 
 
-## The components
+# The components
 
 Materializing the values into actual UI was done in both a top-down and bottom-up approaches:
 
@@ -94,7 +94,7 @@ Materializing the values into actual UI was done in both a top-down and bottom-u
 ![](./components.jpg)
 ```
 
-### Iterations
+## Iterations
 
 Each component passed through several iterations, playing with variations on visual weight and content writing and collecting feedback from the team.
 
@@ -113,13 +113,13 @@ Each component passed through several iterations, playing with variations on vis
 ```
 
 
-## Result
+# Result
  
 Here's how everything worked together. This is the actual state of the page development.
 
-```grid|1
-![](./breakdown.png)
-```
+<jumbo>
+    <img src="./breakdown.png"/>
+</jumbo>
 
 ```grid|1
 ![](./vtex.com.png "The landing page for VTEX, highlighting our work.")
@@ -129,13 +129,13 @@ Here's how everything worked together. This is the actual state of the page deve
 ![](./photo.jpg "A member of the Support Team with the Admin open, a common scene in our office (not sure why, honestly).")
 ```
 
-<!-- ### Before
+<!-- ## Before
 
 ```grid|1
 ![](./before.png)
 ```
 
-### After
+## After
  
 ```grid|1
 ![](./after.png)
