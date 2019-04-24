@@ -12,12 +12,12 @@ forceOrder: 1
 ---
   
 
-## Context
+# Context
 [VTEX](https://vtex.com/) is a brazilian SaaS technology company focused on ecommerce solutions that have a daily impact on the work of thousands of people around the world. More than 2500 leading brands of varying sizes and segments, with operations in 26 countries and in global expansion, rely on VTEX for the online sales of their products.
  
 The main touchpoint of our product with the store owners is the Admin. It's where our clients configure and manage everything related to their operations, and where they'll spend most of their days.
 
-### The problem
+## The problem
 
 The birth of our Design System was only possible because of the confluence of several conditions in the company.
 
@@ -31,9 +31,9 @@ The birth of our Design System was only possible because of the confluence of se
 
 With this momentum we started seeing legacy systems being rewritten, so they could run under new platform. For the growing Product Design team it was an awesome opportunity to improve UX across the admins, but the team was still small for the demand and we needed to scale our design solutions.
 
-## Process
+# Process
 
-### We know what you did last Design System
+## We know what you did last Design System
 
 The first thing that called my attention when we started discussing this project was the fact that something similar had already existed in the company. A few years ago some Designers that were not working with us anymore started a similar initiative which clearly did not work out, so we started looking back at that moment with a critical and open-minded view to make sure we wouldn't repeat the errors of the past.
 
@@ -50,13 +50,10 @@ Building on top of those insights we agreed on some important working principles
 * References should go beyond general-purpose systems like Material, or plain component libraries like Bootstrap. We need to look at references that were more contextualized, and closest to what we needed to build. 
 
 <jumbo caption="Some of our references of mature enterprise Design Systems.">
-<img src="./bench.png"/>
+    <img src="./bench.png"/>
 </jumbo>
- 
-<!-- ```grid|1 
-![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
-``` -->
 
+ 
 <!-- ### Planning
 
 ```grid|1 
@@ -219,6 +216,18 @@ Each line is made of a Statement, that same component used in the Filter compone
 ![](./conditions_advanced.png)
 ```  -->
  
+# Next steps
+
+This project is still under way, constantly evolving with our growing maturity and also changing at the pace the company and our projects change.
+
+There's still a lot of work getting everyone onboard, making everybody feel welcome to contribute and at the same time have a more structured way of tracking ideas and problems.
+
+Beyond the natural evolution of having new components and improving documentation, one major way of improvement is communicating clearer to the company the impact it has in everybody's work. We hope that by improving how people perceive the value of a Design System it'll naturally receive more spontaneous contributions.
+
+```grid|1 
+![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
+```
+
 # Links
 
 <links-list
