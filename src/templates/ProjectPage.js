@@ -280,7 +280,7 @@ class ProjectPage extends React.Component {
               {
                 previous && 
                 <div>
-                  <div className="f3 tl mb3 ttu fw7 black-10 db-ns dn">
+                  <div className="f3 tl mb3 fw7 black-10 db-ns dn">
                     Previous
                   </div>
                   <ProjectCard node={previous} />
@@ -294,7 +294,7 @@ class ProjectPage extends React.Component {
               {
                 next &&
                 <div>
-                  <div className="f3 tr mb3 ttu fw7 black-10 db-ns dn">
+                  <div className="f3 tr mb3 fw7 black-10 db-ns dn">
                     Next
                   </div>
                   <ProjectCard node={next} />
