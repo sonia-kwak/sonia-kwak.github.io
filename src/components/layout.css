@@ -150,22 +150,9 @@ figure figure {
 }
   
 .project-card--cover {
-  height: 18rem;
-
   transform: translateY(0px);
 }
-/* Medium */
-@media screen and (max-width: 60em) and (min-width: 30em) {
-  .project-card--cover {  
-    height: 12rem;
-  }
-}
-/* Mobile */
-@media screen and (max-width: 30em) {
-  .project-card--cover {  
-    height: 12rem;
-  }
-}
+
 .project-card--cover,
 .project-card--title,
 .project-card--description,

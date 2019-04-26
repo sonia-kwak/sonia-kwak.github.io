@@ -52,115 +52,113 @@ class IndexPage extends React.Component {
     
     return (
       <Layout>
-        <section className="flex flex-row-ns flex-column ">
-          <div className="w-40-ns">
-            <img
-              src={selfie}
-              alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
-              className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
-            />
+        <div className="mw9 center">
+          <section className="flex flex-row-ns flex-column ">
+            <div className="w-40-ns">
+              <img
+                src={selfie}
+                alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
+                className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
+              />
 
-            <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns pt5 mt6-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
-              I'm a designer of products and systems.
-            </h1>
-          </div> 
+              <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns pt5 mt6-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
+                I'm a designer of products and systems.
+              </h1>
+            </div> 
 
-          <div className="w-10-ns" />
+            <div className="w-10-ns" />
 
-          <div className="w-50-ns mt7">
-            <section id="about" className="mb4 mt6-ns mt7 f4 lh-copy dark-gray">
-              <p>
-                Nice to meet you!
-              </p>
-              <p>
-                I'm a designer with a skill set ranging from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
-              </p>
-              <p>
-                My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
-              </p>
-              <p>
-                I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
-              </p>
-            </section>
-          </div>
-        </section>
+            <div className="w-50-ns mt7">
+              <section id="about" className="mb4 mt6-ns mt7 f4 lh-copy dark-gray">
+                <p>
+                  Nice to meet you!
+                </p>
+                <p>
+                  I'm a designer with a skill set ranging from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
+                </p>
+                <p>
+                  My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
+                </p>
+                <p>
+                  I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
+                </p>
+              </section>
+            </div>
+          </section>
 
-        <HomeSection title="Work">
-          <div className="f4 pb4-ns pb2 mt2 dark-gray lh-copy">
-              I'm working as a Product Designer at{' '}
-              <a
-                className="pretty-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.vtex.com/"
-              >
-                VTEX
-                </a>
-              , building the future of e-commerce in one of the biggest ecosystems in
-              the world. I've been contributing in a variety of teams and projects, participating from all project phases, always in search of the right balance between the inherent complexity of the platform, technology constraints and the pains and needs of thousands of users that depend on our platform everyday to run their businesses.
-            <p>
-              In my free time I'm a cicloactivist and I've built{' '}
-              <a
-                className="pretty-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.bikedeboa.com.br/"
-              >
-                bike de boa
-                </a>
-              , a web app to help urban cyclists in Brazil.
+          <HomeSection title="Work">
+            <div className="f4 pb4-ns pb2 mt2 dark-gray lh-copy">
+                I'm working as a Product Designer at{' '}
+                <a
+                  className="pretty-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.vtex.com/"
+                >
+                  VTEX
+                  </a>
+                , building the future of e-commerce in one of the biggest ecosystems in
+                the world. I've been contributing in a variety of teams and projects, participating from all project phases, always in search of the right balance between the inherent complexity of the platform, technology constraints and the pains and needs of thousands of users that depend on our platform everyday to run their businesses.
+              <p>
+                In my free time I'm a cicloactivist and I've built{' '}
+                <a
+                  className="pretty-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.bikedeboa.com.br/"
+                >
+                  bike de boa
+                  </a>
+                , a web app to help urban cyclists in Brazil.
+              </p>
+            </div>
+          </HomeSection>
+
+          <HomeSection title="Case studies" fullScreen
+            description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
+            <Projects posts={caseStudies}/> 
+          </HomeSection> 
+          
+          <HomeSection title="Other projects" fullScreen
+            description="">
+            <Projects mini posts={projects}/> 
+          </HomeSection> 
+              
+          <HomeSection
+            title="Speaking"
+            description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+          > 
+            <Speaking />
+          </HomeSection>
+
+          {/* <HomeSection title="Currently">
+            <p className="pretty-bullet">
+              Listening to <b>Lorem</b>, <b>Ipsum</b>.
             </p>
-          </div>
-        </HomeSection>
+          </HomeSection> */}
 
-        <HomeSection title="Case studies" fullScreen
-          description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
-          <Projects posts={caseStudies}/> 
-        </HomeSection> 
-        
-        <HomeSection title="Other projects" fullScreen
-          description="">
-          <Projects mini posts={projects}/> 
-        </HomeSection> 
-            
-        <HomeSection
-          title="Speaking"
-          description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
-        > 
-          <Speaking />
-        </HomeSection>
+          <HomeSection 
+            title="Reading"
+            description={(
+              <span> 
+                Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to 
+                <a
+                  className="pretty-link ml1"
+                  href="https://www.goodreads.com/cmdalbem"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Goodreads
+                </a>.
+              </span>
+            )}
+          >
+            <Reading bookNodes={bookNodes} />
+          </HomeSection>
 
-        {/* <HomeSection title="Currently">
-          <p className="pretty-bullet">
-            Listening to <b>Lorem</b>, <b>Ipsum</b>.
-          </p> 
-
-          <p className="pretty-bullet">
-            Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
-          </p>
-        </HomeSection> */}
-
-        <HomeSection 
-          title="Reading"
-          description={(
-            <span> 
-              Reading good books is like always having good companies and being mentored by the best. This is what I'm currently reading, according to 
-              <a
-                className="pretty-link ml1"
-                href="https://www.goodreads.com/cmdalbem"
-                target="_blank"
-                rel="noopener noreferrer">
-                Goodreads
-              </a>.
-            </span>
-          )}
-        >
-          <Reading bookNodes={bookNodes} />
-        </HomeSection>
-
-        <HomeSection title="Elsewhere">
-          <Elsewhere />
-        </HomeSection>
+          <HomeSection title="Elsewhere">
+            <Elsewhere />
+          </HomeSection>
+        </div>
 
       </Layout>
     );

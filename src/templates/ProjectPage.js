@@ -304,7 +304,7 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-100 tc mt6">
-            <Link to="/#projects" className="ba br1 dim f4 fw6 link orange pa3 br1">
+            <Link to="/#case studies" className="ba br1 dim f4 fw6 link orange pa3 br1">
               View all projects
             </Link>
           </div>
