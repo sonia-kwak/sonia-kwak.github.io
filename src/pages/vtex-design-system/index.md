@@ -6,7 +6,6 @@ title: "VTEX Design System"
 minibio: "Developing a common language to align and scale product design solutions for the entire company, and beyond."
 description: "Styleguide was the company's Design System, the home for all our reusable patterns, components and assets related to product design in VTEX. It aimed to be a common language of tools and processes to facilitate how we collaborated and shared knowledge across teams and projects."
 tags: ['UI/UX','work','process']
-team: "Cristiano Dalbem, Breno Calazans, Kevin Chevalier, Guilherme Freitas, Lucas Bebber, Eric Reis, Raphael Simoens, Jonatas Maia, Gabriel Galc, et al."
 cover: './cover.png' 
 forceOrder: 1
 ---
@@ -228,12 +227,18 @@ Beyond the natural evolution of having new components and improving documentatio
 ![](./slides.png "Some slides of the our presentation to the company in one of our Demo Friday sessions. ")
 ```
 
+# Acknowledgements
+
+As mentioned before this was a highly collaborative project involving *many* people throughout the organization. Still, I'd like to give special thanks to the other Product Designers Raphael Simoens and Jonatas Maia, who have been highly engaged with it and great people to have discussions in general. I'd also like to thank the awesome front-end developers Breno Calazans, Kevin Chevalier, Guilherme Freitas, Lucas Bebber and Eric Reis.
+
+For more people check the [full list of contributors in the Github repository](https://github.com/vtex/styleguide/graphs/contributors).
+
 # Links
 
 <links-list
     items='[
         {
-            "label": "VTEX Design System website",
+            "label": "Website",
             "url": "https://styleguide.vtex.com"
         },
         {
