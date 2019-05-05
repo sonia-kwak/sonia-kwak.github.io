@@ -3,7 +3,7 @@ projectType: 'project'
 date: "2007"
 date2: "Now"
 title: "Photography"
-tags: ['art', 'hobby']
+tags: []
 cover: "./cover.png"
 minibio: "An overview of my photography work since 2007."
 description: "Photography has been for many years the main way in which I try to express my views. I try to see the world from different perspectives, looking for beauty in the most ordinary places."

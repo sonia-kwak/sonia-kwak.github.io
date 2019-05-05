@@ -5,8 +5,7 @@ date2: "2018-10"
 title: "VTEX Home"
 minibio: "A new home dashboard for an ecommerce platfom."
 description: "A new home for the an e-commerce platform admin, setting the ground for a new generation of Admin UIs."
-tags: ['UI/UX','platform','work']
-roles: "UX Design, research"
+tags: ['design']
 cover: './cover.png' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
 forceOrder: 3

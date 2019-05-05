@@ -2,10 +2,9 @@
 projectType: 'project'
 date: "2017-06"
 title: "Game of Lives"
-minibio: "A Virtual Reality game that foster empathy for social issues."
+minibio: "A Virtual Reality game that aims to foster empathy for social issues."
 description: "A story-telling VR game inspired by the best “walking simulators” that will challenge you to see the world from other people’s eyes. Winner of the first Isobar International Hackathon."
-tags: ['hackathon','game','social']
-roles: "Game design, storyboard writing, development"
+tags: ['game design']
 team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
 cover: "./cover.png"
 ---
@@ -127,6 +126,6 @@ This project was developed during the first Isobar Virtual Reality International
 > "This group took VR to a new place by telling a story and making social commentary in a way that provided humor while also tackling a very serious and important subject. This was not just an application, it was art." [(Source)](https://squeeze.isobar.com/2017/06/19/hackathon-virtual-reality/)
  
 
-<!-- ```grid|1
-![](./isobar_hackathon2.png) 
-``` -->
+```grid|1
+![](./isobar_hackathon.png "The event was highlighted in the global Isobar blog.") 
+```

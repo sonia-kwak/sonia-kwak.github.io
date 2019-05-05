@@ -5,7 +5,7 @@ date2: "Now"
 title: "VTEX Design System"
 minibio: "Developing a common language to align and scale product design solutions for the entire company, and beyond."
 description: "Styleguide was the company's Design System, the home for all our reusable patterns, components and assets related to product design in VTEX. It aimed to be a common language of tools and processes to facilitate how we collaborated and shared knowledge across teams and projects."
-tags: ['UI/UX','work','process']
+tags: ['design','front-end','product management']
 cover: './cover.png' 
 forceOrder: 1
 ---
@@ -53,11 +53,9 @@ Building on top of those insights we agreed on some important working principles
 </jumbo>
 
  
-<!-- ### Planning
-
 ```grid|1 
 ![](./maslow.png "We drew inspiration from the famous Maslow Pyramid of Priorities to understand how to focus our energies in the project.")
-``` -->
+```
 
 ## Foundations 
 
@@ -209,11 +207,11 @@ Each line is made of a Statement, that same component used in the Filter compone
     <img src="./conditions.png"/>
 </jumbo>
  
-<!-- It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way. -->
+It can also be extended to allow nesting of conditions, enabling the user to express complex booleans equations in an intuitive way.
 
-<!-- ```grid|1
+```grid|1
 ![](./conditions_advanced.png)
-```  -->
+``` 
  
 # Next steps
 

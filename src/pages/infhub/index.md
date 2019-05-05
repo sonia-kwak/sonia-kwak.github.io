@@ -3,10 +3,9 @@ projectType: 'project'
 date: "2012-09-07"
 date2: "2013-07-25"
 title: "infHub"
-minibio: "My first web development and UX project. A platform for university students to share their projects."
-description: "A platform for university students to share their projects."
-tags: ['social network','platform','academic','UI/UX']
-roles: "Front-end/Back-end development, Design"
+minibio: "A platform for university students to share their projects."
+description: "A platform for university students to share their projects. This project was an important milestone for me, introducing me to the world of front-end development as well as UI design."
+tags: ['front-end','back-end','design']
 team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"
 cover: './cover.png'
 ---
@@ -60,25 +59,21 @@ It also got me more interested in Usability, and what I would find out later to 
 </results-banner>
 
 
-```grid|1
 ![](./infhub1.png)
-```
 
-```grid|2
 ![](./infhub5.png "Projects list")
+
 ![](./infhub3.png "Gallery mode")
-```
- 
-```grid|2
+
 ![](./infhub2.png "User profile page") 
+
 ![](./infhub7.png "Project page")
-```
- 
-```grid|3
+
 ![](./search.png "Search for anything") 
+
 ![](./filter.png "Filter by disciplines")
+
 ![](./tags.png "...or filter by tags")
-```
 
 
 ## Links
