@@ -1,12 +1,13 @@
 ---
+projectType: 'project'
 date: "2014-12"
-title: "Data Visualization of Guitar Songs"
-description: "What if we could plot a guitar song in one single image?"
-tags: ['data visualization','music','academic']
+title: "Guitar Songs Dataviz"
+minibio: "What if we could plot a guitar song in one single image?"
+description: "Final project for the Data Visualization class. What if we could plot a guitar song in one single image?"
+tags: ['data visualization','front-end']
 roles: "Development, Design"
 team: "Cristiano Dalbem, Shivani Shah"
 cover: "./cover.png"
-hide: true
 ---
 
 
@@ -17,27 +18,28 @@ What if we could plot a guitar song in one single image? And what if it could at
 Made with web technology, including the D3.js dataviz library, and some basic music theory.
  
 
-#Inspiration
+# Inspiration
 
-### Visualizing Chess moves on board.
+Visualizing Chess moves on board. Thinking Machine, by Martin Wattenberg.
 
 ```grid|2
-![](./chess1.png "Thinking Machine, by Martin Wattenberg")
-![](./chess2.png "Thinking Machine, by Martin Wattenberg")
+![](./chess1.png)
+![](./chess2.png)
 ```
 
-### Static visualization of patterns in music
+Static visualization of patterns in music.
 
 ![](./shapeofsong1.png "The Shape of Song, by Martin Wattenberg")
 
-### Global flight patterns
+Global flight patterns
 
 ![](./airplanes1.png "BBC News")
 
-#Music theory
+# Music theory
 
+// todo
 
-#Technology
+# Development
 
 - GuitarPro -> MusicXML  -  Input of the songs
 - D3  -  Data Visualization library
@@ -50,40 +52,61 @@ Made with web technology, including the D3.js dataviz library, and some basic mu
 D3 is a Javascript library oriented to Data Visualization. Isn’t a graphics library, but helps managing SVGs and DOMs. It has hundreds of samples online, good documentation, several books published.
 
 
-#Results
+# Results
+
+### Neck position
+
+<jumbo caption="Steve Vai - For The Love Of God">
+    <img src="./stevevai-fortheloveofgod.png"/>
+</jumbo>
+
+<jumbo caption="Jimi Hendrix - Purple Haze">
+    <img src="./jimihendrix-purplehaze.png"/>
+</jumbo>
+
+<jumbo caption="Paco de Lucia - Entre Dos Aguas">
+    <img src="./pacodelucia-entredosaguas.png"/>
+</jumbo>
 
 
-###Neck position
-
-![](./stevevai-fortheloveofgod.png "Steve Vai - For The Love Of God")
-![](./jimihendrix-purplehaze.png "Jimi Hendrix - Purple Haze")
-![](./pacodelucia-entredosaguas.png "Paco de Lucia - Entre Dos Aguas")
-
-###Scale
+### Scale
 
 We can very easily recognize the scale used. The most probable scales used are automatically calculated.
 
 
-![](./santana-blackmagicwoman.png "Santana - Black Magic Woman")
+<jumbo caption="Santana - Black Magic Woman">
+    <img src="./santana-blackmagicwoman.png"/>
+</jumbo>
 
+```grid|1
 ![](./scales.png)
+```
 
-###Complexity
+
+### Complexity
 You can get impressed by something so simple can be so beautiful
 
-![](./pinkfloyd-comfortablynumb.png "Pink Floyd - Comfortably Numb")
+<jumbo caption="Pink Floyd - Comfortably Numb">
+    <img src="./pinkfloyd-comfortablynumb.png"/>
+</jumbo>
 
 ...and yet something that seemed simple aren’t that much
 
-![](./boleroravel.png "Maurice Ravel - Bolero")
+<jumbo caption="Maurice Ravel - Bolero">
+    <img src="./boleroravel.png"/>
+</jumbo>
 
 Some music styles are more complex than others. Let's compare, for example, the performance of two acclaimed artists of different styles: a classic Rock band, and a legendary Jazz guitar player.
 
-![](./ledzeppelin-stairwaytoheaven.png "Led Zeppelin - Stairway To Heaven (Rock)")
+<jumbo caption="Led Zeppelin - Stairway To Heaven (Rock)">
+    <img src="./ledzeppelin-stairwaytoheaven.png"/>
+</jumbo>
 
-![](./patmetheny-haveyouheard.png "Pat Metheny - Have You Heard (Jazz)")
+<jumbo caption="Pat Metheny - Have You Heard (Jazz)">
+    <img src="./patmetheny-haveyouheard.png"/>
+</jumbo>
 
-###Indian classical music
+### Indian classical music
 
 Identifies:
 Mukhya swar (Prominent note)
@@ -92,15 +115,35 @@ Varjit swar (Prohibited note)
 
 Path Identifies Pakad.
 
-![](./raagbhairvi.png "Raag bhairvi")
+<jumbo caption="Raag bhairvi">
+    <img src="./raagbhairvi.png"/>
+</jumbo>
 
 
-##Further work
 
-- Extend the concept to other instruments
-- Study the most common sequences of notes used
-- Add support for Chords
+## Further work
+
+- Improve visual design
+- Enable the user to upload their own songs
+- Highlight not only most common notes, but also most used intervals and sequences (the riffs)
+- Support chords
+- Support special notes like bends, tremolos, open strings, etc.
 - Apply machine learning techniques to identify prominent paths
-- Experiment with colours to put more visual information
-- Dynamically select the part of song to be visualized 
-- Add support for special notes like bends, tremolos, open strings, etc.
+- Dynamically select the part of song to be visualized, instead of collapsing it all into one frame only.
+- Extend the concept to other instruments
+
+
+## Links
+
+<links-list
+    items='[
+        {
+            "label": "Website",
+            "url": "http://cmdalbem.github.io/guitar-songs-viz/"
+        },
+        {
+            "label": "Github",
+            "url": "https://github.com/cmdalbem/guitar-songs-viz"
+        }
+    ]'>
+</links-list>
