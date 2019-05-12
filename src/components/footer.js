@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => (
     <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between">
         <div className="mw6-ns lh-copy">
-            Designed with ❤ in Figma, developed with GatsbyJS, and styled with Tachyons.
+            Made with ❤️ and 🧠 in Figma + GatsbyJS + React + Tachyons.
         </div>
         <div className="mv4 mv0-ns">
             <a
