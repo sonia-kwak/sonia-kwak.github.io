@@ -77,13 +77,16 @@ Building native apps, although they offer the best performance, are very cost-in
 
 We use web technology because it’s the most democratic platform ever. We’ve been using modern tools and concepts like Progressive Web Apps to offer great experiences from low-end to high-end Mobile and Desktop devices while still being free of friction.
 
-```grid|2
+```grid|1
 ![](./trello.png)
+```
+
+```grid|1
 ![](./github.png)
 ```
 
 Since then dozens of people have passed by this project, contributing as they could. As part of a small group of contributors I was responsible for a little bit of everything. Most of the time however has been invested in the UX research and design and front-end development.
-
+ 
 Using simple project management and communication tools such as Trello, GitHub and Slack proved to be essential to enable so many people to contribute asynchronously. Making this project Open Source was also a natural choice.
 
 ## Visual design
