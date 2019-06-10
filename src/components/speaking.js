@@ -3,6 +3,12 @@ import React from 'react'
 const Speaking = () => (
     <div>
       <Talk
+        title="Uma nova experiência para criar e gerenciar promoções na VTEX"
+        context="VTEX Day. 2019"
+        link="https://docs.google.com/presentation/d/1eXlEMlTrrYifJIOIWkdEAiz_Pxo0iHnuXr_NhLsjQto/edit?usp=sharing"
+      />
+
+      <Talk
         title="A UX da Mobilidade Urbana - Cidades melhores para pedalar e viver"
         context="ILA (Interaction Latin America), ILA Redux RJ, ILA Redux SP. 2018"
       link="https://docs.google.com/presentation/d/1pI4ONbgxePD8DrPSmUlRHCa_mSGdzyGJB8Qb38ur4bs/edit?usp=sharing"
