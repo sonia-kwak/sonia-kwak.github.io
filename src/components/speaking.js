@@ -3,9 +3,16 @@ import React from 'react'
 const Speaking = () => (
     <div>
       <Talk
+        title="Os 3 pilares par escalar o time de Design na VTEX"
+        context="Meetup Design at Scale. Rio de Janeiro & Recife, 2019."
+        link="https://drive.google.com/file/d/1kw7KkTTlqmPQJj5QO1hoYQPG0jybxIee/view?   usp=sharing"
+      />
+
+      <Talk
         title="Gerando insights a partir de dados em produtos B2B complexos"
-        context="TheDevelopersConference - Trilha Gestão de Produto. São Paulo, 2019"
-        link="https://s3-sa-east-1.amazonaws.com/thedevconf/presentations/TDC2019SP/gestaoprod/YDA-7768_2019-07-18T102700_Gerando%20insights%20a%20partir%20de%20dados%20em%20produtos%20B2B%20complexos%20(1).pdf"
+        context="TheDevelopersConference - Trilha Gestão de Produto. São Paulo 
+        & Recife, 2019"
+        link="https://docs.google.com/presentation/d/1xDkUiYvJFdY7QShe36kS9pauHzZJhRYnTLz0LNtZ2EY/edit?usp=sharing"
       />
 
       <Talk
@@ -32,11 +39,11 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1JJvtK1kPmfCg-g06vtmPoQNBgT9BdHZQCGxbXaqZAm8/edit#slide=id.p"
       />
 
-      <Talk
+      {/* <Talk
         title="Podcasts"
         context="Isobar Lightning Talks. Porto Alegre, 2017"
         link="https://docs.google.com/presentation/d/1hzKk7USBEVX9m8HlrZD5rRb8sp-VXWFYuyebHe5kzJ8/edit?usp=sharing"
-      />
+      /> */}
 
       <Talk
         title="Multimídias Livres"
