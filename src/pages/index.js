@@ -61,7 +61,7 @@ class IndexPage extends React.Component {
                 className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
               />
 
-              <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns pt5 mt6-ns ml7-ns ml4 mt6 mr3 mw6-ns tl-ns tr">
+              <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3-ns pt5 mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr" style={{maxWidth: 590}}>
                 I'm a designer of products and systems.
               </h1>
             </div> 
@@ -88,7 +88,7 @@ class IndexPage extends React.Component {
 
           <HomeSection title="Work">
             <div className="f4 pb4-ns pb2 mt2 dark-gray lh-copy">
-                I'm working as a Product Designer at{' '}
+              I'm working as a <b>Product Designer</b> at{' '}
                 <a
                   className="pretty-link"
                   target="_blank"
@@ -100,16 +100,9 @@ class IndexPage extends React.Component {
                 , building the future of e-commerce in one of the biggest ecosystems in
                 the world. I've been contributing in a variety of teams and projects, participating from all project phases, always in search of the right balance between the inherent complexity of the platform, technology constraints and the pains and needs of thousands of users that depend on our platform everyday to run their businesses.
               <p>
-                In my free time I'm a cicloactivist and I've built{' '}
-                <a
-                  className="pretty-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.bikedeboa.com.br/"
-                >
-                  bike de boa
-                  </a>
-                , a web app to help urban cyclists in Brazil.
+                In my free time I'm a <b>cicloactivist</b> and I try to apply my skills to improve urban mobility and ultimately contribute for better cities. I've built{' '}
+                <a className="pretty-link" target="_blank" rel="noopener noreferrer" href="https://www.bikedeboa.com.br/" > bike de boa</a> and <a className="pretty-link" target="_blank" rel="noopener noreferrer" href="https://ciclomapa.org.br/" > CicloMapa</a>
+                , two web apps to help urban cyclists in Brazil.
               </p>
             </div>
           </HomeSection>

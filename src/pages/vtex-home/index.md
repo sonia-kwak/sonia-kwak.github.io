@@ -1,5 +1,5 @@
 ---
-projectType: 'case study'
+projectType: 'project'
 date: "2018-03"
 date2: "2018-10"
 title: "VTEX Home"
@@ -8,7 +8,6 @@ description: "A new home for the an e-commerce platform admin, setting the groun
 tags: ['design']
 cover: './cover.png' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
-forceOrder: 3
 ---
   
 
