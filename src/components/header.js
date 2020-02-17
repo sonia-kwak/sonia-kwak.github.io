@@ -25,11 +25,10 @@ class Header extends React.Component {
     const tabItemClasses = 'ml3 f6 pa0 fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
     let sections = [
       'About',
-      'Work',
       'Case studies',
       'Speaking',
       'Reading',
-      'Elsewhere'
+      'Social'
     ];
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     

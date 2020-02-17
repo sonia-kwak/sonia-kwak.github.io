@@ -2,7 +2,7 @@ import React from 'react'
 
 import LinksList from './LinksList'
 
-const Speaking = () => {
+const Social = () => {
   const items = [
     {
       label: 'GitHub',
@@ -35,4 +35,4 @@ const Speaking = () => {
   )
 }
 
-export default Speaking
+export default Social

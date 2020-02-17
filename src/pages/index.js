@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
-import Elsewhere from '../components/Elsewhere'
+import Social from '../components/Social'
 import HomeSection from '../components/HomeSection'
 import Projects from '../components/Projects'
 
@@ -148,8 +148,8 @@ class IndexPage extends React.Component {
             <Reading bookNodes={bookNodes} />
           </HomeSection>
 
-          <HomeSection title="Elsewhere">
-            <Elsewhere />
+          <HomeSection title="Social">
+            <Social />
           </HomeSection>
         </div>
 

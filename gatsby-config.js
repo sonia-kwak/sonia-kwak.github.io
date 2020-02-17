@@ -92,6 +92,14 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
     'gatsby-plugin-catch-links',
     {
       resolve: "@halkeye/gatsby-source-goodreads",

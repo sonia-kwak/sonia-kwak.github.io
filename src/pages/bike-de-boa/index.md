@@ -1,7 +1,7 @@
 ---
 projectType: 'case study'
 date: "2016-10"
-date2: "Now"
+date2: "2019-06"
 title: "bike de boa"
 minibio: "Web app for collaboratively mapping safe places in the city to park your bike."
 description: "A cicloactivist project that aims to foster a positive vibe in the community, encouraging people to use more their bikes in the city. With the web app you can search for safe places to park your bike nearby, as well as map new ones while learning what makes for good bike parking and safer streets."
