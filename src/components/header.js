@@ -14,12 +14,11 @@ class Header extends React.Component {
   }
 
   render() {
-    let isHome=true, url;
+    let isHome=true;
 
     if (typeof window !== `undefined`) {
       isHome = window.location.pathname === '/';
-      
-      url = new URL(window.location.href);
+      // url = new URL(window.location.href);
     }
  
     const tabItemClasses = 'ml4 f6 pa0 fw6 pointer bg-transparent outline-0 bn tab tab--unselected';

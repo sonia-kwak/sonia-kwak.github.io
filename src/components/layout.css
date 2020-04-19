@@ -198,6 +198,9 @@ figure figure {
 .bg-gradient-6 {
   background: -webkit-linear-gradient(#f5852d, #f5882d);
 }
+.bg-gradient-7 {
+  background: -webkit-linear-gradient(hsla(30, 91%, 57%, 1), hsla(32, 91%, 57%, 1))
+}
 
 .bg-background-color {
   background-color: var(--bg-color);

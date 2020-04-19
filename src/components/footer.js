@@ -3,9 +3,32 @@ import React from 'react'
 const Footer = () => (
     <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between">
         <div className="mw6-ns lh-copy">
-            Made with ❤️ and 🧠 in Figma + GatsbyJS + React + Tachyons.
+            Made with <span role="img" aria-label="heart">❤️</span> and <span role="img" aria-label="brain">🧠</span> in Figma & Gatsby.js
         </div>
         <div className="mv4 mv0-ns">
+            <a
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                href="https://www.linkedin.com/in/cmdalbem/">
+                <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
+                    viewBox='0 0 430.117 430.117'>
+                    <path d='M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707 c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21 v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824 C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463 c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z M5.477,420.56h92.184v-277.32H5.477V420.56z'
+                    />
+                </svg>
+                {/* LinkedIn */}
+            </a>
+            <a
+                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                href="mailto:cristiano.dalbem@gmail.com
+                ">
+                <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'
+                    fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round'
+                    strokeLinejoin='round'>
+                    <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'
+                    />
+                    <polyline points='22,6 12,13 2,6' />
+                </svg>
+                {/* Email */}
+            </a>
             <a
                 className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
                 href="https://github.com/cmdalbem/">
@@ -38,28 +61,6 @@ const Footer = () => (
                     />
                 </svg>
                 {/* Twitter */}
-            </a>
-            <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
-                href="https://www.linkedin.com/in/cmdalbem/">
-                <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
-                    viewBox='0 0 430.117 430.117'>
-                    <path d='M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707 c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21 v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824 C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463 c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z M5.477,420.56h92.184v-277.32H5.477V420.56z'
-                    />
-                </svg>
-                {/* LinkedIn */}
-            </a>
-            <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
-                href="mailto:cristiano.dalbem@gmail.com
-                ">
-                <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'
-                    fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round'
-                    strokeLinejoin='round'>
-                    <path d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'
-                    />
-                    <polyline points='22,6 12,13 2,6' />
-                </svg>
             </a>
         </div>
     </div>
