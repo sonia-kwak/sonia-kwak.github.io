@@ -217,12 +217,12 @@ figure figure {
 }
  
 .lh-copy {
-  line-height: 1.65;
+  line-height: 1.65 !important;
 }
 
-.f4 {
+/* .f4, .f4-ns {
   font-size: 18px !important;
-}
+} */
 
 .dark-gray {
   color: var(--dark-gray) !important;
