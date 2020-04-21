@@ -3,9 +3,9 @@ import React from 'react'
 const Speaking = () => (
     <div>
       <Talk
-        title="Os 3 pilares par escalar o time de Design na VTEX"
-        context="Meetup Design at Scale. Rio de Janeiro & Recife, 2019."
-        link="https://drive.google.com/file/d/1kw7KkTTlqmPQJj5QO1hoYQPG0jybxIee/view?   usp=sharing"
+        title="Os 3 Pilares Para Escalar Design na VTEX"
+        context="Meetup Design at Scale. Rio de Janeiro / Recife, 2019."
+        link="hhttps://www.youtube.com/watch?v=43S4BThGopU"
       />
 
       <Talk

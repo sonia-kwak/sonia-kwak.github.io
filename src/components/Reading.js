@@ -54,6 +54,8 @@ class Book extends React.Component {
                 titleClasses += 'f5 fw6'
                 subtitleClasses += 'f6'
                 break;
+            default:
+                break;
         }
 
 
@@ -64,7 +66,7 @@ class Book extends React.Component {
                 rel="noopener noreferrer"
                 href={book.link}
             >
-                <img className="card-shadow" src={book.imageUrl}></img>
+                <img className="card-shadow" src={book.imageUrl} alt={book.title + ' book cover'}></img>
                 
                 {
                     mode !== 'mini' &&

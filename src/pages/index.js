@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
  
-import AnimateLoad from '../components/AnimateLoad'
+// import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
 import Social from '../components/Social'
