@@ -161,6 +161,10 @@ Check below our full webinar, in Portuguese, with participation of the entire te
 
 `youtube: https://www.youtube.com/watch?v=IrPPbCnKPsI` 
 
+```grid|1
+![](./archdaily.png "We were very happy to have been highlighted in ArchDaily, an important website on Architecture and Urbanism.")
+```
+
 
 # Looking ahead
 
