@@ -65,6 +65,7 @@ At this step we validated that our solution seemed to be innovative and unique, 
     <img src="./bench.png"/>
 </jumbo>
  
+
 Our main insights were:
 
 * Solutions based on OSM are very technical and hard to understand and operate, and none had clear instructions about the collaborative dimension and how to contribute with the mapping.
@@ -88,12 +89,12 @@ With the references in mind and the typologies well defined I started sketching 
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
-        <source src="./wireframe.mp4" type="video/mp4">
+        <source src="./prototype.mp4" type="video/mp4">
     </video> 
 </video-container>
 
 It was important to start off with a very low-fidelity prototype to validate the main features and visual hierarchy, without putting on the table discussions on visuals. Although it *looks* very different than the final version, but the overall experience didn't change much!
-
+ 
 You can check the [Figma interactive prototype here](https://www.figma.com/proto/QjH5j2kdQnN1iUZCYxjNsDwt/CicloMapa?node-id=363%3A113&viewport=-3270%2C2793%2C0.45554399490356445&scaling=scale-down-width).
 
 
@@ -124,12 +125,12 @@ For this project I also wanted to try out [Mapbox](https://www.mapbox.com/), an 
 
 
 
-# Visual design
+# Visual design 
 
 With a very functional first version of the system up and running ahead of schedule I found myself with some extra time to _make it pop_. Based on all the process up to now I've devised some brand principles to start thinking on some visual directions:
-
-* It should be **serious**, not playful, since we're dealing with important data that can impact how our cities and built. But we're not formal or academic, we want to be **relatable**, so we can speak to the masses.
-* We're **assertive** and **trustworthy**: we're experienced specialists on cycling and technology.
+ 
+* **Serious** instead of playful, since we're dealing with important data that can impact how our cities and built. But we're not formal or academic, we want to be **relatable**, so we can speak to the masses.
+* **Assertive** and **trustworthy**: we're experienced specialists on cycling and technology.
 * **Collaborative**, **communal** and **educative**, since it's based on OpenStreetMaps.
 
 The main colors are dark because it gives a "data dashboard" vibe. It also resembles the aerial look of a cityscape at night, with the bike paths lighten up as if they were neon lights, which is pretty cool. The color palette is made of steps in a gradient from green to red representing the safety and "goodness" of the different typologies. These were optimized to the best visibility possible on both the dark map as well as available variation of a satellite map.
