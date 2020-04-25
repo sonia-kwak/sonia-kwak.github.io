@@ -79,8 +79,8 @@ body {
 .pretty-link {
   color: inherit;
 
-  text-decoration: none;
-  box-shadow: inset 0 -2px 0 0px var(--orange);
+  box-shadow: inset 0 0 0 0px var(--orange);
+  text-decoration: underline solid var(--orange);
   
   transition: all 200ms var(--global-easing);
 } 
