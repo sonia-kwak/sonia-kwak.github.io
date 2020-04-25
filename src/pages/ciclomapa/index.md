@@ -162,24 +162,25 @@ The main colors are dark because it gives a "data dashboard" vibe. It also resem
 # Promoting
 
 I helped creating some arts to promote the project and our launching webinar in different social media channels.
+ 
+<jumbo>
+    <img src="./social.png"/>
+</jumbo>
+
+We're very happy with the organic coverage from different media channels, mainly with [Mobilize](https://www.mobilize.org.br/noticias/11986/um-mapa-com-quase-todas-as-ciclovias-do-brasil.html) and [ArchDaily](https://www.archdaily.com.br/br/933497/ciclomapa-um-mapa-colaborativo-da-infraestrutura-cicloviaria-das-cidades-brasileiras) which are big portals specialized on mobility.
+
+<!-- ```grid|5
+![](./logo_g1.png)
+![](./logo_archdaily.png)
+![](./logo_mobilize.png)
+![](./logo_cnm.png) 
+![](./logo_diario.png)
+``` -->
 
 ```grid|1
-![](./artes.png)  
+![](./coverage.png)
 ```
-
-Check below our full webinar, in Portuguese, with participation of the entire team as well as some special guests discussing the brazilian scene of urban mobility and usage of data in advocacy.
-
-`youtube: https://www.youtube.com/watch?v=IrPPbCnKPsI` 
-
-```grid|1
-![](./archdaily.png "We were very happy to have been highlighted in ArchDaily, an important website on Architecture and Urbanism.")
-```
-
-
-# Looking ahead
-
-With the current version in production we wanted to start gathering context to think about its future. We had some ideas in our mind but lots of people also came with others. Although we had a product vision of what the future could look like we didn't have a clear strategy of what should be focused first. So I've planned a research to interview users and other specialists all around Brazil to understand in more depth their needs and also get feedback about the product.
-
+ 
 <results-banner
     data='{
         "views since launch": "30,000+",
@@ -187,6 +188,11 @@ With the current version in production we wanted to start gathering context to t
         "brazilian cities viewed": "290"
     }'>
 </results-banner>
+
+
+# Looking ahead
+
+With the current version in production we wanted to start gathering context to think about its future. We had some ideas in our mind but lots of people also came with others. Although we had a product vision of what the future could look like we didn't have a clear strategy of what should be focused first. So I've planned a research to interview users and other specialists all around Brazil to understand in more depth their needs and also get feedback about the product.
 
 <!-- Our main conclusions have been:
 * We validated CicloMapa is innovative, i.e. there isn't an alternative tool that does what we do, and that it already brings value to the community by facilitating the visualization and download of OSM data.
@@ -197,9 +203,8 @@ With the current version in production we wanted to start gathering context to t
 This will help us to plan the next steps, which I'll update here as soon as we have news. :) -->
 
 ```grid|1
-![](./roadmap.jpg "Planning the next features to be implemented.")
-``` 
-
+![](./roadmap.jpeg "Planning the next features to be implemented.")
+```
 
 ## Links
 
