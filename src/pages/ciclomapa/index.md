@@ -11,21 +11,25 @@ forceOrder: 1
 ---
 
 
+
 # Overview
 
 Today in Brazil we face a big challenge of not having data on the cycling infrastructure available in our cities. This makes it very hard to paint a clear picture of our reality and measure the opportunities and impacts to society of improving urban mobility.
 
-I've teamed up with two important brazilian civil society organizations on cycling and urban mobility to design and developed the first platform of cycling maps encompassing all Brazilian cities. We've leveraged the data and collaborativeness of OpenStreetMap (OSM), a huge global initiative similar to a Wikipedia of maps. I've created an open-source web application, free and accessible from any computer or smartphone, aimed at both the average citizen that doesn't know her city's bike paths, and researchers, who now have easy access to data to develop further analysis.
+I've teamed up with [UCB (Brazil Cyclists Union)](https://uniaodeciclistas.org.br/) and [ITDP (Transport and Development Policy Institute)](https://itdpbrasil.org/), two important brazilian civil society organizations on cycling and urban mobility, to design and developed the first platform of cycling maps encompassing all Brazilian cities.
+
+We've leveraged the data and collaborativeness of [OpenStreetMap (OSM)](https://www.openstreetmap.org/), a huge global initiative similar to a Wikipedia of maps. I've created an open-source web application, free and accessible from any computer or smartphone, aimed at both the average citizen that doesn't know her city's bike paths, and researchers, who now have easy access to data to develop further analysis.
 
 The first version of this platform is already on production, but we consider it just the first step, a prototype to validate the concept, and we're undergoing research to understand better and prioritize all the opportunities that lie ahead.
+
+
 
 
 # Understanding the problem
 
 ## Kick off
 
-UCB (Brazil Cyclists Union) and ITDP (Transport and Development Policy Institute) are two civil society organizations that have joined forces to solve once and for all the problem of access to data on Brazil's cycling infrastructure. As the main stakeholders of the project my first activity was conducting a workshop using the Lean Canvas framework so we could make sure we were aligned on what we were going to build.
-
+As the main stakeholders of the project my first activity was conducting a workshop using the Lean Canvas framework so we could make sure we were aligned on what we were going to build.
 
 ```grid|1
 ![](./leancanvas.jpg)
@@ -40,6 +44,7 @@ The main problems we wanted to solve were:
 We also found out some of our "unfair" advantages: UCB and ITDP and 2 of the biggest organizations of this kind which could at that time invest in this project and would be able to mobilize the community. Also everyone on the team already had experience with similar projects involving webapps, maps and OSM data.
 
 The most polemic section of the discussion was around the Customer Segments. At this point in the project it was not clear to us who our users were exactly, or what segment we'd lock in, so it raised a yellow flag to me that we should revisit that in the future.
+
 
 
 ## Research
@@ -60,7 +65,6 @@ At this step we validated that our solution seemed to be innovative and unique, 
     <img src="./bench.png"/>
 </jumbo>
  
-
 Our main insights were:
 
 * Solutions based on OSM are very technical and hard to understand and operate, and none had clear instructions about the collaborative dimension and how to contribute with the mapping.
@@ -68,6 +72,8 @@ Our main insights were:
 * When multiple typologies are these are often colored in rather random ways, producing a final result that is not only unappealing but, most importantly, confusing and overwhelming.
 * Almost none of them were responsive and accessible via smartphones.
 * Several local maps had interesting features but couldn't be easily reused for other cities.
+
+
 
 
 # Prototyping
@@ -80,9 +86,17 @@ Extending the benchmarking research now I started looking at more broad inspirat
 
 With the references in mind and the typologies well defined I started sketching different ways we could lay out these feature on the screen. The concept always was to have the map as the main thing. Second came the current city in focus, and third the complementary UI elements to control the map such as typology filters, address search field, "about" link and the small but important data download button.
 
-```grid|1
-![](./v1.png "The first wireframe validated by the stakeholders. Although it looks very different than the final version, the visual hierarchies didn't change much!")
-```
+<video-container> 
+    <video autoPlay controls loop width="100%" type="video/mp4">
+        <source src="./wireframe.mp4" type="video/mp4">
+    </video> 
+</video-container>
+
+It was important to start off with a very low-fidelity prototype to validate the main features and visual hierarchy, without putting on the table discussions on visuals. Although it *looks* very different than the final version, but the overall experience didn't change much!
+
+You can check the [Figma interactive prototype here](https://www.figma.com/proto/QjH5j2kdQnN1iUZCYxjNsDwt/CicloMapa?node-id=363%3A113&viewport=-3270%2C2793%2C0.45554399490356445&scaling=scale-down-width).
+
+
 
 
 # Implementing
@@ -101,17 +115,16 @@ The overall system architecture passed by 2 iterations. The first one, way simpl
 
 To build the UI I chose the amazing [Ant Design](https://ant.design/) components, which was one of my main inspirations of Design Systems and I always wanted to try it in a real project. Their React components are super high quality and have great documentation.
 
-```grid|1
-![](./ant.png "Ant Design is a design system with values of Nature and Determinacy for better user experience of enterprise applications. (https://ant.design)")
-``` 
-
 For this project I also wanted to try out [Mapbox](https://www.mapbox.com/), an open map library which is built on top of OpenStreetMaps. It's also super modern and well done, and offer way more flexibility than any other library I've used before. In addition, it was a pleasure using Mapbox Studio, their interactive map customization tool, which is an awesome product and enabled me lots of controls to be creative designing our base map.
  
 ```grid|1
 ![](./mapbox.png "Our basemap was designed using Mapbox Studio, a really awesome tool that enabled me to be very creative on applying our brand to the map.")
 ``` 
 
-# Branding
+
+
+
+# Visual design
 
 With a very functional first version of the system up and running ahead of schedule I found myself with some extra time to _make it pop_. Based on all the process up to now I've devised some brand principles to start thinking on some visual directions:
 
@@ -121,10 +134,6 @@ With a very functional first version of the system up and running ahead of sched
 
 The main colors are dark because it gives a "data dashboard" vibe. It also resembles the aerial look of a cityscape at night, with the bike paths lighten up as if they were neon lights, which is pretty cool. The color palette is made of steps in a gradient from green to red representing the safety and "goodness" of the different typologies. These were optimized to the best visibility possible on both the dark map as well as available variation of a satellite map.
 
-<!-- ```grid|1
-![](./brand.png)  
-``` -->
- 
 <jumbo>
     <img src="./brand.png"/>
 </jumbo>
@@ -178,14 +187,17 @@ With the current version in production we wanted to start gathering context to t
     }'>
 </results-banner>
 
-Our main conclusions have been:
+<!-- Our main conclusions have been:
 * We validated CicloMapa is innovative, i.e. there isn't an alternative tool that does what we do, and that it already brings value to the community by facilitating the visualization and download of OSM data.
 * However, the tool is considered to be in an early stage and has a big untapped potential. We gathered several suggestions of little improvements that would "round up the edges" and increase the impact of the product.
 * We can improve our advertising of the app and OSM knowledge with tutorials, events and more partnerships with local organizations.
 * We still don't have clarity that more costly features, such as in-app Bike Path Editor, have better ROI than the already mentioned low-hanging fruits. Also there's no clear indicative that the product should be pivoted, like changing our Customer Segments or main objectives.
 
-This will help us to plan the next steps, which I'll update here as soon as we have news. :)
+This will help us to plan the next steps, which I'll update here as soon as we have news. :) -->
 
+```grid|1
+![](./roadmap.jpg "Planning the next features to be implemented.")
+``` 
 
 
 ## Links
@@ -201,8 +213,12 @@ This will help us to plan the next steps, which I'll update here as soon as we h
             "url": "https://github.com/cmdalbem/ciclomapa"
         },
         {
-            "label": "Launch Webinar video",
+            "label": "Webinar video",
             "url": "https://www.youtube.com/watch?v=IrPPbCnKPsI"
+        },
+        {
+            "label": "How to contribute to OSM (tutorials)",
+            "url": "https://uniaodeciclistas.org.br/atuacao/ciclomapa/"
         }
     ]'>
 </links-list> 
