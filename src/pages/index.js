@@ -88,7 +88,7 @@ class IndexPage extends React.Component {
             </div>
           </section>
 
-          <HomeSection title="Work">
+          {/* <HomeSection title="Work">
             <div className="f4 pb4-ns pb2 mt2 dark-gray lh-copy">
               I'm working as a <b>Product Designer</b> at{' '}
                 <a
@@ -107,7 +107,7 @@ class IndexPage extends React.Component {
                 , two web apps to help urban cyclists in Brazil.
               </p>
             </div>
-          </HomeSection>
+          </HomeSection> */}
 
           <HomeSection title="Case studies" fullScreen
             description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
