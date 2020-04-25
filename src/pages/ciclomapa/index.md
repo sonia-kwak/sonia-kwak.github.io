@@ -93,9 +93,10 @@ With the references in mind and the typologies well defined I started sketching 
     </video> 
 </video-container>
 
-It was important to start off with a very low-fidelity prototype to validate the main features and visual hierarchy, without putting on the table discussions on visuals. Although it *looks* very different than the final version, but the overall experience didn't change much!
- 
-You can check the [Figma interactive prototype here](https://www.figma.com/proto/QjH5j2kdQnN1iUZCYxjNsDwt/CicloMapa?node-id=363%3A113&viewport=-3270%2C2793%2C0.45554399490356445&scaling=scale-down-width).
+[Figma interactive prototype](https://www.figma.com/proto/QjH5j2kdQnN1iUZCYxjNsDwt/CicloMapa?node-id=363%3A113&viewport=-3270%2C2793%2C0.45554399490356445&scaling=scale-down-width)
+
+It was important to start off with a very low-fidelity prototype to validate the main features and visual hierarchy, without putting on the table discussions on visuals. Although it *looks* very different than the final version the overall experience didn't change much.
+
 
 
 
@@ -147,9 +148,11 @@ The main colors are dark because it gives a "data dashboard" vibe. It also resem
     <img src="./final_rj.png"/>
 </jumbo>
 
-<jumbo>
+<jumbo caption="Some sketches of how the mobile experience could look like. We didn't go much further with this part.">
     <img src="./mobile.png"/>
 </jumbo>
+
+A nice little interaction detail are the tooltips on the layers filters. They help educate the user of what each layer type is about.
 
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
@@ -161,21 +164,11 @@ The main colors are dark because it gives a "data dashboard" vibe. It also resem
 
 # Promoting
 
-I helped creating some arts to promote the project and our launching webinar in different social media channels.
- 
-<jumbo>
+<jumbo caption="Arts for different social media channels.">
     <img src="./social.png"/>
-</jumbo>
+</jumbo> 
 
-We're very happy with the organic coverage from different media channels, mainly with [Mobilize](https://www.mobilize.org.br/noticias/11986/um-mapa-com-quase-todas-as-ciclovias-do-brasil.html) and [ArchDaily](https://www.archdaily.com.br/br/933497/ciclomapa-um-mapa-colaborativo-da-infraestrutura-cicloviaria-das-cidades-brasileiras) which are big portals specialized on mobility.
-
-<!-- ```grid|5
-![](./logo_g1.png)
-![](./logo_archdaily.png)
-![](./logo_mobilize.png)
-![](./logo_cnm.png) 
-![](./logo_diario.png)
-``` -->
+We were glad with the organic coverage from different media channels, mainly with [Mobilize](https://www.mobilize.org.br/noticias/11986/um-mapa-com-quase-todas-as-ciclovias-do-brasil.html) and [ArchDaily](https://www.archdaily.com.br/br/933497/ciclomapa-um-mapa-colaborativo-da-infraestrutura-cicloviaria-das-cidades-brasileiras) which are big portals specialized on mobility.
 
 ```grid|1
 ![](./coverage.png)
