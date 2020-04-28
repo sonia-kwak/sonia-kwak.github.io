@@ -7,6 +7,7 @@ minibio: "An open platform to democratize access to bike maps of brazilian citie
 description: "An open platform to democratize access to bike maps of brazilian cities, combining the collaborative power of OpenStreetMaps with web technologies and easy-to-use design."
 tags: ['design','front-end','product management']
 cover: './cover.png'
+team: "Cristiano Dalbem, Bernardo Serra (ITDP), Felipe Alves (UCB)."
 forceOrder: 1
 ---
 

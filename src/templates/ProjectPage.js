@@ -182,24 +182,20 @@ class ProjectPage extends React.Component {
 
         <ReadingProgressBar/>
 
-        {/* Cover image */}
-        <div className="flex flex-row-ns flex-column mb4">
-          <div className="w-100">
-            { 
-              post.frontmatter.cover ?
-                <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt=""/>
-                :
-                <div className="w-100 h5 pv7 bg-silver"></div>
-            }
-          </div>
-        </div>
-
         {/* Heading */}
-        <div className="flex flex-row-ns flex-column mt5 mb6">
-          <div className="w-30-ns"> 
+        <div className="flex flex-row-ns flex-column mt5 mb5">
+          <div className="w-60-ns">
             <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
             </h1>
+            {
+              post.frontmatter.description &&
+              <div className="mb3 dark-gray">
+                <div className='f3 dark-gray lh-title'>
+                  {post.frontmatter.description}
+                </div>
+              </div>
+            }
             <div className='f6 gray db-ns dn'>
               {readingTime.text}
             </div>
@@ -208,22 +204,13 @@ class ProjectPage extends React.Component {
           <div className="w-10-ns">
           </div>
 
-          <div className="w-60-ns">
-            {
-              post.frontmatter.description &&
-              <div className="mb4 dark-gray">
-                <div className='f3 dark-gray lh-title'>
-                  {post.frontmatter.description}
-                </div>
-              </div>
-            }
-
+          <div className="w-30-ns">
             {
               post.frontmatter.tags &&
-              <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
-                    <span className="">
-                      Tags
+              <div className="mb4 dark-gray">
+                <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                  <span className="">
+                    Tags
                     </span>
                 </h2>
                 <div className="">
@@ -237,8 +224,22 @@ class ProjectPage extends React.Component {
             }
 
             {
+              post.frontmatter.team &&
+              <div className='mv4 dark-gray'>
+                <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                  <span className="">
+                    Team
+                  </span>
+                </h2>
+                <span className="f5 din">
+                  {post.frontmatter.team}
+                </span>
+              </div>
+            }
+
+            {
               <div className="mv4 dark-gray">
-                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
+                <h2 className="f7 fw6 ttu mv2 fw7 mr2">
                   <span className="">
                     Date
                   </span>
@@ -251,23 +252,21 @@ class ProjectPage extends React.Component {
                 </div>
               </div>
             }
+          </div>
+        </div>
 
+        {/* Cover image */}
+        <div className="flex flex-row-ns flex-column mb4">
+          <div className="w-100">
             {
-              post.frontmatter.team &&
-              <div className='mv4 dark-gray'>
-                <h2 className="f7 fw6 ttu mv1 fw7 mr2">
-                  <span className="">
-                    Team
-                  </span>
-                </h2>
-                <span className="f5 din">
-                  { post.frontmatter.team }
-                </span>
-              </div>
+              post.frontmatter.cover ?
+                <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt="" />
+                :
+                <div className="w-100 h5 pv7 bg-silver"></div>
             }
           </div>
         </div>
-        
+
         {/* Content */}
         <div className="flex flex-column">
           <div className={baseType}>

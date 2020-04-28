@@ -129,6 +129,7 @@ li::before {
 }
 .tab--unselected {
   color: var(--gray);
+  opacity: .6;
 }
 .tab--unselected:hover:before { 
   opacity: 1;
@@ -136,6 +137,7 @@ li::before {
 }
 .tab--selected {
   color: var(--dark-gray);
+  opacity: 1;
 }
 .tab--selected:before {
   /* color: var(--blue); */
@@ -229,10 +231,13 @@ li::before {
   font-family: 'Rozha One', 'Muli', sans-serif;
 }
 
-@media screen and (min-width: 30em) {
-  .f-subheadline-ns { font-size: 3.5rem !important; }
-}
+.f1 { font-size: 64px !important; }
 
+@media screen and (min-width: 30em) {
+  .f1-ns { font-size: 64px !important; }
+  .f-subheadline-ns { font-size: 72px !important; }
+}
+ 
 .h6 {
   height: 32rem;
 }
