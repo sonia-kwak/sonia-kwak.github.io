@@ -55,7 +55,7 @@ class IndexPage extends React.Component {
           <section className="flex flex-row-ns flex-column ">
             <div className="w-40-ns">
               <Img
-                className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
+                className="parallax__layer--back absolute top-3-ns top-2 mt4-ns mt5 w-80 w-100-ns relative-ns"
                 fluid={this.props.data.file.childImageSharp.fluid}
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
