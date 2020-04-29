@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 // import ScrollReveal from 'scrollreveal'
 
@@ -11,8 +12,6 @@ import Reading from '../components/Reading'
 import Social from '../components/Social'
 import HomeSection from '../components/HomeSection'
 import Projects from '../components/Projects'
-
-import selfie from '../images/selfie.png' 
 
 import { sortPosts } from '../components/utils.js'
 
@@ -55,10 +54,10 @@ class IndexPage extends React.Component {
         <div className="mw9 center">
           <section className="flex flex-row-ns flex-column ">
             <div className="w-40-ns">
-              <img
-                src={selfie}
-                alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
+              <Img
                 className="parallax__layer--back absolute top-3-ns top-2 mt0-ns mt5 w-80 w-100-ns relative-ns"
+                fluid={this.props.data.file.childImageSharp.fluid}
+                alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
               <h1 
@@ -155,6 +154,19 @@ export default IndexPage;
 
 export const pageQuery = graphql`
          query {
+           file(relativePath: {regex: "\/.*selfie.png\/"}) {
+            childImageSharp {
+              # Specify the image processing specifications right in the query.
+              fluid {
+                src
+                srcSet
+                base64
+                aspectRatio
+                originalImg
+                sizes  
+              }
+            }
+          },
            allGoodreadsBook(filter: {shelfNames: {in: ["read","currently-reading"]}}) {
             edges {
               node {
@@ -185,10 +197,19 @@ export const pageQuery = graphql`
                    minibio
                    projectType
                    tags
-                   cover {
-                     publicURL
-                   }
                    forceOrder
+                   cover { 
+                      childImageSharp {
+                        fluid {
+                          src
+                          srcSet
+                          base64
+                          aspectRatio
+                          originalImg
+                          sizes  
+                        }
+                      }
+                    }
                  }
                }
              }

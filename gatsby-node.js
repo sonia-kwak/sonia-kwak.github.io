@@ -39,8 +39,17 @@ exports.createPages = ({ graphql, actions }) => {
                     minibio
                     projectType
                     tags
-                    cover {
-                      publicURL
+                    cover { 
+                      childImageSharp {
+                        fluid(maxWidth: 1440) {
+                          src
+                          srcSet
+                          base64
+                          aspectRatio
+                          originalImg
+                          sizes  
+                        }
+                      }
                     }
                   }
                 }
