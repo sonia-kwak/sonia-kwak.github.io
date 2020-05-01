@@ -182,8 +182,20 @@ class ProjectPage extends React.Component {
 
         <ReadingProgressBar/>
 
-        {/* Heading */}
+        {/* Cover image */}
         <div className="flex flex-row-ns flex-column mt5 mb5">
+          <div className="w-100">
+            {
+              post.frontmatter.cover ?
+                <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt="" />
+                :
+                <div className="w-100 h5 pv7 bg-silver"></div>
+            }
+          </div>
+        </div>
+
+        {/* Heading */}
+        <div className="flex flex-row-ns flex-column mb4">
           <div className="w-60-ns">
             <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid">
               {post.frontmatter.title}
@@ -251,18 +263,6 @@ class ProjectPage extends React.Component {
                   }
                 </div>
               </div>
-            }
-          </div>
-        </div>
-
-        {/* Cover image */}
-        <div className="flex flex-row-ns flex-column mb4">
-          <div className="w-100">
-            {
-              post.frontmatter.cover ?
-                <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt="" />
-                :
-                <div className="w-100 h5 pv7 bg-silver"></div>
             }
           </div>
         </div>
