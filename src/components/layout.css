@@ -217,6 +217,11 @@ li::before {
 }
 
 
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /* ------------------ */
 /* Tachyons Overrides */
 /* ------------------ */

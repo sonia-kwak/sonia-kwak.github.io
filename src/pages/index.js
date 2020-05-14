@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 // import ScrollReveal from 'scrollreveal'
+import anime from 'animejs/lib/anime.es.js';
 
 import Layout from '../components/Layout'
  
@@ -36,6 +37,23 @@ class IndexPage extends React.Component {
   //   }
   // }
 
+  componentDidMount() {
+    // Wrap every letter in a span
+    const textWrapper = document.querySelector('.ml13');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+ 
+    anime.timeline({loop: false})
+      .add({
+        targets: '.ml13 .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+      });
+  }
+
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
     const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
@@ -61,7 +79,7 @@ class IndexPage extends React.Component {
               />
 
               <h1 
-                className="f-subheadline-ns f1 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
+                className="ml13 f-subheadline-ns f1 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
                 style={{maxWidth: 650}}>
                 I'm a designer of products and systems.
               </h1>
