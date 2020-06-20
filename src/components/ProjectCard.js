@@ -26,7 +26,7 @@ class ProjectCard extends React.Component {
                 {
                     post.frontmatter.cover &&
                         <Img 
-                            className={`w-100 db project-card--cover cover card-shadow br1 ${mini ? "h4" : "h5-ns h4"}`}
+                            className={`w-100 db project-card--cover cover card-shadow br1`}
                             fluid={post.frontmatter.cover.childImageSharp.fluid}
                             alt="" 
                         />
