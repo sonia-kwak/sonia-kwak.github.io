@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
     
     return (
       <Layout>
-        <div className="mw9 center">
+        <div className="layoutMaxWidth center">
           <section className="flex flex-row-ns flex-column ">
             <div className="w-40-ns">
               <Img

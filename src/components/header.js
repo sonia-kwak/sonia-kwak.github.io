@@ -32,7 +32,7 @@ class Header extends React.Component {
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (
-      <div className='flex pt4 pb3'>
+      <div className='flex pt4 pb3 layoutMaxWidth center'>
         <div className="w-100 flex items-center">
           <h1 className="f5">
             <Link to="/" className="link dim near-black fw7 ttu">

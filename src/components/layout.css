@@ -49,7 +49,7 @@ html {
   --orange-light: hsl(27, 100%, 80%);
   --blue: #1B9393;
   --blue-light: hsl(180, 75%, 80%);
-  /* --bg-color: #fdfcf8; */
+  /* --bg-color: #FDFCF8; */
   --bg-color: white;
 
   --gray: #777;
@@ -69,6 +69,10 @@ html {
 /* * {
   outline: 1px solid #fafafa;
 } */
+
+.layoutMaxWidth {
+  max-width: 1200px;
+}
  
 body {
   background: var(--bg-color);
