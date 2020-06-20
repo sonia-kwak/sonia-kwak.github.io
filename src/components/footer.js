@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Footer = () => (
-    <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between">
+    <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between layoutMaxWidth center">
         <div className="mw6-ns lh-copy">
-            Made with <span role="img" aria-label="heart">❤️</span> and <span role="img" aria-label="brain">🧠</span> in Figma & Gatsby.js
+            Crafted in Figma and Gatsby.js.
         </div>
         <div className="mv4 mv0-ns">
             <a
