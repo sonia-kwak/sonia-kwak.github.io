@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 // import ScrollReveal from 'scrollreveal'
+import { motion } from "framer-motion"
 
 import Layout from '../components/Layout'
  
@@ -60,11 +61,13 @@ class IndexPage extends React.Component {
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <h1 
+              <motion.h1 
                 className="f-subheadline-ns f2 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
+                animate={{ opacity: 1, y: 5 }}
+                transition={{ ease: "easeOut", duration: 2 }}              
                 style={{maxWidth: 800}}>
                 I'm a designer of products and systems.
-              </h1>
+              </motion.h1>
             </div> 
 
             <div className="w-10-ns" />

@@ -1,53 +1,25 @@
 import React from 'react'
 
-class ReadingProgressBar extends React.Component {
-    constructor(props) {
-        super(props);
-
-        let listenerCallback;
-
-        // Prevent error on server-side renderer
-        if (typeof window !== 'undefined') {
-            listenerCallback = () => {
-                const h = document.documentElement;
-                const b = document.body;
-                const st = 'scrollTop';
-                const sh = 'scrollHeight';
-                let scroll;
-    
-                scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-    
-                this.setState({
-                    scroll: scroll
-                });
-            }
-    
-            document.addEventListener('scroll', listenerCallback, { passive: true });
-    
-        }
-
-        this.state = {
-            listenerCallback: listenerCallback,
-            scroll: 0
-        };
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('scroll', this.state.listenerCallback);
-    }
-
-    render() {
-        return (
-            <div 
-                className="fixed top-0 left-0 right-0 z-1"
-                style={{
-                    background: `linear-gradient(to right, var(--orange) ${this.state.scroll}%, transparent 0)`,
-                    backgroundRepeat: 'no-repeat',
-                    height: '3px'
-                }}
-            />
-        )
-    }
+import { motion, useViewportScroll, useTransform, useSpring } from "framer-motion"
+ 
+// class ReadingProgressBar extends React.Component {
+const ReadingProgressBar = () => {
+    const { scrollYProgress } = useViewportScroll();
+    const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
+    const scale = useSpring(yRange, { stiffness: 400, damping: 90 });
+  
+    return (
+        <motion.div 
+            className="fixed top-0 left-0 z-1 w-100"
+            style={{
+                background: `linear-gradient(to right, var(--orange) 100%, transparent 0)`,
+                backgroundRepeat: 'no-repeat',
+                height: '4px',
+                transformOrigin: 'left',
+                scaleX: scale
+            }}
+        />
+    )
 }
 
-export default ReadingProgressBar
+export default ReadingProgressBar;

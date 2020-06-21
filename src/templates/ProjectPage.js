@@ -180,7 +180,7 @@ class ProjectPage extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
-        {/* <ReadingProgressBar/> */}
+        <ReadingProgressBar/>
 
         {/* Cover image */}
         <div className="flex flex-row-ns flex-column mt5 mb5">
