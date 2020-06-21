@@ -32,7 +32,7 @@ class ResultsBanner extends React.Component {
       >
         {
           Object.keys(dataObj).map ( i => (
-            <div className="mv0-ns mv3">
+            <div className="mv0-ns mv3" key={i}>
               <div className="f1 fw1 mt0">
                 {dataObj[i]}
               </div>
@@ -227,7 +227,7 @@ class ProjectPage extends React.Component {
                 </h2>
                 <div className="">
                   {post.frontmatter.tags.map(tag => (
-                    <Tag size="big">
+                    <Tag size="big" key={tag}>
                       {tag}
                     </Tag>
                   ))}

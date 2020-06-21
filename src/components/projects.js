@@ -15,7 +15,10 @@ class Projects extends React.Component {
                 {
                     posts.map(({ node }) => {
                         return (
-                            <div className={classes}>
+                            <div 
+                            className={classes}
+                            key={node.fields.slug}
+                            >
                                 <ProjectCard mini={mini} node={node}/>
                             </div>
                         )

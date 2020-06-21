@@ -11,7 +11,11 @@ class Reading extends React.Component {
                 <div className="flex flex-wrap nr3">
                     {
                         bookNodes.reading.map(i =>
-                            <Book mode="half" book={i.node.book}/>
+                            <Book 
+                                mode="half"
+                                book={i.node.book}
+                                key={i.node.book.title}
+                            />
                         )
                     }
                 </div>

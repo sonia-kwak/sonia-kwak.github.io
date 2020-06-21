@@ -18,6 +18,7 @@ const LinksList = props => {
             target="_blank"
             rel="noopener noreferrer"
             href={l.url}
+            key={l.label}
           >
             {l.label} 
           </a>

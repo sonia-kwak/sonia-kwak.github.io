@@ -16,24 +16,24 @@ import Projects from '../components/Projects'
 import { sortPosts } from '../components/utils.js'
 
 class IndexPage extends React.Component {
+  sr = null;
+
   // componentDidMount() {
-  //   if (typeof window !== `undefined`) {
-  //     window.sr = ScrollReveal({
-  //       reset: false,
-  //       // scale: 1, 
-  //       // mobile: true,
-  //       // viewFactor: 0.3,
-  //       // delay: 200,
-  //       opacity: 0.2,
-  //       duration: 700,
-  //       distance: '20px',
-  //       easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
-  //     }); 
-      
-  //     // window.sr.reveal('section', { duration: 700}, 3000); 
-  //     // window.sr.reveal('section, .project-card');
-  //     window.sr.reveal('.animatable');
-  //   }
+  //   this.sr = ScrollReveal({
+  //     reset: false,
+  //     // scale: 1, 
+  //     // mobile: true,
+  //     // viewFactor: 0.3,
+  //     // delay: 200,
+  //     opacity: 0.2,
+  //     duration: 700,
+  //     distance: '20px',
+  //     easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
+  //   });
+    
+  //   this.sr.reveal('section', { duration: 700}, 3000); 
+  //   // this.sr.reveal('section, .project-card');
+  //   // this.sr.reveal('.animatable');
   // }
 
   render() {

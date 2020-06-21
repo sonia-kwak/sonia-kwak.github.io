@@ -67,7 +67,7 @@ class ProjectCard extends React.Component {
                         !mini &&
                         <div className="flex flex-row flex-wrap mt2">
                             {post.frontmatter.tags.map(tag => (
-                                <Tag>
+                                <Tag key={tag}>
                                     {tag}
                                 </Tag>
                             ))}
