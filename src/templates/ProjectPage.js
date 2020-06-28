@@ -3,6 +3,9 @@ import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import Img from "gatsby-image"
 
+import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
+
 import rehypeReact from "rehype-react"
 
 import Tag from '../components/Tag'
@@ -28,15 +31,17 @@ class ResultsBanner extends React.Component {
         className="nl6 nr6 nl4-m nr4-m nl3 nr3 mv6 pa6 bg-near-white flex flex-row-l flex-column justify-around tl-ns tc"
       >
         {
-          Object.keys(dataObj).map ( i => (
-            <div className="mv0-ns mv3" key={i}>
-              <div className="f1 fw1 mt0">
-                {dataObj[i]}
+          Object.keys(dataObj).map ( (i, n) => (
+            <Fade bottom duration={1500} delay={n*500}>
+              <div className="mv0-ns mv3" key={i}>
+                <div className="f1 fw1 mt0">
+                  {dataObj[i]}
+                </div>
+                <div className="f7 gray ttu mb0 tracked">
+                  {i}
+                </div>
               </div>
-              <div className="f7 gray ttu mb0 tracked">
-                {i}
-              </div>
-            </div>
+            </Fade>
           ))
         }
       </div>
@@ -51,7 +56,7 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    const defaultMargins = 'mw7 center';
+    const defaultMargins = 'mw7 center layoutMaxWidth';
     const bigImageMargins = `nl5-ns nr5-ns nl3-m nr3-m mv6-ns mv5 `;
     const imageMargins = `${defaultMargins} mv6-ns mv5 `;
     const baseType = 'f4-ns f5 dark-gray lh-copy ';
@@ -162,99 +167,103 @@ class ProjectPage extends React.Component {
 
         <ReadingProgressBar barColor={post.frontmatter.color}/>
         
-        <div className="layoutMaxWidth center">
+        <div className="center layoutMaxWidth">
           {/* Cover image */}
           <div className="flex flex-row-ns flex-column mt5 mb5">
             <div className="w-100">
-              {
-                post.frontmatter.cover ?
-                  <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt="" />
-                  :
-                  <div className="w-100 h5 pv7 bg-silver"></div>
-              }
+              <Reveal effect="clipIn" duration={2000}>
+                {
+                  post.frontmatter.cover ?
+                    <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt="" />
+                    :
+                    <div className="w-100 h5 pv7 bg-silver"></div>
+                }
+              </Reveal>
             </div>
           </div>
 
           {/* Heading */}
-          <div className="flex flex-row-ns flex-column mb4">
-            <div className="w-60-ns">
-              <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid">
-                {post.frontmatter.title}
-              </h1>
-              {
-                post.frontmatter.description &&
-                <div className="mb3 dark-gray">
-                  <div className='f3 dark-gray lh-title'>
-                    {post.frontmatter.description}
+          <Fade duration={1500} delay={1000}>
+            <div className="flex flex-row-ns flex-column mb4">
+              <div className="w-60-ns">
+                <h1 className="f2 mt0 fw8 mb3 dark-gray lh-solid">
+                  {post.frontmatter.title}
+                </h1>
+                {
+                  post.frontmatter.description &&
+                  <div className="mb3 dark-gray">
+                    <div className='f3 dark-gray lh-title'>
+                      {post.frontmatter.description}
+                    </div>
                   </div>
+                }
+                <div className='f6 gray db-ns dn'>
+                  {readingTime.text}
                 </div>
-              }
-              <div className='f6 gray db-ns dn'>
-                {readingTime.text}
+              </div>
+
+              <div className="w-10-ns">
+              </div>
+
+              <div className="w-30-ns">
+                {
+                  post.frontmatter.tags &&
+                  <div className="mb4 dark-gray">
+                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                      <span className="">
+                        Tags
+                        </span>
+                    </h2>
+                    <div className="">
+                      {post.frontmatter.tags.map(tag => (
+                        <Tag size="big" key={tag}>
+                          {tag}
+                        </Tag>
+                      ))}
+                    </div>
+                  </div>
+                }
+
+                {
+                  post.frontmatter.team &&
+                  <div className='mv4 dark-gray'>
+                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                      <span className="">
+                        Team
+                      </span>
+                    </h2>
+                    <span className="f5 din">
+                      {post.frontmatter.team}
+                    </span>
+                  </div>
+                }
+
+                {
+                  <div className="mv4 dark-gray">
+                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                      <span className="">
+                        Date
+                      </span>
+                    </h2>
+                    <div className="f5">
+                      {dateStart}
+                      {dateEnd &&
+                        ` – ${dateEnd}`
+                      }
+                    </div>
+                  </div>
+                }
               </div>
             </div>
-
-            <div className="w-10-ns">
-            </div>
-
-            <div className="w-30-ns">
-              {
-                post.frontmatter.tags &&
-                <div className="mb4 dark-gray">
-                  <h2 className="f7 fw6 ttu mv2 fw7 mr2">
-                    <span className="">
-                      Tags
-                      </span>
-                  </h2>
-                  <div className="">
-                    {post.frontmatter.tags.map(tag => (
-                      <Tag size="big" key={tag}>
-                        {tag}
-                      </Tag>
-                    ))}
-                  </div>
-                </div>
-              }
-
-              {
-                post.frontmatter.team &&
-                <div className='mv4 dark-gray'>
-                  <h2 className="f7 fw6 ttu mv2 fw7 mr2">
-                    <span className="">
-                      Team
-                    </span>
-                  </h2>
-                  <span className="f5 din">
-                    {post.frontmatter.team}
-                  </span>
-                </div>
-              }
-
-              {
-                <div className="mv4 dark-gray">
-                  <h2 className="f7 fw6 ttu mv2 fw7 mr2">
-                    <span className="">
-                      Date
-                    </span>
-                  </h2>
-                  <div className="f5">
-                    {dateStart}
-                    {dateEnd &&
-                      ` – ${dateEnd}`
-                    }
-                  </div>
-                </div>
-              }
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="flex flex-column">
-            <div className={baseType}>
-              { renderAst(post.htmlAst) }
-            </div>
-          </div> 
+          </Fade>
         </div>
+
+        {/* Content */}
+        <div className="flex flex-column">
+          <div className={baseType}>
+            { renderAst(post.htmlAst) }
+          </div>
+        </div> 
 
       {/* Other projects */}
       <div className="flex flex-column bg-near-white mt6 nl6 nr6 ph6 pb6">

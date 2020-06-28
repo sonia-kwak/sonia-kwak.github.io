@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Footer = () => (
-    <div className="flex flex-row-ns flex-column pv6 f7 w-100 moon-gray justify-between layoutMaxWidth center">
+    <div className="flex flex-row-ns flex-column pv6 f7 w-100 gray justify-between layoutMaxWidth center">
         <div className="mw6-ns lh-copy">
-            Crafted in Figma and Gatsby.js.
+            Handcrafted in Figma and Gatsby.js. Fonts by Google Fonts.
         </div>
         <div className="mv4 mv0-ns">
             <a
