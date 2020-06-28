@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 import ProjectCard from '../components/ProjectCard'
 
@@ -14,7 +14,7 @@ class Projects extends React.Component {
 
         return (
             <div className="flex flex-wrap">
-                <Fade top>
+                <Reveal effect="slideDownWithDelay" duration={2000}>
                 {
                     posts.map(({ node }) => {
                         return (
@@ -27,7 +27,7 @@ class Projects extends React.Component {
                         )
                     })
                 }
-                </Fade>
+                </Reveal>
             </div>
         )
     }
