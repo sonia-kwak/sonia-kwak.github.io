@@ -34,8 +34,8 @@ class Header extends React.Component {
     return (
       <div className='flex pt4 pb3 layoutMaxWidth center'>
         <div className="w-100 flex items-center">
-          <h1 className="f5">
-            <Link to="/" className="link dim near-black fw7 ttu">
+          <h1 className="f6">
+            <Link to="/" className="link dim near-black fw7 ttu mr3 pr2">
               Cristiano Dalbem
             </Link>
 

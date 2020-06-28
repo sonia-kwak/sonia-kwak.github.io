@@ -86,7 +86,7 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f2 tracked-tight lh-title fw7 dark-gray mt6-ns mb5-ns mt5 mb4 ${defaultMargins}`}>
+          <h1 className={`f2 lh-title fw7 dark-gray mt6-ns mb5-ns mt5 mb4 ${defaultMargins}`}>
             {props.children}
           </h1>
         ), 

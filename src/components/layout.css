@@ -41,7 +41,7 @@
  
 
 html {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 
   /* --red: #F52D2D; */
   --red: #ED4934;
@@ -232,7 +232,7 @@ li::before {
 .f-subheadline-ns,
 .f1,
 .f1-ns {
-  font-family: 'Rozha One', 'Muli', sans-serif;
+  font-family: 'Rozha One', 'Nunito Sans', sans-serif;
 }
 
 .f1 { font-size: 64px !important; }
@@ -250,10 +250,6 @@ li::before {
   height: 64rem;
 }
  
-.lh-copy {
-  line-height: 1.65 !important;
-}
-
 /* .f4, .f4-ns {
   font-size: 18px !important;
 } */
