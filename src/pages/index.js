@@ -3,10 +3,11 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import Reveal from 'react-reveal/Reveal';
 
 import Layout from '../components/Layout'
  
-// import AnimateLoad from '../components/AnimateLoad'
 import Speaking from '../components/Speaking'
 import Reading from '../components/Reading'
 import Social from '../components/Social'
@@ -17,6 +18,8 @@ import { sortPosts } from '../components/utils.js'
 
 class IndexPage extends React.Component {
   render() {
+    const isMobile = window.matchMedia('only screen and (max-width: 30em)').matches;
+
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
     const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
     const projects = posts.filter(i => i.node.frontmatter.projectType === 'project');
@@ -34,27 +37,28 @@ class IndexPage extends React.Component {
         <div className="layoutMaxWidth center">
           <section className="flex flex-row-ns flex-column ">
             <div className="w-40-ns">
-              <Img
-                className="parallax__layer--back absolute top-3-ns top-2 mt4-ns mt5 w-80 w-100-ns relative-ns"
-                fluid={this.props.data.file.childImageSharp.fluid}
-                alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
-              />
+              <Reveal effect="clipIn" duration={5000}>
+                <Img
+                  // className="parallax__layer--back absolute top-3-ns top-2 mt4-ns mt5 w-80 w-100-ns relative-ns"
+                  fluid={this.props.data.file.childImageSharp.fluid}
+                  fadeIn={false}
+                  alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
+                />
+              </Reveal>
 
               <div className="absolute top-0 left-3-ns mt6-ns ml7-ns ml4 mt6 mr3 pt5-ns">
                 <div className="overflow-hidden">
-                  <Fade bottom cascade duration={800}>
+                  <Fade bottom cascade={!isMobile} duration={800}>
                     <h1
-                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr"
-                      style={{maxWidth: 800}}>
+                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr">
                       I'm a designer of 
                     </h1>
                   </Fade>
                 </div>
                 <div className="overflow-hidden">
-                  <Fade bottom cascade delay={400} duration={800}>
+                  <Fade bottom cascade={!isMobile} delay={400} duration={800}>
                     <h1
-                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr"
-                      style={{maxWidth: 800}}>
+                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr">
                       products and systems.
                     </h1>
                   </Fade>
@@ -66,7 +70,7 @@ class IndexPage extends React.Component {
 
             <div className="w-50-ns mt7-ns">
               <section id="about" className="mb4 mt6-ns mt4 pt4 f4 lh-copy dark-gray">
-                <Fade duration={2000} delay={1000}>
+                <Fade bottom distance={'10px'} duration={1500} delay={800}> 
                   <p>
                     Nice to meet you!
                   </p>
@@ -147,7 +151,6 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage;
-// export default AnimateLoad(IndexPage);
 
 export const pageQuery = graphql`
          query {
