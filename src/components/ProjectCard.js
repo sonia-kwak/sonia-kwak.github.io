@@ -26,7 +26,7 @@ class ProjectCard extends React.Component {
                 {
                     post.frontmatter.cover &&
                         <Img 
-                            className={`w-100 db project-card--cover cover card-shadow br1`}
+                            className={`w-100 db project-card--cover cover br1`}
                             fluid={post.frontmatter.cover.childImageSharp.fluid}
                             alt="" 
                         />
@@ -34,7 +34,7 @@ class ProjectCard extends React.Component {
 
                 {/* <div className="ph3 pv4"> */}
                 <div className="pv3">
-                    <div className="project-card--date f6 mt1 silver db-ns dn">
+                    <div className="project-card--date f6 mt0 silver db-ns dn">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div>
 
