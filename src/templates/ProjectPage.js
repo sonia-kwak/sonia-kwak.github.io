@@ -5,9 +5,6 @@ import Img from "gatsby-image"
 
 import rehypeReact from "rehype-react"
 
-// import ScrollReveal from 'scrollreveal'
-
-import AnimateLoad from '../components/AnimateLoad'
 import Tag from '../components/Tag'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
@@ -48,23 +45,6 @@ class ResultsBanner extends React.Component {
 }
 
 class ProjectPage extends React.Component {
-  // componentDidMount() {
-  //   if (typeof window !== `undefined`) {
-  //     window.sr = ScrollReveal({
-  //       // reset: false,
-  //       scale: 1,
-  //       // mobile: true,
-  //       // // delay: 200,
-  //       // viewFactor: 0.3,
-  //       duration: 1200,
-  //       distance: '30px',
-  //       easing: 'ease-in-out',
-  //     });
-
-  //     window.sr.reveal('div', { duration: 700 }, 500);
-  //   }
-  // }
-
   render() {
     const post = this.props.data.markdownRemark
     const siteDescription = post.excerpt
@@ -322,8 +302,7 @@ class ProjectPage extends React.Component {
   }
 }
 
-export default AnimateLoad(ProjectPage)
-// export default ProjectPage
+export default ProjectPage
 
 export const pageQuery = graphql`
          query BlogPostBySlug($slug: String!) {

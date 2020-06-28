@@ -3,7 +3,7 @@ import React from 'react'
 import Reveal from 'react-reveal/Reveal';
 
 const Speaking = () => (
-  <Reveal effect="slideDownWithDelay">
+  <Reveal effect="slideUp">
       <Talk
         title="Os 3 Pilares Para Escalar Design na VTEX"
         context="Meetup Design at Scale. Rio de Janeiro / Recife, 2019."

@@ -9,8 +9,8 @@ html {
   --orange-light: hsl(27, 100%, 80%);
   --blue: #1B9393;
   --blue-light: hsl(180, 75%, 80%);
-  /* --bg-color: #FDFCF8; */
   --bg-color: white;
+  --bg-color2: #FDFCF8;
 
   --gray: #777;
   /* --near-black: #111111; */
@@ -36,7 +36,7 @@ html {
 
 @keyframes slideUp {
   from { 
-    transform: translateY(5px);
+    transform: translateY(50px);
     opacity: 0;
   }
   
@@ -44,6 +44,10 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.slideUp {
+  animation-name: slideUp;
+  animation-timing-function: var(--global-easing);
 }
 
 @keyframes slideDownWithDelay {
@@ -78,17 +82,23 @@ html {
   animation-timing-function: var(--global-easing);
 }
 
-@keyframes slizzDown {
+@keyframes clipIn {
   from { 
-    transform: translate3d(0px, -100px, 0px);
+    /* clip-path: inset(100% 0 0 0);
+    transform: translateY(20px); */
+    filter: blur(30px);
+    opacity: 0.7;
   }
   
   to {
-    transform: translate3d(0px, 0px, 0px);
+    /* clip-path: inset(0 0 0 0);
+    transform: translateY(0); */
+    filter: blur(0);
+    opacity: 1;
   }
 }
-.slizzDown {
-  animation-name: slizzDown;
+.clipIn {
+  animation-name: clipIn;
   animation-timing-function: var(--global-easing);
 }
 
@@ -258,6 +268,10 @@ li::before {
   background-color: var(--bg-color);
 }
 
+.bg-background-color2 {
+  background-color: var(--bg-color2);
+}
+
 
 /* ------------------ */
 /* Tachyons Overrides */
@@ -342,8 +356,3 @@ li::before {
 .gatsby-resp-image-wrapper {
   width: 100%;
 }
-
-/* Prevents flickering on ScrollReveal */
-/* html.sr .project-card {
-    visibility: hidden;
-} */

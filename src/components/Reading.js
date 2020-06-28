@@ -11,7 +11,7 @@ class Reading extends React.Component {
         return (
             <>
                 <div className="flex flex-wrap nr3">
-                    <Reveal effect="slideDownWithDelay" cascade>
+                    <Reveal effect="slideUp" cascade>
                     {
                         bookNodes.reading.map(i =>
                             <Book 

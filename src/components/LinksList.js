@@ -13,7 +13,7 @@ const LinksList = props => {
 
   return (
     <div className="f3 fw2">
-      <Reveal effect="slideDownWithDelay" cascade>
+      <Reveal effect="slideUp" cascade>
         {
           items.map( (l, i) =>
             <a
