@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
-// import ScrollReveal from 'scrollreveal'
+import Reveal from 'react-reveal/Reveal';
 
 import Layout from '../components/Layout'
  
@@ -16,26 +16,6 @@ import Projects from '../components/Projects'
 import { sortPosts } from '../components/utils.js'
 
 class IndexPage extends React.Component {
-  sr = null;
-
-  // componentDidMount() {
-  //   this.sr = ScrollReveal({
-  //     reset: false,
-  //     // scale: 1, 
-  //     // mobile: true,
-  //     // viewFactor: 0.3,
-  //     // delay: 200,
-  //     opacity: 0.2,
-  //     duration: 700,
-  //     distance: '20px',
-  //     easing: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
-  //   });
-    
-  //   this.sr.reveal('section', { duration: 700}, 3000); 
-  //   // this.sr.reveal('section, .project-card');
-  //   // this.sr.reveal('.animatable');
-  // }
-
   render() {
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
     const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
@@ -60,29 +40,33 @@ class IndexPage extends React.Component {
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <h1 
-                className="f-subheadline-ns f2 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
-                style={{maxWidth: 800}}>
-                I'm a designer of products and systems.
-              </h1>
+              <Reveal effect="slideDown" duration={6000}>
+                <h1
+                  className="f-subheadline-ns f2 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
+                  style={{maxWidth: 800}}>
+                  I'm a designer of products and systems.
+                </h1>
+              </Reveal>
             </div> 
 
             <div className="w-10-ns" />
 
             <div className="w-50-ns mt7-ns">
-              <section id="about" className="mb4 mt6-ns mt4 pt4 f4-ns f5 lh-copy dark-gray">
-                <p>
-                  Nice to meet you!
-                </p>
-                <p>
-                  I'm a designer with a skill set ranging from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
-                </p>
-                <p>
-                  My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
-                </p>
-                <p>
-                  I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
-                </p>
+              <section id="about" className="mb4 mt6-ns mt4 pt4 f4 lh-copy dark-gray">
+                <Reveal effect="slideDownWithDelay" cascade duration={3000}>
+                  <p>
+                    Nice to meet you!
+                  </p>
+                  <p>
+                    I'm a designer with a skill set ranging from researching to designing and programming products and systems. I'm interested in solving problems related to the human experience of technology and tools we use to work and express ourselves.
+                  </p>
+                  <p>
+                    My background in Computer Science has biased me towards solutions that are scalable, maintainable and that stand the test of time. This mindset also applies to businesses and their role in the society. I work with purpose, and I like creating stuff that contribute to a more sustainable and equitable world.
+                  </p>
+                  <p>
+                    I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
+                  </p>
+                </Reveal>
               </section>
             </div>
           </section>

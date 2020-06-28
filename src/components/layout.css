@@ -150,6 +150,16 @@ li::before {
   animation: slideDown .8s var(--global-easing)
 }
 
+.slideDownWithDelay {
+  animation-name: slideDownWithDelay;
+  animation-timing-function: var(--global-easing);
+}
+
+.slideDown {
+  animation-name: slideDown;
+  animation-timing-function: var(--global-easing);
+}
+
 .dim {
   transition: opacity .3s var(--global-easing) !important;
 } 

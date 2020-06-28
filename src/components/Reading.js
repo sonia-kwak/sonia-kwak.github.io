@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Reveal from 'react-reveal/Reveal';
+
 class Reading extends React.Component {
     render() {
         let { bookNodes } = this.props;
@@ -9,6 +11,7 @@ class Reading extends React.Component {
         return (
             <>
                 <div className="flex flex-wrap nr3">
+                    <Reveal effect="slideDownWithDelay" cascade>
                     {
                         bookNodes.reading.map(i =>
                             <Book 
@@ -18,6 +21,7 @@ class Reading extends React.Component {
                             />
                         )
                     }
+                    </Reveal>
                 </div>
                 
                 {/* <h2 className="dark-gray f5 mb4">Recently finished</h2>

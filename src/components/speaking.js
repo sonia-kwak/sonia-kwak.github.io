@@ -1,7 +1,9 @@
 import React from 'react'
 
+import Reveal from 'react-reveal/Reveal';
+
 const Speaking = () => (
-    <div>
+  <Reveal effect="slideDownWithDelay">
       <Talk
         title="Os 3 Pilares Para Escalar Design na VTEX"
         context="Meetup Design at Scale. Rio de Janeiro / Recife, 2019."
@@ -80,7 +82,7 @@ const Speaking = () => (
         context="Desconferência UFRGS. Porto Alegre, 2013"
         link="https://docs.google.com/presentation/d/1djDV4rN1B3gyP-ODDjxwNMGlvgfExUyxe47l8n7tI_w/edit#slide=id.p"
       />
-    </div>
+    </Reveal>
 )
 
 class Talk extends React.Component {

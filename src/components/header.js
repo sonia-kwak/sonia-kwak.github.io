@@ -90,4 +90,4 @@ class Header extends React.Component {
 }
 
 // export default Header
-export default AnimateLoad(Header, { animation: 'slideDownWithDelay', duration: '1.5s'})
+export default AnimateLoad(Header, { animation: 'slideDown', duration: '1.5s'})
