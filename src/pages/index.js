@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
-import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 
 import Layout from '../components/Layout'
  
@@ -40,20 +40,33 @@ class IndexPage extends React.Component {
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <Reveal effect="slideDown" duration={6000}>
-                <h1
-                  className="f-subheadline-ns f2 fw4 dark-gray absolute lh-solid top-0 left-3-ns pt5-ns mt6-ns ml7-ns ml4 mt6 mr3 tl-ns tr"
-                  style={{maxWidth: 800}}>
-                  I'm a designer of products and systems.
-                </h1>
-              </Reveal>
+              <div className="absolute top-0 left-3-ns mt6-ns ml7-ns ml4 mt6 mr3 pt5-ns">
+                <div className="overflow-hidden">
+                  <Fade bottom cascade duration={800}>
+                    <h1
+                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr"
+                      style={{maxWidth: 800}}>
+                      I'm a designer of 
+                    </h1>
+                  </Fade>
+                </div>
+                <div className="overflow-hidden">
+                  <Fade bottom cascade delay={400} duration={800}>
+                    <h1
+                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr"
+                      style={{maxWidth: 800}}>
+                      products and systems.
+                    </h1>
+                  </Fade>
+                </div>
+              </div>
             </div> 
 
             <div className="w-10-ns" />
 
             <div className="w-50-ns mt7-ns">
               <section id="about" className="mb4 mt6-ns mt4 pt4 f4 lh-copy dark-gray">
-                <Reveal effect="slideDownWithDelay" cascade duration={3000}>
+                <Fade duration={2000} delay={1000}>
                   <p>
                     Nice to meet you!
                   </p>
@@ -66,7 +79,7 @@ class IndexPage extends React.Component {
                   <p>
                     I'm very curious and I'm always learning different stuff. I find it helps me stay creative, and give me knowledge to find the right problems to solve, as well as the right solutions for them.
                   </p>
-                </Reveal>
+                </Fade>
               </section>
             </div>
           </section>
