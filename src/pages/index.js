@@ -69,8 +69,8 @@ class IndexPage extends React.Component {
 
             <div className="w-10-ns" />
 
-            <div className="w-50-ns mt7">
-              <section id="about" className="mb4 mt6-ns mt7 pt4 f4 lh-copy dark-gray">
+            <div className="w-50-ns mt7-ns">
+              <section id="about" className="mb4 mt6-ns mt4 pt4 f4-ns f5 lh-copy dark-gray">
                 <p>
                   Nice to meet you!
                 </p>

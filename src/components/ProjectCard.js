@@ -34,7 +34,7 @@ class ProjectCard extends React.Component {
 
                 {/* <div className="ph3 pv4"> */}
                 <div className="pv3">
-                    <div className="project-card--date f6 mt1 silver">
+                    <div className="project-card--date f6 mt1 silver db-ns dn">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div>
 
@@ -55,8 +55,7 @@ class ProjectCard extends React.Component {
                     } */}
 
                     {
-                        post.frontmatter.minibio
-                        &&
+                        post.frontmatter.minibio &&
                         <div className="project-card--description f5 mt0 gray lh-copy">
                             {post.frontmatter.minibio}
                         </div>
