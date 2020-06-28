@@ -180,7 +180,7 @@ class ProjectPage extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
-        {/* <ReadingProgressBar/> */}
+        <ReadingProgressBar barColor={post.frontmatter.color}/>
 
         {/* Cover image */}
         <div className="flex flex-row-ns flex-column mt5 mb5">
@@ -335,6 +335,7 @@ export const pageQuery = graphql`
                date2
                tags
                team
+               color
                cover {
                   childImageSharp {
                     fluid(maxWidth: 1440) {

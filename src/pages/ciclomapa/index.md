@@ -9,6 +9,7 @@ tags: ['design','front-end','product management']
 cover: './cover.png'
 team: "Cristiano Dalbem, Bernardo Serra (ITDP), Felipe Alves (UCB)."
 forceOrder: 1
+color: '#29221a'
 ---
 
 

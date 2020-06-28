@@ -7,6 +7,7 @@ description: "A story-telling VR game inspired by the best “walking simulators
 tags: ['game design']
 team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
 cover: "./cover.png"
+color: '#318bcc'
 ---
 
 

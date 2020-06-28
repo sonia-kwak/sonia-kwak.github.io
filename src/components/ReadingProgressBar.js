@@ -21,9 +21,7 @@ class ReadingProgressBar extends React.Component {
                     scroll: scroll
                 });
             }
-    
             document.addEventListener('scroll', listenerCallback, { passive: true });
-    
         }
 
         this.state = {
@@ -37,13 +35,15 @@ class ReadingProgressBar extends React.Component {
     }
 
     render() {
+        const barColor = this.props.barColor || 'var(--orange)';
+
         return (
             <div 
                 className="fixed top-0 left-0 right-0 z-1"
                 style={{
-                    background: `linear-gradient(to right, var(--orange) ${this.state.scroll}%, transparent 0)`,
-                    backgroundRepeat: 'no-repeat',
-                    height: '3px'
+                    background: barColor,
+                    width: `${this.state.scroll}%`,
+                    height: '4px'
                 }}
             />
         )

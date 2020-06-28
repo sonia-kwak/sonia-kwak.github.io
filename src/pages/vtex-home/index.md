@@ -8,6 +8,7 @@ description: "A new home for the an e-commerce platform admin, setting the groun
 tags: ['design']
 cover: './cover.png' 
 team: 'Bruna Aleixo, Cristiano Dalbem, Guilherme Rodrigues, Kevin Chevalier'
+color: '#f71b62'
 ---
   
 

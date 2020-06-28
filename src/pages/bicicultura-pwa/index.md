@@ -8,6 +8,7 @@ description: "A simple web app for improving attendees' experience in the bigges
 tags: ['design','front-end']
 roles: "Front-end Development, UX Design"
 cover: './cover.png'
+color: '#893fe4'
 --- 
 
 # Context

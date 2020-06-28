@@ -8,6 +8,7 @@ description: "A cicloactivist project that aims to foster a positive vibe in the
 tags: ['design','front-end','back-end','product management','branding']
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi, and others."
 cover: './cover.png'
+color: '#00d47e'
 ---
 
 # Overview

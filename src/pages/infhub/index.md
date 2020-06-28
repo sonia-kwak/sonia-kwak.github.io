@@ -8,6 +8,7 @@ description: "A platform for university students to share their projects. This p
 tags: ['front-end','back-end','design']
 team: "César Daudt, Cristiano Dalbem, João Gilberto Gaiewski"
 cover: './cover.png'
+color: '#922924'
 ---
 
 
