@@ -58,7 +58,7 @@ class IndexPage extends React.Component {
                   <Fade bottom cascade={!isMobile} delay={400} duration={800}>
                     <h1
                       className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr">
-                      products and systems.
+                      products & systems.
                     </h1>
                   </Fade>
                 </div>
