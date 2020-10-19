@@ -7,7 +7,7 @@ const Speaking = () => (
       <Talk
         title="Os 3 Pilares Para Escalar Design na VTEX"
         context="Meetup Design at Scale. Rio de Janeiro / Recife, 2019."
-        link="hhttps://www.youtube.com/watch?v=43S4BThGopU"
+        link="https://www.youtube.com/watch?v=43S4BThGopU"
       />
 
       <Talk
