@@ -21,7 +21,7 @@ class Header extends React.Component {
       // url = new URL(window.location.href);
     }
  
-    const tabItemClasses = 'ml4 f6 pa0 fw6 pointer bg-transparent outline-0 bn tab tab--unselected';
+    const tabItemClasses = 'ml4 f6 pa0 fw4 pointer bg-transparent outline-0 bn tab tab--unselected';
     let sections = [
       'About',
       'Case studies',
@@ -35,8 +35,8 @@ class Header extends React.Component {
       <div className='flex pt4 pb3 layoutMaxWidth center'>
         <div className="w-100 flex items-center">
           <Fade duration={1500}>
-            <h1 className="f6">
-              <Link to="/" className="link dim near-black fw7 ttu mr3 pr2">
+            <h1 className="f7">
+              <Link to="/" className="link dim near-black fw6 ttu mr3 pr2">
                 Cristiano Dalbem
               </Link>
 

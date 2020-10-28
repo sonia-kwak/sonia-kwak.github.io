@@ -65,10 +65,10 @@ class IndexPage extends React.Component {
               </div>
             </div> 
 
-            <div className="w-10-ns" />
+            <div className="w-20-ns" />
 
-            <div className="w-50-ns mt7-ns">
-              <section id="about" className="mb4 mt6-ns mt4 pt4 f4 lh-copy dark-gray">
+            <div className="w-40-ns mt7-ns">
+              <section id="about" className="mb4 mt6-ns mt4 pt4 f5 lh-copy dark-gray">
                 <Fade duration={1500} delay={800}> 
                   <p>
                     Nice to meet you!

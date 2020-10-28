@@ -1,7 +1,30 @@
+@font-face {
+  font-family: 'Object Sans';
+  src: url('fonts/objectsans-bold-webfont.woff2') format('woff2'),
+       url('fonts/objectsans-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Object Sans';
+  src: url('fonts/objectsans-regular-webfont.woff2') format('woff2'),
+       url('fonts/objectsans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Object Sans';
+  src: url('fonts/objectsans-heavy-webfont.woff2') format('woff2'),
+       url('fonts/objectsans-heavy-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* Global */
 
 html {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Object Sans', sans-serif;
 
   /* --red: #F52D2D; */
   --red: #ED4934;
@@ -278,7 +301,7 @@ li::before {
 .f-subheadline-ns,
 .f1,
 .f1-ns {
-  font-family: 'Rozha One', 'Nunito Sans', sans-serif;
+  font-family: 'Syne', 'Nunito Sans', sans-serif;
 }
 
 .f1 { font-size: 64px !important; }

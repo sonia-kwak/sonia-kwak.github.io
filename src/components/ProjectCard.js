@@ -4,18 +4,18 @@ import Img from "gatsby-image"
 
 import Tag from '../components/Tag.js'
 
-import { formatDate } from '../components/utils.js'
+// import { formatDate } from '../components/utils.js'
 
 class ProjectCard extends React.Component {
     render() {
         const post = this.props.node;
         const mini = this.props.mini;
 
-        let dateStart = formatDate(post.frontmatter.date, 'YYYY');
-        let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
-        if (dateEnd && dateEnd === dateStart) {
-            dateEnd = null;
-        }
+        // let dateStart = formatDate(post.frontmatter.date, 'YYYY');
+        // let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');
+        // if (dateEnd && dateEnd === dateStart) {
+        //     dateEnd = null;
+        // }
 
         return (
             <Link
@@ -34,14 +34,14 @@ class ProjectCard extends React.Component {
 
                 {/* <div className="ph3 pv4"> */}
                 <div className="pv3">
-                    <div className="project-card--date f6 mt0 silver db-ns dn">
+                    {/* <div className="project-card--date f6 mt0 silver db-ns dn">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
-                    </div>
+                    </div> */}
 
                     {
                         post.frontmatter.title
                         &&
-                        <h3 className="project-card--title f4 fw7 near-black mt0 mb0">
+                        <h3 className="project-card--title f5 fw6 near-black mt0 mb0">
                             {post.frontmatter.title}
                         </h3>
                     }
@@ -61,17 +61,17 @@ class ProjectCard extends React.Component {
                         </div>
                     }
 
-                    {
+                    {/* {
                         post.frontmatter.tags &&
                         !mini &&
-                        <div className="flex flex-row flex-wrap mt2">
+                        <div className="flex flex-row flex-wrap mt3">
                             {post.frontmatter.tags.map(tag => (
                                 <Tag key={tag}>
                                     {tag}
                                 </Tag>
                             ))}
                         </div>
-                    }
+                    } */}
                 </div>
             </Link>
         )

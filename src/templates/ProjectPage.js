@@ -192,7 +192,7 @@ class ProjectPage extends React.Component {
                 {
                   post.frontmatter.description &&
                   <div className="mb3 dark-gray">
-                    <div className='f3 dark-gray lh-title'>
+                    <div className='f3 dark-gray lh-copy'>
                       {post.frontmatter.description}
                     </div>
                   </div>
@@ -211,7 +211,7 @@ class ProjectPage extends React.Component {
                   <div className="mb4 dark-gray">
                     <h2 className="f7 fw6 ttu mv2 fw7 mr2">
                       <span className="">
-                        Tags
+                        Roles
                         </span>
                     </h2>
                     <div className="">
