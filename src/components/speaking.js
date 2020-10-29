@@ -5,8 +5,14 @@ import Reveal from 'react-reveal/Reveal';
 const Speaking = () => (
   <Reveal effect="slideUp">
       <Talk
+        title="Protótipos (or: A Presentation About Prototypes Made As A Prototype)."
+        context="Laboratório de Práticas Criativas em Software. UFRGS - Especialização em Engenharia de Software e Inovação, 2020"
+        link="https://www.figma.com/proto/wzuas1ACN5n2t9lVyPtnj8/Apresenta%C3%A7%C3%A3o-Prot%C3%B3tipos?node-id=22%3A89&scaling=min-zoom"
+      />
+
+      <Talk
         title="Os 3 Pilares Para Escalar Design na VTEX"
-        context="Meetup Design at Scale. Rio de Janeiro / Recife, 2019."
+        context="Design at Scale Meetup. Rio de Janeiro & Recife, 2019."
         link="https://www.youtube.com/watch?v=43S4BThGopU"
       />
 
@@ -29,11 +35,11 @@ const Speaking = () => (
       link="https://docs.google.com/presentation/d/1pI4ONbgxePD8DrPSmUlRHCa_mSGdzyGJB8Qb38ur4bs/edit?usp=sharing"
       />
 
-      {/* <Talk
+      <Talk
         title="Rage, rage against the dying of the Design System - Morte e vida de um sistema para empoderar um ecossistema."
         context="Interaction Latin America, 2018 [proposal]"
         link="https://drive.google.com/open?id=10VxokY3c1onxm67WUD_flPh5tlxyydBy"
-      /> */}
+      />
 
       <Talk
         title="É possível estacionar a bike de boa?"
@@ -77,11 +83,11 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1989zLiju0njGpa4oTJz3J80kEIODHYTTTfmP6UYX35M/edit#slide=id.p"
       /> */}
 
-      <Talk
+      {/* <Talk
         title="O que aprendi com as Artes Marciais"
         context="Desconferência UFRGS. Porto Alegre, 2013"
         link="https://docs.google.com/presentation/d/1djDV4rN1B3gyP-ODDjxwNMGlvgfExUyxe47l8n7tI_w/edit#slide=id.p"
-      />
+      /> */}
     </Reveal>
 )
 
@@ -90,24 +96,24 @@ class Talk extends React.Component {
     const { title, context, link } = this.props;
 
     return (
-      <div className="pb4-ns pb3 animatable lh-copy">
-        <div className="fw5 f4 mv1">
-          {/* {title} */}
-          <a className="pretty-link" href={link} target="_blank" rel="noopener noreferrer">
-            {title}
-          </a>
-        </div>
-        
-        <div className="gray f5">
-          {context}
-        </div>
-        
-        {/* <div className="mv2">
-          <a className="pretty-link" href={link}>
+      <a className="link dark-gray dim animatable db pv4-ns pv3 lh-copy bb b--light-gray" href={link} target="_blank" rel="noopener noreferrer">
+        <div className="">
+          <div className="fw6 mv1">
+            {/* {title} */}
+              {title}
+          </div>
+          
+          <div className="gray f5">
+            {context}
+          </div>
+          
+          {/* <div className="mv2">
+            <a className="pretty-link" href={link}>
             Slides
-          </a>
-        </div> */}
-      </div>
+            </a>
+          </div> */}
+        </div>
+      </a>
     )
   }
 }

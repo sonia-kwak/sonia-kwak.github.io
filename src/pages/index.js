@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Fade from 'react-reveal/Fade';
-import Reveal from 'react-reveal/Reveal';
 
 import Layout from '../components/Layout'
  

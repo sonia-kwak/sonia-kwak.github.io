@@ -5,7 +5,7 @@ import Reveal from 'react-reveal/Reveal';
 const LinksList = props => {
   const { items } = props;
   // const classes = 'animatable link dim db text-gradient-clip bb b--black-10';
-  const classes = 'animatable link dim db text-gradient-clip';
+  const classes = 'animatable link dim db text-gradient-clip bb b--light-gray';
 
   if (!items || !items.map) {
     return null;
@@ -17,7 +17,7 @@ const LinksList = props => {
         {
           items.map( (l, i) =>
             <a
-              className={`${classes} bg-gradient-${i+1} ${i===0 ? 'pb3-ns pb2' : 'pv3-ns pv2'}`}
+              className={`${classes} bg-gradient-${i+1} pv4`}
               target="_blank"
               rel="noopener noreferrer"
               href={l.url}
