@@ -58,7 +58,7 @@ class Header extends React.Component {
                   <Scrollspy
                     items={sectionsSlugs}
                     componentTag="div"
-                    currentClassName="tab--selected"
+                    currentClassName="tab--selected fw6"
                     offset={-200}
                   >
                     {

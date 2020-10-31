@@ -1,13 +1,19 @@
 import React from 'react'
 
+const footerIconsClasses = 'pl3-ns pr0-ns pr3 pl0 dim gray';
+
 const Footer = () => (
     <div className="flex flex-row-ns flex-column pv6 f7 w-100 gray justify-between layoutMaxWidth center">
         <div className="mw6-ns lh-copy">
-            Handcrafted in Figma and Gatsby.js. Fonts by Google Fonts.
+            Prototyped in <a target="_blank" rel="noopener noreferrer" className="link gray underline-hover" href="https://www.figma.com/">Figma</a> and handcrafted in <a target="_blank" rel="noopener noreferrer" className="link gray underline-hover" href="https://reactjs.org/">React</a> and <a target="_blank" rel="noopener noreferrer" className="link gray underline-hover" href="https://www.gatsbyjs.com/">Gatsby.js</a>.
+            
+            <br/>
+            
+            Fonts by <a target="_blank" rel="noopener noreferrer" className="link gray underline-hover" href="https://pangrampangram.com/">Pangram</a> and <a target="_blank" rel="noopener noreferrer" className="link gray underline-hover" href="https://fonts.google.com/">Google Fonts</a>.
         </div>
         <div className="mv4 mv0-ns">
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                className={footerIconsClasses}
                 href="https://www.linkedin.com/in/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 430.117 430.117'>
@@ -17,7 +23,7 @@ const Footer = () => (
                 {/* LinkedIn */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                className={footerIconsClasses}
                 href="mailto:cristiano.dalbem@gmail.com
                 ">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'
@@ -30,7 +36,7 @@ const Footer = () => (
                 {/* Email */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                className={footerIconsClasses}
                 href="https://github.com/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 438.549 438.549'>
@@ -40,7 +46,7 @@ const Footer = () => (
                 {/* GitHub */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                className={footerIconsClasses}
                 href="https://www.instagram.com/cmdalbem/">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 512 512'>
@@ -53,7 +59,7 @@ const Footer = () => (
                 {/* Instagram */}
             </a>
             <a
-                className="pl3-ns pr0-ns pr3 pl0 dim moon-gray"
+                className={footerIconsClasses}
                 href="https://twitter.com/cmdalbem">
                 <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg' fill='currentColor'
                     viewBox='0 0 612 612'>

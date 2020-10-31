@@ -18,7 +18,7 @@ class HomeSection extends React.Component {
         return (
             <section id={anchor} className={containerClasses}>
                 <div className="flex flex-column w-100">
-                    <h2 className="f1-ns f1 lh-solid fw4 mv0-ns mb2 dark-gray left-3-ns ml7-ns ml4-ns">{title}</h2>
+                    <h2 className="f1-ns f1 lh-solid fw4 mv2-ns mb2 dark-gray left-3-ns ml7-ns ml4-ns">{title}</h2>
                     
                     <div className="left-3-ns ml7-ns ml4-ns mt2">
                         { descriptionContent }

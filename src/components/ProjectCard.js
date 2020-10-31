@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
-import Tag from '../components/Tag.js'
+// import Tag from '../components/Tag.js'
 
 // import { formatDate } from '../components/utils.js'
 
 class ProjectCard extends React.Component {
     render() {
         const post = this.props.node;
-        const mini = this.props.mini;
+        // const mini = this.props.mini;
 
         // let dateStart = formatDate(post.frontmatter.date, 'YYYY');
         // let dateEnd = formatDate(post.frontmatter.date2, 'YYYY');

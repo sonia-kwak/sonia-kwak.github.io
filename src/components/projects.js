@@ -13,7 +13,7 @@ class Projects extends React.Component {
         classes += "animatable mv4-ns mv3 pr4-ns pr3-m pr3";
 
         return (
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap mb5">
                 <Reveal effect="slideUp" duration={2000}>
                 {
                     posts.map(({ node }) => {
