@@ -259,7 +259,7 @@ class ProjectPage extends React.Component {
                   <div className="mv5">
                     <a
                       href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
-                      className="ba br2 dim f5 fw6 link orange pv2 ph3 text-gradient-clip bg-gradient-1"
+                      className="gradient-border text-gradient-clip bg-gradient dim f5 fw6 link orange pv2 ph3"
                     >
                       See it live
                     </a>
@@ -312,7 +312,7 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-100 tc mt6">
-            <Link to="/#case studies" className="ba br2 dim f4 fw6 link orange pa3" text-gradient-clip bg-gradient-0>
+            <Link to="/#case studies" className="gradient-border text-gradient-clip bg-gradient dim f4 fw6 link pa3">
               View all projects
             </Link>
           </div>

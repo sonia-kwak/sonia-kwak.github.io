@@ -52,7 +52,7 @@ class Header extends React.Component {
               } */}
             </h1>
         
-            <div className={`${isHome && 'f7 dn db-ns ml5'}`}>
+            <div className={`${isHome && 'f7 dn db-ns ml5 pl2'}`}>
               { 
                 isHome && 
                   <Scrollspy
