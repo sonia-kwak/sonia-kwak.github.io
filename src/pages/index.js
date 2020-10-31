@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 
 import Fade from 'react-reveal/Fade';
 
+import LocomotiveScroll from 'locomotive-scroll';
+
 import Layout from '../components/Layout'
  
 import Speaking from '../components/Speaking'
@@ -14,7 +16,22 @@ import Projects from '../components/Projects'
 
 import { sortPosts } from '../components/utils.js'
 
+import './locomotive-scroll.css'
+
+
 class IndexPage extends React.Component {
+  componentDidMount() {
+    console.log('LocomotiveScroll');
+    
+    // setTimeout(() => {
+      this.scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        scrollFromAnywhere: true
+      });
+    // }, 2000)
+  }
+
   render() {
     let isMobile;
     if (typeof window !== `undefined`) {

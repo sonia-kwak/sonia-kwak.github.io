@@ -5,7 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './Header'
 import Footer from './Footer'
+
 import './layout.css'
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +32,7 @@ const Layout = ({ children }) => (
       headerClasses += isHome ? ` fixed-ns top-0 left-0 right-0 bg-background-color z-2 relative` : '';
 
       return (
-        <div className="parallax">
+        <div>
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
@@ -48,13 +50,15 @@ const Layout = ({ children }) => (
             <Header/>
           </div>
 
-          <div className={`${globalPadding} mt2 mb0`}>
-            {/* <AnimatedChildren/> */}
-            {children}
-          </div>
+          <div data-scroll-container>
+            <div className={`${globalPadding} mt2 mb0`}>
+              {/* <AnimatedChildren/> */}
+              {children}
+            </div>
 
-          <div className={`${globalPadding} bg-light-gray`}>
-            <Footer/>
+            <div className={`${globalPadding} bg-light-gray`}>
+              <Footer/>
+            </div>
           </div>
         </div>
       )
