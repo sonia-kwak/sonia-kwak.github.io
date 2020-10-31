@@ -186,7 +186,7 @@ class ProjectPage extends React.Component {
           <Fade duration={1500} delay={1000}>
             <div className="flex flex-row-ns flex-column mb4">
               <div className="w-60-ns">
-                <h1 className="f2 mt0 fw8 mb3 dark-gray lh-solid">
+                <h1 className="f1 mt0 fw8 mb3 dark-gray lh-solid">
                   {post.frontmatter.title}
                 </h1>
                 {
@@ -209,7 +209,7 @@ class ProjectPage extends React.Component {
                 {
                   post.frontmatter.tags &&
                   <div className="mb4 dark-gray">
-                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                    <h2 className="f6 fw6 ttu mv2 fw7 mr2">
                       <span className="">
                         Roles
                         </span>
@@ -227,12 +227,12 @@ class ProjectPage extends React.Component {
                 {
                   post.frontmatter.team &&
                   <div className='mv4 dark-gray'>
-                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                    <h2 className="f6 fw6 ttu mv2 fw7 mr2">
                       <span className="">
                         Team
                       </span>
                     </h2>
-                    <span className="f5 din">
+                    <span className="f5 din lh-copy">
                       {post.frontmatter.team}
                     </span>
                   </div>
@@ -240,7 +240,7 @@ class ProjectPage extends React.Component {
 
                 {
                   <div className="mv4 dark-gray">
-                    <h2 className="f7 fw6 ttu mv2 fw7 mr2">
+                    <h2 className="f6 fw6 ttu mv2 fw7 mr2">
                       <span className="">
                         Date
                       </span>
@@ -251,6 +251,18 @@ class ProjectPage extends React.Component {
                         ` – ${dateEnd}`
                       }
                     </div>
+                  </div>
+                }
+
+                {
+                  post.frontmatter.liveLink &&
+                  <div className="mv5">
+                    <a
+                      href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
+                      className="ba br2 dim f5 fw6 link orange pv2 ph3 text-gradient-clip bg-gradient-1"
+                    >
+                      See it live
+                    </a>
                   </div>
                 }
               </div>
@@ -300,7 +312,7 @@ class ProjectPage extends React.Component {
           </div>
 
           <div className="w-100 tc mt6">
-            <Link to="/#case studies" className="ba br3 dim f4 fw6 link orange pa3">
+            <Link to="/#case studies" className="ba br2 dim f4 fw6 link orange pa3" text-gradient-clip bg-gradient-0>
               View all projects
             </Link>
           </div>
@@ -324,6 +336,7 @@ export const pageQuery = graphql`
                description
                date
                date2
+               liveLink
                tags
                team
                color

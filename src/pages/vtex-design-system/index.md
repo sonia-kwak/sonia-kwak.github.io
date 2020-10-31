@@ -8,6 +8,7 @@ description: "Styleguide was the company's Design System, the home for all our r
 tags: ['design','front-end','product management']
 cover: './cover.png' 
 color: '#f71b62'
+liveLink: 'https://styleguide.vtex.com/'
 ---
   
 

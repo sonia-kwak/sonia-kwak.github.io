@@ -10,6 +10,7 @@ cover: './cover.png'
 team: "Cristiano Dalbem, Bernardo Serra (ITDP), Felipe Alves (UCB)."
 forceOrder: 1
 color: '#29221a'
+liveLink: 'https://ciclomapa.org.br/'
 ---
 
 
