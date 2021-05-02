@@ -26,14 +26,13 @@ class Header extends React.Component {
       'About',
       'Case studies',
       'Speaking',
-      'Reading',
       'Social'
     ];
     const sectionsSlugs = sections.map( section => section.toLowerCase() );
     
     return (
       <div className='flex pt4 pb3 layoutMaxWidth center'>
-        <div className="w-100 flex items-center">
+        <div className="w-100 flex items-center justify-between">
           <Fade duration={1500}>
             <h1 className="f7">
               <Link to="/" className="link dim near-black fw6 ttu mr3 pr2">
@@ -52,7 +51,7 @@ class Header extends React.Component {
               } */}
             </h1>
         
-            <div className={`${isHome && 'f7 dn db-ns ml5 pl2'}`}>
+            <div className={`${isHome && 'f7 dn db-ns'}`}>
               { 
                 isHome && 
                   <Scrollspy

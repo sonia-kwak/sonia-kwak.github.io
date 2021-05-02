@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Syne\:700`]
+        fonts: [`Syne\:400`]
       },
     },
     {
@@ -108,13 +108,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-catch-links',
-    {
-      resolve: '@halkeye/gatsby-source-goodreads',
-      options: {
-        developerKey: 'toGLdnsikKAbTOmaFiPrw',
-        goodReadsUserId: '14179336',
-        userShelf: 'currently-reading',
-      },
-    }
   ],
 }

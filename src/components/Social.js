@@ -13,15 +13,11 @@ const Social = () => {
       url: "mailto:cristiano.dalbem@gmail.com"
     },
     {
-      label: 'Instagram',
-      url: "https://www.instagram.com/cmdalbem/"
-    },
-    {
       label: 'Twitter',
       url: "https://twitter.com/cmdalbem"
     },
     {
-      label: 'GitHub (code)',
+      label: 'GitHub',
       url: "https://github.com/cmdalbem/"
     },
     {

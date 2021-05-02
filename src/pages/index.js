@@ -25,14 +25,6 @@ class IndexPage extends React.Component {
     const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
     const projects = posts.filter(i => i.node.frontmatter.projectType === 'project');
     
-    let bookNodes = {};
-    bookNodes.finished = this.props.data.allGoodreadsBook.edges.filter( b =>
-      b.node.shelfNames.includes('read')
-    );
-    bookNodes.reading = this.props.data.allGoodreadsBook.edges.filter( b =>
-      b.node.shelfNames.includes('currently-reading')
-    );
-    
     return (
       <Layout>
         <div className="layoutMaxWidth center">
@@ -67,7 +59,7 @@ class IndexPage extends React.Component {
             <div className="w-20-ns" />
 
             <div className="w-40-ns mt7-ns">
-              <section id="about" className="mb4 mt6-ns mt4 pt4 f5 lh-copy dark-gray">
+              <section id="about" className="mb4 mt6-ns mt4 pt4 f5 lh-copy dark-gray mw6">
                 <Fade duration={1500} delay={800}> 
                   <p>
                     Nice to meet you!
@@ -110,7 +102,7 @@ class IndexPage extends React.Component {
           <HomeSection title="Case studies" fullScreen
             description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
             <Projects posts={caseStudies}/> 
-            <Projects mini posts={projects} /> 
+            {/* <Projects mini posts={projects} />  */}
           </HomeSection> 
           
           <HomeSection
@@ -120,7 +112,7 @@ class IndexPage extends React.Component {
             <Speaking />
           </HomeSection>
 
-          <HomeSection 
+          {/* <HomeSection 
             title="Reading"
             description={(
               <span> 
@@ -136,7 +128,7 @@ class IndexPage extends React.Component {
             )}
           >
             <Reading bookNodes={bookNodes} />
-          </HomeSection>
+          </HomeSection> */}
 
           <HomeSection title="Social">
             <Social />
@@ -162,21 +154,6 @@ export const pageQuery = graphql`
                 aspectRatio
                 originalImg
                 sizes  
-              }
-            }
-          },
-           allGoodreadsBook(filter: {shelfNames: {in: ["read","currently-reading"]}}) {
-            edges {
-              node {
-                shelfNames
-                book {
-                  link
-                  title
-                  imageUrl
-                  authors {
-                    name
-                  }
-                }
               }
             }
           },

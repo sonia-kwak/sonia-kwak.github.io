@@ -9,7 +9,7 @@ tags: ['design','front-end','product management']
 cover: './cover.png'
 team: "Cristiano Dalbem, Bernardo Serra (ITDP), Felipe Alves (UCB)."
 forceOrder: 1
-color: '#29221a'
+color: '#B6F9D1'
 liveLink: 'https://ciclomapa.org.br/'
 ---
 
