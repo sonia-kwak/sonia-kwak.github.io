@@ -186,7 +186,7 @@ class ProjectPage extends React.Component {
           <Fade duration={1500} delay={1000}>
             <div className="flex flex-row-ns flex-column mb4">
               <div className="w-60-ns">
-                <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid">
+                <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid tracked-tight">
                   {post.frontmatter.title}
                 </h1>
                 {

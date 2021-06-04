@@ -35,7 +35,7 @@ html {
   --bg-color: white;
   --bg-color2: #FDFCF8;
 
-  --gray: #6c6460;
+  --gray: #514b48;
   /* --near-black: #111111; */
   --near-black: #493e36;
   /* --dark-gray: #414141; */
@@ -126,22 +126,15 @@ html {
   100%{background-position: 100% 0%}
 }
 
-
-/* Styles */
-
-/* * {
-  outline: 1px dotted transparent;
-} */
-*:hover {
-  /* outline-color: #EAEAEA; */
-  /* transition: outline-color 200ms; */
-  /* animation: OutlineGlow 400ms; */
-}
 @keyframes OutlineGlow {
   0%   { outline-color: transparent; }
   50%  { outline-color: #EAEAEA; }
   100% { outline-color: transparent; }
 }
+
+
+
+/* Styles */
 
 .layoutMaxWidth {
   max-width: 1200px;
@@ -153,12 +146,26 @@ body {
   /* min-height: 100vh; */
 }
 
+
+/* Mobile */
 @media (max-width: 30em) {
   .react-reveal {
     animation: none !important;
     opacity: 1 !important;
   }
 }
+
+@media (min-width: 30.1em) {
+  * {
+    outline: 1px solid transparent;
+    transition: outline-color 300ms ease-out; 
+  }
+  *:hover {
+    outline-color: #EAEAEA;
+    /* animation: OutlineGlow 600ms ease-out; */
+  }
+}
+
 
 .pretty-link {
   color: inherit;
@@ -339,23 +346,23 @@ li::before {
 /* ------------------ */
 
 
-.f1 {
+/* .f1 {
   font-size: 71px !important;
   letter-spacing: -3px;
-}
+} */
 
-.f-subheadline,
+/* .f-subheadline,
 .f-subheadline-ns,
 .f1,
 .f1-ns {
   font-family: 'Syne', 'Nunito Sans', sans-serif;
   letter-spacing: -3px;
-}
+} */
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
   .f1-ns { font-size: 54px !important; }
   .f-subheadline-ns { font-size: 54px !important; }
-}
+} */
 
 .h6 {
   height: 32rem;

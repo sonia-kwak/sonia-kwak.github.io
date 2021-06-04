@@ -18,7 +18,16 @@ export const sortPosts = function (posts) {
     
     const nonPriorizedPosts = posts.filter(p => !p.node.frontmatter.forceOrder);
 
-    return [...priorizedPosts, ...nonPriorizedPosts];
+    let priorizedList = [...priorizedPosts, ...nonPriorizedPosts];
+    return priorizedList.sort((b,a) =>
+            (a.node.frontmatter.date2 
+                ? a.node.frontmatter.date2.split('-')[0]
+                : a.node.frontmatter.date.split('-')[0])
+            -
+            (b.node.frontmatter.date2
+                ? b.node.frontmatter.date2.split('-')[0]
+                : b.node.frontmatter.date.split('-')[0])
+        );
 }
 
 export const capitalize = function (str) {

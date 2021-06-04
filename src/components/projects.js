@@ -12,8 +12,11 @@ class Projects extends React.Component {
         let classes = mini ? "w-25-ns w-25-m w-50 " : "w-50-ns w-50-m w-100 ";
         classes += "animatable mv4-ns mv3 pr4-ns pr3-m pr3";
 
+        // const globalPadding = 'ph6-ns ph4-m ph3 ';
+        const overflowMargins =  'nl6-ns nr6-ns nl4-m nr4-m pl3-ns nr3'
+
         return (
-            <div className="flex flex-wrap mb5 nr4">
+            <div className={`flex flex-wrap mb5 ${overflowMargins}`}>
                 <Reveal effect="slideUp" duration={2000}>
                 {
                     posts.map(({ node }) => {

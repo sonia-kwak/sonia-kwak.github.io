@@ -22,6 +22,9 @@ class IndexPage extends React.Component {
     }
 
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
+
+    console.debug('posts', posts);
+    
     const caseStudies = posts.filter(i => i.node.frontmatter.projectType === 'case study');
     const projects = posts.filter(i => i.node.frontmatter.projectType === 'project');
     
@@ -29,14 +32,20 @@ class IndexPage extends React.Component {
       <Layout>
         <div className="layoutMaxWidth center">
           <section className="flex flex-row-ns flex-column ">
-            <div className="w-40-ns">
+            {/* <div className="w-40-ns"> */}
+            <div className="relative vh-75 w-100">
               <Img
-                // className="parallax__layer--back absolute top-3-ns top-2 mt4-ns mt5 w-80 w-100-ns relative-ns"
+                style={{position: 'absolute'}}
+                className="top-0-ns right-0-ns h-100-ns h-75 mt0-ns mt6 w-100 w-50-ns"
                 fluid={this.props.data.file.childImageSharp.fluid}
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <div className="absolute top-0 left-3-ns mt6-ns ml7-ns mt6 mr3 pt5-ns">
+              <h1 className="f1-ns f3 fw4 dark-gray ma0 absolute top-0 mt6-ns mt4 mw7 tracked-tight">
+                I’m a designer bridging the gap between Product & Systems Design with a purpose to improve the way people work and express themselves with technology.
+              </h1>
+
+              {/* <div className="absolute top-0 left-3-ns mt6-ns ml7-ns mt6 mr3 pt5-ns">
                 <div className="overflow-hidden">
                   <Fade bottom cascade={!isMobile} duration={800}>
                     <h1
@@ -53,10 +62,10 @@ class IndexPage extends React.Component {
                     </h1>
                   </Fade>
                 </div>
-              </div>
+              </div> */}
             </div> 
 
-            <div className="w-20-ns" />
+            {/* <div className="w-20-ns" />
 
             <div className="w-40-ns mt7-ns">
               <section id="about" className="mb4 mt6-ns mt4 pt4 f5 lh-copy dark-gray mw6">
@@ -75,7 +84,8 @@ class IndexPage extends React.Component {
                   </p>
                 </Fade>
               </section>
-            </div>
+            </div> */}
+
           </section>
 
           {/* <HomeSection title="Work">
