@@ -20,3 +20,11 @@ export const sortPosts = function (posts) {
 
     return [...priorizedPosts, ...nonPriorizedPosts];
 }
+
+export const capitalize = function (str) {
+    str = str.split(' ');
+    let capitalized = str.map(function(word) {
+        return word.charAt(0).toUpperCase() + word.substring(1, word.length);
+    });
+    return capitalized.join(' ');
+}

@@ -1,5 +1,5 @@
 ---
-projectType: 'case study'
+projectType: 'project'
 date: "2016-10"
 date2: "2019-06"
 title: "bike de boa"
@@ -252,7 +252,7 @@ We were featured in some cool places: cicloactivist and technology conferences, 
             "url": "https://www.bikedeboa.com.br"
         },
         {
-            "label": "Github",
+            "label": "GitHub",
             "url": "https://github.com/bikedeboa"
         },
         {

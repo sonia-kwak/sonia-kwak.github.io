@@ -1,6 +1,6 @@
 import React from 'react'
 
-const footerIconsClasses = 'pl3-ns pr0-ns pr3 pl0 dim gray';
+const footerIconsClasses = 'pl4-ns pr0-ns pr3 pl0 dim gray';
 
 const Footer = () => (
     <div className="flex flex-row-ns flex-column pv6 f7 w-100 gray justify-between layoutMaxWidth center">

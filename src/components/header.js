@@ -35,7 +35,7 @@ class Header extends React.Component {
         <div className="w-100 flex items-center justify-between">
           <Fade duration={1500}>
             <h1 className="f7">
-              <Link to="/" className="link dim near-black fw6 ttu mr3 pr2">
+              <Link to="/" className="link dim near-black fw6 ttu tracked">
                 Cristiano Dalbem
               </Link>
 
@@ -57,7 +57,7 @@ class Header extends React.Component {
                   <Scrollspy
                     items={sectionsSlugs}
                     componentTag="div"
-                    currentClassName="tab--selected fw6"
+                    currentClassName="tab--selected"
                     offset={-200}
                   >
                     {

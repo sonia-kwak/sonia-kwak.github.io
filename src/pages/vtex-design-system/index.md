@@ -241,7 +241,7 @@ For more people check the [full list of contributors in the Github repository](h
             "url": "https://styleguide.vtex.com"
         },
         {
-            "label": "Github",
+            "label": "GitHub",
             "url": "https://github.com/vtex/styleguide/"
         }
     ]'>

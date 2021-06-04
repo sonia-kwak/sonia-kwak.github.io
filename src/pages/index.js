@@ -102,7 +102,7 @@ class IndexPage extends React.Component {
           <HomeSection title="Case studies" fullScreen
             description="Here's a selection of projects in which I've played a major role and I'm very proud of.">
             <Projects posts={caseStudies}/> 
-            {/* <Projects mini posts={projects} />  */}
+            <Projects mini posts={projects} />
           </HomeSection> 
           
           <HomeSection

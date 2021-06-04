@@ -167,7 +167,7 @@ body {
   box-shadow: inset 0 0 0 0px var(--orange);
   text-decoration: underline solid var(--orange);
   
-  transition: all 200ms var(--global-easing);
+  /* transition: all 200ms var(--global-easing); */
 } 
 .pretty-link:hover {
   /* background-color: var(--orange); */
@@ -340,14 +340,18 @@ li::before {
 /* ------------------ */
 
 
+.f1 {
+  font-size: 71px !important;
+  letter-spacing: -3px;
+}
+
 .f-subheadline,
 .f-subheadline-ns,
 .f1,
 .f1-ns {
   font-family: 'Syne', 'Nunito Sans', sans-serif;
+  letter-spacing: -2px;
 }
-
-.f1 { font-size: 71px !important; }
 
 @media screen and (max-width: 1280px) {
   .f1-ns { font-size: 54px !important; }

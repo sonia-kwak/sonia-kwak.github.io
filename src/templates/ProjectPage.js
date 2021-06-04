@@ -14,7 +14,7 @@ import ProjectCard from '../components/ProjectCard'
 import LinksList from '../components/LinksList'
 import ReadingProgressBar from '../components/ReadingProgressBar'
 
-import { formatDate } from '../components/utils.js'
+import { formatDate, capitalize } from '../components/utils.js'
  
 // import { RightArrow, LeftArrow } from '../components/icons.js'
 
@@ -91,7 +91,7 @@ class ProjectPage extends React.Component {
           }</p>
         ),
         blockquote: props => (
-          <div className={`mt0 ml5 mv5 f3 fw6`} style={{textIndent: '-.5em'}}>
+          <div className={`mt0 pl4 mv5 f3 gray ${defaultMargins}`} style={{textIndent: '-.5em'}}>
             {props.children}
           </div>
         ),
@@ -197,7 +197,7 @@ class ProjectPage extends React.Component {
                     </div>
                   </div>
                 }
-                <div className='f6 gray db-ns dn'>
+                <div className='f5 gray db-ns dn'>
                   {readingTime.text}
                 </div>
               </div>
@@ -212,14 +212,15 @@ class ProjectPage extends React.Component {
                     <h2 className="f6 fw6 ttu mv2 fw7 mr2">
                       <span className="">
                         Roles
-                        </span>
+                      </span>
                     </h2>
                     <div className="">
-                      {post.frontmatter.tags.map(tag => (
+                      { post.frontmatter.tags.map(t => capitalize(t)).join(', ') }
+                      {/* {post.frontmatter.tags.map(tag => (
                         <Tag size="big" key={tag}>
                           {tag}
                         </Tag>
-                      ))}
+                      ))} */}
                     </div>
                   </div>
                 }
@@ -288,9 +289,9 @@ class ProjectPage extends React.Component {
               {
                 previous && 
                 <div>
-                  <div className="f6 tl mb1 fw7 ttu black-20 db-ns dn">
+                  {/* <div className="f6 tl mb1 fw7 ttu black-20 db-ns dn">
                     Previous
-                  </div>
+                  </div> */}
                   <ProjectCard node={previous} />
                 </div>
               }
@@ -302,9 +303,9 @@ class ProjectPage extends React.Component {
               {
                 next &&
                 <div>
-                  <div className="f6 tl mb1 fw7 ttu black-20 db-ns dn">
+                  {/* <div className="f6 tl mb1 fw7 ttu black-20 db-ns dn">
                     Next
-                  </div>
+                  </div> */}
                   <ProjectCard node={next} />
                 </div>
               }
