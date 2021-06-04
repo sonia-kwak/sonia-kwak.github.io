@@ -107,24 +107,24 @@ With the references in mind and the typologies well defined I started sketching 
 
 # Implementing
 
-The entire development was done by me. It's always a challenge to separate the engineering and design mindsets in the process, so I forced myself to always ideate on Figma first, validating with the peers and only then creating cards on our [Trello board](https://trello.com/b/qPvH3xbA/ciclomapa) to document the task and prioritize it.
-
+The entire development was done by me. It's always a challenge to separate the engineering and design mindsets in the process, so I forced myself to always ideate on Figma first, validating with the peers and only then creating cards on our Trello board to document the task and prioritize it.
+<!-- 
 ```grid|1
 ![](./trello.png) 
-```
+``` -->
 
 The overall system architecture passed by many iterations. I started with very simple ones to test concepts concerning the [OSM Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) and slowly added more complexity to mitigate the problems we're seeing, getting feedback from the stakeholders and always aiming to improve the user experience.
 
 ```grid|1
-![](./arch.jpeg "A simplified view of the system architecture.")
+![](./arch.jpeg)
 ```
 
 To build the UI I chose [Ant Design](https://ant.design/), which has super high quality React components and have great documentation. All styling was done on [TailwindCSS](https://tailwindcss.com/), an amazing CSS framework.
 
-For this project I also wanted to try out [Mapbox](https://www.mapbox.com/), an open map library which is built on top of OpenStreetMap. It's also super modern and well done, and offer way more flexibility than any other library I've used before. In addition, it was a pleasure using Mapbox Studio, their interactive map customization tool, which is an awesome product and enabled me lots of controls to be creative designing our base map.
+For this project I also wanted to try out [Mapbox](https://www.mapbox.com/), an open map library which is built on top of OpenStreetMap. It's also super modern and well done, and offer way more flexibility than any other library I've used before. In addition, it was a pleasure using [Mapbox Studio](https://www.mapbox.com/mapbox-studio), their interactive map customization tool, which is an awesome product and enabled me lots of controls to be creative designing our base map.
  
 ```grid|1
-![](./mapbox.png "Our basemap was designed using Mapbox Studio, a really awesome tool that enabled me to be very creative on applying our brand to the map.")
+![](./mapbox.png)
 ``` 
 
 

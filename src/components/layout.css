@@ -35,8 +35,7 @@ html {
   --bg-color: white;
   --bg-color2: #FDFCF8;
 
-  /* --gray: #777; */
-  --gray: #837a75;
+  --gray: #6c6460;
   /* --near-black: #111111; */
   --near-black: #493e36;
   /* --dark-gray: #414141; */
@@ -214,15 +213,15 @@ li::before {
 }
 .tab--unselected {
   color: var(--gray);
-  opacity: .6;
+  /* opacity: .6; */
 }
 .tab--unselected:hover:before { 
   opacity: 1;
   animation: slideDown .8s var(--global-easing)
 }
 .tab--selected {
-  color: var(--dark-gray);
-  opacity: 1;
+  color: var(--near-black);
+  /* opacity: 1; */
 }
 .tab--selected:before {
   /* color: var(--blue); */
@@ -350,7 +349,7 @@ li::before {
 .f1,
 .f1-ns {
   font-family: 'Syne', 'Nunito Sans', sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 
 @media screen and (max-width: 1280px) {

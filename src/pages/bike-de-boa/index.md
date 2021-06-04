@@ -5,7 +5,7 @@ date2: "2019-06"
 title: "bike de boa"
 minibio: "Web app for collaboratively mapping safe places in the city to park your bike."
 description: "A cicloactivist project that aims to encoure more people to use bike in the city. With the collaborative web app you can search for safe places to park your bike nearby and map new ones while learning what makes for good and safe bike parking and safer streets."
-tags: ['design','branding','product management','front-end','back-end']
+tags: ['design','web development','product management','branding']
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi, and others."
 cover: './cover.png'
 color: '#00d47e'
@@ -25,19 +25,19 @@ The collaborative aspect allows the active participation of citizens, fostering 
 This has been a great project to put in practice so many tools and concepts I've been learning in the past years about web development, UX Design and Analytics. Working in bike de boa I've learned how important it is to go beyond aesthetics and Usability to create a great product. And, most of all, beyond just improving hard skills, this has been a project with a social purpose.
 
  
-## How it all started
+<!-- ## How it all started
 
 Everything started as a simple project at a local hackathon, held in Isobar IWS, the place where I worked at that time. The theme of that year was "improving people's lives with technology". A few friendly people joined me trying to make come true an old idea of creating this platform to map bike parkings. We felt in love with it and extended the project much further than those 24h.
 
 
 ```grid|1 
 ![](./team.png "This was a collaborative non-profit project that received support from several people accross the years and with whom I learned a lot about design, technology and urbanism.")
-``` 
+```  -->
  
  
 # The problem
 
-We might we contribute to the local culture of urban biking with technology? Most cicling apps at that time seemed to focus too much on routing: how to bike from point A to point B? But how can even the most advanced pathplanning algorithms help you if you happen to live in a city with few to no cyclable paths and traffic is chaotic and dangerous? This is a cultural problem, and probably no app can fix that. Most of our western cities are car-centric by design, and drivers think they have the streets all to themselves and for their noisy, air-polluting and stress-inducing machines.
+How might we contribute to the local culture of urban biking with technology? Most cicling apps at that time seemed to focus too much on routing: how to bike from point A to point B? But how can even the most advanced pathplanning algorithms help you if you happen to live in a city with few to no cyclable paths and traffic is chaotic and dangerous? This is a cultural problem, and probably no app can fix that. Most of our western cities are car-centric by design, and drivers think they have the streets all to themselves and for their noisy, air-polluting and stress-inducing machines.
 
 <jumbo caption="Examples of good and bad bike racks. Can you spot which is which?">
     <img src="./mosaic.png"/>
@@ -71,8 +71,6 @@ The main issues we found with the current collaborative maps we found were:
 
 # Execution
 
-## Design
-
 <!-- ```grid|1
 ![](./mindmap.png "The brand values mindmap")
 ``` -->
@@ -92,16 +90,22 @@ The main issues we found with the current collaborative maps we found were:
 ![](./process2.jpg)
 ```
 
-```grid|1
-![](./attributes_chart.jpg "Categorization of the properties every location would have with their proper icon to help users quickly identify them. Objective attributes are parts of the bike rack registry itself, while subjective attributes are like tags used on user reviews.")
-```
+Categorization of the properties every location would have with their proper icon to help users quickly identify them. Objective attributes are parts of the bike rack registry itself, while subjective attributes are like tags used on user reviews.
 
 ```grid|1
-![](./icons.png "Every bike rack type would have their own reduced icon. The map pin color represents the average rating users have given to that bike rack.")
+![](./attributes_chart.jpg )
 ```
 
+Every bike rack type would have their own reduced icon. The map pin color represents the average rating users have given to that bike rack.
+
 ```grid|1
-![](./illustration.png "We played with some decorative illustrations as well to use on social media, etc.")
+![](./icons.png)
+```
+
+We played with some decorative illustrations as well to use on social media.
+
+```grid|1
+![](./illustration.png)
 ```
 
 <!-- For even more in depth tips on bike parkings and safety we create guides. These are based on international urbanism guides, which we made an effort to simplify and make as accessible as possible. -->
@@ -113,13 +117,15 @@ The main issues we found with the current collaborative maps we found were:
 
 We leveraged as much as possible the flexibility of Google Maps for customizing everything in the map, cutting out all information that wasn't strictly necessary and fine-tuning colors to match the visual identiy.
 
-<jumbo caption="On the left the original Google Maps style, and on the right our customized version.">
+<jumbo>
     <img src="./mapstyle.png"/>
 </jumbo>
 
 Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This led us to use a mobile-first strategy, both for UX and Front-end development, making sure this was the main touchpoint we invested our energies. Although we used web technologies and PWA, ultimately we managed to get it into Google Play Store.
 
-<jumbo caption="Google Play Store screenshots section is a great place to sell the main product's value propositions. It reads: 'Find safe places to park your bike', 'See all details of the bike racks' and 'Take a look how other cyclists rated the places'.">
+Google Play Store screenshots section is a great place to sell the main product's value propositions. It reads: 'Find safe places to park your bike', 'See all details of the bike racks' and 'Take a look how other cyclists rated the places'.
+
+<jumbo>
     <img src="./row1.png"/>
 </jumbo>
 
@@ -131,7 +137,9 @@ Our hypothesis was that the main use of the app would be on Mobile, with the use
 ![](./analytics_mobile.png.png)
 ``` -->
 
-<jumbo caption="Education is an important part of this project. Concepts like the types of bike racks are explained in more details with contextualized tooltips.">
+Education is an important part of this project. Concepts like the types of bike racks are explained in more details with contextualized tooltips.
+
+<jumbo>
     <img src="./tooltips.png"/>
 </jumbo>
 
