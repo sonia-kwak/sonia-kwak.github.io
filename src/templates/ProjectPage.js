@@ -257,7 +257,7 @@ class ProjectPage extends React.Component {
 
                 {
                   post.frontmatter.liveLink &&
-                  <div className="mv5 gradient-border--animated dim ">
+                  <div className="gradient-border--animated dim ">
                     <a
                       href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
                       className="text-gradient-clip bg-gradient--animated dib f5 fw6 link orange pv2 ph3"

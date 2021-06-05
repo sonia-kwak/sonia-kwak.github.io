@@ -7,6 +7,10 @@ import Img from "gatsby-image"
 // import { formatDate } from '../components/utils.js'
 
 class ProjectCard extends React.Component {
+    state = {
+        hover: false,
+    }
+
     render() {
         const post = this.props.node;
         // const mini = this.props.mini;
@@ -22,18 +26,20 @@ class ProjectCard extends React.Component {
                 // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
                 className="project-card link near-black db br1 lh-copy"
                 to={post.fields.slug} 
+                onMouseEnter={() => this.setState({hover: true})}
+                onMouseLeave={() => this.setState({hover: false})}
             >
-                {
-                    post.frontmatter.cover &&
-                        <Img 
-                            className={`w-100 db project-card--cover cover br1`}
-                            fluid={post.frontmatter.cover.childImageSharp.fluid}
-                            alt="" 
-                        />
-                }
+                <div className="db br1 w-100 project-card--cover" style={{paddingBottom: '56.25%', height: 0}}>
+                    {
+                        post.frontmatter.hover && this.state.hover ?
+                            <img src={post.frontmatter.hover} className="w-100 " style={{objectFit: 'cover'}}/>
+                        :
+                            <Img fluid={post.frontmatter.cover.childImageSharp.fluid} className=" w-100" alt=""/>
+                    }
+                </div>
 
                 {/* <div className="ph3 pv4"> */}
-                <div className="pv3">
+                <div className={`pv3`}>
                     {/* <div className="project-card--date f6 mt0 silver db-ns dn">
                         {dateStart} {dateEnd && `– ${dateEnd}`}
                     </div> */}

@@ -7,6 +7,7 @@ description: "A story-telling Virtual Reality game that challenges the player to
 tags: ['game design']
 team: "André Trevisani, Cristiano Dalbem, Diego Cunha, Diego Tomasi, Leonardo Schenfeld, Victória Aiello"
 cover: "./cover.png"
+hover: "./covers/game.gif"
 color: '#318bcc'
 ---
 

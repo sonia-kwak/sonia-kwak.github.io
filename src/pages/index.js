@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="layoutMaxWidth center">
-          <section className="flex flex-row-ns flex-column ">
+          <section id="about" className="flex flex-row-ns flex-column ">
             {/* <div className="w-40-ns"> */}
             <div className="relative vh-75 w-100">
               <Img
@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <h1 className="f1-ns f3 fw4 dark-gray ma0 absolute top-0 mt6-ns mt4 mw7 tracked-tight">
+              <h1 className="f1-ns f3 fw4 dark-gray ma0 absolute top-0 mt7-ns mt4 mw7 tracked-tight">
                 I’m a designer bridging the gap between Product & Systems Design with a purpose to improve the way people work and express themselves with technology.
               </h1>
 
@@ -183,6 +183,8 @@ export const pageQuery = graphql`
                    projectType
                    tags
                    forceOrder
+                   hover
+                   color
                    cover { 
                       childImageSharp {
                         fluid {

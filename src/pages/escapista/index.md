@@ -7,6 +7,7 @@ minibio: "A COVID-19 quarantine personal project of a website of curated videos 
 description: "Choose a channel and let your mind wander with the continuous stream of great Slow TV and ambient videos we handpicked for you. Relax with the natural images and sounds while you work, put on your TV or invite your friends to watch together."
 tags: ['design','front-end','product management']
 cover: './cover.png'
+hover: './covers/escapista.gif'
 forceOrder: 1
 team: "Cristiano Dalbem, Gabriela Catão."
 color: '#008080'

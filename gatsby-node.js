@@ -40,6 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
                     minibio
                     projectType
                     tags
+                    hover
                     cover { 
                       childImageSharp {
                         fluid(maxWidth: 1440) {

@@ -7,6 +7,7 @@ minibio: "Redesigning a complex legacy admin system in an e-commerce platform."
 description: "Rethinking and redesigning one of the core experiences in managing products and marketing strategies in VTEX e-commerce platform."
 tags: ['design','product management']
 cover: './cover.png'
+hover: './covers/promotions-admin.gif'
 color: '#f71b62'
 ---
 
