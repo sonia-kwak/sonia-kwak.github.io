@@ -18,13 +18,11 @@ liveLink: 'http://escapista.app/'
  
 For a few years, I've been in love with the concept of [Slow TV](https://en.wikipedia.org/wiki/Slow_television), but I haven't done much about it. Then from the beginning of the COVID pandemic I started collecting some YouTube channels, and I was shocked with how much amazing stuff was out there. I started sketching ideas for a website that would help highlight all this amazing content, but with a frictionless experience that attempts to fix once and for all the choice paralysis present in so many video streaming platforms these days.
  
-```grid|1 
+<!-- ```grid|1 
 ![](./devices.png)  
-``` 
+```  -->
 
-This project was co-created with [/r/SlowTV, the Reddit Slow TV community](https://www.reddit.com/r/SlowTV/), where we understood the whys and hows of those users. One of the main requests: an interface that would be calming, "playing to the affective experience of watching Slow TV itself". So I designed and implemented an interface inspired by Scandinavian design, well-known for its minimalism and elegance - and also the birthplace of the original Slow TV shows. Those were aired on broadcast TV during days, you couldn't pause or fast-forward - it was "at the speed of life", so my website wouldn't have these controls neither.
-
-For us, Escapista is a heartfelt passion project, and building it brought us much joy in these uncertain times. We deeply hope you feel it too, and share it with your friends that might like it too :)
+This project was co-created with [the Reddit Slow TV community](https://www.reddit.com/r/SlowTV/), where we understood the whys and hows of those users. One of the main requests: an interface that would be calming, "playing to the affective experience of watching Slow TV itself". So I designed and implemented an interface inspired by Scandinavian design, well-known for its minimalism and elegance - and also the birthplace of the original Slow TV shows. Those were aired on broadcast TV during days, you couldn't pause or fast-forward - it was "at the speed of life", so my website wouldn't have these controls neither.
 
 ```grid|1
 ![](./press.png)
@@ -44,7 +42,7 @@ Our research started diving into the topics of Slow TV, reading all articles, wa
 ![](./survey.png)
 ``` -->
 
-This project was co-created with [/r/SlowTV](https://www.reddit.com/r/SlowTV/), the Reddit Slow TV community, where we understood the whys and hows of those users. I [posted a survey](https://www.reddit.com/r/SlowTV/comments/iuuwoo/help_me_design_a_slow_tv_app/g5nfv64/?context=3) asking people to help me build this app and got a very nice engagement. Some of the things we wanted to find out were:
+This project was co-created with [the Reddit Slow TV community](https://www.reddit.com/r/SlowTV/), where we understood the whys and hows of those users. We [posted a survey](https://www.reddit.com/r/SlowTV/comments/iuuwoo/help_me_design_a_slow_tv_app/g5nfv64/?context=3) asking people to help me build this app and got a very nice engagement. Some of the things we wanted to find out were:
 * Why, when and how do people watch Slow TV content?
 * What kind of experience or features people miss from the current websites where they get their content?
 * What makes for good Slow TV content?
@@ -54,7 +52,7 @@ This project was co-created with [/r/SlowTV](https://www.reddit.com/r/SlowTV/), 
 ![](./reddit1.png)
 ```
 
-After analysing these responses I made sure to [post again on the community](https://www.reddit.com/r/SlowTV/comments/kccdky/presenting_escapista_a_new_experience_of_watching/) thanking for the interest and the great feedback, sharing [a small report of the main findings](https://www.notion.so/Slow-TV-Community-Survey-1c0838bac8c84383b49b8f03eaeed04f) which I summarize below.
+After analysing these responses we made sure to [post again on the community](https://www.reddit.com/r/SlowTV/comments/kccdky/presenting_escapista_a_new_experience_of_watching/) thanking for the interest and the great feedback, sharing [a small report of the main findings](https://www.notion.so/Slow-TV-Community-Survey-1c0838bac8c84383b49b8f03eaeed04f) which I summarize below.
 
 <jumbo>
     <img src="./survey-analysis.jpg"/>
@@ -64,36 +62,39 @@ After analysing these responses I made sure to [post again on the community](htt
 
 ## Survey learnings
 
+### Consumption habits
+
 > "It's meditative. It can get my creative juices flowing. The moving picture stimulates my brain, without invading my thoughts. My mind is able to fly free in a state of flow."
 
-Mostly everyone mentioned they watch Slow TV to _relax_, and many mentioned it allows them to _travel and meet new places_ and cultures, something even more important now during the quarantine. Also, some mention helping focus, create a specific atmosphere in the room (either calming or exciting), and even helping to do exercises at home.
+We learned that most people watch Slow TV to _relax_, to _travel and meet new places_ and cultures, something even more important now during the quarantine. Also, some mention helping focus, create a specific atmosphere in the room (either calming or exciting), and even helping to do exercises at home.
 
 > "I suffer from anxiety and this is a method of calming down or remaining calm in times of stress."
 
-Most often people watch at _home_ (which, during the pandemic, is quite obvious), _mainly on TV_ and big screens, secondly on the computer and 2nd monitors. People watch it in _parallel_ with a high variety of activities: _working_, with _friends_, with _music_, _eating_, writing, drawing, knitting, folding laundry, ... Various mentions to smart TV devices and videogames, but no mobile. Most get their content from either _YouTube_ or _Reddit_, in equal proportions.
+Most often people watch at _home_, _mainly on TV_ and big screens, secondly on the computer and 2nd monitors. People watch it while doing a high variety of activities: _working_, with _friends_, with _music_, _eating_, writing, drawing, knitting, folding laundry, ... Various mentions to smart TV devices and videogames, but no mobile.
 
-> "Try to play to the same affective experience of watching slow tv itself"
+
+### Product requirements
 
 As for the website experience, almost everyone mentioned the interface should be _minimalistic and calming_. Also very often is the concept of _categories, or themes,_ that organize the main types of videos.
 
-> "Minimal, make a few choices press play and don't touch for as long as possible."
+> "Try to play to the same affective experience of watching slow tv itself. Minimal, make a few choices press play and don't touch for as long as possible."
 
-Some people say it should be exactly like other streaming services, with a full catalog where you can browse, search, and filter. Others state the contrary: it should be very simple and minimalistic, with more curated, high-quality content.
+<!-- Some people say it should be exactly like other streaming services, with a full catalog where you can browse, search, and filter. Others state the contrary: it should be very simple and minimalistic, with more curated, high-quality content. -->
 
-> "Not overwhelming or overstimulating. A good recommendation system, but not too many options shown all at once on the landing/home page."
+<!-- > "Not overwhelming or overstimulating. A good recommendation system, but not too many options shown all at once on the landing/home page." -->
 
 
 <jumbo>
     <img src="./survey-content.png"/>
 </jumbo>
 
-In terms of content, the most important aspects seem to be _technical quality_ (good resolution, sound, ...) and _unedited_. Last but not least were _long duration_, _human curated_, no soundtrack and no watermarks. Most common requested categories were _nature_, _urban_, _walking, train_, _car, boat_. The most important aspect for categorizing videos seems to be the types of _transportation_ and _location._ Very often people asked for being able to filter by location of the video based on the region of the world, country, city, etc.
+In terms of content, the most important aspects seem to be _technical quality_ (good resolution, sound, ...) and _unedited_. Most common requested categories were _nature_, _urban_, _walking, train_, _car, boat_, and the most important aspect for categorizing videos seems to be the types of _transportation_ and _location._
 
-> "I like seeing tech used in a way that encourages reflection and calm living."
-
-Several people would like to have a YouTube-like experience, where they can browse and search for the videos they want, build playlists, etc. Still, several also like the idea of a Cable TV-like experience, where you're presented with a few live channels. Some mentioned a combination of both approaches would be cool.
+<!-- Several people would like to have a YouTube-like experience, where they can browse and search for the videos they want, build playlists, etc. Still, several also like the idea of a Cable TV-like experience, where you're presented with a few live channels. Some mentioned a combination of both approaches would be cool. -->
 
 > "What I would not want is to load it and be presented with a busy YouTube-esque interface"
+
+If you're interested in reading the [full report we've made it available here.](https://www.notion.so/Slow-TV-Community-Survey-1c0838bac8c84383b49b8f03eaeed04f) 
 
 
 # Visual identity
@@ -102,7 +103,7 @@ Several people would like to have a YouTube-like experience, where they can brow
     <img src="./semanticmap.png"/>
 </jumbo> -->
 
-I drew inspiration from an overlap between adventure magazines, Scandinavian and Japanese design, which can be seen from the moodboard below. Scandinavia is the birthplace of the original Slow TV shows, and I've learned they have a design tradition of minimalism, subdued colors, geometric typography and high usage of photography laid out in assymetric grids.
+We drew inspiration from an overlap between adventure magazines, Scandinavian and Japanese design, which can be seen from the moodboard below. Scandinavia is the birthplace of the original Slow TV shows, and I've learned they have a design tradition of minimalism, subdued colors, geometric typography and high usage of photography laid out in assymetric grids.
 
 <jumbo>
     <img src="./moodboard.png"/>
@@ -134,13 +135,14 @@ Before start exploring UI solutions we do a wide benchmark research looking for 
 
 <jumbo>
     <img src="./benchmarks.png"/>
-</jumbo>
+</jumbo> 
 
 <!-- <jumbo caption="blablabla">
-    <img src="./explorations.png"/>
+    <img src="./explorations.png"/> 
 </jumbo> --> 
 
-Some of the many explorations I've played with, searching for something that made sense to my vision.
+I've explored many alternatives, searching for something that made sense to our vision of a minimalistic interface that "play to the same affective experience of watching Slow TV itself" as one survey respondent said. The only important interaction would be changing the video categories, which were based on the survey data, and the whole thing should be super immersive and enducing of a laid back feel.
+
 
 <jumbo>
     <img src="./variations.png"/>
@@ -185,20 +187,28 @@ Since the main website would be super simple a lot of our focus was on creating 
 </jumbo>
 
 The database is comprised of mainly 3 entities: Videos, Channels and Tags, all which can be edited separately and are linked among themselves just like regular Databases would. This is then connected to the website backend, which retrieves, processes and caches this data and build the video "scheduling".
-
+<!-- 
 <jumbo>
     <img src="./airtable2.png"/>
-</jumbo>
-
-Although all the scheduling is "live", just like in a regular Cable TV, there's no distributed syncing mechanism. I've developed a simple but elegant algorithm that uses the computer clock as a hash index for the full video sequence, effectively reducing my power in controlling it but rendering a perfectly synced experience in multiple devices and locations at the same time. This enables anyone sharing the link with a friend or family member to watch the same video while chatting on Zoom for example.
+</jumbo> -->
 
 ```grid|1
+![](./airtable2.png)
+```
+
+```grid|1
+![](./airtable3.png)
+```
+
+Although all the scheduling is "live", just like in a regular Cable TV, there's no actual syncing mechanism. I've developed a simple algorithm that uses the computer clock, which is most of the times is alreadysynced by the Operational System, as a index for videos. This enables anyone sharing the link with a friend or family member to watch the same video, at the same location, while chatting on Zoom for example.
+
+```grid|1  
 ![](./algorithm.png)
 ```
 
 # Publishing
 
-This was my first time doing a personal project that could be international, so I planned for [a big launch on ProductHunt](https://www.producthunt.com/posts/escapista), one of the biggest communities for tech products. It ended up being a reasanable success, accumulating more than 200 upvotes and ending up in the top products launch and gaining lots of organic traction from posterior blog posts.
+This was my first time doing a personal project that could be international, so we planned for [a big launch on ProductHunt](https://www.producthunt.com/posts/escapista), one of the biggest communities for tech products. We were very happy with the result, accumulating more than 270 upvotes and ending up in the top ranked launches for the week and gaining lots of organic traction from posterior blog posts.
 
 ```grid|1
 ![](./producthunt.png)
@@ -209,6 +219,7 @@ Later on, with more clarity of what were some questions users were having on the
 ```grid|1
 ![](./landing.png)
 ```
+
 
 
 # Monitoring
@@ -230,10 +241,14 @@ From the qualitative side we also have a Typeform survey embeded on the website 
 * What did you think about the video curation?
 * Anything else you'd like to share? -->
 
-
 # Results
 
-Since the ProductHunt launch we continue being marketed organically by news platformas, blogs, websites and on Social Media in general. For a non-profit project like this one it's great not having to spend any dollar in marketing.
+The user feedbacks lalala....
+
+> "I like seeing tech used in a way that encourages reflection and calm living."
+
+
+Since the ProductHunt launch we continue being marketed organically by news platformas, blogs, websites and on Social Media in general. For a non-profit project like this one it's great not having to spend any dollar in marketing. 
 
 <jumbo>
     <img src="./press.png"/>

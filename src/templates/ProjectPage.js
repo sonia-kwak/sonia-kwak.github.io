@@ -81,7 +81,7 @@ class ProjectPage extends React.Component {
           </h2> 
         ),
         h3: props => (
-          <h3 className={`f3 lh-title gray fw7 mt4 mb3 ${defaultMargins}`}>
+          <h3 className={`f4 lh-title gray mt4 mb3 ${defaultMargins}`}>
             {props.children}
           </h3>
         ),
