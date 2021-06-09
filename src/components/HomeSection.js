@@ -10,7 +10,7 @@ class HomeSection extends React.Component {
 
         const descriptionContent = (
             description &&
-            <p className="f5 fw5 pr4-ns mb5-ns mb4 mt0-ns mt0 lh-copy measure gray">
+            <p className="f4 fw5 pr4-ns mb5-ns mb4 mt0-ns mt0 lh-copy measure gray">
                 {description}
             </p>
         );

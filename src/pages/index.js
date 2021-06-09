@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
           
           <HomeSection
             title="Speaking"
-            description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
+            description="I try to engage with the community as much as possible, always learning from others and sometimes trying to share some ideas too."
           > 
             <Speaking />
           </HomeSection>

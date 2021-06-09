@@ -71,17 +71,17 @@ class ProjectPage extends React.Component {
       createElement: React.createElement,
       components: {
         h1: props => (
-          <h1 className={`f2 lh-title fw7 dark-gray mt6-ns mb5-ns mt5 mb4 ${defaultMargins}`}>
+          <h1 className={`f2 lh-title dark-gray fw4 mt6-ns mt5 mb4 ${defaultMargins}`}>
             {props.children}
           </h1>
         ), 
         h2: props => (
-          <h2 className={`f3 lh-title dark-gray fw7 mt5-ns mb3-ns mt4 mb2 ${defaultMargins}`}>
+          <h2 className={`f3 lh-title dark-gray fw4 mt5-ns mt4 mb3-ns mb2 ${defaultMargins}`}>
             {props.children}
           </h2> 
         ),
         h3: props => (
-          <h3 className={`f4 lh-title gray mt4 mb3 ${defaultMargins}`}>
+          <h3 className={`f4-ns f5 lh-title gray fw6 mt4 ${defaultMargins}`}>
             {props.children}
           </h3>
         ),
