@@ -20,11 +20,11 @@ The main touchpoint of our product with the merchants is the Admin. It's where o
 
 
 ## The challenge
-This is the main interface where merchants create and manage all kinds of promotions of their e-commerce. It's used by almost 100% of VTEX clients in a daily basis, which results in more than 5000 sessios per day by more than 2000 users. Its users vary, but often they're from Marketing and Commercial teams.
+The Promotions Admin is the interface where merchants create and manage all kinds of promotions, discounts and other benefits for their e-commerce. It's used by 99% of VTEX clients in a daily basis, which results in more than 5000 sessions per day by more than 2000 users. Its users vary, but often they're in Marketing or Commercial teams.
 
-During this project's research we found out it's one of the main strenghts of the platform, offering a lot of flexibity and power that other platforms don't. The result is that more than 50% of all sales have some kind of promotion.
+During this project's research we found out it's one of the main strengths of the platform, offering a lot of flexibility and power that other competitors don't. The result is that more than 50% of all sales have some kind of promotion.
 
-Despite its power and proven relevance to our customers' business, the product evolution accross more than 7 years have made its concepts and UI a little odd. This was made very clear in a chat with Soncini, who brought a new perspective of customers from a very new and much more demanding market to VTEX: the United States.
+Despite its power and proven relevance to our customers' business, the product evolution across more than 7 years wasn't closely followed by evolution in its UX. This was made very clear in a chat with stakeholders from USA Sales team, who brought a new perspective of customers from a very new and much more demanding market.
 
 We found that of all VTEX modules, promotions was the 3rd with the most customer questions - almost 400 tickets were opened in the last 3 months. More than improving the efficiency of our Support team to answer tickets, we always ask ourselves: what could we do to prevent the ticket from being created in the first place? It was the UX could be improved a lot.
   
@@ -32,10 +32,10 @@ We found that of all VTEX modules, promotions was the 3rd with the most customer
 ![](./research_tickets.png)
 ``` 
 
-Historically the company's products have been led by the engineers themselves, who usually care more about the product's functionality than other more subjective dimensions such as ease of use. With the recent growth of the Design team at VTEX, the concern with bringing balance to these different dimensions that form the experience of a product has grown. A notable initiative is our Design System that offers components ready to create quality interfaces and consistent with each other as well as guidelines for creating new admins.
+Historically the company's products have been led by the engineers themselves, who usually care more about the product's functionality than other more subjective dimensions such as ease of use. With the recent growth of the Design Team at VTEX, the concern with bringing balance to these different dimensions that form the experience of a product has grown. A notable initiative that we leveraged in this project was the Design System, offering components and guidelines that was trying to consistently raise the bar of UX quality throughout the platform.
 
 ```grid|1
-![](./maslow.png "An adaptation of Maslow's Hierarchy of Needs Pyramid to digital products. It's expected that for each iteration there's an equilibrium of the different dimensions of the experience.")
+![](./maslow.png)
 ```
 
 
@@ -45,7 +45,7 @@ Historically the company's products have been led by the engineers themselves, w
 
 With some main stakeholder's vision at hand and having understood this was a project worth working on I started devising a research plan to validate some assumptions and understand in more depth where we were getting into. 
 
-we went after other stakeholders in the company to enrich our vision of how the product was perceived by customers and what improvements we could make. Our focus was on Account Managers who, with their own words, "defend customers within VTEX and defend VTEX within customers". My objectives were:
+We went after other stakeholders in the company to enrich our vision of how the product was perceived by customers and what improvements we could make. Our focus was on Account Managers who, with their own words, "defend customers within VTEX and defend VTEX within customers". My objectives were:
 - Understand the importance of the product to VTEX 
 - How it's perceived by our customers 
 - How it compares with the competition
@@ -55,16 +55,17 @@ we went after other stakeholders in the company to enrich our vision of how the 
 ![](./vtexorgchart.png)
 ```
 
-After 10 interviews with internal stakeholders and 8 interviews with customers we concluded that:
-- In fact the module is already quite complete in features, standing out from the competition and being one of the "flagships" in the platform's sales pitches.
+After almost 20 interviews with both internal stakeholders and customers we concluded many things, in particular:
+- In fact the module already has great features, standing out from the competition and being one of the flagships in the platform's sales pitches.
 - There were some functionality improvements that could be done, but...
-- The amount of functionality, however, negatively impacts its ease of use. It's not considered intuitive, generate many doubts sometimes even leading the user to make mistakes that can be financially disastrous.
+- The amount of functionality, however, negatively impacts its ease of use. It's not considered intuitive, it raises many doubts and sometimes even leads the user to make mistakes that can be financially disastrous.
+- Some new features recently launched were confusing and didn't get much traction, so we had an opportunity to rethink them as well.
 
-<jumbo caption="The research generated lots of insights, which I summarized in a Miro presentation that was a great reference that we would go back several times during the design and development of this project.">
+The research generated lots of insights, which I summarized in a Miro presentation (below) that was a great reference that we would go back several times during the design and development of this project.
+
+<jumbo>
     <img src="./research.gif"/>
 </jumbo>
-
-Other important findings were concerning other recent team initiatives such as the new Conditions Builder and the Campaigns system are poorly understood both internally and externally and are thus underused. We understood that as an opportunity to rethink these features with the safety of not impacting too many customers.
 
 
 ## Delving deeper with data
@@ -82,9 +83,7 @@ Our first step was to validate the hypothesis that the interviewees brought us t
 ![](./usageoftypes.png)
 ``` -->
 
-Another very important information for us was to understand the real use of the dozens of special conditions that the system works.
-
-This discovery inspired us to better detail the functionality of conditions that we already supported and to rethink which ones we would continue to support. In addition, this helped us to prioritize which would be the first to be worked on in creating the new admin.
+This discovery inspired us to, for the first time, generate detailed documentations about the supported features and their rates of usages, which helped us prioritize them as well.
 
 ```grid|1
 ![](./conditions_support_table.png)
@@ -103,11 +102,11 @@ This discovery inspired us to better detail the functionality of conditions that
 Abrir algumas dessas promoções que usavam listas infindáveis de itens foi um banho de água fria no time que entendeu a importância de estar mais próximo das necessidades reais dos nossos clientes! -->
 
 
-## Looking around
+<!-- ## Looking around
 
 In the research process we also learned a lot by looking carefully at other market solutions. We really understood how the experience we offered could be better, we saw many cool ideas to inspire us and we managed to design a new experience with the clarity and certainty that we were designing something as good as or better than what the market already offered.
 
-We look at other ecommerce platforms, from the giants to the small ones. We looked at the apps offered on some of these platforms, for external tools that are possible to be integrated with them and even for other tools not related to ecommerce but that brought similar concepts of Campaigns and Promotions.
+We look at other ecommerce platforms, from the giants to the small ones. We looked at the apps offered on some of these platforms, for external tools that are possible to be integrated with them and even for other tools not related to ecommerce but that brought similar concepts of Campaigns and Promotions. -->
 
 
 
@@ -123,7 +122,7 @@ The first and most notable problem was the different types of Promotion, the dif
 </jumbo>
 
 ```grid|1
-![](./ia.jpg "Simply organizing better the features.")
+![](./ia.jpg)
 ```
 
 <jumbo>
@@ -131,7 +130,7 @@ The first and most notable problem was the different types of Promotion, the dif
 </jumbo>
  
 
-Added to this is the Campaign and Campaign Promotion system, which, as mentioned above, causes many doubts for users of the platform, since the name Campaign refers to them a concept very different from the meaning adopted by VTEX. In addition, this system brought even more complexity to the admin, as it added an additional configuration outside the promotions module, so that afterwards a new type of promotion specific to this scenario could be created, which works in a similar way to regular promotion.
+<!-- Added to this is the Campaign and Campaign Promotion system, which, as mentioned above, causes many doubts for users of the platform, since the name Campaign refers to them a concept very different from the meaning adopted by VTEX. In addition, this system brought even more complexity to the admin, as it added an additional configuration outside the promotions module, so that afterwards a new type of promotion specific to this scenario could be created, which works in a similar way to regular promotion. -->
 
 
 
@@ -242,7 +241,7 @@ A pressing concern for some users is the limit - and for others, not. That's why
 ``` -->
 
 
-# Results & learnings
+# Results & Learnings
 
 Unfortunately the project development had many obstacles. By the time I left the company we had just started a Beta Program where selected customers would be able to try a very early version of the final product, so I didn't have the opportunity to measure results.
 
