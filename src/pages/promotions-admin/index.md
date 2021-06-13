@@ -7,7 +7,7 @@ minibio: "Redesigning a complex legacy admin system in an e-commerce platform."
 description: "Rethinking and redesigning one of the core experiences in managing products and marketing strategies in VTEX e-commerce platform."
 tags: ['design','product management']
 cover: './cover.png'
-hover: './covers/promotions-admin.gif'
+hover: '/covers/promotions-admin.gif'
 color: '#f71b62'
 ---
 
@@ -138,9 +138,7 @@ Added to this is the Campaign and Campaign Promotion system, which, as mentioned
 
 ## Conditions builder
 
-The context-driven conditions system which is where our engine shines. It's very flexible, offering thousands of possible combinations for creating customized promotions.
-
-However we believe that the interaction paradigm was not the best: simply by listing all the options, the complexity of the screen is proportional to the flexibility of the system, which ends up undermining our intentions to keep evolving this system. 
+The context-driven conditions system which is where our engine shines. It's very flexible, offering thousands of possible combinations for creating customized promotions. However we believe that the interaction paradigm was not the best: simply by listing all the options, the complexity of the screen is proportional to the flexibility of the system, which ends up undermining our intentions to keep evolving this system. 
 
 ```grid|1
 ![](./complexity.png)
@@ -154,9 +152,13 @@ In our new solution, the initial complexity of the screen is always the same reg
     </video> 
 </video-container>
 
-The Conditions component resembles natural language, enabling the user to progressively build their conditional "statements" leveraging a common interface for all filters. It also accepts a global selector for changing the boolean operation, making the system even more powerful than the previous.
+The Conditions component resembles natural language, and it's structured like this:
 
-<jumbo caption="All the conditions the new system could support.">
+> [subject] [verb] [object]
+
+Enabling the user to progressively build their conditional "statements" leveraging a common interface for all filters. It also accepts a global selector for changing the boolean operation, making the system even more powerful than the previous. This meant the new admin could support all previously existing conditions but enabling many more combinations.
+
+<jumbo>
     <img src="./all_conditions.png"/>
 </jumbo>
 
@@ -167,33 +169,31 @@ The Conditions component resembles natural language, enabling the user to progre
 
 The list of promotions was also mentioned by some as excessively confusing. It uses a content diagramming paradigm popularly known as "card", which is quite visual but when compared to a simple table it makes comparing data between entities much more difficult. Our solution was to leverage and evolve the Table component of Styleguide, developed especially for building complex and powerful admins without giving up the clarity of information and intuitiveness.
 
-Before:
 ```grid|1
-![](./oldrnb.png)
+![](./oldrnb.png "Before")
 ```
  
-After:
-```grid|1
-![](./new_admin.png)
-```
+<jumbo caption="After">
+    <img src="./new_admin.png"/>
+</jumbo>
+
+During this project we created a new filters system, which was integrated into the VTEX Design System and reused in many other admins later. You can read more about this component and the process behind it in my [VTEX Design System case study](https://cristianodalbem.com/vtex-design-system/).
 
 ```grid|1
-![](./filters.png "The new filters system created during this project's development and integrated into our Design System.")
+![](./filters.png)
 ``` 
 
 
 
 ## Simulator
 
-Another common cause of misunderstanding of the system comes from the way promotions accumulate and accumulate an compete with each other. This means that, given a scenario with sufficiently complex business rules, the operation of the system becomes more unpredictable, and interrelationships between dozens of promotions can have undesirable effects.
-
-For tackling this issue we started a side project that will be a new admin inside the Promotions Admin. This new Promotions Simulator will, given a purchase context (a shopping cart) we simulate which promotions would be activated, why this they were activated or not and what the final effects are for the products in that cart.
+Another common cause of misunderstanding of the system comes from the way promotions accumulate or compete with each other. This means that, given a scenario with sufficiently complex business rules, the operation of the system becomes more unpredictable, and interrelationships between dozens of promotions can have undesirable effects, such as making a product price go to zero.
 
 ```grid|1
 ![](./simulator.png)
 ```
 
-We imagine that this in the future will not only facilitate debugging unwanted scenarios but empower the merchants to design new business rules with much more assertiveness.
+This new feature for the Promotions Admin simulates for a given shopping cart which promotions would be activated, why is that and the resulting effects for the products in that cart.
  
 
 <!-- ## Visualização em Gantt
@@ -209,13 +209,13 @@ Para os clientes que costumam se planejar e agendar várias promoções, o novo 
 
 As of a work tool that people might have to be using everyday, the small almost forgetable details in the UI that sometimes improve the best the productivity. Here's a couple of these.
 
-First off, we heard some users create a bunch of promotions in sequence. In the sticky footer component of our admin, aside from the `SAVE` button, we added a conveninent `SAVE & ADD NEW` for optimizing this flow.
+<!-- First off, we heard some users create a bunch of promotions in sequence. In the sticky footer component of our admin, aside from the `SAVE` button, we added a conveninent `SAVE & ADD NEW` for optimizing this flow.
 
 ```grid|1
 ![](./saveandaddnew.png) 
-```
+``` -->
 
-Another very common action the users needed was to duplicate existing promotions since very often their commercial campaigns would repeat seasonaly but with important modifications. Other than handy actions that now were available directly from the dashboard, we created the duplicate feature.
+A very common action the users needed was to duplicate existing promotions since very often their commercial campaigns would repeat seasonaly but with important modifications. Other than handy actions that now were available directly from the dashboard, we created the duplicate feature.
 
 ```grid|1
 ![](./lineactions.png) 
@@ -235,19 +235,23 @@ A pressing concern for some users is the limit - and for others, not. That's why
 ![](./slots.png) 
 ```
  
-Given the internal structure of companies it was very common to have problems with multiple people editing the same promotions, either because of internal miscomunication problems or something. We found out it was very common for the Support team to help out clients going through our internal system logs, so our idea was to expose this in an easy-to-use way so clients could self-serve themselves on finding out who edited what and when.
+<!-- Given the internal structure of companies it was very common to have problems with multiple people editing the same promotions, either because of internal miscomunication problems or something. We found out it was very common for the Support team to help out clients going through our internal system logs, so our idea was to expose this in an easy-to-use way so clients could self-serve themselves on finding out who edited what and when.
 
 ```grid|1
 ![](./history.png) 
-```
+``` -->
 
 
-<!-- ## Roll out strategy
+# Results & learnings
+
+Unfortunately the project development had many obstacles. By the time I left the company we had just started a Beta Program where selected customers would be able to try a very early version of the final product, so I didn't have the opportunity to measure results.
 
 ```grid|1
 ![](./announcement.png) 
-``` -->
+``` 
 
+One of the main learnings from this project is that, even if I contributed intensely with the Engineers during the Discovery phase, there was still room for improving how we broke it down and prioritized its parts to deliver value more quickly and iteratively. It also taught me the importance of having a Product Manager, a role the company was barely starting to value and hire at that time.
+ 
 
 <!-- ## Other improvements
 

@@ -3,7 +3,7 @@ import React from 'react'
 const footerIconsClasses = 'pl4-ns pr0-ns pr3 pl0 dim gray';
 
 const Footer = () => (
-    <div className="flex flex-row-ns flex-column pv6 f7 w-100 gray justify-between layoutMaxWidth center">
+    <div className="flex flex-row-ns flex-column pv6 f6 w-100 gray justify-between layoutMaxWidth center">
         <div className="mw6-ns lh-copy">
             Prototyped in <a target="_blank" rel="noopener noreferrer" className="link gray underline" href="https://www.figma.com/">Figma</a> and handcrafted in <a target="_blank" rel="noopener noreferrer" className="link gray underline" href="https://reactjs.org/">React</a> and <a target="_blank" rel="noopener noreferrer" className="link gray underline" href="https://www.gatsbyjs.com/">Gatsby.js</a>.
             
