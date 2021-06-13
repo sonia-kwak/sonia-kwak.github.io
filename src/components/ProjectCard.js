@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
+import { isMobile } from 'react-device-detect';
+
 // import Tag from '../components/Tag.js'
 
 // import { formatDate } from '../components/utils.js'
@@ -26,8 +28,8 @@ class ProjectCard extends React.Component {
                 // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
                 className="project-card link near-black db br1 lh-copy"
                 to={post.fields.slug} 
-                onMouseEnter={() => this.setState({hover: true})}
-                onMouseLeave={() => this.setState({hover: false})}
+                onMouseEnter={() => !isMobile && this.setState({hover: true})}
+                onMouseLeave={() => !isMobile && this.setState({hover: false})}
             >
                 <div className="db br1 w-100 project-card--cover" style={{paddingBottom: '56.25%', height: 0}}>
                     {

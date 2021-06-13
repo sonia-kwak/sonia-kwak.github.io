@@ -1,10 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+
 import { Link,graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
+
+import { isMobile } from 'react-device-detect';
 
 import rehypeReact from "rehype-react"
 
@@ -165,7 +168,10 @@ class ProjectPage extends React.Component {
           title={`${post.frontmatter.title}`}
         />
 
-        <ReadingProgressBar barColor={post.frontmatter.color}/>
+        {
+          !isMobile &&
+          <ReadingProgressBar barColor={post.frontmatter.color}/>
+        }
         
         <div className="center layoutMaxWidth">
           {/* Cover image */}
@@ -261,7 +267,7 @@ class ProjectPage extends React.Component {
                   <div className="gradient-border--animated dim ">
                     <a
                       href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
-                      className="text-gradient-clip bg-gradient--animated dib f5 fw6 link orange pv2 ph3"
+                      className="text-gradient-clip bg-gradient--animated dib f5 fw6 link orange pv3 ph5"
                     >
                       See it live
                     </a>
@@ -343,6 +349,7 @@ export const pageQuery = graphql`
                team
                color
                fullWidth
+               hover
                cover {
                   childImageSharp {
                     fluid(maxWidth: 1440) {
