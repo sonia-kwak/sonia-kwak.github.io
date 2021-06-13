@@ -56,7 +56,7 @@ class ProjectPage extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
-    const defaultMargins = 'mw7 center layoutMaxWidth';
+    const defaultMargins = `center ${post.frontmatter.fullWidth ? 'layoutMaxWidth' : 'mw7'}`;
     const bigImageMargins = `nl5-ns nr5-ns nl3-m nr3-m mv6-ns mv5 `;
     const imageMargins = `${defaultMargins} mv6-ns mv5 `;
     const baseType = 'f4-ns f5 dark-gray lh-copy ';
@@ -208,6 +208,7 @@ class ProjectPage extends React.Component {
               <div className="w-30-ns">
                 {
                   post.frontmatter.tags &&
+                  post.frontmatter.tags.length > 0 &&
                   <div className="mb4 dark-gray">
                     <h2 className="f6 fw6 ttu mv2 fw7 mr2">
                       <span className="">
@@ -341,6 +342,7 @@ export const pageQuery = graphql`
                tags
                team
                color
+               fullWidth
                cover {
                   childImageSharp {
                     fluid(maxWidth: 1440) {
