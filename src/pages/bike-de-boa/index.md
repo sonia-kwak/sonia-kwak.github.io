@@ -8,7 +8,7 @@ description: "A cicloactivist project that aims to encoure more people to use bi
 tags: ['design','web development','product management','branding']
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi."
 cover: './cover.png'
-hover: './covers/bikedeboa.gif'
+hover: '/covers/bikedeboa.gif'
 color: '#00d47e'
 liveLink: 'https://www.bikedeboa.com.br/'
 ---

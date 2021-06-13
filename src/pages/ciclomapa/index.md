@@ -7,7 +7,7 @@ minibio: "Democratizing the democratize access to bike maps of brazilian cities 
 description: "An open platform to democratize access to bike maps of brazilian cities, combining the open collaborativity  OpenStreetMap with web technologies and easy-to-use design."
 tags: ['design','front-end','product management']
 cover: './cover.png'
-hover: './covers/ciclomapa.gif'
+hover: '/covers/ciclomapa.gif'
 team: "Cristiano Dalbem, Bernardo Serra (ITDP), Felipe Alves (UCB)."
 color: '#4EA76F'
 liveLink: 'https://ciclomapa.org.br/'

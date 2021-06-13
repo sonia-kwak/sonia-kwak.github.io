@@ -7,7 +7,7 @@ minibio: "A minimalistic webapp for watching curated videos to relax, explore th
 description: "Choose a channel and let your mind wander with the continuous stream of great Slow TV and ambient videos we handpicked for you. Relax with the natural images and sounds while you work, put on your TV or invite your friends to watch together."
 tags: ['design','front-end','product management']
 cover: './cover.png'
-hover: './covers/escapista.gif'
+hover: '/covers/escapista.gif'
 forceOrder: 1
 team: "Cristiano Dalbem, Gabriela Catão."
 color: '#008080'
@@ -19,12 +19,12 @@ liveLink: 'http://escapista.app/'
 For a few years, I've been in love with the concept of [Slow TV](https://en.wikipedia.org/wiki/Slow_television), but I haven't done much about it. Then from the beginning of the COVID pandemic I started collecting some YouTube channels, and I was shocked with how much amazing stuff was out there. I started sketching ideas for a webapp that would help highlight all this amazing content, but with a frictionless experience that attempts to fix once and for all the choice paralysis present in so many video streaming platforms these days.
  
 <!-- ```grid|1 
-![](./devices.png)   
+![](./devices.png)
 ```  -->
 
 This project was co-created with [the Reddit Slow TV community](https://www.reddit.com/r/SlowTV/), where we learned about the habits of Slow TV consumption and their desires for a specialized website. One of the main requests: an interface that would be calming, "playing to the affective experience of watching Slow TV itself". The interface design is inspired by Scandinavian design, well-known for its minimalism and elegance - and also the birthplace of the original Slow TV shows.
 
-```grid|1
+```grid|1 
 ![](./press.png)
 ```
 

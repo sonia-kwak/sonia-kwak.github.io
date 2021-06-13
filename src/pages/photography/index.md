@@ -25,11 +25,11 @@ description: "Photography has been for many years the main way in which I try to
 ![](./2019-05-0709.44.39.jpg "Rio de Janeiro. 2019")
 ![](./2019-01-2711.17.11.jpg "Florianópolis. 2019")
 ```
-
+ 
 ```grid|2
 ![](./2019-09-2610.39.44.jpg "Galicia, Spain. 2020")
 ![](./2019-08-0508.39.06.jpg "Galicia, Spain. 2020")
-```
+``` 
 
 
 ```grid|2
@@ -73,7 +73,7 @@ description: "Photography has been for many years the main way in which I try to
 ```
 
 ![](./10045407925_c3f09d40e0_o.jpg "Canoas. 2013")
-
+ 
 ![](./4369418992_24edef7e49_o.jpg "São Paulo. 2010")
 
 ```grid|2
