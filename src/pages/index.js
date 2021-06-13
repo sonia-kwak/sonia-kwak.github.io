@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
               />
 
               <h1 className="f1-ns f3 fw4 dark-gray ma0 absolute top-0 mt7-ns mt4 mw7 tracked-tight">
-                I’m a designer bridging the gap between Product & Systems Design with a purpose to improve the way people work and express themselves with technology.
+                I’m a designer bridging the gap between Product & Systems Design, with a purpose to improve how people interact with technology to work and be creative.
               </h1>
 
               {/* <div className="absolute top-0 left-3-ns mt6-ns ml7-ns mt6 mr3 pt5-ns">
