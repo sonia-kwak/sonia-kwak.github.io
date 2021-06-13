@@ -6,7 +6,7 @@ title: "bike de boa"
 minibio: "Web app for collaboratively mapping safe places in the city to park your bike."
 description: "A cicloactivist project that aims to encoure more people to use bike in the city. With the collaborative web app you can search for safe places to park your bike nearby and map new ones while learning what makes for good and safe bike parking and safer streets."
 tags: ['design','web development','product management','branding']
-team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi, and others."
+team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi."
 cover: './cover.png'
 hover: './covers/bikedeboa.gif'
 color: '#00d47e'
@@ -25,20 +25,22 @@ The collaborative aspect allows the active participation of citizens, fostering 
 
 This has been a great project to put in practice so many tools and concepts I've been learning in the past years about web development, UX Design and Analytics. Working in bike de boa I've learned how important it is to go beyond aesthetics and Usability to create a great product. And, most of all, beyond just improving hard skills, this has been a project with a social purpose.
 
- 
-<!-- ## How it all started
-
-Everything started as a simple project at a local hackathon, held in Isobar IWS, the place where I worked at that time. The theme of that year was "improving people's lives with technology". A few friendly people joined me trying to make come true an old idea of creating this platform to map bike parkings. We felt in love with it and extended the project much further than those 24h.
-
-
-```grid|1 
-![](./team.png "This was a collaborative non-profit project that received support from several people accross the years and with whom I learned a lot about design, technology and urbanism.")
-```  -->
+<results-banner
+    data='{
+        "avg rating": "4.7/5",
+        "cities mapped": "60+",
+        "unique users every month": "400",
+        "mapped bike racks": "2,800+",
+        "map pins views": "180,000+"
+    }'> 
+</results-banner>
  
  
 # The problem
 
-How might we contribute to the local culture of urban biking with technology? Most cicling apps at that time seemed to focus too much on routing: how to bike from point A to point B? But how can even the most advanced pathplanning algorithms help you if you happen to live in a city with few to no cyclable paths and traffic is chaotic and dangerous? This is a cultural problem, and probably no app can fix that. Most of our western cities are car-centric by design, and drivers think they have the streets all to themselves and for their noisy, air-polluting and stress-inducing machines.
+> How might we contribute to the local culture of urban cycling using technology to encourage people to bike more?
+
+Most cycling apps at that time seemed to focus too much on routing: how to bike from point A to point B? But how can even the most advanced pathplanning algorithms help you if you happen to live in a city with few to no bike paths and traffic is chaotic and dangerous? This is a cultural problem, and probably no app can fix that. Most of our western cities are car-centric by design, and drivers think they have the streets all to themselves and for their noisy, air-polluting and stress-inducing machines.
 
 <jumbo caption="Examples of good and bad bike racks. Can you spot which is which?">
     <img src="./mosaic.png"/>
@@ -51,26 +53,28 @@ Many places already offered good structures to their clients to park their bikes
 
 # Research
 
-<jumbo caption="We made a very extensive benchmark study of collaborative maps in Brazil and abroad.">
+We made a very extensive benchmark study of collaborative maps in Brazil and abroad.
+
+<jumbo>
     <img src="./benchmark.png"/>
 </jumbo>
 
-We back all our decisions with user interviews and extensive Desk Research for content on bike safety and urban guidelines from around the world. We started getting really active on online biking communities to reach all kinds of opinions. With that we designed a system that gives a voice for people to say how safe they feel at places and also educates them with good practices from experts.
+We back all our decisions with user interviews and extensive Desk Research for content on bike safety and urban guidelines from around the world. We started getting really active on online biking communities to reach all kinds of opinions.
 
 ![](./portoalegre.jpg "A friend caught one of our user interview sessions during Massa Crítica, a monthly cicloactivist event.") 
 
-The idea of mapping safe places to park wasn't that new at all. We found out there were actually several collaborative maps throughout Brazil with this objective, which proved many others had also though it was a good idea. However as designers and developers we though we could drastically improve the experience by building a custom platform with our users needs in mind.
-
-The main issues we found with the current collaborative maps we found were:
+The idea of mapping safe places to park wasn't that new at all. We found out there were actually several collaborative maps throughout Brazil with this objective, which proved many others had also though it was a good idea. However as designers and developers we though we could improve that experience by fixing the issues we found:
 
 * **Trust:** how can I trust how good are the mapped places? None had a uniform way of ranking the pins.
 * **Data consistency:** each user helping with the mapping gave focus to the attributes they were most interested in, so each pin had very different information than the others. This made really hard to detect patterns in the data, track progress, etc.
-* **Ease of use:** it's expected to happen a tradeoff when you use a generic map platform for a very specific need. We though we could offer a better experience building a platform tailored for this scenario.
+* **Ease of use:** many used Google MyMaps, which is good but there's a tradeoff when you use a generic map platform for a very specific need. We though we could offer a better experience by building a platform tailored for mapping bike parkings.
 * **Discoverability and SEO:** native apps are not indexed by web search engines, which makes it hard to regular people _googling_ for places to park their bikes.
 
 
 
 # Execution
+
+This was my first big digital product and I had just pivoted my career from Web Engineer to UX Designer, so most prototyping was done on paper and then I went directly to code.
 
 <!-- ```grid|1
 ![](./mindmap.png "The brand values mindmap")
@@ -80,18 +84,17 @@ The main issues we found with the current collaborative maps we found were:
 ![](./references.png "Pinterest moodboard of design references") 
 ``` -->
 
-<!-- ```grid|2
-![](./workshop_logo2.jpg)
-![](./workshop_logo.jpg) 
-``` -->
-
-
 ```grid|2
 ![](./process1.jpg)
 ![](./process2.jpg)
 ```
 
-Categorization of the properties every location would have with their proper icon to help users quickly identify them. Objective attributes are parts of the bike rack registry itself, while subjective attributes are like tags used on user reviews.
+```grid|2
+![](./workshop_logo2.jpg)
+![](./workshop_logo.jpg) 
+```
+
+From the research we categorized the different properties related to bike parkings, creating custom icons and illustrations to depict each one. An important distinction we created was between **Objective Attributes**, which describe the bike rack itself, and **Subjective Attributes**, which come from user reviews.
 
 ```grid|1
 ![](./attributes_chart.jpg )
@@ -116,7 +119,7 @@ We played with some decorative illustrations as well to use on social media.
 ![](./guide2.png)
 ``` -->
 
-We leveraged as much as possible the flexibility of Google Maps for customizing everything in the map, cutting out all information that wasn't strictly necessary and fine-tuning colors to match the visual identiy.
+Leveraging the flexibility of Google Maps we customized everything in the map, filtering out the noise, keeping the essential and fine-tuning colors to match the project visual identity.
 
 <jumbo>
     <img src="./mapstyle.png"/>
@@ -124,13 +127,21 @@ We leveraged as much as possible the flexibility of Google Maps for customizing 
 
 Our hypothesis was that the main use of the app would be on Mobile, with the user in the streets either looking for a safe place to park or trying to map and review some place he/she found. This led us to use a mobile-first strategy, both for UX and Front-end development, making sure this was the main touchpoint we invested our energies. Although we used web technologies and PWA, ultimately we managed to get it into Google Play Store.
 
-Google Play Store screenshots section is a great place to sell the main product's value propositions. It reads: 'Find safe places to park your bike', 'See all details of the bike racks' and 'Take a look how other cyclists rated the places'.
-
 <jumbo>
     <img src="./row1.png"/>
 </jumbo>
 
-<jumbo caption="'Leave your review as well', 'Help mapping places on your town', 'Learn how to lock your bike on different bike rack types', 'Available also through the website'.">
+The Play Store screenshots section is a great place to sell the main product's value propositions: 
+* Find safe places to park your bike
+* See all details of the bike racks
+* Take a look how other cyclists rated the places
+* Leave your review as well
+* Help mapping places on your town
+* Learn how to lock your bike on different bike rack types
+* Available also through the website
+
+
+<jumbo>
     <img src="./row2.png"/>
 </jumbo>
 
@@ -176,64 +187,61 @@ The user experience is focused on exploring the map. Colored pins show where the
 
 Since places have attributes and tags you can use filters to chose the kind of places you prefer. Are you looking only for well reviewed, public, u-racks that are covered from the sun and rain? No problem, here are the results.
 
-<!-- ```grid|1
-![](./desktop_details.png)
-``` -->
-
 <video-container> 
     <video autoPlay controls loop width="100%" type="video/mp4">
         <source src="./desktop2.mp4" type="video/mp4">
     </video> 
 </video-container>
 
-<!-- ```grid|2
-![](./howtoinstall.png) 
-![](./data.png)
-``` -->
-
-Like our source code all the project data is also open, and we created a simple [dashboard](https://www.bikedeboa.com.br/dados) for users to easily browser, search and filter through data. Using our data for research or other applications is as easy as clicking the download button, which exports all our data in convenient file format such as CSV or XLS.
+Like our source code all the project data is also open. I built a [Data Platform](https://www.bikedeboa.com.br/dados) for users to easily browser, search and filter through data. Using our data for research or other applications is as easy as clicking the download button, which exports all our data in convenient file format such as CSV or XLS.
 
 ```grid|1
 ![](./dashboard.png "Our dashboard for easily browsing through the data and downloading it.")
 ```
 
-We designed a simple [dashboard on Google Data Studio](https://datastudio.google.com/open/1Dcx_Cq_rDgmD4cjQqumQZ2ilvl7bQDey), which is automatically synced with our Google Analytics and shows the most important data about any given month activity on the platform.
+To monitor the product metrics I created a [dashboard on Google Data Studio](https://datastudio.google.com/open/1Dcx_Cq_rDgmD4cjQqumQZ2ilvl7bQDey), which is automatically synced with our Google Analytics and shows the most important data about any given month activity on the platform.
  
 <jumbo caption="Data Studio dashboard with our main monthly metrics. From top left to bottom right: user acquisition (channels and devices), main landing pages, total sessions, total users, % new users, new sign ups, main cities visited, new reviews, nbr of places created, updated and viewed. On the bottom a chart of the user sessions along the month.">
     <img src="./datastudio.png"/>
 </jumbo>
 
  
-We made some effort to have a decent social media presence as well, both on Facebook and Instagram. Digital Marketing was not the expertise of any of us in the team, so there was a steep learning curve that I'm not sure we ever conquered.
+We made some effort to have a good social media presence as well, both on Facebook and Instagram. Digital Marketing was not the expertise of any of us in the team, so there was a steep learning curve.
 
 ```grid|1
 ![](./facebook.png)
 ``` 
- 
-## Results 
 
-We're very happy that all the work has had good results. We've managed to burst the bubble and expand to all the country, and the engagement numbers are quite good for a project with zero marketing budget.
+<!-- ![](./instagram.png) -->
+
+
+
+# Results 
+
+We're very happy that all the work had results! We've managed to burst the bubble and expand to all the country, and the engagement numbers are quite good for a project with zero marketing budget.
 
 <results-banner
     data='{
+        "avg rating": "4.7/5",
         "cities mapped": "60+",
-        "mapped bike racks": "2,800+",
         "unique users every month": "400",
-        "map pin visualizations": "180,000+"
+        "mapped bike racks": "2,800+",
+        "map pins views": "180,000+"
     }'> 
 </results-banner>
  
-We were featured in some cool places: cicloactivist and technology conferences, blogs, podcasts, newsletters and the local press.
+We also were featured in some cool places: cicloactivist and technology conferences, blogs, podcasts, newsletters and the local press.
  
  ```grid|1
 ![](./press.png)
 ``` 
 
 
-## Cool pictures of our team
+
+# Cool pictures of our team
 
 ```grid|1
-![](./ila.jpg "Presenting at Interaction Latin America 2018, in Rio de Janeiro. What a blast!")
+![](./ila.jpg "Presenting at Interaction Latin America 2018, in Rio de Janeiro. What a blast! (full disclosure: we didn't have official photography of our talk so I made this montage that depicts very realistically how it was")
 ```
 
 ```grid|2
@@ -263,14 +271,6 @@ We were featured in some cool places: cicloactivist and technology conferences, 
         {
             "label": "GitHub",
             "url": "https://github.com/bikedeboa"
-        },
-        {
-            "label": "Facebook",
-            "url": "https://www.facebook.com/bikedeboaapp/"
-        },
-        {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/bikedeboa/"
         }
     ]'>
 </links-list>
