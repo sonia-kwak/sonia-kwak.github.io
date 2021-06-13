@@ -32,7 +32,7 @@ const Speaking = () => (
       <Talk
         title="A UX da Mobilidade Urbana - Cidades melhores para pedalar e viver"
         context="Interaction Latin America - Rio de Janeiro, 2018"
-      link="https://docs.google.com/presentation/d/1pI4ONbgxePD8DrPSmUlRHCa_mSGdzyGJB8Qb38ur4bs/edit?usp=sharing"
+        link="https://docs.google.com/presentation/d/1wYfnc6qrscQ26ndJRMlrk82xW-tqHEZpuK_kVjXSofs/edit?usp=sharing"
       />
 
       {/* <Talk
