@@ -55,7 +55,6 @@ class ResultsBanner extends React.Component {
 class ProjectPage extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
@@ -162,11 +161,19 @@ class ProjectPage extends React.Component {
     
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title}`}
-        />
+        <Helmet>
+          <html lang="en"/>
+          <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
+
+          <meta property="og:title" content={post.frontmatter.title}/>
+          <meta property="og:description" content={post.frontmatter.description}/>
+          <meta property="og:image" content={post.frontmatter.cover.childImageSharp.fluid.src}/>
+          <meta property="og:type" content="website"/>
+
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:title" content={post.frontmatter.title}/>
+          <meta name="twitter:description" content={post.frontmatter.description}/>
+        </Helmet>
 
         {
           !isMobile &&
