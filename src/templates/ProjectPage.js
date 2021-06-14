@@ -173,7 +173,7 @@ class ProjectPage extends React.Component {
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:title" content={post.frontmatter.title}/>
-          <meta name="twitter:description" content={post.frontmatter.description}/>
+          <meta name="twitter:description" content={post.frontmatter.minibio}/>
         </Helmet>
 
         {
