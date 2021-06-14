@@ -167,7 +167,7 @@ class ProjectPage extends React.Component {
 
           <meta property="og:title" content={post.frontmatter.title}/>
           <meta property="og:description" content={post.frontmatter.description}/>
-          <meta property="og:image" content={post.frontmatter.cover.childImageSharp.fluid.src}/>
+          <meta property="og:image" content={'https://www.cristianodalbem.com' + post.frontmatter.cover.childImageSharp.fluid.src}/>
           <meta property="og:type" content="website"/>
 
           <meta name="twitter:card" content="summary_large_image"/>

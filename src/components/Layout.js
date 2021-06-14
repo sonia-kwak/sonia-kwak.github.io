@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
             <meta property="og:title" content="Cristiano Dalbem Portfolio"/>
             <meta property="og:site_name" content="Cristiano Dalbem Portfolio"/>
             <meta property="og:description" content="Portfolio of Cristiano Dalbem, a designer of products and systems, with UX case studies of professional and personal projects."/>
-            <meta property="og:image" content={image}/>
+            <meta property="og:image" content={'https://www.cristianodalbem.com' + image}/>
             <meta property="og:url" content="https://www.cristianodalbem.com/"/>
             <meta property="og:type" content="website"/>
 
