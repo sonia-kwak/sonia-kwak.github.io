@@ -38,6 +38,8 @@ const Layout = ({ children }) => (
             <html lang="en"/>
             <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css"/>
 
+            <title>Cristiano Dalbem Portfolio</title>
+
             <meta property="og:title" content="Cristiano Dalbem Portfolio"/>
             <meta property="og:site_name" content="Cristiano Dalbem Portfolio"/>
             <meta property="og:description" content="Portfolio of Cristiano Dalbem, a designer of products and systems, with UX case studies of professional and personal projects."/>
