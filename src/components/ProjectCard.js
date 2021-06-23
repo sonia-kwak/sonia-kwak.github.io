@@ -15,6 +15,7 @@ class ProjectCard extends React.Component {
 
     render() {
         const post = this.props.node;
+        const isShowHover = post.frontmatter.hover && this.state.hover;
         // const mini = this.props.mini;
 
         // let dateStart = formatDate(post.frontmatter.date, 'YYYY');
@@ -32,11 +33,17 @@ class ProjectCard extends React.Component {
                 onMouseLeave={() => !isMobile && this.setState({hover: false})}
             >
                 <div className="db br1 w-100 project-card--cover" style={{paddingBottom: '56.25%', height: 0}}>
-                    {
-                        post.frontmatter.hover && this.state.hover ?
-                            <img src={post.frontmatter.hover} className="w-100 " style={{objectFit: 'cover'}}/>
-                        :
-                            <Img fluid={post.frontmatter.cover.childImageSharp.fluid} className=" w-100" alt=""/>
+                    <Img
+                        fluid={post.frontmatter.cover.childImageSharp.fluid}
+                        className={`w-100 ${isShowHover ? 'dn' : ''}`}
+                        alt=""/>
+                    
+                    { 
+                        !isMobile && 
+                        <img
+                        src={post.frontmatter.hover}
+                        className={`w-100 ${isShowHover ? 'o-100' : 'o-0'}`}
+                        style={{objectFit: 'cover'}}/>
                     }
                 </div>
 
