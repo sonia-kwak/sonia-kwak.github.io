@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 import Reveal from 'react-reveal/Reveal';
 import Fade from 'react-reveal/Fade';
 
-import { isMobile } from 'react-device-detect';
+import { BrowserView } from 'react-device-detect';
 
 import rehypeReact from "rehype-react"
 
@@ -178,10 +178,9 @@ class ProjectPage extends React.Component {
           <meta name="twitter:description" content={post.frontmatter.minibio}/>
         </Helmet>
 
-        {
-          !isMobile &&
+        <BrowserView>
           <ReadingProgressBar barColor={post.frontmatter.color}/>
-        }
+        </BrowserView>
         
         <div className="center layoutMaxWidth">
           {/* Cover image */}

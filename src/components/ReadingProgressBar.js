@@ -45,7 +45,8 @@ class ReadingProgressBar extends React.Component {
                     width: `${this.state.scroll}%`,
                     height: '4px'
                 }}
-            />
+            >
+            </div>
         )
     }
 }
