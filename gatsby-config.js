@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cristiano Dalbem',
+    title: 'Cristiano Dalbem — Product Design Portfolio',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Cristiano Dalbem Portfolio',
+        name: 'Cristiano Dalbem — Product Design Portfolio',
         short_name: 'Cristiano Dalbem',
         start_url: '/',
         background_color: '#ffffff',
