@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 
 import Fade from 'react-reveal/Fade';
 
+import { isMobile } from 'react-device-detect';
+
 import Layout from '../components/Layout'
  
 import Speaking from '../components/Speaking'
@@ -14,13 +16,28 @@ import Projects from '../components/Projects'
 
 import { sortPosts } from '../components/utils.js'
 
+function AnimatedHeader(props) {
+  const {rows} = props;
+  const typography = 'f1-ns f3 fw4 dark-gray mw7 tracked-tight ma0';
+  return (
+    <div className="absolute top-0 mt7-ns mt4">
+      {
+        rows.map((r,i) =>
+          <div className="overflow-hidden">
+            <Fade bottom cascade={!isMobile} duration={800} delay={400*(i+2)}>
+              <h1 className={typography}>
+                { r }
+              </h1>
+            </Fade>
+          </div>
+        )
+      }
+    </div>
+  )
+}
+
 class IndexPage extends React.Component {
   render() {
-    let isMobile;
-    if (typeof window !== `undefined`) {
-      isMobile = window.matchMedia('only screen and (max-width: 30em)').matches;
-    }
-
     const posts = sortPosts(this.props.data.allMarkdownRemark.edges);
 
     console.debug('posts', posts);
@@ -41,28 +58,13 @@ class IndexPage extends React.Component {
                 alt="Silhouette of a man standing at the top of a hill with silhouettes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
               />
 
-              <h1 className="f1-ns f3 fw4 dark-gray ma0 absolute top-0 mt7-ns mt4 mw7 tracked-tight">
-                I’m a designer bridging the gap between Product & Systems Design, with a purpose to improve how people interact with technology to work and be creative.
-              </h1>
-
-              {/* <div className="absolute top-0 left-3-ns mt6-ns ml7-ns mt6 mr3 pt5-ns">
-                <div className="overflow-hidden">
-                  <Fade bottom cascade={!isMobile} duration={800}>
-                    <h1
-                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr">
-                      I'm a designer of 
-                    </h1>
-                  </Fade>
-                </div>
-                <div className="overflow-hidden">
-                  <Fade bottom cascade={!isMobile} delay={400} duration={800}>
-                    <h1
-                      className="f-subheadline-ns f2 fw4 dark-gray ma0 tl-ns tr">
-                      products & systems.
-                    </h1>
-                  </Fade>
-                </div>
-              </div> */}
+              <AnimatedHeader rows={[
+                'I’m a designer bridging the gap',
+                'between Product & Systems',
+                'Design, with a purpose to improve',
+                'how people interact with',
+                'technology to work and be creative.'
+              ]}/>
             </div> 
 
             {/* <div className="w-20-ns" />
