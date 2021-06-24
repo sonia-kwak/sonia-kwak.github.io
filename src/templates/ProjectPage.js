@@ -201,7 +201,7 @@ class ProjectPage extends React.Component {
           <Fade duration={1500} delay={1000}>
             <div className="flex flex-row-ns flex-column mb4">
               <div className="w-60-ns">
-                <h1 className="f1 mt0 fw4 mb3 dark-gray lh-solid tracked-tight">
+                <h1 className="f1 mt0 fw7 mb3 lh-solid tracked-tight" style={{color: post.frontmatter.color}}>
                   {post.frontmatter.title}
                 </h1>
                 {
@@ -273,14 +273,21 @@ class ProjectPage extends React.Component {
 
                 {
                   post.frontmatter.liveLink &&
-                  <div className="gradient-border--animated dim ">
-                    <a
-                      href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
-                      className="text-gradient-clip bg-gradient--animated dib f5 fw6 link orange pv3 ph5"
-                    >
-                      See it live
-                    </a>
-                  </div>
+                  // <div className="gradient-border--animated dim ">
+                  //   <a
+                  //     href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
+                  //     className="text-gradient-clip bg-gradient--animated dib f5 fw6 link orange pv3 ph5"
+                  //   >
+                  //     See it live
+                  //   </a>
+                  // </div>
+                  <a
+                    href={post.frontmatter.liveLink} target="_blank" rel="noopener noreferrer"
+                    className="dib f5 fw6 link pv3 ph5 ba br1"
+                    style={{color: post.frontmatter.color}}
+                  >
+                    See it live
+                  </a>
                 }
               </div>
             </div>

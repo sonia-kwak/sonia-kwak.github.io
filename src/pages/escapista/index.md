@@ -10,10 +10,10 @@ cover: './cover.png'
 hover: '/covers/escapista.gif'
 forceOrder: 1
 team: "Cristiano Dalbem, Gabriela Catão."
-color: '#008080'
+color: '#006E6E'
 liveLink: 'http://escapista.app/'
----
-
+--- 
+ 
 # Overview
  
 For a few years, I've been in love with the concept of [Slow TV](https://en.wikipedia.org/wiki/Slow_television), but I haven't done much about it. Then from the beginning of the COVID pandemic I started collecting some YouTube channels, and I was shocked with how much amazing stuff was out there. I started sketching ideas for a webapp that would help highlight all this amazing content, but with a frictionless experience that attempts to fix once and for all the choice paralysis present in so many video streaming platforms these days.
