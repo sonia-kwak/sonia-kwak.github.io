@@ -9,7 +9,7 @@ tags: ['design','web development','product management','branding']
 team: "Cristiano Dalbem, Hannah Kny, Tadeu Saldanha, Denner Evaldt, Francisco Cenzi."
 cover: './cover.png'
 hover: '/covers/bikedeboa.gif'
-color: '#00d47e'
+color: '#41A65A'
 liveLink: 'https://www.bikedeboa.com.br/'
 ---
 

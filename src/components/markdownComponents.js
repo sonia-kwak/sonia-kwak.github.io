@@ -106,7 +106,7 @@ export function markdownRenderer(isFullWidth) {
                     {props.children}
                     {
                         props.caption &&
-                        <figcaption className={defaultMargins + " mt4 fw6 f6 dark-gray tc"}>
+                        <figcaption className={defaultMargins + " mt2 f6 dark-gray tc"}>
                             {props.caption}
                         </figcaption>
                     }

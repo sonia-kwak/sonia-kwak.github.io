@@ -26,13 +26,12 @@ class ProjectCard extends React.Component {
 
         return (
             <Link
-                // className="b--light-gray bg-white br0 db near-black overflow-hidden card-shadow card-hover"
-                className="project-card link near-black db br1 lh-copy overflow-hidden "
+                className="project-card link near-black db br1 lh-copy "
                 to={post.fields.slug} 
                 onMouseEnter={() => !isMobile && this.setState({hover: true})}
                 onMouseLeave={() => !isMobile && this.setState({hover: false})}
             >
-                <div className="db br1 w-100 project-card--cover" style={{paddingBottom: '56.25%', height: 0}}>
+                <div className="db br1 w-100 project-card--cover overflow-hidden" style={{paddingBottom: '56.25%', height: 0}}>
                     <Img
                         fluid={post.frontmatter.cover.childImageSharp.fluid}
                         className={`w-100 ${isShowHover ? 'dn' : ''}`}
